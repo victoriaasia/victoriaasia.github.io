@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="contactsApp">
+<head>
+ <meta charset="utf-8">
+ <title>Contacts</title>
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-controller="contactsCtrl">
+
+  <div class="wrapper">
+  <div class="wrapper__header">
+    <h2 class="title">Contacts List</h2>
+    <div class="search">
+      <span class="search__title">Search:</span>
+      <input type="text" class="search__field" ng-model="search">
+    </div>
+  </div>
+
+  <table class="table table-striped">
+   <tr>
+    <th></th>
+    <th>Name</th>
+    <th>Surname</th>
+    <th>Email</th>
+    <th>Company</th>
+    <th>Position</th>
+    <th>Phone</th>
+    <th></th>
+   </tr>
+   <tr ng-repeat="contact in contacts | orderBy: 'id' | filter: search" id="{{contact.id}}" ng-click="foo($event, team)">
+
+    <td><img ng-src="{{contact.avatar}}"/></td>
+    <td>{{contact.first_name}}</td>
+    <td>{{contact.last_name}}</td>
+    <td>{{contact.email}}</td>
+    <td>{{contact.company_name}}</td>
+    <td>{{contact.job_title}}</td>
+    <td>{{contact.phone}}</td>
+
+    <td><a class="btn btn-secondary">open</a></td>
+
+   </tr>
+  </table>
+
+
+
+</div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
