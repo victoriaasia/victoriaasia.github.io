@@ -14,8 +14,52 @@
 
 <div class="wrapper">
   <div class="container-header">
-    <header></header>
+    <header class="flex">
+
+      <div class="header-item1 logo">
+          <a href="#" class="logo-img"></a>
+      </div>
+
+      <div class="header-item5 menu">
+        <ul class="hamburger">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      <nav>
+      	<ul>
+      		<li class="menu-item"><a href="#" class="link">солод</a></li>
+      		<li class="menu-item"><a href="#" class="link">хмель</a></li>
+      		<li class="menu-item"><a href="#" class="link">брожение</a></li>
+      		<li class="menu-item"><a href="#" class="link">специи</a></li>
+      		<li class="menu-item"><a href="#" class="link">фильтр &#38; мойка</a></li>
+      	</ul>
+      </nav>
+      </div>
+      <div class="header-item1 search">
+        <div class="search__inner">
+          <form action="" autocomplete="on">
+            <input class="search-field" name="search" placeholder="" type="text">
+            <input class="search-submit" type="submit">
+          </form>
+        </div>
+      </div>
+      <div class="header-item2 city">
+        <a href="#" class="city-select">Санкт-Петербург</a>
+      </div>
+      <div class="header-item1 lk"><a href="#" class="lk-btn">Войти</a></div>
+      <div class="header-item1 cart"><a href="#" class="cart-btn"><img src="img/cart.png" alt=""></a></div>
+
+      <div class="phone"><a href="#"><img src="img/phone.png" alt="Звонок"></a></div>
+
+    </header>
   </div>
+
+
+
+
+
+
 
   <div class="container-content flex">
 
@@ -199,6 +243,15 @@
 
 </div>
 
+
+
+<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+<script>
+$('.hamburger').click(function () {
+    $('.hamburger').toggleClass('on', function () {});
+    $('nav').slideToggle(400, function () {});
+});
+</script>
 
 </body>
 </html>

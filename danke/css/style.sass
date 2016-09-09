@@ -1,5 +1,8 @@
 @import "fonts"
 @import "colors"
+@import "animations"
+@import "header"
+
 
 body
   background-color: $lightGray
@@ -22,13 +25,6 @@ a
   background-color: $white
   position: relative
 
-.container-header
-  width: 100%
-  background-color: $white
-  height: 80px
-  header
-    max-width: 1400px
-
 .container-content
   flex-wrap: wrap
   justify-content: center
@@ -40,20 +36,20 @@ a
   width: 25%
   max-width: 20%
   min-width: 200px
+  min-height: 320px
+  max-height: 400px
   position: relative
   margin: 10px
   color: $black
   z-index: 1
   perspective: 1000
+  cursor: pointer
   &:hover .card
     transform: rotateY(180deg)
     box-shadow: -3px 6px 44px -1px rgba($black, 0.38)
   .card
     width: 100%
     height: 100%
-    min-height: 320px
-    max-height: 400px
-    margin: 0 auto
     transform-style: preserve-3d
     transition: all 1s ease
     .face
@@ -79,8 +75,23 @@ a
       display: flex
       flex-direction: column
       justify-content: space-between
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        border-top: 1px solid $lightGray
+        width: 100%
+        height: 2px
+        left: 0
+        bottom: 89px
       .price
         justify-content: flex-end
+      .karl
+        background-color: $white
+        padding: 0 10px
+        position: relative
+        left: -10px
+
     &-img
       height: 100%
       position: relative
@@ -142,6 +153,8 @@ a
         padding: 13px 15px
         margin: 2px
         text-align: center
+        &:hover
+          background-color: rgba($green, 0.8)
       .add-btn
         flex: 1
         border: 0
@@ -152,3 +165,7 @@ a
         padding: 5px 10px
         margin: 2px
         cursor: pointer
+        &:hover
+          border-color: rgba($green, 0.8)
+        &:hover img
+          opacity: 0.8

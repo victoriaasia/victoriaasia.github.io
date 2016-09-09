@@ -1,0 +1,266 @@
+@import "fonts"
+@import "colors"
+
+.container-header
+  width: 100%
+  background-color: $white
+  height: 80px
+  header
+    max-width: 1400px
+    padding: 0 15px
+    height: 100%
+    box-sizing: border-box
+    justify-content: space-between
+    align-items: center
+    .header-item1
+      flex: 1
+    .header-item5
+      flex: 10
+    .header-item2
+      flex: 2
+    > div
+      margin: 0 10px
+      text-align: center
+      transition: all 2s ease
+    .logo
+      &-img
+        display: block
+        background-image: url(../img/logo.png)
+        width: 70px
+        height: 80px
+        background-repeat: no-repeat
+        background-position: left
+        transition: all 1.5s ease
+
+  .lk-btn
+    border: 2px solid $green
+    border-radius: 20px
+    font-size: 11px
+    font-family: "GothamProBold"
+    color: $black
+    text-transform: uppercase
+    padding: 6px 25px 5px 15px
+    position: relative
+    transition: all 1s ease
+    &::after
+      content: ''
+      position: absolute
+      background-image: url(../img/arrow.png)
+      width: 4px
+      height: 6px
+      top: 8px
+      right: 13px
+    &:hover
+      border-color: rgba($green, .8)
+
+.link, .hamburger, .hamburger li
+  transition: all 0.3s ease-out
+
+nav
+  font-size: 11px
+  font-family: "GothamPro"
+  text-transform: uppercase
+  text-align: center
+  .menu-item
+    display: inline-block
+    margin: 0 .8em
+    line-height: 2
+    &:first-child
+      margin: 0 .8em 0 0
+    &:last-child
+      margin: 0 0 0 .8em
+  .link
+    display: block
+    color: black
+    text-decoration: none
+    text-transform: uppercase
+    &:hover
+      color: $green
+
+.hamburger
+  display: none
+  width: 35px
+  height: 30px
+  padding-top: 6px
+  margin: 0 auto
+  &:hover
+    cursor:pointer
+  li
+    list-style: none
+    margin: 4px 0
+    width: 35px
+    height: 3px
+    background: $darkGray
+    &:nth-child(2)
+      width: 25px
+    &:last-child
+      width: 30px
+.on
+  transform: rotate(90deg)
+  li
+    background: $gray
+    &:nth-child(2)
+      width: 35px
+    &:first-child
+      width: 30px
+
+@media only screen and (max-width: 996px)
+  .hamburger
+    display: block
+  nav
+    width: 100%
+    display: none
+    position: absolute
+    background: #fff
+    z-index: 99999
+    top: 81px
+    left: 0
+    .menu-item
+      display: block
+      margin: .6em .8em !important
+      border-bottom: 1px solid #ccc
+      &:last-child
+        border:none
+
+  .header-item5
+    flex: 1 !important
+
+@media only screen and (min-width: 997px)
+  nav
+    display: block !important
+
+@media only screen and (max-width: 776px)
+  .search
+    opacity: 0
+    display: none
+
+@media only screen and (max-width: 690px)
+  .city
+    opacity: 0
+    display: none
+
+@media only screen and (max-width: 480px)
+  .lk
+    opacity: 0
+    display: none
+
+  .phone
+    display: block
+    opacity: 1
+
+  .logo-img
+    background-image: url(../img/logo-min.png) !important
+    background-position: center !important
+
+
+  .cart
+    position: relative
+    &::after,
+    &::before
+      content: ''
+      position: absolute
+      border-right: 1px solid $lightGray
+      height: 42px
+      width: 2px
+      top: -10px
+    &::before
+      left: -5px
+    &::after
+      right: -5px
+
+  .container-header
+    header > div
+      margin: 0 5px
+
+
+@media only screen and (min-width: 481px)
+  .phone
+    opacity: 0
+    display: none
+
+
+
+
+
+.city
+  .city-select
+    display: block
+    background-color: $lightGray
+    border-radius: 15px
+    padding: 9px 25px 9px 15px
+    font-size: 11px
+    font-family: "GothamProBold"
+    color: $black
+    text-transform: uppercase
+    position: relative
+    white-space: nowrap
+    transition: all 1s ease
+    &::after
+      content: ''
+      position: absolute
+      background-image: url(../img/arrow-black.png)
+      width: 6px
+      height: 4px
+      top: 13px
+      right: 13px
+      background-repeat: no-repeat
+    &:hover
+      background-color: rgba($lightGray, .5)
+
+
+
+
+
+.search
+  width: 100%
+  height: 50px
+  &__inner
+    position: relative
+  input[type="text"]
+    height: 22px
+    font-size: 12px
+    color: $gray
+    display: inline-block
+    padding-right: 50px
+    border: 0
+    outline: none
+    width: 0px
+    position: absolute
+    top: 11px
+    right: 0
+    background: none
+    z-index: 4
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000)
+    cursor: pointer
+    &:hover
+      z-index: 0
+  input[type="text"]:focus
+    width: 100%
+    padding: 3px 20px
+    padding-right: 50px
+    z-index: 1
+    color: $black
+    background-color: $lightGray
+    border-radius: 15px
+    cursor: text
+  .search-submit
+    height: 18px
+    width: 18px
+    display: inline-block
+    float: right
+    text-indent: -10000px
+    background-image: url('../img/search.png')
+    background-repeat: no-repeat
+    background-size: contain
+    background-color: transparent
+    border: 0
+    outline: none
+    position: absolute
+    top: 15px
+    right: 20px
+    z-index: 2
+    cursor: pointer
+
+  input[type="text"]:focus
+    + #search__submit
+      background-image: url('../img/close.png')
