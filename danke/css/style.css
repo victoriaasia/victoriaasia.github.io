@@ -499,7 +499,9 @@ a {
         text-transform: uppercase;
         padding: 13px 15px;
         margin: 2px;
-        text-align: center; }
+        text-align: center;
+        -webkit-transition: all 1s ease;
+                transition: all 1s ease; }
         .container-card .card-buttons .more-btn:hover {
           background-color: rgba(73, 182, 137, 0.8); }
       .container-card .card-buttons .add-btn {
