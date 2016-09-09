@@ -1,0 +1,71 @@
+@media only screen and (max-width: 996px)
+  .hamburger
+    display: block
+  nav
+    width: 100%
+    display: none
+    position: absolute
+    background: #fff
+    z-index: 99999
+    top: 81px
+    left: 0
+    .menu-item
+      display: block
+      margin: .6em .8em !important
+      border-bottom: 1px solid #ccc
+      &:last-child
+        border:none
+
+  .header-item5
+    flex: 1 !important
+
+@media only screen and (min-width: 997px)
+  nav
+    display: block !important
+
+@media only screen and (max-width: 776px)
+  .search
+    opacity: 0
+    display: none
+
+@media only screen and (max-width: 690px)
+  .city
+    opacity: 0
+    display: none
+
+@media only screen and (max-width: 480px)
+  .lk
+    opacity: 0
+    display: none
+
+  .phone
+    display: block
+    opacity: 1
+
+  .logo-img
+    background-image: url(../img/logo-min.png) !important
+    background-position: center !important
+
+  .cart
+    position: relative
+    &::after,
+    &::before
+      content: ''
+      position: absolute
+      border-right: 1px solid $lightGray
+      height: 42px
+      width: 2px
+      top: -10px
+    &::before
+      left: -5px
+    &::after
+      right: -5px
+
+  .container-header
+    header > div
+      margin: 0 5px
+
+@media only screen and (min-width: 481px)
+  .phone
+    opacity: 0
+    display: none
