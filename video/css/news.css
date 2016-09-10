@@ -1,0 +1,12 @@
+.articles-items .item .title .date {
+    opacity: .5;
+    font-family: Raleway-Regular, sans-serif;
+}
+
+@media screen and (max-width:768px) {
+    .articles-items .item .title .date {
+        display: block;
+    }
+}
+
+
