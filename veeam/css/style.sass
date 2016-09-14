@@ -1,0 +1,394 @@
+a, address, area, article, aside, b, big, blockquote, body, button, caption, center, cite, comment, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, head, header, hgroup, i, input, label, legend, li, menu, nav, nobr, ol, option, p, section, select, small, span, strong, summary, sup, table, td, textarea, time, title, tr, u, ul
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+
+body
+  background-image: url(../imgs/pattern-basic.png)
+
+.header-right__text
+  margin: 0
+  padding: 0
+
+.header
+  margin: 0
+  padding: 16px 0 0
+  border-top: 5px solid #000
+
+.header-logo img
+  width: 180px
+  margin-left: -5px
+
+.header-right
+  text-align: right
+
+.header-right__text--bold
+  font-size: 23px
+  color: #222
+  text-align: center
+  font-weight: 800
+  font-family: 'Open Sans'
+
+.header-right div
+  &:last-child
+    line-height: 45px
+  &:first-child
+    height: 49px
+    line-height: 21px
+
+.header-right__text
+  font-size: 16px
+  color: #222
+  font-weight: 600
+  font-family: 'Open Sans'
+
+.header-right__text--thin
+  font-size: 16px
+  color: #222
+  font-weight: 400
+  font-family: 'Open Sans'
+
+.header-right-end span::before
+  content: ''
+  position: absolute
+  border-left: 1px solid gray
+  height: 45px
+  left: 12px
+
+.breadcrumbs
+  background: #1e8509
+  background: -webkit-gradient(linear, left top, left bottom, from(#2fc206), to(#1e8509))
+  background: -webkit-linear-gradient(top, #2fc206, #1e8509)
+  background: -o-linear-gradient(top, #2fc206, #1e8509)
+  background-image: -ms-linear-gradient(top, #2fc206 0%, #1e8509 100%)
+  height: 50px
+  margin-top: 20px
+
+.breadcrumbs-breadcrumb
+  display: inline-block
+  line-height: 50px
+  a
+    font-weight: 400
+    color: #fff
+    font-size: 16px
+    font-family: 'Open Sans'
+    &:hover
+      text-decoration: none
+      color: #fff
+
+.breadcrumbs .current-crumb
+  font-weight: 800
+
+.breadcrumbs-breadcrumb:first-child::after
+  content: '\00bb'
+  position: relative
+  margin: 0 10px
+
+.tab-header
+  background: url(../imgs/Annual_DP_Report_2013_header_LP.png) no-repeat
+  height: 150px
+  width: 100%
+  background-size: cover
+
+#tabs-container
+  margin-top: 20px
+
+.tabs-menu
+  height: 40px
+  float: right
+  clear: both
+  margin-bottom: -2px
+  li
+    height: 40px
+    line-height: 30px
+    list-style-type: none
+    float: left
+    margin-right: 3px
+    background-color: lightgray
+    border-top: 1px solid #d4d4d1
+    border-right: 1px solid #d4d4d1
+    border-left: 1px solid #d4d4d1
+    line-height: 40px
+    border-radius: 2px
+    &:last-child
+      margin-right: 18px
+    &.current
+      position: relative
+      background-color: #fff
+      border-bottom: 1px solid #fff
+      z-index: 5
+    a
+      padding: 10px 25px
+      text-transform: uppercase
+      color: gray
+      text-decoration: none
+      font-weight: 800
+  .current a
+    color: #000
+    font-weight: 800
+
+.tab
+  border: 1px solid #d4d4d1
+  border-radius: 6px
+  background-color: #fff
+  float: left
+  margin-bottom: 20px
+  width: 100%
+
+.tab-content
+  padding: 20px
+  display: none
+
+#tab-1
+  display: block
+
+.tab-content__text--bold
+  color: #222
+  font-weight: 800
+  font-family: 'Open Sans'
+
+.video-popup-img
+  width: 100%
+
+.video
+  height: 100%
+
+.down
+  cursor: pointer
+
+.down2
+  cursor: pointer
+  &::after
+    content: url(../imgs/hands_on_guide_click.png)
+    position: absolute
+    top: 120px
+    -webkit-transform: scale(1.2)
+    -ms-transform: scale(1.2)
+    transform: scale(1.2)
+    left: 28px
+
+.down::after
+  content: url(../imgs/hands_on_guide_click.png)
+  position: absolute
+  top: 120px
+  -webkit-transform: scale(1.2)
+  -ms-transform: scale(1.2)
+  transform: scale(1.2)
+  left: 28px
+
+.tab-content ul
+  padding-left: 5px
+
+.tab-cont
+  margin-top: 20px
+
+.tab-content__text--bold
+  line-height: 30px
+
+.infogfaphic-img
+  width: 100%
+
+.tab-header-text
+  max-width: 875px
+  margin: 0 auto
+  position: relative
+  top: 60px
+  div:first-child
+    font-weight: 800
+    font-size: 26px
+
+.tab-header-text--white
+  color: #fff
+
+.tab-header-text--yellow
+  color: #ff0
+
+.tab-header-text--end
+  font-size: 18.3px
+  font-weight: 400
+  color: #fff
+
+/* form */
+
+.flex
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: justify
+  -webkit-justify-content: space-between
+  -ms-flex-pack: justify
+  justify-content: space-between
+  -webkit-box-align: center
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+  margin-bottom: 20px
+
+input, select
+  width: 60%
+
+.required::after
+  content: '*'
+  color: red
+  margin-left: 3px
+
+.registrationForm
+  background-image: url(../imgs/pattern-basic.png)
+  padding: 10px 25px 30px
+  border-radius: 1px
+
+.form-title
+  color: green
+  font-weight: 800
+  text-align: center
+  margin-bottom: 25px
+
+.button
+  border: 1px solid #097a10
+  background: #1e8509
+  background: -webkit-gradient(linear, left top, left bottom, from(#2fc206), to(#1e8509))
+  background: -webkit-linear-gradient(top, #2fc206, #1e8509)
+  background: -o-linear-gradient(top, #2fc206, #1e8509)
+  background-image: -ms-linear-gradient(top, #2fc206 0%, #1e8509 100%)
+  padding: 8px 20px
+  border-radius: 6px
+  box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0
+  text-shadow: #7a7a7a 0 1px 0
+  color: #fff
+  font-size: 20px
+  font-family: helvetica,serif
+  text-decoration: none
+  vertical-align: middle
+
+.flex-center
+  margin-top: 40px
+  -webkit-box-pack: center
+  -webkit-justify-content: center
+  -ms-flex-pack: center
+  justify-content: center
+
+.form-back
+  background-color: #fff
+  box-shadow: 0 1px 5px 0 lightgray
+  padding: 15px
+  border-radius: 3px
+
+.flex label
+  min-width: 100px
+
+.modal-win, .modal-win2
+  display: none
+  top: 0
+  right: 0
+  left: 0
+  width: 100%
+  z-index: 10001
+  -webkit-transition: opacity 500ms ease-in
+  transition: opacity 500ms ease-in
+  border: 1px solid rgba(120, 120, 120, 0.7)
+  border-radius: 5px
+  background: rgba(60, 63, 65, 0.9)
+  background-clip: padding-box
+  box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5)
+  padding-top: 30px
+
+.modal-win--active
+  display: block
+  position: absolute
+  z-index: 1000000
+
+.close-popup
+  position: absolute
+  width: 30px
+  height: 30px
+  right: 7px
+  top: 0
+  z-index: 999999
+  cursor: pointer
+  text-align: center
+  text-decoration: none
+  line-height: 26px
+  &:after
+    content: 'X'
+    color: #fff
+    display: block
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    border: 2px solid #fff
+    -webkit-transition: all .6s
+    transition: all .6s
+    -ms-transform: scale(0.85)
+    -webkit-transform: scale(0.85)
+    transform: scale(0.85)
+
+.close:hover:after
+  -webkit-transform: scale(1)
+  -ms-transform: scale(1)
+  transform: scale(1)
+
+.inforfaphics-detail
+  margin: 15px 0 5px
+
+.copyright
+  text-align: center
+  margin-top: 25px
+
+.footer
+  color: gray
+  margin: 15px 0
+
+.footer-left
+  white-space: nowrap
+
+.footer-left__breadcrumbs
+  border-right: 1px solid gray
+  padding: 0 12px
+  a
+    color: gray
+    &:hover
+      text-decoration: none
+      color: #1e8509
+  &:last-child
+    border: 0
+  &:first-child
+    padding-left: 2px
+
+.social
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: horizontal
+  -webkit-box-direction: normal
+  -webkit-flex-direction: row
+  -ms-flex-direction: row
+  flex-direction: row
+  -webkit-box-pack: end
+  -webkit-justify-content: flex-end
+  -ms-flex-pack: end
+  justify-content: flex-end
+  -webkit-box-align: baseline
+  -webkit-align-items: baseline
+  -ms-flex-align: baseline
+  align-items: baseline
+  div
+    margin-left: 15px
+    &:last-child
+      padding-right: 2px
+
+@media (min-width: 991px) and (max-width: 1199px)
+  .down::after, .down2::after
+    top: 87px
+
+@media (max-width: 991px)
+  .down::after, .down2::after
+    top: 56px
+    -webkit-transform: scale(0.8)
+    -ms-transform: scale(0.8)
+    transform: scale(0.8)
+    left: 0
+  .footer-left__breadcrumbs
+    padding: 0 5px
+  .tab-header
+    height: 220px
+    text-align: center
