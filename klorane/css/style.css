@@ -1,0 +1,368 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background: url(../img/backgr.png) repeat center top;
+  font-family: "Trebuchet MS", Arial, sans-serif; }
+
+.clearfix {
+  clear: both;
+  display: table;
+  content: "";
+  position: absolute; }
+
+.slider-control {
+  text-align: center;
+  width: 145px;
+  height: 145px;
+  border-radius: 100px;
+  position: absolute;
+  z-index: 999;
+  cursor: pointer; }
+  .slider-control div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    background-color: #bb3754;
+    border: 1px solid #fff;
+    position: relative; }
+    .slider-control div span {
+      font-size: 18px;
+      line-height: 20px;
+      font-family: "BodoniCondensed";
+      color: #fff;
+      text-transform: uppercase; }
+    .slider-control div::after {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: -7px;
+      right: -7px;
+      bottom: -7px;
+      background: #bb3754;
+      z-index: -1;
+      border-radius: 100px;
+      border: 1px solid #fff; }
+
+.lesson-title {
+  font-size: 19px;
+  text-transform: uppercase;
+  line-height: 25px;
+  white-space: nowrap;
+  margin-bottom: 15px; }
+  .lesson-title.-dark {
+    color: #000; }
+  .lesson-title span {
+    color: #bb3754; }
+
+.extra-info {
+  font-family: "Bodoni72OSC";
+  font-size: 27px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: right;
+  position: relative; }
+  .extra-info.-first {
+    background-color: transparent;
+    padding: 5px 30px 40px;
+    background: rgba(2, 117, 52, 0.5);
+    min-height: 190px; }
+    .extra-info.-first .content {
+      position: absolute;
+      left: 25px;
+      top: -20px;
+      padding: 0 40px;
+      color: #fff; }
+    .extra-info.-first::before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      top: -150px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 150px solid rgba(2, 117, 52, 0.5);
+      border-left: 754px solid transparent; }
+  .extra-info.-second {
+    background-color: #fff;
+    padding: 80px 200px 80px 80px; }
+    .extra-info.-second .content {
+      color: #027534; }
+    .extra-info.-second::after {
+      content: "";
+      position: absolute;
+      background-image: url(../img/extra.png);
+      height: 380px;
+      width: 130px;
+      right: 5%;
+      top: 52px;
+      background-repeat: no-repeat;
+      background-size: cover; }
+
+.text-slider {
+  overflow: hidden; }
+  .text-slider .text-item {
+    display: none; }
+    .text-slider .text-item .lesson-content {
+      font-size: 14px;
+      line-height: 18px;
+      font-family: "FuturaMedium", sans-serif; }
+    .text-slider .text-item .beauty-content {
+      font-size: 18px;
+      font-family: "BodoniCyr";
+      line-height: 20px; }
+
+.container {
+  width: 1060px;
+  margin: 0 auto; }
+
+#wrapper {
+  width: auto;
+  overflow: hidden;
+  clear: both; }
+
+#content {
+  float: left;
+  width: 754px;
+  margin-left: 0;
+  background: -webkit-linear-gradient(bottom, white 0%, white 56%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.6) 100%);
+  background: linear-gradient(to top, white 0%, white 56%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.6) 100%); }
+
+.main {
+  width: 100%; }
+  .main-title {
+    font-size: 39px;
+    font-family: "FuturaMedium", sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 40px;
+    white-space: nowrap; }
+  .main-intro-text {
+    font-size: 14px;
+    font-family: "FuturaBook", sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 1.4; }
+  .main .lesson {
+    position: relative; }
+    .main .lesson.-one {
+      padding: 40px 30px;
+      min-height: 820px; }
+      .main .lesson.-one::after {
+        content: "";
+        position: absolute;
+        background-image: url(../img/number1.png);
+        width: 130px;
+        height: 250px;
+        bottom: 30%;
+        left: 50%;
+        background-repeat: no-repeat;
+        z-index: -1;
+        background-size: cover; }
+      .main .lesson.-one .slider-control {
+        bottom: 115px;
+        left: 260px; }
+      .main .lesson.-one .line {
+        width: 150px;
+        height: 2px;
+        background-color: #027534;
+        margin: 30px auto; }
+      .main .lesson.-one .left {
+        width: 55%;
+        float: left; }
+      .main .lesson.-one .right {
+        width: 43%;
+        float: right;
+        padding-left: 5px;
+        margin-top: 5px; }
+      .main .lesson.-one .image-slider {
+        max-width: 333px;
+        height: 620px;
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(2, 117, 52, 0.5); }
+        .main .lesson.-one .image-slider::after {
+          content: "";
+          position: absolute;
+          z-index: 0;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-bottom: 70px solid white;
+          border-left: 333px solid transparent; }
+        .main .lesson.-one .image-slider .image-list {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          position: absolute;
+          width: 200%;
+          height: 100%;
+          top: 0; }
+        .main .lesson.-one .image-slider .image-item {
+          padding: 0;
+          margin: 0;
+          width: 50%;
+          height: 100%;
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          border: none; }
+          .main .lesson.-one .image-slider .image-item img {
+            max-width: 100%;
+            min-height: 100%; }
+      .main .lesson.-one .text-slider {
+        max-height: 343px; }
+    .main .lesson.-two::after {
+      content: "";
+      position: absolute;
+      background-image: url(../img/number2.png);
+      width: 250px;
+      height: 265px;
+      bottom: 100px;
+      left: 90px;
+      background-repeat: no-repeat;
+      z-index: 0;
+      background-size: cover; }
+    .main .lesson.-two .slider-control {
+      top: 370px;
+      left: 540px; }
+    .main .lesson.-two .image-slider {
+      max-width: 759px;
+      height: 542px;
+      overflow: hidden;
+      position: relative;
+      background-color: rgba(187, 55, 84, 0.6); }
+      .main .lesson.-two .image-slider::after {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 150px solid white;
+        border-left: 754px solid transparent; }
+      .main .lesson.-two .image-slider .image-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        width: 200%;
+        height: 100%;
+        top: 0; }
+      .main .lesson.-two .image-slider .image-item {
+        padding: 0;
+        margin: 0;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        border: none; }
+        .main .lesson.-two .image-slider .image-item img {
+          max-width: 100%;
+          min-height: 100%; }
+    .main .lesson.-two .text-slider {
+      min-height: 380px;
+      padding: 30px 40px;
+      position: relative;
+      z-index: 999; }
+      .main .lesson.-two .text-slider .text-item {
+        position: relative;
+        margin-left: 200px; }
+        .main .lesson.-two .text-slider .text-item .lesson-content, .main .lesson.-two .text-slider .text-item .beauty-content {
+          width: 47%;
+          float: left;
+          position: absolute; }
+          .main .lesson.-two .text-slider .text-item .lesson-content:last-child, .main .lesson.-two .text-slider .text-item .beauty-content:last-child {
+            top: -25px;
+            right: 15px; }
+          .main .lesson.-two .text-slider .text-item .lesson-content:first-child, .main .lesson.-two .text-slider .text-item .beauty-content:first-child {
+            top: 55px; }
+
+.cosmetics .cosmetics-title {
+  font-size: 39px;
+  font-family: "FuturaMedium", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400; }
+.cosmetics .cosmetics-item {
+  position: relative; }
+  .cosmetics .cosmetics-item > div {
+    padding: 100px 150px 40px 320px; }
+  .cosmetics .cosmetics-item.-first::before {
+    content: "";
+    position: absolute;
+    background: url(../img/b1.png);
+    width: 200px;
+    height: 360px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 70px;
+    left: 55px; }
+  .cosmetics .cosmetics-item.-first::after {
+    content: "";
+    position: absolute;
+    background: url(../img/b1a.png);
+    width: 200px;
+    height: 430px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    right: -20px; }
+  .cosmetics .cosmetics-item .item-title {
+    font-size: 20px;
+    font-family: "FuturaMedium", sans-serif;
+    color: #027534;
+    line-height: 30px;
+    text-transform: uppercase; }
+  .cosmetics .cosmetics-item .item-content {
+    font-family: "FuturaBook", sans-serif;
+    font-size: 14px;
+    line-height: 16px; }

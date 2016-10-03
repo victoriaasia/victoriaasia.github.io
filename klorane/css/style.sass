@@ -1,0 +1,335 @@
+@import "reset"
+@import "colors"
+
+body
+  background: url(../img/backgr.png) repeat center top
+  font-family: "Trebuchet MS", Arial, sans-serif
+
+.clearfix
+  clear: both
+  display: table
+  content: ''
+  position: absolute
+
+.slider-control
+  text-align: center
+  width: 145px
+  height: 145px
+  border-radius: 100px
+  position: absolute
+  z-index: 999
+  cursor: pointer
+  div
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $white
+    width: 100%
+    height: 100%
+    border-radius: 100px
+    background-color: $pink
+    border: 1px solid $white
+    position: relative
+    span
+      font-size: 18px
+      line-height: 20px
+      font-family: "BodoniCondensed"
+      color: $white
+      text-transform: uppercase
+    &::after
+      content: ''
+      position: absolute
+      top: -7px
+      left: -7px
+      right: -7px
+      bottom: -7px
+      background: $pink
+      z-index: -1
+      border-radius: 100px
+      border: 1px solid $white
+
+.lesson-title
+  font-size: 19px
+  // font-family: "FuturaDemi"
+  text-transform: uppercase
+  line-height: 25px
+  white-space: nowrap
+  margin-bottom: 15px
+  &.-dark
+    color: $black
+  span
+    color: $pink
+
+.extra-info
+  font-family: "Bodoni72OSC"
+  font-size: 27px
+  line-height: 30px
+  text-transform: uppercase
+  text-align: right
+  position: relative
+  &.-first
+    background-color: transparent
+    padding: 5px 30px 40px
+    background: rgba($green, 0.5)
+    min-height: 190px
+    .content
+      position: absolute
+      left: 25px
+      top: -20px
+      padding: 0 40px
+      color: $white
+    &::before
+      content: ''
+      position: absolute
+      z-index: 0
+      top: -150px
+      left: 0
+      width: 0
+      height: 0
+      border-bottom: 150px solid rgba($green, 0.5)
+      border-left: 754px solid transparent
+  &.-second
+    background-color: $white
+    padding: 80px 200px 80px 80px
+    .content
+      color: $green
+    &::after
+      content: ''
+      position: absolute
+      background-image: url(../img/extra.png)
+      height: 380px
+      width: 130px
+      right: 5%
+      top: 52px
+      background-repeat: no-repeat
+      background-size: cover
+
+.text-slider
+  overflow: hidden
+  .text-item
+    display: none
+    .lesson-content
+      font-size: 14px
+      line-height: 18px
+      font-family: "FuturaMedium", sans-serif
+    .beauty-content
+      font-size: 18px
+      font-family: "BodoniCyr"
+      line-height: 20px
+
+.container
+  width: 1060px
+  margin: 0 auto
+
+#wrapper
+  width: auto
+  overflow: hidden
+  clear: both
+
+#content
+  float: left
+  width: 754px
+  margin-left: 0
+  background: linear-gradient(to top, rgba($white,1) 0%,rgba($white,1) 56%,rgba($white,0.6) 80%,rgba($white,0.6) 100%)
+
+.main
+  width: 100%
+  &-title
+    font-size: 39px
+    font-family: "FuturaMedium", sans-serif
+    color: $black
+    text-transform: uppercase
+    font-weight: 400
+    margin-bottom: 40px
+    white-space: nowrap
+  &-intro-text
+    font-size: 14px
+    font-family: "FuturaBook", sans-serif
+    color: $black
+    text-transform: uppercase
+    line-height: 1.4
+
+  .lesson
+    position: relative
+    &.-one
+      padding: 40px 30px
+      min-height: 820px
+      &::after
+        content: ''
+        position: absolute
+        background-image: url(../img/number1.png)
+        width: 130px
+        height: 250px
+        bottom: 30%
+        left: 50%
+        background-repeat: no-repeat
+        z-index: -1
+        background-size: cover
+      .slider-control
+        bottom: 115px
+        left: 260px
+      .line
+        width: 150px
+        height: 2px
+        background-color: $green
+        margin: 30px auto
+      .left
+        width: 55%
+        float: left
+      .right
+        width: 43%
+        float: right
+        padding-left: 5px
+        margin-top: 5px
+      .image-slider
+        max-width: 333px
+        height: 620px
+        position: relative
+        overflow: hidden
+        background-color: rgba($green, 0.5)
+        &::after
+          content: ''
+          position: absolute
+          z-index: 0
+          bottom: 0
+          left: 0
+          width: 0
+          height: 0
+          border-bottom: 70px solid white
+          border-left: 333px solid transparent
+        .image-list
+          margin: 0
+          padding: 0
+          list-style: none
+          position: absolute
+          width: 200%
+          height: 100%
+          top: 0
+        .image-item
+          padding: 0
+          margin: 0
+          width: 50%
+          height: 100%
+          overflow: hidden
+          position: absolute
+          top: 0
+          bottom: 0
+          border: none
+          img
+            max-width: 100%
+            min-height: 100%
+      .text-slider
+        max-height: 343px
+
+    &.-two
+      &::after
+        content: ''
+        position: absolute
+        background-image: url(../img/number2.png)
+        width: 250px
+        height: 265px
+        bottom: 100px
+        left: 90px
+        background-repeat: no-repeat
+        z-index: 0
+        background-size: cover
+      .slider-control
+        top: 370px
+        left: 540px
+      .image-slider
+        max-width: 759px
+        height: 542px
+        overflow: hidden
+        position: relative
+        background-color: rgba($pink, 0.6)
+        &::after
+          content: ''
+          position: absolute
+          z-index: 0
+          bottom: 0
+          left: 0
+          width: 0
+          height: 0
+          border-bottom: 150px solid white
+          border-left: 754px solid transparent
+        .image-list
+          margin: 0
+          padding: 0
+          list-style: none
+          position: absolute
+          width: 200%
+          height: 100%
+          top: 0
+        .image-item
+          padding: 0
+          margin: 0
+          width: 50%
+          height: 100%
+          overflow: hidden
+          position: absolute
+          top: 0
+          bottom: 0
+          border: none
+          img
+            max-width: 100%
+            min-height: 100%
+      .text-slider
+        min-height: 380px
+        padding: 30px 40px
+        position: relative
+        z-index: 999
+        .text-item
+          position: relative
+          margin-left: 200px
+          .lesson-content, .beauty-content
+            width: 47%
+            float: left
+            position: absolute
+            &:last-child
+              top: -25px
+              right: 15px
+            &:first-child
+              top: 55px
+
+.cosmetics
+  .cosmetics-title
+    font-size: 39px
+    font-family: "FuturaMedium", sans-serif
+    text-transform: uppercase
+    text-align: center
+    font-weight: 400
+  .cosmetics-item
+    position: relative
+    > div
+      padding: 100px 150px 40px 320px
+    &.-first
+      &::before
+        content: ''
+        position: absolute
+        background: url(../img/b1.png)
+        width: 200px
+        height: 360px
+        background-repeat: no-repeat
+        background-size: contain
+        top: 70px
+        left: 55px
+      &::after
+        content: ''
+        position: absolute
+        background: url(../img/b1a.png)
+        width: 200px
+        height: 430px
+        background-repeat: no-repeat
+        background-size: contain
+        top: 0
+        right: -20px
+    .item-title
+      font-size: 20px
+      font-family: "FuturaMedium", sans-serif
+      color: $green
+      line-height: 30px
+      text-transform: uppercase
+    .item-content
+      font-family: "FuturaBook", sans-serif
+      font-size: 14px
+      line-height: 16px
