@@ -192,17 +192,9 @@ body
         height: 590px
         position: relative
         overflow: hidden
-        // background-color: rgba($green, 0.6)
-        // &::after
-        //   content: ''
-        //   position: absolute
-        //   z-index: 0
-        //   bottom: 0
-        //   left: 0
-        //   width: 0
-        //   height: 0
-        //   border-bottom: 70px solid white
-        //   border-left: 333px solid transparent
+        background-color: rgba($green, 0.6)
+        -webkit-clip-path: polygon(100% 0, 100% 88%, 0 100%, 0 0)
+        clip-path: polygon(100% 0, 100% 88%, 0 100%, 0 0)
         .image-list
           margin: 0
           padding: 0
@@ -211,6 +203,10 @@ body
           width: 200%
           height: 100%
           top: 0
+          .-one
+            background-image: url(../img/1.png)
+          .-two
+            background-image: url(../img/1a.png)
         .image-item
           padding: 0
           margin: 0
@@ -221,9 +217,12 @@ body
           top: 0
           bottom: 0
           border: none
-          img
-            max-width: 100%
-            min-height: 100%
+          max-width: 100%
+          min-height: 100%
+          background-repeat: no-repeat
+          // img
+          //   max-width: 100%
+          //   min-height: 100%
       .text-slider
         max-height: 343px
 
@@ -266,6 +265,10 @@ body
           width: 100%
           height: 200%
           top: 0
+          .-one
+            background-image: url(../img/2.png)
+          .-two
+            background-image: url(../img/2a.png)
         .image-item
           text-align: center
           padding: 0
@@ -277,9 +280,12 @@ body
           top: 0
           bottom: 0
           border: none
-          img
-            width: 100%
-            max-height: 100%
+          max-width: 100%
+          max-height: 100%
+          background-repeat: no-repeat
+          // img
+          //   width: 100%
+          //   max-height: 100%
       .text-slider
         min-height: 300px
         padding: 30px 40px
@@ -320,7 +326,9 @@ body
         position: relative
         overflow: hidden
         margin-left: 10px
-        // background-color: $seaGreen
+        background-color: $seaGreen
+        -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
       .image-list
         margin: 0
         padding: 0
@@ -329,6 +337,10 @@ body
         width: 200%
         height: 100%
         top: 0
+        .-one
+          background-image: url(../img/3.png)
+          max-width: 100%
+          max-height: 100%
       .image-item
         padding: 0
         margin: 0
@@ -339,9 +351,9 @@ body
         top: 0
         bottom: 0
         border: none
-        img
-          max-width: 100%
-          max-height: 100%
+        // img
+        //   max-width: 100%
+        //   max-height: 100%
       .text-slider
         position: relative
         top: -630px
@@ -354,24 +366,26 @@ body
           height: 465px
         .lesson-content, .beauty-content
           color: $white
+          text-align: right
+          -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 60% 0)
+          clip-path: polygon(100% 0, 100% 100%, 0 100%, 60% 0)
         .text-item
           position: relative
-          width: 400px
+          width: 445px
           height: 400px
-          // transform: matrix3d(0.495232, 0, 0, 0.000051, -0.51992, 0.505338, 0, -0.004947, 0, 0, 1, 0, 52.507474, 0, 0, 1)
-          // transform-origin: -1px 0px 0px
           float: right
           padding: 120px 20px 20px
           max-height: 320px
           &:last-child::before
             content: ''
             position: absolute
-            background: url(../img/3product.png)
-            background-size: cover
-            width: 300px
-            height: 400px
-            top: -240px
-            left: -135px
+            background: url(../img/3a.png)
+            background-size: contain
+            width: 195px
+            height: 380px
+            top: -220px
+            left: -40px
+            background-repeat: no-repeat
 
     &.-four
       .slider-control
@@ -391,6 +405,10 @@ body
           width: 100%
           height: 200%
           top: 0
+          .-one
+            background-image: url(../img/4.jpg)
+          .-two
+            background-image: url(../img/4a.png)
         .image-item
           padding: 0
           margin: 0
@@ -401,9 +419,12 @@ body
           top: 0
           bottom: 0
           border: none
-          img
-            max-width: 100%
-            max-height: 100%
+          max-width: 100%
+          max-height: 100%
+          background-repeat: no-repeat
+          // img
+          //   max-width: 100%
+          //   max-height: 100%
       .-one
         .text-slider
           top: 40px
