@@ -13,8 +13,8 @@ body
 
 .slider-control
   text-align: center
-  width: 145px
-  height: 145px
+  width: 135px
+  height: 135px
   border-radius: 100px
   position: absolute
   z-index: 999
@@ -62,22 +62,22 @@ body
 
 .extra-info
   font-family: "Bodoni72OSC"
-  font-size: 27px
-  line-height: 30px
+  font-size: 28px
+  line-height: 34px
   text-transform: uppercase
   text-align: right
   position: relative
   &.-first
     background-color: transparent
-    padding: 5px 30px 40px
+    padding: 40px 30px
     background: rgba($green, 0.5)
     min-height: 190px
     .content
       position: absolute
-      left: 25px
-      top: -20px
-      padding: 0 40px
+      left: 90px
+      top: -15px
       color: $white
+      white-space: nowrap
     &::before
       content: ''
       position: absolute
@@ -110,7 +110,7 @@ body
     display: none
     .lesson-content
       font-size: 14px
-      line-height: 18px
+      line-height: 16px
       font-family: "FuturaMedium", sans-serif
     .beauty-content
       font-size: 18px
@@ -135,25 +135,26 @@ body
 .main
   width: 100%
   &-title
-    font-size: 39px
+    font-size: 40px
     font-family: "FuturaMedium", sans-serif
     color: $black
     text-transform: uppercase
     font-weight: 400
     margin-bottom: 40px
     white-space: nowrap
+    line-height: 45px
   &-intro-text
     font-size: 14px
     font-family: "FuturaBook", sans-serif
     color: $black
     text-transform: uppercase
-    line-height: 1.4
+    line-height: 18px
 
   .lesson
     position: relative
     &.-one
-      padding: 40px 30px
-      min-height: 820px
+      padding: 30px
+      height: 780px
       &::after
         content: ''
         position: absolute
@@ -166,8 +167,8 @@ body
         z-index: -1
         background-size: cover
       .slider-control
-        bottom: 115px
-        left: 260px
+        bottom: 110px
+        left: 280px
       .line
         width: 150px
         height: 2px
@@ -177,13 +178,12 @@ body
         width: 55%
         float: left
       .right
-        width: 43%
+        width: 290px
         float: right
-        padding-left: 5px
-        margin-top: 5px
+        margin-left: 15px
       .image-slider
         max-width: 333px
-        height: 620px
+        height: 590px
         position: relative
         overflow: hidden
         background-color: rgba($green, 0.5)
@@ -226,15 +226,15 @@ body
         content: ''
         position: absolute
         background-image: url(../img/number2.png)
-        width: 250px
-        height: 265px
-        bottom: 100px
-        left: 90px
+        width: 240px
+        height: 250px
+        bottom: 165px
+        left: 100px
         background-repeat: no-repeat
         z-index: 0
         background-size: cover
       .slider-control
-        top: 370px
+        top: 355px
         left: 540px
       .image-slider
         max-width: 759px
@@ -280,16 +280,17 @@ body
         z-index: 999
         .text-item
           position: relative
-          margin-left: 200px
+          margin-left: 180px
           .lesson-content, .beauty-content
-            width: 47%
             float: left
             position: absolute
             &:last-child
-              top: -25px
+              width: 240px
+              top: -35px
               right: 15px
             &:first-child
-              top: 55px
+              width: 210px
+              top: 5px
 
 .cosmetics
   .cosmetics-title
@@ -300,36 +301,70 @@ body
     font-weight: 400
   .cosmetics-item
     position: relative
-    > div
-      padding: 100px 150px 40px 320px
+    padding-bottom: 40px
     &.-first
+      > div
+        padding: 105px 150px 40px 320px
       &::before
         content: ''
         position: absolute
         background: url(../img/b1.png)
-        width: 200px
-        height: 360px
+        width: 210px
+        height: 390px
         background-repeat: no-repeat
         background-size: contain
-        top: 70px
-        left: 55px
+        top: 90px
+        left: 45px
       &::after
         content: ''
         position: absolute
         background: url(../img/b1a.png)
         width: 200px
-        height: 430px
+        height: 485px
         background-repeat: no-repeat
         background-size: contain
         top: 0
         right: -20px
     .item-title
-      font-size: 20px
+      font-size: 19px
       font-family: "FuturaMedium", sans-serif
       color: $green
-      line-height: 30px
+      line-height: 28px
       text-transform: uppercase
+      margin-bottom: 48px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        border-bottom: 1px solid $black
+        width: 88px
+        left: 0
+        bottom: -25px
     .item-content
       font-family: "FuturaBook", sans-serif
-      font-size: 14px
-      line-height: 16px
+      font-size: 13px
+      line-height: 17px
+      margin-bottom: 35px
+    .link
+      font-family: "FuturaMedium", sans-serif
+      text-transform: uppercase
+      color: $green
+      border-bottom-color: $green
+      font-size: 17px
+      position: relative
+      padding-right: 20px
+      &::after
+        content: ''
+        position: absolute
+        background: url(../img/more.png)
+        width: 10px
+        height: 15px
+        right: 2px
+        top: 2px
+        background-size: contain
+        background-repeat: no-repeat
+    &.-second
+      > div
+        padding: 35px 50px
+        width: 50%
+        box-sizing: border-box
