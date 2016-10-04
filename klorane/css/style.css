@@ -112,7 +112,7 @@ body {
     min-height: 190px; }
     .extra-info.-first .content {
       position: absolute;
-      left: 90px;
+      right: 40px;
       top: -15px;
       color: #fff;
       white-space: nowrap; }
