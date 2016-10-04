@@ -95,12 +95,14 @@ body {
   margin-bottom: 15px; }
   .lesson-title.-dark {
     color: #000; }
-  .lesson-title span {
-    color: #bb3754; }
+    .lesson-title.-dark span {
+      color: #bb3754; }
+  .lesson-title.-light {
+    color: #fff; }
 
 .extra-info {
   font-family: "Bodoni72OSC";
-  font-size: 27px;
+  font-size: 28px;
   line-height: 34px;
   text-transform: uppercase;
   text-align: right;
@@ -112,7 +114,7 @@ body {
     min-height: 190px; }
     .extra-info.-first .content {
       position: absolute;
-      right: 40px;
+      right: 45px;
       top: -15px;
       color: #fff;
       white-space: nowrap; }
@@ -128,7 +130,7 @@ body {
       border-left: 754px solid transparent; }
   .extra-info.-second {
     background-color: #fff;
-    padding: 80px 200px 80px 80px; }
+    padding: 80px 200px 120px 80px; }
     .extra-info.-second .content {
       color: #027534; }
     .extra-info.-second::after {
@@ -147,8 +149,8 @@ body {
   .text-slider .text-item {
     display: none; }
     .text-slider .text-item .lesson-content {
-      font-size: 14px;
-      line-height: 16px;
+      font-size: 13px;
+      line-height: 17px;
       font-family: "FuturaMedium", sans-serif; }
     .text-slider .text-item .beauty-content {
       font-size: 18px;
@@ -168,8 +170,8 @@ body {
   float: left;
   width: 754px;
   margin-left: 0;
-  background: -webkit-linear-gradient(bottom, white 0%, white 56%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.6) 100%);
-  background: linear-gradient(to top, white 0%, white 56%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0.6) 100%); }
+  background: -webkit-linear-gradient(bottom, white 0%, white 50%, white 80%, rgba(255, 255, 255, 0.6) 100%);
+  background: linear-gradient(to top, white 0%, white 50%, white 80%, rgba(255, 255, 255, 0.6) 100%); }
 
 .main {
   width: 100%; }
@@ -276,7 +278,7 @@ body {
         width: 0;
         height: 0;
         border-bottom: 150px solid white;
-        border-left: 754px solid transparent; }
+        border-left: 759px solid transparent; }
       .main .lesson.-two .image-slider .image-list {
         margin: 0;
         padding: 0;
@@ -316,125 +318,166 @@ body {
           .main .lesson.-two .text-slider .text-item .lesson-content:first-child, .main .lesson.-two .text-slider .text-item .beauty-content:first-child {
             width: 210px;
             top: 5px; }
+    .main .lesson.-four .slider-control {
+      top: -50px;
+      right: 273px; }
+    .main .lesson.-four .image-slider {
+      max-width: 759px;
+      height: 545px;
+      overflow: hidden;
+      position: relative; }
+      .main .lesson.-four .image-slider .image-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        width: 100%;
+        height: 200%;
+        top: 0; }
+      .main .lesson.-four .image-slider .image-item {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        border: none; }
+        .main .lesson.-four .image-slider .image-item img {
+          width: 100%;
+          max-height: 100%; }
+    .main .lesson.-four .-one .text-slider {
+      top: 40px; }
+    .main .lesson.-four .-two .text-slider {
+      top: 255px; }
+    .main .lesson.-four .text-slider {
+      width: 255px;
+      position: absolute;
+      left: 90px; }
+      .main .lesson.-four .text-slider .lesson-content, .main .lesson.-four .text-slider .beauty-content {
+        color: #fff; }
 
-.cosmetics .cosmetics-title {
-  font-size: 39px;
-  font-family: "FuturaMedium", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 400; }
-.cosmetics .cosmetics-item {
-  position: relative;
-  padding-bottom: 40px; }
-  .cosmetics .cosmetics-item.-first > div {
-    padding: 105px 150px 40px 320px; }
-  .cosmetics .cosmetics-item.-first::before {
-    content: "";
-    position: absolute;
-    background: url(../img/b1.png);
-    width: 210px;
-    height: 390px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    top: 90px;
-    left: 45px; }
-  .cosmetics .cosmetics-item.-first::after {
-    content: "";
-    position: absolute;
-    background: url(../img/b1a.png);
-    width: 200px;
-    height: 485px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    top: 0;
-    right: -20px; }
-  .cosmetics .cosmetics-item .item-title {
-    font-size: 19px;
-    font-family: "FuturaMedium", sans-serif;
-    color: #027534;
-    line-height: 28px;
-    text-transform: uppercase;
-    margin-bottom: 48px;
-    position: relative; }
-    .cosmetics .cosmetics-item .item-title::after {
-      content: "";
-      position: absolute;
-      border-bottom: 1px solid #000;
-      width: 88px;
-      left: 0;
-      bottom: -25px; }
-  .cosmetics .cosmetics-item .item-content {
-    font-family: "FuturaBook", sans-serif;
-    font-size: 13px;
-    line-height: 17px;
-    margin-bottom: 20px; }
-  .cosmetics .cosmetics-item .link {
+.cosmetics {
+  padding-top: 80px; }
+  .cosmetics .cosmetics-title {
+    font-size: 39px;
     font-family: "FuturaMedium", sans-serif;
     text-transform: uppercase;
-    color: #027534;
-    border-bottom-color: #027534;
-    font-size: 17px;
+    text-align: center;
+    font-weight: 400; }
+  .cosmetics .cosmetics-item {
     position: relative;
-    padding-right: 20px; }
-    .cosmetics .cosmetics-item .link::after {
+    padding-bottom: 40px; }
+    .cosmetics .cosmetics-item.-first > div {
+      padding: 105px 150px 40px 320px; }
+    .cosmetics .cosmetics-item.-first::before {
       content: "";
       position: absolute;
-      background: url(../img/more.png);
-      width: 10px;
-      height: 15px;
-      right: 2px;
-      top: 2px;
+      background: url(../img/b1.png);
+      width: 210px;
+      height: 390px;
+      background-repeat: no-repeat;
       background-size: contain;
-      background-repeat: no-repeat; }
-  .cosmetics .cosmetics-item.-second > div {
-    padding: 35px 50px;
-    width: 52%;
-    box-sizing: border-box; }
-  .cosmetics .cosmetics-item.-second::before {
-    content: "";
-    position: absolute;
-    background: url(../img/b2.png);
-    width: 210px;
-    height: 390px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    top: 0;
-    right: 185px; }
-  .cosmetics .cosmetics-item.-second::after {
-    content: "";
-    position: absolute;
-    background: url(../img/b2a.png);
-    width: 160px;
-    height: 195px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    top: 0;
-    right: 15px; }
-  .cosmetics .cosmetics-item.-third > div {
-    width: 485px;
-    margin: 0 auto;
-    padding: 15px 33px;
-    box-sizing: border-box; }
-  .cosmetics .cosmetics-item.-third::before {
-    content: "";
-    position: absolute;
-    background: url(../img/b3.png);
-    width: 168px;
-    height: 425px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    top: -130px;
-    right: 0; }
-  .cosmetics .cosmetics-item.-third::after {
-    content: "";
-    position: absolute;
-    background: url(../img/b3a.png);
-    width: 130px;
-    height: 310px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    top: 0;
-    left: 18px; }
+      top: 90px;
+      left: 45px; }
+    .cosmetics .cosmetics-item.-first::after {
+      content: "";
+      position: absolute;
+      background: url(../img/b1a.png);
+      width: 200px;
+      height: 485px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 0;
+      right: -20px; }
+    .cosmetics .cosmetics-item .item-title {
+      font-size: 19px;
+      font-family: "FuturaMedium", sans-serif;
+      color: #027534;
+      line-height: 28px;
+      text-transform: uppercase;
+      margin-bottom: 48px;
+      position: relative; }
+      .cosmetics .cosmetics-item .item-title::after {
+        content: "";
+        position: absolute;
+        border-bottom: 1px solid #000;
+        width: 88px;
+        left: 0;
+        bottom: -25px; }
+    .cosmetics .cosmetics-item .item-content {
+      font-family: "FuturaBook", sans-serif;
+      font-size: 13px;
+      line-height: 17px;
+      margin-bottom: 20px; }
+    .cosmetics .cosmetics-item .link {
+      font-family: "FuturaMedium", sans-serif;
+      text-transform: uppercase;
+      color: #027534;
+      border-bottom-color: #027534;
+      font-size: 17px;
+      position: relative;
+      padding-right: 20px; }
+      .cosmetics .cosmetics-item .link::after {
+        content: "";
+        position: absolute;
+        background: url(../img/more.png);
+        width: 10px;
+        height: 15px;
+        right: 2px;
+        top: 2px;
+        background-size: contain;
+        background-repeat: no-repeat; }
+    .cosmetics .cosmetics-item.-second > div {
+      padding: 35px 50px;
+      width: 52%;
+      box-sizing: border-box; }
+    .cosmetics .cosmetics-item.-second::before {
+      content: "";
+      position: absolute;
+      background: url(../img/b2.png);
+      width: 210px;
+      height: 390px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 0;
+      right: 185px; }
+    .cosmetics .cosmetics-item.-second::after {
+      content: "";
+      position: absolute;
+      background: url(../img/b2a.png);
+      width: 160px;
+      height: 195px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 0;
+      right: 15px; }
+    .cosmetics .cosmetics-item.-third > div {
+      width: 485px;
+      margin: 0 auto;
+      padding: 15px 33px;
+      box-sizing: border-box; }
+    .cosmetics .cosmetics-item.-third::before {
+      content: "";
+      position: absolute;
+      background: url(../img/b3.png);
+      width: 168px;
+      height: 425px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: -130px;
+      right: 0; }
+    .cosmetics .cosmetics-item.-third::after {
+      content: "";
+      position: absolute;
+      background: url(../img/b3a.png);
+      width: 130px;
+      height: 310px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 0;
+      left: 18px; }
 
 .footer {
   padding-top: 40px; }
