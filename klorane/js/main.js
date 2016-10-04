@@ -10,8 +10,8 @@ $(function() {
   slide_count4 = slider4.children().length;
 
   var slide_width_pc = 100.0 / slide_count,
-  slide_width_pc2 = 100.0 / slide_count2,
-  slide_height_pc3 = 100.0 / slide_count3,
+  slide_height_pc2 = 100.0 / slide_count2,
+  slide_width_pc3 = 100.0 / slide_count3,
   slide_height_pc4 = 100.0 / slide_count2;
 
   var slide_index = 0,
@@ -80,7 +80,7 @@ $(function() {
       return;
     }
     var margin_left_pc2 = (new_slide_index2 * -100) + '%';
-    slider2.animate({ 'margin-left': margin_left_pc2 }, 600, function() {
+    slider2.animate({ 'margin-top': margin_left_pc2 }, 600, function() {
       slide_index2 = new_slide_index2;
     }
     );
@@ -94,7 +94,7 @@ $(function() {
       return;
     }
     var margin_top_pc3 = (new_slide_index3 * -100) + '%';
-    slider3.animate({ 'margin-top': margin_top_pc3 }, 600, function() {
+    slider3.animate({ 'margin-left': margin_top_pc3 }, 600, function() {
       slide_index3 = new_slide_index3;
     }
     );
@@ -121,20 +121,20 @@ $(function() {
   });
 
   slider2.find('.image-item').each(function(indx) {
-    var left_percent2 = (slide_width_pc2 * indx) + '%';
-    $(this).css({'left': left_percent2});
+    var left_percent2 = (slide_height_pc2 * indx) + '%';
+    $(this).css({'top': left_percent2});
+    // $(this).css({width:(100 / slide_count) + "%"});
+  });
+
+  slider3.find('.image-item').each(function(indx) {
+    var top_percent3 = (slide_width_pc3 * indx) + '%';
+    $(this).css({'left': top_percent3});
     // $(this).css({width:(100 / slide_count) + "%"});
   });
 
   slider4.find('.image-item').each(function(indx) {
     var top_percent4 = (slide_height_pc4 * indx) + '%';
     $(this).css({'top': top_percent4});
-    // $(this).css({width:(100 / slide_count) + "%"});
-  });
-
-  slider3.find('.image-item').each(function(indx) {
-    var top_percent3 = (slide_height_pc3 * indx) + '%';
-    $(this).css({'top': top_percent3});
     // $(this).css({width:(100 / slide_count) + "%"});
   });
 
