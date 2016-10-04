@@ -100,7 +100,7 @@ body {
 
 .extra-info {
   font-family: "Bodoni72OSC";
-  font-size: 28px;
+  font-size: 27px;
   line-height: 34px;
   text-transform: uppercase;
   text-align: right;
@@ -437,7 +437,7 @@ body {
     left: 18px; }
 
 .footer {
-  padding-top: 20px; }
+  padding-top: 40px; }
   .footer .social {
     width: 260px;
     display: -webkit-box;
@@ -462,7 +462,8 @@ body {
       width: 515px;
       height: 2px;
       background-color: #027534;
-      bottom: -40px; }
+      bottom: -40px;
+      left: -130px; }
   .footer .footer-logo {
     height: 280px;
     display: -webkit-box;
