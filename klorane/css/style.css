@@ -367,7 +367,7 @@ body {
     font-family: "FuturaBook", sans-serif;
     font-size: 13px;
     line-height: 17px;
-    margin-bottom: 35px; }
+    margin-bottom: 30px; }
   .cosmetics .cosmetics-item .link {
     font-family: "FuturaMedium", sans-serif;
     text-transform: uppercase;
@@ -388,5 +388,50 @@ body {
       background-repeat: no-repeat; }
   .cosmetics .cosmetics-item.-second > div {
     padding: 35px 50px;
-    width: 50%;
+    width: 52%;
     box-sizing: border-box; }
+  .cosmetics .cosmetics-item.-second::before {
+    content: "";
+    position: absolute;
+    background: url(../img/b2.png);
+    width: 210px;
+    height: 390px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    right: 185px; }
+  .cosmetics .cosmetics-item.-second::after {
+    content: "";
+    position: absolute;
+    background: url(../img/b2a.png);
+    width: 160px;
+    height: 195px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    right: 15px; }
+  .cosmetics .cosmetics-item.-third > div {
+    width: 485px;
+    margin: 0 auto;
+    padding: 15px 33px;
+    box-sizing: border-box; }
+  .cosmetics .cosmetics-item.-third::before {
+    content: "";
+    position: absolute;
+    background: url(../img/b3.png);
+    width: 168px;
+    height: 425px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -130px;
+    right: 0; }
+  .cosmetics .cosmetics-item.-third::after {
+    content: "";
+    position: absolute;
+    background: url(../img/b3a.png);
+    width: 130px;
+    height: 310px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    left: 18px; }
