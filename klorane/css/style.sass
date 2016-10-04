@@ -1,0 +1,590 @@
+@import "reset"
+@import "colors"
+
+body
+  background: url(../img/backgr.png) repeat center top
+  font-family: "Trebuchet MS", Arial, sans-serif
+
+.clearfix
+  clear: both
+  display: table
+  content: ''
+  position: absolute
+
+.slider-control
+  text-align: center
+  width: 135px
+  height: 135px
+  border-radius: 100px
+  position: absolute
+  z-index: 999
+  cursor: pointer
+  background-image: url(../img/btn.png)
+  background-size: contain
+  // div
+  //   display: flex
+  //   align-items: center
+  //   justify-content: center
+  //   color: $white
+  //   width: 100%
+  //   height: 100%
+  //   border-radius: 100px
+  //   background-color: $pink
+  //   border: 1px solid $white
+  //   position: relative
+  //   span
+  //     font-size: 18px
+  //     line-height: 20px
+  //     font-family: "BodoniCondensed"
+  //     color: $white
+  //     text-transform: uppercase
+  //   &::after
+  //     content: ''
+  //     position: absolute
+  //     top: -7px
+  //     left: -7px
+  //     right: -7px
+  //     bottom: -7px
+  //     background: $pink
+  //     z-index: -1
+  //     border-radius: 100px
+  //     border: 1px solid $white
+
+.lesson-title
+  font-size: 19px
+  font-family: "FuturaMedium", sans-serif
+  text-transform: uppercase
+  line-height: 25px
+  white-space: nowrap
+  margin-bottom: 15px
+  &.-dark
+    color: $black
+    span
+      color: $pink
+  &.-light
+    color: $white
+
+.extra-info
+  font-family: "Bodoni72OSC"
+  font-size: 28px
+  line-height: 34px
+  text-transform: uppercase
+  text-align: right
+  position: relative
+  &.-first
+    background-color: transparent
+    padding: 40px 30px
+    background: rgba($green, 0.6)
+    min-height: 190px
+    .content
+      position: absolute
+      right: 45px
+      top: -15px
+      color: $white
+      white-space: nowrap
+    &::before
+      content: ''
+      position: absolute
+      z-index: 0
+      top: -150px
+      left: 0
+      width: 0
+      height: 0
+      border-bottom: 150px solid rgba($green, 0.6)
+      border-left: 754px solid transparent
+  &.-second
+    background-color: $white
+    padding: 90px 200px 120px 75px
+    height: 570px
+    box-sizing: border-box
+    .content
+      color: $green
+    &::after
+      content: ''
+      position: absolute
+      background-image: url(../img/extra.png)
+      height: 380px
+      width: 130px
+      right: 5%
+      top: 65px
+      background-repeat: no-repeat
+      background-size: cover
+
+.text-slider
+  overflow: hidden
+  .text-item
+    display: none
+    .lesson-content
+      font-size: 13px
+      line-height: 17px
+      font-family: "FuturaMedium", sans-serif
+    .beauty-content
+      font-size: 18px
+      font-family: "BodoniCyr"
+      line-height: 20px
+
+.container
+  width: 1060px
+  margin: 0 auto
+
+#wrapper
+  width: auto
+  overflow: hidden
+  clear: both
+
+#content
+  float: left
+  width: 754px
+  margin-left: 0
+  background: linear-gradient(to top, rgba($white,1) 0%,rgba($white,1) 50%,rgba($white,1) 80%,rgba($white,0.8) 90%,rgba($white,0.6) 100%)
+
+.main
+  width: 100%
+  &-title
+    font-size: 40px
+    font-family: "FuturaMedium", sans-serif
+    color: $black
+    text-transform: uppercase
+    font-weight: 400
+    margin-bottom: 40px
+    white-space: nowrap
+    line-height: 45px
+  &-intro-text
+    font-size: 14px
+    font-family: "FuturaBook", sans-serif
+    color: $black
+    text-transform: uppercase
+    line-height: 18px
+
+  .lesson
+    position: relative
+    &.-one
+      padding: 30px
+      height: 780px
+      &::after
+        content: ''
+        position: absolute
+        background-image: url(../img/number1.png)
+        width: 130px
+        height: 250px
+        bottom: 30%
+        left: 50%
+        background-repeat: no-repeat
+        z-index: -1
+        background-size: cover
+      .slider-control
+        bottom: 110px
+        left: 280px
+      .line
+        width: 150px
+        height: 2px
+        background-color: $green
+        margin: 30px auto
+      .left
+        width: 55%
+        float: left
+      .right
+        width: 290px
+        float: right
+        margin-left: 15px
+      .image-slider
+        max-width: 333px
+        height: 590px
+        position: relative
+        overflow: hidden
+        background-color: rgba($green, 0.6)
+        -webkit-clip-path: polygon(100% 0, 100% 88%, 0 100%, 0 0)
+        clip-path: polygon(100% 0, 100% 88%, 0 100%, 0 0)
+        .image-list
+          margin: 0
+          padding: 0
+          list-style: none
+          position: absolute
+          width: 200%
+          height: 100%
+          top: 0
+          .-one
+            background-image: url(../img/1.png)
+          .-two
+            background-image: url(../img/1a.png)
+        .image-item
+          padding: 0
+          margin: 0
+          width: 50%
+          height: 100%
+          overflow: hidden
+          position: absolute
+          top: 0
+          bottom: 0
+          border: none
+          max-width: 100%
+          min-height: 100%
+          background-repeat: no-repeat
+          // img
+          //   max-width: 100%
+          //   min-height: 100%
+      .text-slider
+        max-height: 343px
+
+    &.-two
+      &::after
+        content: ''
+        position: absolute
+        background-image: url(../img/number2.png)
+        width: 240px
+        height: 250px
+        bottom: 85px
+        left: 100px
+        background-repeat: no-repeat
+        z-index: 0
+        background-size: cover
+      .slider-control
+        top: 355px
+        left: 540px
+      .image-slider
+        max-width: 759px
+        height: 542px
+        overflow: hidden
+        position: relative
+        background-color: rgba($pink, 0.6)
+        &::after
+          content: ''
+          position: absolute
+          z-index: 0
+          bottom: 0
+          left: 0
+          width: 0
+          height: 0
+          border-bottom: 150px solid white
+          border-left: 759px solid transparent
+        .image-list
+          margin: 0
+          padding: 0
+          list-style: none
+          position: absolute
+          width: 100%
+          height: 200%
+          top: 0
+          .-one
+            background-image: url(../img/2.png)
+          .-two
+            background-image: url(../img/2a.png)
+        .image-item
+          text-align: center
+          padding: 0
+          margin: 0
+          width: 100%
+          height: 100%
+          overflow: hidden
+          position: absolute
+          top: 0
+          bottom: 0
+          border: none
+          max-width: 100%
+          max-height: 100%
+          background-repeat: no-repeat
+          // img
+          //   width: 100%
+          //   max-height: 100%
+      .text-slider
+        min-height: 300px
+        padding: 30px 40px
+        position: relative
+        z-index: 999
+        .text-item
+          position: relative
+          margin-left: 180px
+          .lesson-content, .beauty-content
+            float: left
+            position: absolute
+            &:last-child
+              width: 240px
+              top: -35px
+              right: 15px
+            &:first-child
+              width: 210px
+              top: 5px
+
+    &.-three
+      height: 775px
+      &::after
+        content: ''
+        position: absolute
+        background-image: url(../img/number3.png)
+        width: 250px
+        height: 260px
+        background-size: contain
+        bottom: 60px
+        left: 50px
+        background-repeat: no-repeat
+      .slider-control
+        right: 160px
+        top: 80px
+      .image-slider
+        width: 630px
+        height: 630px
+        position: relative
+        overflow: hidden
+        margin-left: 10px
+        background-color: $seaGreen
+        -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+      .image-list
+        margin: 0
+        padding: 0
+        list-style: none
+        position: absolute
+        width: 200%
+        height: 100%
+        top: 0
+        .-one
+          background-image: url(../img/3.png)
+          max-width: 100%
+          max-height: 100%
+      .image-item
+        padding: 0
+        margin: 0
+        width: 50%
+        height: 100%
+        overflow: hidden
+        position: absolute
+        top: 0
+        bottom: 0
+        border: none
+        // img
+        //   max-width: 100%
+        //   max-height: 100%
+      .text-slider
+        position: relative
+        top: -630px
+        height: 780px
+        .text-backgr
+          position: absolute
+          bottom: 0
+          background-color: rgba($pink, 0.4)
+          width: 100%
+          height: 465px
+        .lesson-content, .beauty-content
+          color: $white
+          text-align: right
+          -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 60% 0)
+          clip-path: polygon(100% 0, 100% 100%, 0 100%, 60% 0)
+        .text-item
+          position: relative
+          width: 445px
+          height: 400px
+          float: right
+          padding: 120px 20px 20px
+          max-height: 320px
+          &:last-child::before
+            content: ''
+            position: absolute
+            background: url(../img/3a.png)
+            background-size: contain
+            width: 195px
+            height: 380px
+            top: -220px
+            left: -40px
+            background-repeat: no-repeat
+
+    &.-four
+      .slider-control
+        top: -50px
+        right: 273px
+      .image-slider
+        max-width: 759px
+        height: 545px
+        overflow: hidden
+        position: relative
+        // background-color: $seaGreen
+        .image-list
+          margin: 0
+          padding: 0
+          list-style: none
+          position: absolute
+          width: 100%
+          height: 200%
+          top: 0
+          .-one
+            background-image: url(../img/4.jpg)
+          .-two
+            background-image: url(../img/4a.png)
+        .image-item
+          padding: 0
+          margin: 0
+          width: 100%
+          height: 100%
+          overflow: hidden
+          position: absolute
+          top: 0
+          bottom: 0
+          border: none
+          max-width: 100%
+          max-height: 100%
+          background-repeat: no-repeat
+          // img
+          //   max-width: 100%
+          //   max-height: 100%
+      .-one
+        .text-slider
+          top: 40px
+      .-two
+        .text-slider
+          top: 255px
+      .text-slider
+        width: 255px
+        position: absolute
+        left: 90px
+        .lesson-content, .beauty-content
+          color: $white
+
+.cosmetics
+  padding-top: 80px
+  .cosmetics-title
+    font-size: 39px
+    font-family: "FuturaMedium", sans-serif
+    text-transform: uppercase
+    text-align: center
+    font-weight: 400
+  .cosmetics-item
+    position: relative
+    padding-bottom: 40px
+    &.-first
+      > div
+        padding: 105px 150px 40px 320px
+      &::before
+        content: ''
+        position: absolute
+        background: url(../img/b1.png)
+        width: 210px
+        height: 390px
+        background-repeat: no-repeat
+        background-size: contain
+        top: 90px
+        left: 45px
+      &::after
+        content: ''
+        position: absolute
+        background: url(../img/b1a.png)
+        width: 200px
+        height: 485px
+        background-repeat: no-repeat
+        background-size: contain
+        top: 0
+        right: -20px
+    .item-title
+      font-size: 19px
+      font-family: "FuturaMedium", sans-serif
+      color: $green
+      line-height: 28px
+      text-transform: uppercase
+      margin-bottom: 48px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        border-bottom: 1px solid $black
+        width: 88px
+        left: 0
+        bottom: -25px
+    .item-content
+      font-family: "FuturaBook", sans-serif
+      font-size: 13px
+      line-height: 17px
+      margin-bottom: 20px
+    .link
+      font-family: "FuturaMedium", sans-serif
+      text-transform: uppercase
+      color: $green
+      border-bottom-color: $green
+      font-size: 17px
+      position: relative
+      padding-right: 20px
+      &::after
+        content: ''
+        position: absolute
+        background: url(../img/more.png)
+        width: 10px
+        height: 15px
+        right: 2px
+        top: 2px
+        background-size: contain
+        background-repeat: no-repeat
+    &.-second
+      > div
+        padding: 35px 50px
+        width: 52%
+        box-sizing: border-box
+      &::before
+        content: ''
+        position: absolute
+        background: url(../img/b2.png)
+        width: 210px
+        height: 390px
+        background-repeat: no-repeat
+        background-size: contain
+        top: 0
+        right: 185px
+      &::after
+        content: ''
+        position: absolute
+        background: url(../img/b2a.png)
+        width: 160px
+        height: 195px
+        background-repeat: no-repeat
+        background-size: contain
+        top: 0
+        right: 15px
+    &.-third
+      > div
+        width: 485px
+        margin: 0 auto
+        padding: 15px 33px
+        box-sizing: border-box
+      &::before
+        content: ''
+        position: absolute
+        background: url(../img/b3.png)
+        width: 168px
+        height: 425px
+        background-repeat: no-repeat
+        background-size: contain
+        top: -130px
+        right: 0
+      &::after
+        content: ''
+        position: absolute
+        background: url(../img/b3a.png)
+        width: 130px
+        height: 310px
+        background-repeat: no-repeat
+        background-size: contain
+        top: 0
+        left: 18px
+
+.footer
+  padding-top: 40px
+  .social
+    width: 260px
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin: 0 auto
+    position: relative
+    .social-icon
+      width: 40px
+      text-align: center
+    &::after
+      content: ''
+      position: absolute
+      width: 515px
+      height: 2px
+      background-color: $green
+      bottom: -40px
+      left: -130px
+  .footer-logo
+    height: 280px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
