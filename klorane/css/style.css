@@ -47,44 +47,9 @@ body {
   border-radius: 100px;
   position: absolute;
   z-index: 999;
-  cursor: pointer; }
-  .slider-control div {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    color: #fff;
-    width: 100%;
-    height: 100%;
-    border-radius: 100px;
-    background-color: #bb3754;
-    border: 1px solid #fff;
-    position: relative; }
-    .slider-control div span {
-      font-size: 18px;
-      line-height: 20px;
-      font-family: "BodoniCondensed";
-      color: #fff;
-      text-transform: uppercase; }
-    .slider-control div::after {
-      content: "";
-      position: absolute;
-      top: -7px;
-      left: -7px;
-      right: -7px;
-      bottom: -7px;
-      background: #bb3754;
-      z-index: -1;
-      border-radius: 100px;
-      border: 1px solid #fff; }
+  cursor: pointer;
+  background-image: url(../img/btn.png);
+  background-size: contain; }
 
 .lesson-title {
   font-size: 19px;
@@ -130,7 +95,7 @@ body {
       border-left: 754px solid transparent; }
   .extra-info.-second {
     background-color: #fff;
-    padding: 80px 200px 120px 80px; }
+    padding: 90px 200px 120px 80px; }
     .extra-info.-second .content {
       color: #027534; }
     .extra-info.-second::after {
@@ -140,7 +105,7 @@ body {
       height: 380px;
       width: 130px;
       right: 5%;
-      top: 52px;
+      top: 65px;
       background-repeat: no-repeat;
       background-size: cover; }
 
@@ -255,7 +220,7 @@ body {
       background-image: url(../img/number2.png);
       width: 240px;
       height: 250px;
-      bottom: 165px;
+      bottom: 85px;
       left: 100px;
       background-repeat: no-repeat;
       z-index: 0;
@@ -301,7 +266,7 @@ body {
           max-width: 100%;
           min-height: 100%; }
     .main .lesson.-two .text-slider {
-      min-height: 380px;
+      min-height: 300px;
       padding: 30px 40px;
       position: relative;
       z-index: 999; }
@@ -318,6 +283,77 @@ body {
           .main .lesson.-two .text-slider .text-item .lesson-content:first-child, .main .lesson.-two .text-slider .text-item .beauty-content:first-child {
             width: 210px;
             top: 5px; }
+    .main .lesson.-three {
+      height: 775px; }
+      .main .lesson.-three::after {
+        content: "";
+        position: absolute;
+        background-image: url(../img/number3.png);
+        width: 240px;
+        height: 250px;
+        background-size: contain;
+        bottom: 60px;
+        left: 50px;
+        background-repeat: no-repeat; }
+      .main .lesson.-three .slider-control {
+        right: 160px;
+        top: 80px; }
+      .main .lesson.-three .image-slider {
+        width: 630px;
+        height: 630px;
+        position: relative;
+        overflow: hidden;
+        margin-left: 10px; }
+      .main .lesson.-three .image-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        width: 100%;
+        height: 200%;
+        top: 0; }
+      .main .lesson.-three .image-item {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        border: none; }
+        .main .lesson.-three .image-item img {
+          max-width: 100%;
+          max-height: 100%; }
+      .main .lesson.-three .text-slider {
+        position: relative;
+        top: -630px;
+        height: 780px; }
+        .main .lesson.-three .text-slider .text-backgr {
+          position: absolute;
+          bottom: 0;
+          background-color: rgba(187, 55, 84, 0.4);
+          width: 100%;
+          height: 465px; }
+        .main .lesson.-three .text-slider .lesson-content, .main .lesson.-three .text-slider .beauty-content {
+          color: #fff; }
+        .main .lesson.-three .text-slider .text-item {
+          position: relative;
+          width: 400px;
+          height: 400px;
+          float: right;
+          padding: 120px 20px 20px;
+          max-height: 320px; }
+          .main .lesson.-three .text-slider .text-item:last-child::before {
+            content: "";
+            position: absolute;
+            background: url(../img/3product.png);
+            background-size: cover;
+            width: 300px;
+            height: 400px;
+            top: -240px;
+            left: -135px; }
     .main .lesson.-four .slider-control {
       top: -50px;
       right: 273px; }
@@ -345,7 +381,7 @@ body {
         bottom: 0;
         border: none; }
         .main .lesson.-four .image-slider .image-item img {
-          width: 100%;
+          max-width: 100%;
           max-height: 100%; }
     .main .lesson.-four .-one .text-slider {
       top: 40px; }

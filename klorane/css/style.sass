@@ -19,34 +19,36 @@ body
   position: absolute
   z-index: 999
   cursor: pointer
-  div
-    display: flex
-    align-items: center
-    justify-content: center
-    color: $white
-    width: 100%
-    height: 100%
-    border-radius: 100px
-    background-color: $pink
-    border: 1px solid $white
-    position: relative
-    span
-      font-size: 18px
-      line-height: 20px
-      font-family: "BodoniCondensed"
-      color: $white
-      text-transform: uppercase
-    &::after
-      content: ''
-      position: absolute
-      top: -7px
-      left: -7px
-      right: -7px
-      bottom: -7px
-      background: $pink
-      z-index: -1
-      border-radius: 100px
-      border: 1px solid $white
+  background-image: url(../img/btn.png)
+  background-size: contain
+  // div
+  //   display: flex
+  //   align-items: center
+  //   justify-content: center
+  //   color: $white
+  //   width: 100%
+  //   height: 100%
+  //   border-radius: 100px
+  //   background-color: $pink
+  //   border: 1px solid $white
+  //   position: relative
+  //   span
+  //     font-size: 18px
+  //     line-height: 20px
+  //     font-family: "BodoniCondensed"
+  //     color: $white
+  //     text-transform: uppercase
+  //   &::after
+  //     content: ''
+  //     position: absolute
+  //     top: -7px
+  //     left: -7px
+  //     right: -7px
+  //     bottom: -7px
+  //     background: $pink
+  //     z-index: -1
+  //     border-radius: 100px
+  //     border: 1px solid $white
 
 .lesson-title
   font-size: 19px
@@ -92,7 +94,7 @@ body
       border-left: 754px solid transparent
   &.-second
     background-color: $white
-    padding: 80px 200px 120px 80px
+    padding: 90px 200px 120px 80px
     .content
       color: $green
     &::after
@@ -102,12 +104,12 @@ body
       height: 380px
       width: 130px
       right: 5%
-      top: 52px
+      top: 65px
       background-repeat: no-repeat
       background-size: cover
 
 .text-slider
-  overflow: hidden  
+  overflow: hidden
   .text-item
     display: none
     .lesson-content
@@ -230,7 +232,7 @@ body
         background-image: url(../img/number2.png)
         width: 240px
         height: 250px
-        bottom: 165px
+        bottom: 85px
         left: 100px
         background-repeat: no-repeat
         z-index: 0
@@ -276,7 +278,7 @@ body
             max-width: 100%
             min-height: 100%
       .text-slider
-        min-height: 380px
+        min-height: 300px
         padding: 30px 40px
         position: relative
         z-index: 999
@@ -293,6 +295,81 @@ body
             &:first-child
               width: 210px
               top: 5px
+
+    &.-three
+      height: 775px
+      &::after
+        content: ''
+        position: absolute
+        background-image: url(../img/number3.png)
+        width: 240px
+        height: 250px
+        background-size: contain
+        bottom: 60px
+        left: 50px
+        background-repeat: no-repeat
+      .slider-control
+        right: 160px
+        top: 80px
+      .image-slider
+        width: 630px
+        height: 630px
+        position: relative
+        overflow: hidden
+        margin-left: 10px
+        // background-color: $seaGreen
+      .image-list
+        margin: 0
+        padding: 0
+        list-style: none
+        position: absolute
+        width: 100%
+        height: 200%
+        top: 0
+      .image-item
+        text-align: center
+        padding: 0
+        margin: 0
+        width: 100%
+        height: 100%
+        overflow: hidden
+        position: absolute
+        top: 0
+        bottom: 0
+        border: none
+        img
+          max-width: 100%
+          max-height: 100%
+      .text-slider
+        position: relative
+        top: -630px
+        height: 780px
+        .text-backgr
+          position: absolute
+          bottom: 0
+          background-color: rgba($pink, 0.4)
+          width: 100%
+          height: 465px
+        .lesson-content, .beauty-content
+          color: $white
+        .text-item
+          position: relative
+          width: 400px
+          height: 400px
+          // transform: matrix3d(0.495232, 0, 0, 0.000051, -0.51992, 0.505338, 0, -0.004947, 0, 0, 1, 0, 52.507474, 0, 0, 1)
+          // transform-origin: -1px 0px 0px
+          float: right
+          padding: 120px 20px 20px
+          max-height: 320px
+          &:last-child::before
+            content: ''
+            position: absolute
+            background: url(../img/3product.png)
+            background-size: cover
+            width: 300px
+            height: 400px
+            top: -240px
+            left: -135px
 
     &.-four
       .slider-control
@@ -323,7 +400,7 @@ body
           bottom: 0
           border: none
           img
-            width: 100%
+            max-width: 100%
             max-height: 100%
       .-one
         .text-slider
@@ -337,8 +414,6 @@ body
         left: 90px
         .lesson-content, .beauty-content
           color: $white
-
-
 
 .cosmetics
   padding-top: 80px

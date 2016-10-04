@@ -1,22 +1,27 @@
 $(function() {
   var slider1 = $('#one .image-list'),
   slider2 = $('#two .image-list'),
+  slider3 = $('#three .image-list'),
   slider4 = $('#four .image-list');
 
   var slide_count = slider1.children().length,
   slide_count2 = slider2.children().length,
+  slide_count3 = slider3.children().length,
   slide_count4 = slider4.children().length;
 
   var slide_width_pc = 100.0 / slide_count,
   slide_width_pc2 = 100.0 / slide_count2,
+  slide_height_pc3 = 100.0 / slide_count3,
   slide_height_pc4 = 100.0 / slide_count2;
 
   var slide_index = 0,
   slide_index2 = 0,
+  slide_index3 = 0,
   slide_index4 = 0;
 
   var text_index = 0,
   text_index2 = 0,
+  text_index3 = 0,
   text_index4 = 0;
 
   var textItems = $('#one .text-item'),
@@ -24,6 +29,9 @@ $(function() {
 
   var textItems2 = $('#two .text-item'),
   itemAmt2 = textItems2.length;
+
+  var textItems3 = $('#three .text-item'),
+  itemAmt3 = textItems3.length;
 
   var textItems4 = $('#four .text-item'),
   itemAmt4 = textItems4.length;
@@ -38,6 +46,12 @@ $(function() {
     var text2 = $('#two .text-item').eq(text_index2);
     textItems2.hide();
     text2.css('display', 'block');
+  };
+
+  var slideText3 = function() {
+    var text3 = $('#three .text-item').eq(text_index3);
+    textItems3.hide();
+    text3.css('display', 'block');
   };
 
   var slideText4 = function() {
@@ -72,6 +86,20 @@ $(function() {
     );
   };
 
+//3 slider
+
+  var slideImg3 = function(new_slide_index3) {
+    if (new_slide_index3 >= slide_count3) {
+      slideImg3(slide_index3 - 1);
+      return;
+    }
+    var margin_top_pc3 = (new_slide_index3 * -100) + '%';
+    slider3.animate({ 'margin-top': margin_top_pc3 }, 600, function() {
+      slide_index3 = new_slide_index3;
+    }
+    );
+  };
+
 // 4 slider
   var slideImg4 = function(new_slide_index4) {
     if (new_slide_index4 >= slide_count4) {
@@ -84,6 +112,7 @@ $(function() {
     }
     );
   };
+
 
   slider1.find('.image-item').each(function(indx) {
     var left_percent = (slide_width_pc * indx) + '%';
@@ -100,6 +129,12 @@ $(function() {
   slider4.find('.image-item').each(function(indx) {
     var top_percent4 = (slide_height_pc4 * indx) + '%';
     $(this).css({'top': top_percent4});
+    // $(this).css({width:(100 / slide_count) + "%"});
+  });
+
+  slider3.find('.image-item').each(function(indx) {
+    var top_percent3 = (slide_height_pc3 * indx) + '%';
+    $(this).css({'top': top_percent3});
     // $(this).css({width:(100 / slide_count) + "%"});
   });
 
@@ -125,6 +160,16 @@ $(function() {
     }
     textItems2.fadeIn(600);
     slideText2();
+  });
+
+  $('.js-third-control').click(function() {
+    slideImg3(slide_index3 + 1);
+    text_index3 += 1;
+    if (text_index3 > itemAmt3 - 1) {
+      text_index3 = 0;
+    }
+    textItems3.fadeIn(600);
+    slideText3();
   });
 
   $('.js-fourth-control').click(function() {
