@@ -357,11 +357,11 @@ body {
           height: 465px; }
         .main .lesson.-three .text-slider .lesson-content, .main .lesson.-three .text-slider .beauty-content {
           color: #fff; }
-          .main .lesson.-three .text-slider .lesson-content .shape, .main .lesson.-three .text-slider .beauty-content .shape {
+          .main .lesson.-three .text-slider .lesson-content #shape, .main .lesson.-three .text-slider .beauty-content #shape {
             width: 270px;
             height: 270px;
             float: left;
-            shape-outside: polygon(100% 0, 0% 100%, 0 0); }
+            shape-outside: polygon(100% 0, 0% 100%, 50% 46%); }
         .main .lesson.-three .text-slider .text-item {
           position: relative;
           width: 445px;

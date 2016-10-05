@@ -1,4 +1,21 @@
 $(function() {
+
+  // var shape = document.getElementById('shape');
+  //
+  // if( navigator.userAgent.toLowerCase().indexOf('firefox') > -1 ){
+  //   shape.css('display', 'none');
+  // }
+  //
+  // var IE;
+  // if ($('html').is('.ie6, .ie7, .ie8, .ie9, .ie11')) {
+  //     IE = true;
+  //   }
+  // if (IE) {
+  //   shape.css('display', 'none');
+  // }
+
+
+
   var slider1 = $('#one .image-list'),
   slider2 = $('#two .image-list'),
   slider3 = $('#three .image-list'),
