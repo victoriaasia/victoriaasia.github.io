@@ -115,7 +115,6 @@ body {
   float: left;
   width: 754px;
   margin-left: 0;
-  background: -webkit-linear-gradient(bottom, white 0%, white 50%, white 80%, rgba(255, 255, 255, 0.8) 90%, rgba(255, 255, 255, 0.6) 100%);
   background: linear-gradient(to top, white 0%, white 50%, white 80%, rgba(255, 255, 255, 0.8) 90%, rgba(255, 255, 255, 0.6) 100%); }
 
 .main {
@@ -335,17 +334,19 @@ body {
         .main .lesson.-three .text-slider .lesson-content, .main .lesson.-three .text-slider .beauty-content {
           color: #fff; }
           .main .lesson.-three .text-slider .lesson-content #shape, .main .lesson.-three .text-slider .beauty-content #shape {
-            width: 270px;
-            height: 270px;
+            width: 300px;
+            height: 300px;
             float: left;
-            shape-outside: polygon(100% 0, 0% 100%, 50% 46%); }
+            shape-outside: polygon(100% 0, 0% 100%, 50% 46%);
+            clip-path: polygon(100% 0, 0% 100%, 50% 46%);
+            -webkit-clip-path: polygon(100% 0, 0% 100%, 50% 46%); }
         .main .lesson.-three .text-slider .text-item {
           position: relative;
-          width: 445px;
-          height: 400px;
+          width: 485px;
           float: right;
-          padding: 110px 20px 20px;
-          max-height: 320px; }
+          padding: 80px 20px 20px;
+          max-height: 480px;
+          box-sizing: border-box; }
           .main .lesson.-three .text-slider .text-item:last-child::before {
             content: "";
             position: absolute;
@@ -536,17 +537,9 @@ body {
   padding-top: 40px; }
   .footer .social {
     width: 260px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-around;
+    align-items: center;
     margin: 0 auto;
     position: relative; }
     .footer .social .social-icon {
@@ -562,20 +555,7 @@ body {
       left: -130px; }
   .footer .footer-logo {
     height: 280px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
