@@ -6,29 +6,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
 body {
   line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after {
-  content: "";
-  content: none; }
-
-q:before, q:after {
-  content: "";
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
 
 body {
   background: url(../img/backgr.png) repeat center top;
@@ -299,7 +278,7 @@ body {
             width: 210px;
             top: 5px; }
     .main .lesson.-three {
-      height: 775px; }
+      height: 790px; }
       .main .lesson.-three::after {
         content: "";
         position: absolute;
@@ -348,13 +327,13 @@ body {
       .main .lesson.-three .text-slider {
         position: relative;
         top: -630px;
-        height: 780px; }
+        height: 790px; }
         .main .lesson.-three .text-slider .text-backgr {
           position: absolute;
           bottom: 0;
           background-color: rgba(187, 55, 84, 0.4);
           width: 100%;
-          height: 465px; }
+          height: 485px; }
         .main .lesson.-three .text-slider .lesson-content, .main .lesson.-three .text-slider .beauty-content {
           color: #fff; }
           .main .lesson.-three .text-slider .lesson-content #shape, .main .lesson.-three .text-slider .beauty-content #shape {
