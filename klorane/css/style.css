@@ -193,7 +193,6 @@ body {
         height: 590px;
         position: relative;
         overflow: hidden;
-        background-color: rgba(2, 117, 52, 0.6);
         -webkit-clip-path: polygon(100% 0, 100% 88%, 0 100%, 0 0);
         clip-path: polygon(100% 0, 100% 88%, 0 100%, 0 0); }
         .main .lesson.-one .image-slider .image-list {
@@ -245,6 +244,16 @@ body {
       background-color: rgba(187, 55, 84, 0.6);
       -webkit-clip-path: polygon(100% 0, 100% 73%, 0 100%, 0 0);
       clip-path: polygon(100% 0, 100% 73%, 0 100%, 0 0); }
+      .main .lesson.-two .image-slider::after {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 150px solid white;
+        border-left: 759px solid transparent; }
       .main .lesson.-two .image-slider .image-list {
         margin: 0;
         padding: 0;
@@ -310,7 +319,6 @@ body {
         position: relative;
         overflow: hidden;
         margin-left: 10px;
-        background-color: #67ac85;
         -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
         clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
       .main .lesson.-three .image-list {
@@ -322,9 +330,9 @@ body {
         height: 100%;
         top: 0; }
         .main .lesson.-three .image-list .-one {
-          background-image: url(../img/3.png);
-          max-width: 100%;
-          max-height: 100%; }
+          background-image: url(../img/3.png); }
+        .main .lesson.-three .image-list .-two {
+          background-image: url(../img/3b.png); }
       .main .lesson.-three .image-item {
         padding: 0;
         margin: 0;
@@ -334,7 +342,9 @@ body {
         position: absolute;
         top: 0;
         bottom: 0;
-        border: none; }
+        border: none;
+        max-width: 100%;
+        max-height: 100%; }
       .main .lesson.-three .text-slider {
         position: relative;
         top: -630px;
@@ -369,6 +379,17 @@ body {
             top: -220px;
             left: -40px;
             background-repeat: no-repeat; }
+    .main .lesson.-four::after {
+      content: "";
+      position: absolute;
+      background-image: url(../img/number4.png);
+      width: 215px;
+      height: 290px;
+      bottom: 0;
+      left: 195px;
+      background-repeat: no-repeat;
+      z-index: 0;
+      background-size: cover; }
     .main .lesson.-four .slider-control {
       top: -50px;
       right: 273px; }
