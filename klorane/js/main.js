@@ -176,6 +176,8 @@ $(function() {
       text_index3 = 0;
     }
     textItems3.fadeIn(600);
+    window.ShapesPolyfill.teardown();
+    window.ShapesPolyfill.run();
     slideText3();
   });
 
