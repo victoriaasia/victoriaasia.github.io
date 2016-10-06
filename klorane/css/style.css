@@ -164,7 +164,8 @@ body {
       float: left; }
     .lesson.-one .right {
       width: 300px;
-      float: right; }
+      float: right;
+      margin-top: 5px; }
     .lesson.-one .image-slider {
       max-width: 333px;
       height: 590px;
