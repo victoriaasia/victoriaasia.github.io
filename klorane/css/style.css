@@ -99,7 +99,6 @@ body {
       line-height: 18px; }
     .text-slider .text-item .beauty-content {
       font-size: 16px;
-      font-family: "BodoniCyr";
       line-height: 20px; }
 
 .container {
@@ -146,8 +145,8 @@ body {
       position: absolute;
       background-image: url(../img/number1.png);
       width: 130px;
-      height: 225px;
-      bottom: 32%;
+      height: 240px;
+      bottom: 30%;
       left: 47%;
       background-repeat: no-repeat;
       z-index: -1;
@@ -204,9 +203,9 @@ body {
     content: "";
     position: absolute;
     background-image: url(../img/number2.png);
-    width: 240px;
-    height: 250px;
-    bottom: 85px;
+    width: 245px;
+    height: 260px;
+    bottom: 70px;
     left: 100px;
     background-repeat: no-repeat;
     z-index: 0;
