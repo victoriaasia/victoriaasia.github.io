@@ -190,5 +190,4 @@ $(function() {
     textItems4.fadeIn(600);
     slideText4();
   });
-
 });

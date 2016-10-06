@@ -21,8 +21,8 @@ body {
 
 .slider-control {
   text-align: center;
-  width: 135px;
-  height: 135px;
+  width: 145px;
+  height: 145px;
   border-radius: 100px;
   position: absolute;
   z-index: 999;
@@ -96,9 +96,9 @@ body {
     display: none; }
     .text-slider .text-item .lesson-content {
       font-size: 13px;
-      line-height: 17px; }
+      line-height: 18px; }
     .text-slider .text-item .beauty-content {
-      font-size: 17px;
+      font-size: 16px;
       font-family: "BodoniCyr";
       line-height: 20px; }
 
@@ -146,15 +146,15 @@ body {
       position: absolute;
       background-image: url(../img/number1.png);
       width: 130px;
-      height: 250px;
-      bottom: 30%;
-      left: 50%;
+      height: 225px;
+      bottom: 32%;
+      left: 47%;
       background-repeat: no-repeat;
       z-index: -1;
       background-size: cover; }
     .lesson.-one .slider-control {
-      bottom: 110px;
-      left: 280px; }
+      bottom: 100px;
+      left: 270px; }
     .lesson.-one .line {
       width: 150px;
       height: 2px;
@@ -164,7 +164,7 @@ body {
       width: 390px;
       float: left; }
     .lesson.-one .right {
-      width: 290px;
+      width: 300px;
       float: right; }
     .lesson.-one .image-slider {
       max-width: 333px;
@@ -213,7 +213,7 @@ body {
     background-size: cover; }
   .lesson.-two .slider-control {
     top: 355px;
-    left: 540px; }
+    right: 75px; }
   .lesson.-two .image-slider {
     max-width: 759px;
     height: 542px;
@@ -271,7 +271,7 @@ body {
         position: absolute; }
         .lesson.-two .text-slider .text-item .lesson-content:last-child, .lesson.-two .text-slider .text-item .beauty-content:last-child {
           width: 240px;
-          top: -15px;
+          top: -17px;
           right: 15px; }
         .lesson.-two .text-slider .text-item .lesson-content:first-child, .lesson.-two .text-slider .text-item .beauty-content:first-child {
           width: 210px;
@@ -289,8 +289,8 @@ body {
       left: 50px;
       background-repeat: no-repeat; }
     .lesson.-three .slider-control {
-      right: 160px;
-      top: 80px; }
+      top: -45px;
+      right: 265px; }
     .lesson.-three .image-slider {
       width: 630px;
       height: 630px;
