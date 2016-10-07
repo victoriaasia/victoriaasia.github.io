@@ -1,0 +1,124 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+.k-container {
+  width: 754px;
+  font-family: "CenturyGothicRegular";
+  background-color: #fff;
+  margin: 0 auto; }
+
+.k-header {
+  width: 100%;
+  color: #fff; }
+
+.k-header__content {
+  background-color: #141d2c;
+  height: 455px;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  position: relative; }
+  .k-header__content::before {
+    content: "";
+    position: absolute;
+    background: url(../img/ill.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    width: 754px;
+    height: 270px; }
+  .k-header__content::after {
+    content: "";
+    position: absolute;
+    background: url(../img/woman.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -300px;
+    right: 20px;
+    width: 212px;
+    height: 665px; }
+
+.k-main-title {
+  font-size: 56px;
+  line-height: 50px;
+  padding-top: 20px;
+  margin-left: -5px; }
+
+.k-header__sub-title {
+  background-color: #009a82;
+  height: 85px; }
+  .k-header__sub-title h2 {
+    font-size: 21px;
+    line-height: 21px;
+    width: 530px;
+    padding: 15px 35px;
+    box-sizing: border-box; }
+
+.k-main {
+  height: 1240px;
+  padding-top: 230px; }
+  .k-main .k-link {
+    display: block;
+    background-color: #eeecec;
+    height: 90px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin-top: 253px;
+    position: relative; }
+    .k-main .k-link:first-child {
+      margin-top: 0px !important; }
+    .k-main .k-link .k-title {
+      width: 350px;
+      color: #d52b1e;
+      font-size: 29px;
+      line-height: 30px; }
+    .k-main .k-link:nth-child(odd) .k-title {
+      float: right; }
+    .k-main .k-link:nth-child(even) .k-title {
+      float: left; }
+  .k-main .k-link-scaner::before {
+    content: "";
+    position: absolute;
+    background: url(../img/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -94px;
+    left: 30px;
+    width: 330px;
+    height: 380px; }
+  .k-main .k-link-hack::after {
+    content: "";
+    position: absolute;
+    background: url(../img/2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -94px;
+    right: 30px;
+    width: 330px;
+    height: 380px; }
+  .k-main .k-link-guide::before {
+    content: "";
+    position: absolute;
+    background: url(../img/3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -94px;
+    left: 30px;
+    width: 330px;
+    height: 380px; }
+  .k-main .k-link-article::after {
+    content: "";
+    position: absolute;
+    background: url(../img/4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -94px;
+    right: 30px;
+    width: 330px;
+    height: 380px; }
