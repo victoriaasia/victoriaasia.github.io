@@ -2,8 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -15,25 +16,26 @@
           <a href="#"><img src="img/logo.png" alt="KasperskyLab"></a>
         </div>
         <div class="k-main-title">
-          <h1>Безопасные<br/>связи</h1>
+          <h1 class="wow flipInX" data-wow-delay="0.5s">Безопасные<br/>связи</h1>
         </div>
       </div>
         <div class="k-header__sub-title">
-          <h2>Как быть девушкой, живущей в сети, но не попасться в сети мошенников? Узнаем!</h2>
+          <h2 class="wow flipInX" data-wow-delay="1s">Как быть девушкой, живущей в сети, но не попасться в сети мошенников? Узнаем!</h2>
         </div>
+        <div class="k-header__girl wow fadeInRightBig" data-wow-delay="1s" data-wow-duration="2s"></div>
     </div>
 
     <div class="k-main">
-      <a href="#" class="k-link k-link-scaner">
+      <a href="#" class="k-link k-link-scaner wow slideInLeft" data-wow-duration="1s">
         <div class="k-title">Интерактивный сканер цифровой личности</div>
       </a>
-      <a href="#" class="k-link k-link-hack">
+      <a href="#" class="k-link k-link-hack wow slideInRight" data-wow-duration="1s">
         <div class="k-title">Как не попасться в сети: лайфхаки</div>
       </a>
-      <a href="#" class="k-link k-link-guide">
+      <a href="#" class="k-link k-link-guide wow slideInLeft" data-wow-duration="1s">
         <div class="k-title">Гид по знакомствам  в большом городе</div>
       </a>
-      <a href="#" class="k-link k-link-article">
+      <a href="#" class="k-link k-link-article wow slideInRight" data-wow-duration="1s">
         <div class="k-title">Как понять, что вас обманывают</div>
       </a>
     </div>
@@ -41,5 +43,9 @@
   </div>
 </div>
 
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
 </body>
 </html>

@@ -14,7 +14,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
 
 .k-header {
   width: 100%;
-  color: #fff; }
+  color: #fff;
+  position: relative; }
 
 .k-header__content {
   background-color: #141d2c;
@@ -32,16 +33,16 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
     left: 0;
     width: 754px;
     height: 270px; }
-  .k-header__content::after {
-    content: "";
-    position: absolute;
-    background: url(../img/woman.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    bottom: -300px;
-    right: 20px;
-    width: 212px;
-    height: 665px; }
+
+.k-header__girl {
+  position: absolute;
+  background: url(../img/woman.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: -215px;
+  right: 20px;
+  width: 212px;
+  height: 665px; }
 
 .k-main-title {
   font-size: 56px;
@@ -91,8 +92,9 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
     bottom: -94px;
     left: 30px;
     width: 330px;
-    height: 380px; }
-  .k-main .k-link-hack::after {
+    height: 380px;
+    transition: all 0.5s ease-in-out; }
+  .k-main .k-link-hack::before {
     content: "";
     position: absolute;
     background: url(../img/2.png);
@@ -101,7 +103,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
     bottom: -94px;
     right: 30px;
     width: 330px;
-    height: 380px; }
+    height: 380px;
+    transition: all 0.5s ease-in-out; }
   .k-main .k-link-guide::before {
     content: "";
     position: absolute;
@@ -111,8 +114,9 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
     bottom: -94px;
     left: 30px;
     width: 330px;
-    height: 380px; }
-  .k-main .k-link-article::after {
+    height: 380px;
+    transition: all 0.5s ease-in-out; }
+  .k-main .k-link-article::before {
     content: "";
     position: absolute;
     background: url(../img/4.png);
@@ -121,4 +125,11 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
     bottom: -94px;
     right: 30px;
     width: 330px;
-    height: 380px; }
+    height: 380px;
+    transition: all 0.5s ease-in-out; }
+
+.k-link-scaner:hover::before,
+.k-link-hack:hover::before,
+.k-link-guide:hover::before,
+.k-link-article:hover::before {
+  transform: scaleX(-1); }
