@@ -64,72 +64,115 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
   height: 1240px;
   padding-top: 230px; }
   .k-main .k-link {
-    display: block;
-    background-color: #eeecec;
-    height: 90px;
-    padding: 15px 25px;
-    box-sizing: border-box;
-    text-decoration: none;
-    margin-top: 253px;
-    position: relative; }
+    position: relative;
+    height: 342px; }
     .k-main .k-link:first-child {
       margin-top: 0px !important; }
     .k-main .k-link .k-title {
-      width: 350px;
-      color: #d52b1e;
+      width: 100%;
+      height: 90px;
+      padding: 15px 25px;
+      box-sizing: border-box;
+      background-color: #eeecec;
       font-size: 29px;
       line-height: 30px; }
-    .k-main .k-link:nth-child(odd) .k-title {
+      .k-main .k-link .k-title a {
+        display: block;
+        text-decoration: none;
+        color: #d52b1e; }
+      .k-main .k-link .k-title h3 {
+        width: 350px;
+        transition: all 0.2s ease-in-out; }
+        .k-main .k-link .k-title h3:hover {
+          transform: scale(1.1); }
+    .k-main .k-link:nth-child(odd) .k-title h3 {
       float: right; }
-    .k-main .k-link:nth-child(even) .k-title {
+    .k-main .k-link:nth-child(even) .k-title h3 {
       float: left; }
-  .k-main .k-link-scaner::before {
-    content: "";
-    position: absolute;
-    background: url(../img/1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    bottom: -94px;
-    left: 30px;
-    width: 330px;
-    height: 380px;
-    transition: all 0.5s ease-in-out; }
-  .k-main .k-link-hack::before {
-    content: "";
-    position: absolute;
-    background: url(../img/2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    bottom: -94px;
-    right: 30px;
-    width: 330px;
-    height: 380px;
-    transition: all 0.5s ease-in-out; }
-  .k-main .k-link-guide::before {
-    content: "";
-    position: absolute;
-    background: url(../img/3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    bottom: -94px;
-    left: 30px;
-    width: 330px;
-    height: 380px;
-    transition: all 0.5s ease-in-out; }
-  .k-main .k-link-article::before {
-    content: "";
-    position: absolute;
-    background: url(../img/4.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    bottom: -94px;
-    right: 30px;
-    width: 330px;
-    height: 380px;
-    transition: all 0.5s ease-in-out; }
+    .k-main .k-link:nth-child(even) .k-image {
+      float: right;
+      left: -30px; }
 
-.k-link-scaner:hover::before,
-.k-link-hack:hover::before,
-.k-link-guide:hover::before,
-.k-link-article:hover::before {
-  transform: scaleX(-1); }
+.k-link__scaner {
+  background: url(../img/1.png) no-repeat center center; }
+
+.k-link__hack {
+  background: url(../img/2.png) no-repeat center center; }
+
+.k-link__guide {
+  background: url(../img/3.png) no-repeat center center; }
+
+.k-link__article {
+  background: url(../img/4.png) no-repeat center center; }
+
+.k-image {
+  position: relative;
+  top: -287px;
+  left: 30px;
+  width: 330px;
+  height: 380px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+  -webkit-clip-path: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 100%, 0 24%);
+  clip-path: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 100%, 0 24%); }
+
+.k-image .mask {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 330px;
+  height: 380px;
+  background-color: rgba(20, 29, 44, 0.6);
+  text-align: center;
+  opacity: 0;
+  transform: translate(460px, -100px) rotate(180deg);
+  transition: all 0.2s 0.4s ease-in-out;
+  -webkit-clip-path: polygon(50% 0, 100% 23%, 100% 76%, 50% 100%, 0 76%, 0 23%);
+  clip-path: polygon(50% 0, 100% 23%, 100% 76%, 50% 100%, 0 76%, 0 23%); }
+
+.k-image .k-image__title {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 154, 130, 0.8);
+  margin: 95px 0 0 0;
+  transform: translateY(-100px);
+  transition: all 0.2s ease-in-out; }
+
+.k-image .mask p {
+  font-size: 12px;
+  position: relative;
+  color: #fff;
+  padding: 10px 20px 20px;
+  text-align: center;
+  transform: translateX(300px) rotate(90deg);
+  transition: all 0.2s ease-in-out; }
+
+.k-image .k-image__link {
+  transform: translateY(-200px);
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #009a82;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #141d2c; }
+
+.k-image:hover .mask {
+  opacity: 1;
+  transition-delay: 0s;
+  transform: translate(0px, 0px); }
+  .k-image:hover .mask .k-image__title {
+    transform: translateY(0px);
+    transition-delay: 0.5s; }
+  .k-image:hover .mask p {
+    transform: translateX(0px) rotate(0deg);
+    transition-delay: 0.4s; }
+  .k-image:hover .mask .k-image__link {
+    transform: translateY(0px);
+    transition-delay: 0.3s; }
