@@ -83,8 +83,6 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
       .k-main .k-link .k-title h3 {
         width: 350px;
         transition: all 0.2s ease-in-out; }
-        .k-main .k-link .k-title h3:hover {
-          transform: scale(1.1); }
     .k-main .k-link:nth-child(odd) .k-title h3 {
       float: right; }
     .k-main .k-link:nth-child(even) .k-title h3 {
@@ -123,7 +121,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
   left: 0;
   width: 330px;
   height: 380px;
-  background-color: rgba(20, 29, 44, 0.6);
+  background: url(../img/back.png) no-repeat center center;
   text-align: center;
   opacity: 0;
   transform: translate(460px, -100px) rotate(180deg);
@@ -140,7 +138,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
   padding: 10px;
   background: rgba(0, 154, 130, 0.8);
   margin: 95px 0 0 0;
-  transform: translateY(-100px);
+  transform: translateX(300px) rotate(90deg);
   transition: all 0.2s ease-in-out; }
 
 .k-image .mask p {
@@ -153,7 +151,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
   transition: all 0.2s ease-in-out; }
 
 .k-image .k-image__link {
-  transform: translateY(-200px);
+  transform: translateY(-100px);
   transition: all 0.2s ease-in-out;
   display: inline-block;
   text-decoration: none;
@@ -163,16 +161,18 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
   text-transform: uppercase;
   box-shadow: 0 0 1px #141d2c; }
 
-.k-image:hover .mask {
+.k-link:hover .k-image .mask {
   opacity: 1;
   transition-delay: 0s;
   transform: translate(0px, 0px); }
-  .k-image:hover .mask .k-image__title {
+  .k-link:hover .k-image .mask .k-image__title {
     transform: translateY(0px);
     transition-delay: 0.5s; }
-  .k-image:hover .mask p {
+  .k-link:hover .k-image .mask p {
     transform: translateX(0px) rotate(0deg);
     transition-delay: 0.4s; }
-  .k-image:hover .mask .k-image__link {
+  .k-link:hover .k-image .mask .k-image__link {
     transform: translateY(0px);
     transition-delay: 0.3s; }
+.k-link:hover .k-title h3 {
+  transform: scale(1.1); }
