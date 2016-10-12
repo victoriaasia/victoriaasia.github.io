@@ -86,6 +86,13 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
     .k-main .k-link:nth-child(odd) .k-title a {
       position: absolute;
       right: 0; }
+    .k-main .k-link:nth-child(odd) .k-image {
+      -webkit-clip-path: polygon(50% 0, 100% 24%, 100% 76%, 100% 100%, 0 100%, 0 24%);
+      clip-path: polygon(50% 0, 100% 24%, 100% 76%, 100% 100%, 0 100%, 0 24%); }
+      .k-main .k-link:nth-child(odd) .k-image .mask {
+        transform: translate(-460px, -100px) rotate(180deg); }
+      .k-main .k-link:nth-child(odd) .k-image__title, .k-main .k-link:nth-child(odd) .k-image__content {
+        transform: translateX(-300px) rotate(90deg); }
     .k-main .k-link:nth-child(even) .k-title h3 {
       float: left; }
     .k-main .k-link:nth-child(even) .k-image {
@@ -130,7 +137,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
   -webkit-clip-path: polygon(50% 0, 100% 23%, 100% 76%, 50% 100%, 0 76%, 0 23%);
   clip-path: polygon(50% 0, 100% 23%, 100% 76%, 50% 100%, 0 76%, 0 23%); }
 
-.k-image .k-image__title {
+.k-image__title {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -142,7 +149,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
   transform: translateX(300px) rotate(90deg);
   transition: all 0.2s ease-in-out; }
 
-.k-image .mask p {
+.k-image__content {
   font-size: 12px;
   position: relative;
   color: #fff;
@@ -151,7 +158,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
   transform: translateX(300px) rotate(90deg);
   transition: all 0.2s ease-in-out; }
 
-.k-image .k-image__link {
+.k-image__link {
   transform: translateY(-100px);
   transition: all 0.2s ease-in-out;
   display: inline-block;
@@ -165,15 +172,15 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
 .k-link:hover .k-image .mask {
   opacity: 1;
   transition-delay: 0s;
-  transform: translate(0px, 0px); }
-  .k-link:hover .k-image .mask .k-image__title {
-    transform: translateY(0px);
-    transition-delay: 0.5s; }
-  .k-link:hover .k-image .mask p {
-    transform: translateX(0px) rotate(0deg);
-    transition-delay: 0.4s; }
-  .k-link:hover .k-image .mask .k-image__link {
-    transform: translateY(0px);
-    transition-delay: 0.3s; }
+  transform: translate(0px, 0px) !important; }
+.k-link:hover .k-image__title {
+  transform: translateY(0px) !important;
+  transition-delay: 0.5s; }
+.k-link:hover .k-image__content {
+  transform: translateX(0px) rotate(0deg) !important;
+  transition-delay: 0.4s; }
+.k-link:hover .k-image__link {
+  transform: translateY(0px) !important;
+  transition-delay: 0.3s; }
 .k-link:hover .k-title h3 {
   transform: scale(1.1); }
