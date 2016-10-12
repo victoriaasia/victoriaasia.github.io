@@ -83,8 +83,9 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
       .k-main .k-link .k-title h3 {
         width: 350px;
         transition: all 0.2s ease-in-out; }
-    .k-main .k-link:nth-child(odd) .k-title h3 {
-      float: right; }
+    .k-main .k-link:nth-child(odd) .k-title a {
+      position: absolute;
+      right: 0; }
     .k-main .k-link:nth-child(even) .k-title h3 {
       float: left; }
     .k-main .k-link:nth-child(even) .k-image {
