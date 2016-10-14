@@ -95,7 +95,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img, ul, li {
     .part-two .k-game-pages .circle3 {
       background: url(../img/circle3.png); }
   .part-two .k-game-main {
-    padding: 0 25px;
+    padding: 0 30px;
     max-height: 600px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -113,7 +113,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img, ul, li {
       background: url(../img/right.png) no-repeat;
       width: 100px;
       height: 312px;
-      right: 45px;
+      right: 47px;
       bottom: 12px; }
     .part-two .k-game-main > div {
       -webkit-box-flex: 1;
@@ -136,7 +136,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img, ul, li {
       margin-left: 20px; }
   .part-two .k-game-answer {
     min-height: 90px;
-    width: 545px;
+    width: 539px;
     margin: 10px 0;
     display: -webkit-box;
     display: -webkit-flex;
@@ -184,8 +184,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img, ul, li {
 .k-game-footer {
   min-height: 140px;
   background: url(../img/footer.png) no-repeat;
-  background-size: cover;
+  background-size: contain;
   max-width: 100%;
-  width: 693px;
+  width: 685px;
   height: 15%;
-  margin: 0 25px; }
+  margin: 0 30px; }
