@@ -70,13 +70,7 @@ $('#question-ten .js-button').click(function() { setTimeout(function() {
     $.ajax({
       type: 'POST',
       url: 'result.php',
-      data: msg,
-      // success: function(data) {
-      //   $('#question-form').html(data);
-      // },
-      // error:  function(xhr, str){
-      // alert('Возникла ошибка: ' + xhr.responseCode);
-      // }
+      data: msg
     });
 }, 1000); });
 
