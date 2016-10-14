@@ -63,10 +63,10 @@ $('#question-nine .js-button').click(function() { setTimeout(function() {
   $("#page-10").css('display', 'block');
 }, 1000); });
 
-$('#question-ten .js-button').click(function call() { setTimeout(function() {
+$('#question-ten .js-button').click(function() { setTimeout(function() {
   $("#question-ten").hide();
   $("#page-10").hide();
-  var msg   = $('#question-form').serialize();
+  var msg = $('#question-form').serialize();
     $.ajax({
       type: 'POST',
       url: 'result.php',
