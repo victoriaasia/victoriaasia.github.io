@@ -112,9 +112,9 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img, ul, li {
       position: absolute;
       background: url(../img/right.png) no-repeat;
       width: 100px;
-      height: 312px;
+      height: 305px;
       right: 47px;
-      bottom: 12px; }
+      bottom: 0px; }
     .part-two .k-game-main > div {
       -webkit-box-flex: 1;
       -webkit-flex: 1 1 auto;
