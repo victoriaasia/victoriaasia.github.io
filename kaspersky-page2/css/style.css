@@ -1,0 +1,192 @@
+@charset "UTF-8";
+html, body, div, span, h1, h2, h3, h4, h5, h6, a, img, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+.k-game-container {
+  width: 754px;
+  height: 795px;
+  margin: 0 auto;
+  font-family: "CenturyGothicRegular"; }
+
+.part-two {
+  background-color: #141d2c;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .part-two .k-game-inner {
+    width: 735px;
+    height: 786px;
+    overflow: hidden;
+    position: relative; }
+    .part-two .k-game-inner::before {
+      content: "";
+      position: absolute;
+      background: url(../img/border2.png) no-repeat;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
+  .part-two .k-game-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 175px;
+    padding: 40px 60px 20px 30px;
+    box-sizing: border-box;
+    position: relative; }
+    .part-two .k-game-header::after {
+      content: "";
+      position: absolute;
+      background: url(../img/corner.png) no-repeat;
+      width: 100px;
+      height: 90px;
+      right: 8px;
+      top: 18px; }
+  .part-two .k-game-pages {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .part-two .k-game-pages > div {
+      width: 118px;
+      height: 115px;
+      margin-right: 10px;
+      background-size: cover !important;
+      background-repeat: no-repeat !important; }
+      .part-two .k-game-pages > div:last-child {
+        margin-right: 0px; }
+    .part-two .k-game-pages .page {
+      background: url(../img/circle1.png);
+      font-size: 21px;
+      color: #85edd9;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .part-two .k-game-pages .circle2 {
+      background: url(../img/circle2.png); }
+    .part-two .k-game-pages .circle3 {
+      background: url(../img/circle3.png); }
+  .part-two .k-game-main {
+    padding: 0 25px;
+    max-height: 600px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .part-two .k-game-main > div {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+          -ms-flex: 1 1 auto;
+              flex: 1 1 auto; }
+  .part-two .k-game-question {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .part-two .k-game-question h2 {
+      font-size: 36px;
+      color: #fff;
+      line-height: 36px;
+      margin-left: 20px; }
+  .part-two .k-game-answers {
+    position: relative; }
+    .part-two .k-game-answers::after {
+      content: "";
+      position: absolute;
+      background: url(../img/right.png);
+      width: 100px;
+      height: 315px;
+      right: 20px;
+      top: 10px; }
+    .part-two .k-game-answers [type="radio"]:not(:checked), .part-two .k-game-answers [type="radio"]:checked {
+      position: absolute;
+      left: -9999px; }
+    .part-two .k-game-answers [type="radio"]:not(:checked) + label, .part-two .k-game-answers [type="radio"]:checked + label {
+      cursor: pointer; }
+    .part-two .k-game-answers [type="radio"]:not(:checked) + label:before, .part-two .k-game-answers [type="radio"]:checked + label:before {
+      content: "";
+      position: absolute;
+      left: 20px;
+      top: 27px;
+      width: 40px;
+      height: 40px;
+      background: #009a82; }
+    .part-two .k-game-answers [type="radio"]:not(:checked) + label:after, .part-two .k-game-answers [type="radio"]:checked + label:after {
+      content: "✔";
+      position: absolute;
+      top: 30px;
+      left: 27px;
+      font-size: 35px;
+      line-height: 0.8;
+      color: white;
+      -webkit-transition: all 0.2s;
+              transition: all 0.2s; }
+    .part-two .k-game-answers [type="radio"]:not(:checked) + label:after {
+      opacity: 0;
+      -webkit-transform: scale(0);
+          -ms-transform: scale(0);
+              transform: scale(0); }
+    .part-two .k-game-answers .answer {
+      height: 95px;
+      width: 545px;
+      margin: 10px 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border: 1px solid #009a82;
+      font-size: 18px;
+      color: #85edd9;
+      position: relative; }
+      .part-two .k-game-answers .answer > div {
+        padding: 5px 30px 5px 75px; }
+
+.k-game-footer {
+  min-height: 140px;
+  background: url(../img/footer.png) no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  width: 693px;
+  height: 15%;
+  margin: 0 25px; }
