@@ -125,62 +125,52 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img, ul, li {
       color: #fff;
       line-height: 36px;
       margin-left: 20px; }
-  .part-two .k-game-answers {
+  .part-two .k-game-answer {
+    min-height: 90px;
+    width: 545px;
+    margin: 10px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid #009a82;
+    font-size: 18px;
+    color: #85edd9;
     position: relative; }
-    .part-two .k-game-answers::after {
-      content: "";
-      position: absolute;
-      background: url(../img/right.png);
-      width: 100px;
-      height: 315px;
-      right: 20px;
-      top: 10px; }
-    .part-two .k-game-answers [type="radio"]:not(:checked), .part-two .k-game-answers [type="radio"]:checked {
+    .part-two .k-game-answer > div {
+      padding: 5px 30px 5px 75px; }
+    .part-two .k-game-answer [type="radio"]:not(:checked), .part-two .k-game-answer [type="radio"]:checked {
       position: absolute;
       left: -9999px; }
-    .part-two .k-game-answers [type="radio"]:not(:checked) + label, .part-two .k-game-answers [type="radio"]:checked + label {
+    .part-two .k-game-answer [type="radio"]:not(:checked) + label, .part-two .k-game-answer [type="radio"]:checked + label {
       cursor: pointer; }
-    .part-two .k-game-answers [type="radio"]:not(:checked) + label:before, .part-two .k-game-answers [type="radio"]:checked + label:before {
+    .part-two .k-game-answer [type="radio"]:not(:checked) + label:before, .part-two .k-game-answer [type="radio"]:checked + label:before {
       content: "";
       position: absolute;
       left: 20px;
-      top: 27px;
+      top: 30%;
       width: 40px;
       height: 40px;
       background: #009a82; }
-    .part-two .k-game-answers [type="radio"]:not(:checked) + label:after, .part-two .k-game-answers [type="radio"]:checked + label:after {
+    .part-two .k-game-answer [type="radio"]:not(:checked) + label:after, .part-two .k-game-answer [type="radio"]:checked + label:after {
       content: "✔";
       position: absolute;
-      top: 30px;
+      top: 33%;
       left: 27px;
       font-size: 35px;
       line-height: 0.8;
       color: white;
       -webkit-transition: all 0.2s;
               transition: all 0.2s; }
-    .part-two .k-game-answers [type="radio"]:not(:checked) + label:after {
+    .part-two .k-game-answer [type="radio"]:not(:checked) + label:after {
       opacity: 0;
       -webkit-transform: scale(0);
           -ms-transform: scale(0);
               transform: scale(0); }
-    .part-two .k-game-answers .answer {
-      height: 95px;
-      width: 545px;
-      margin: 10px 0;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      border: 1px solid #009a82;
-      font-size: 18px;
-      color: #85edd9;
-      position: relative; }
-      .part-two .k-game-answers .answer > div {
-        padding: 5px 30px 5px 75px; }
 
 .k-game-footer {
   min-height: 140px;
