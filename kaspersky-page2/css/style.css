@@ -152,10 +152,13 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img, ul, li {
     position: relative; }
     .part-two .k-game-answer > div {
       padding: 5px 30px 5px 75px; }
+      .part-two .k-game-answer > div label {
+        font-size: 18px;
+        line-height: 17px; }
     .part-two .k-game-answer [type="radio"]:not(:checked), .part-two .k-game-answer [type="radio"]:checked {
       position: absolute;
       left: -9999px; }
-    .part-two .k-game-answer [type="radio"]:not(:checked) + label, .part-two .k-game-answer [type="radio"]:checked + label {
+    .part-two .k-game-answer [type="radio"]:not(:checked) + label {
       cursor: pointer; }
     .part-two .k-game-answer [type="radio"]:not(:checked) + label:before, .part-two .k-game-answer [type="radio"]:checked + label:before {
       content: "";
