@@ -116,7 +116,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img, ul, li {
         content: "";
         position: absolute;
         background: url(../img/circle3.png);
-        background-size: contain;
+        background-size: cover;
         width: 118px;
         height: 115px;
         top: 0;
