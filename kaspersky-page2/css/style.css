@@ -176,8 +176,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img, ul, li {
       background: #009a82;
       position: absolute;
       bottom: 0;
-      -webkit-animation: equalize 6s 0s infinite;
-              animation: equalize 6s 0s infinite; }
+      -webkit-animation: equalize 20s 0s infinite;
+              animation: equalize 20s 0s infinite; }
     .part-two .k-game-question .bar-1 {
       left: 5px;
       -webkit-animation-delay: -1.9s;
@@ -192,8 +192,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img, ul, li {
               animation-delay: -2.3s; }
     .part-two .k-game-question .bar-4 {
       left: 56px;
-      -webkit-animation-delay: -2.4s;
-              animation-delay: -2.4s; }
+      -webkit-animation-delay: -2.5s;
+              animation-delay: -2.5s; }
     .part-two .k-game-question .bar-5 {
       left: 74px;
       -webkit-animation-delay: -2.1s;
@@ -204,16 +204,16 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img, ul, li {
               animation-delay: -2s; }
     .part-two .k-game-question .bar-7 {
       right: 61px;
-      -webkit-animation-delay: -2.3s;
-              animation-delay: -2.3s; }
+      -webkit-animation-delay: -3s;
+              animation-delay: -3s; }
     .part-two .k-game-question .bar-8 {
       right: 44px;
       -webkit-animation-delay: -1.9s;
               animation-delay: -1.9s; }
     .part-two .k-game-question .bar-9 {
       right: 27px;
-      -webkit-animation-delay: -2.1s;
-              animation-delay: -2.1s; }
+      -webkit-animation-delay: -2.7s;
+              animation-delay: -2.7s; }
     .part-two .k-game-question .bar-10 {
       right: 10px;
       -webkit-animation-delay: -2.4s;
