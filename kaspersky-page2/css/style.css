@@ -93,7 +93,34 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img, ul, li {
     .part-two .k-game-pages .circle2 {
       background: url(../img/circle2.png); }
     .part-two .k-game-pages .circle3 {
-      background: url(../img/circle3.png); }
+      background: url(../img/circle3.png);
+      position: relative; }
+      .part-two .k-game-pages .circle3::before {
+        content: "";
+        position: absolute;
+        background: url(../img/sonar1.png) no-repeat;
+        background-size: contain;
+        width: 118px;
+        height: 115px;
+        top: 0;
+        right: 0;
+        -webkit-animation-name: spin;
+                animation-name: spin;
+        -webkit-animation-duration: 2000ms;
+                animation-duration: 2000ms;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+                animation-timing-function: linear; }
+      .part-two .k-game-pages .circle3::after {
+        content: "";
+        position: absolute;
+        background: url(../img/circle3.png);
+        background-size: contain;
+        width: 118px;
+        height: 115px;
+        top: 0;
+        right: 0; }
   .part-two .k-game-main {
     padding: 0 30px;
     max-height: 600px;
@@ -189,3 +216,19 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img, ul, li {
   width: 685px;
   height: 15%;
   margin: 0 30px; }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
