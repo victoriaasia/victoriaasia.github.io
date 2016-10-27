@@ -10,7 +10,9 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, a, img {
   width: 754px;
   font-family: "CenturyGothicRegular";
   background-color: #fff;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-height: 1980px;
+  overflow: hidden; }
 
 .k-header {
   width: 100%;
