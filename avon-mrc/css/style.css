@@ -31,7 +31,8 @@ body {
   position: relative;
   box-sizing: border-box; }
   .av-wrapper > div {
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
 
 .av-header {
   padding: 0 33px; }
@@ -171,7 +172,7 @@ body {
       top: -180px; }
 
 .av-block-two {
-  padding: 0 33px; }
+  padding: 0 33px 35px; }
   .av-block-two > div {
     display: -webkit-box;
     display: -webkit-flex;
@@ -196,13 +197,12 @@ body {
     line-height: 20px; }
   .av-block-two .av-number {
     position: absolute;
-    bottom: -40px;
+    bottom: 4px;
     left: 420px; }
 
 .av-block-three {
   color: #fff;
   background-color: #000;
-  margin-top: 43px;
   z-index: 999; }
   .av-block-three .av-block-three-back {
     position: absolute;
@@ -234,7 +234,7 @@ body {
     margin-bottom: 78px; }
 
 .av-block-four {
-  padding: 0 125px 90px; }
+  padding: 0 125px 55px; }
   .av-block-four .av-title {
     font-size: 31px;
     font-family: "ddt", serif;
@@ -272,45 +272,47 @@ body {
     right: 135px;
     top: 460px; }
 
-.av-block-five .av-block-five-back {
-  background-color: #000;
-  width: 815px;
-  height: 385px;
-  position: absolute;
-  right: 35px;
-  top: 32px; }
-.av-block-five .av-content {
-  font-size: 16px;
-  font-family: "Minion Pro";
-  color: #fff;
-  line-height: 20px;
-  position: relative;
-  z-index: 999;
-  width: 500px;
-  margin-left: 435px;
-  padding: 85px 45px;
-  box-sizing: border-box; }
-.av-block-five .av-title {
-  font-size: 31px;
-  font-family: "ddt", serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: -7px 0 25px 0; }
-.av-block-five .av-woman {
-  position: absolute;
-  left: 50px;
-  top: -30px;
-  z-index: 999;
-  width: 340px; }
-.av-block-five .av-number {
-  position: absolute;
-  bottom: 75px;
-  left: 320px;
-  z-index: 999;
-  width: 125px; }
+.av-block-five {
+  padding-top: 30px; }
+  .av-block-five .av-block-five-back {
+    background-color: #000;
+    width: 815px;
+    height: 395px;
+    position: absolute;
+    right: 35px;
+    top: 40px; }
+  .av-block-five .av-content {
+    font-size: 16px;
+    font-family: "Minion Pro";
+    color: #fff;
+    line-height: 20px;
+    position: relative;
+    z-index: 999;
+    width: 500px;
+    margin-left: 435px;
+    padding: 60px 45px 75px;
+    box-sizing: border-box; }
+  .av-block-five .av-title {
+    font-size: 31px;
+    font-family: "ddt", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: -7px 0 25px 0; }
+  .av-block-five .av-woman {
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    z-index: 999;
+    width: 340px; }
+  .av-block-five .av-number {
+    position: absolute;
+    bottom: 55px;
+    left: 325px;
+    z-index: 999;
+    width: 125px; }
 
 .av-block-six {
-  padding: 50px 100px; }
+  padding: 60px 100px; }
   .av-block-six .av-title {
     position: relative; }
     .av-block-six .av-title h2 {
@@ -344,7 +346,7 @@ body {
     height: 535px;
     position: absolute;
     right: 155px;
-    top: -5px; }
+    top: 0px; }
   .av-block-six .av-decor {
     position: absolute;
     right: 60px;
