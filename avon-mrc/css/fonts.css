@@ -15,3 +15,16 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
+@font-face {
+	font-family: 'hnm';
+	src: url('../fonts/hnm/HelveticaNeue-Medium.eot');
+	src: url('../fonts/hnm/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/hnm/HelveticaNeue-Medium.woff2') format('woff2'),
+		url('../fonts/hnm/HelveticaNeue-Medium.woff') format('woff'),
+		url('../fonts/hnm/HelveticaNeue-Medium.ttf') format('truetype'),
+		url('../fonts/hnm/HelveticaNeue-Medium.svg#HelveticaNeue-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}

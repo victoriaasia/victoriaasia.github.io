@@ -156,14 +156,13 @@ body {
       z-index: 999; }
     .av-block-one .av-desc-short .av-advise {
       color: #ffc709;
-      width: 265px;
+      width: 260px;
       position: absolute;
       right: 25px;
       font-size: 14px;
-      line-height: 34px;
-      font-family: "hna", sans-serif;
+      line-height: 30px;
+      font-family: "hnm", sans-serif;
       text-transform: uppercase;
-      font-weight: 600;
       bottom: 15px;
       padding: 0 10px;
       box-sizing: border-box; }
@@ -261,10 +260,9 @@ body {
     right: 100px;
     font-size: 14px;
     line-height: 30px;
-    font-family: "hna", sans-serif;
+    font-family: "hnm", sans-serif;
     text-transform: uppercase;
     color: #ffc709;
-    font-weight: 600;
     bottom: 20px;
     padding: 0 10px;
     box-sizing: border-box;
