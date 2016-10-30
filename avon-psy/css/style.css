@@ -334,7 +334,8 @@ body {
       width: 220px; }
   .av-block-five .av-item-column {
     padding-top: 40px;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .av-block-five .av-item-column .av-img {
       width: 470px;
       height: 655px;
