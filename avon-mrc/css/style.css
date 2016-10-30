@@ -325,7 +325,8 @@ body {
       width: 500px;
       padding: 15px 20px;
       box-sizing: border-box;
-      text-align: center; }
+      text-align: center;
+      white-space: nowrap; }
     .av-block-six .av-title div {
       position: absolute;
       width: 110px;
@@ -342,10 +343,10 @@ body {
     color: #000;
     line-height: 20px; }
   .av-block-six .av-product {
+    height: 535px;
     position: absolute;
     right: 155px;
-    bottom: -20px;
-    height: 535px; }
+    top: -5px; }
   .av-block-six .av-decor {
     position: absolute;
     right: 60px;
