@@ -157,35 +157,6 @@ body {
     padding: 0 0 0 730px;
     position: relative;
     z-index: 999; }
-.av-block-two .av-oil-footer div:first-child {
-  width: 130px;
-  height: 15px;
-  background-color: #000;
-  position: absolute;
-  bottom: 15px;
-  left: 43px;
-  z-index: 9999; }
-.av-block-two .av-oil-footer .av-content {
-  background-color: #ffc709;
-  width: 865px;
-  margin: 10px auto;
-  padding: 15px 55px;
-  box-sizing: border-box;
-  font-size: 22px;
-  font-family: "hna", serif;
-  color: #000;
-  text-transform: uppercase;
-  line-height: 28px;
-  font-weight: bold;
-  text-align: center;
-  font-style: normal;
-  position: relative;
-  z-index: 999; }
-.av-block-two .av-oil-footer .av-decor {
-  position: absolute;
-  left: 90px;
-  top: -125px;
-  width: 240px; }
 .av-block-two .av-oil-four .av-img {
   position: absolute;
   top: -413px;
@@ -210,9 +181,39 @@ body {
   left: 348px; }
 .av-block-two .av-oil-five .av-content {
   padding: 25px 90px 25px 500px; }
+.av-block-two .av-oil-footer {
+  padding-bottom: 40px; }
+  .av-block-two .av-oil-footer div:first-child {
+    width: 130px;
+    height: 15px;
+    background-color: #000;
+    position: absolute;
+    bottom: 55px;
+    left: 43px;
+    z-index: 9999; }
+  .av-block-two .av-oil-footer .av-content {
+    background-color: #ffc709;
+    width: 865px;
+    margin: 10px auto 0;
+    padding: 15px 55px;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-family: "hna", serif;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 28px;
+    font-weight: bold;
+    text-align: center;
+    font-style: normal;
+    position: relative;
+    z-index: 999; }
+  .av-block-two .av-oil-footer .av-decor {
+    position: absolute;
+    left: 90px;
+    top: -125px;
+    width: 240px; }
 
 .av-block-three {
-  margin-top: 40px;
   background: url(../img/back3.png);
   width: 100%;
   height: 900px;
@@ -238,3 +239,37 @@ body {
     .av-block-three .av-content .av-intro-text span:nth-child(2) {
       font-family: "Minion Pro";
       font-size: 28px; }
+  .av-block-three .av-content .av-text {
+    color: #fff;
+    width: 280px;
+    margin: 75px 0 0 70px;
+    font-size: 16px;
+    font-family: "Minion Pro";
+    line-height: 22px; }
+
+.av-block-four {
+  top: -130px;
+  padding: 0 47px; }
+  .av-block-four .av-img {
+    width: 350px;
+    height: 425px;
+    float: left; }
+  .av-block-four .av-content {
+    padding: 175px 0 0 390px;
+    font-size: 16px;
+    font-family: "Minion Pro";
+    color: #000;
+    font-style: italic;
+    line-height: 20px; }
+    .av-block-four .av-content p {
+      padding-bottom: 20px; }
+      .av-block-four .av-content p span {
+        font-style: normal; }
+  .av-block-four .av-extra-content {
+    font-size: 20px;
+    font-family: "hna", serif;
+    color: #000;
+    line-height: 22px;
+    padding: 30px 25px;
+    box-sizing: border-box;
+    width: 660px; }
