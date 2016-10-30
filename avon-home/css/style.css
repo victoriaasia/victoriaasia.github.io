@@ -9,6 +9,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
   background: #000; }
 
+.av-wrapper ::-moz-selection {
+  background: #ffc709;
+  color: #000; }
+
+.av-wrapper ::selection {
+  background: #ffc709;
+  color: #000; }
+
 .av-decor {
   position: absolute; }
 
