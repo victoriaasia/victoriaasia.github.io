@@ -34,6 +34,12 @@ body {
     position: relative;
     overflow: hidden; }
 
+.clearfix {
+  content: "";
+  position: absolute;
+  clear: both;
+  display: table; }
+
 .av-header {
   padding: 0 33px; }
   .av-header .av-special {
@@ -97,7 +103,8 @@ body {
       margin-bottom: -0.4em;
       margin-right: 0.09em;
       position: relative;
-      top: -28px; }
+      top: -28px;
+      font-family: "hna", sans-serif; }
     .av-block-one .av-content p {
       padding: 10px; }
 
@@ -249,7 +256,8 @@ body {
 
 .av-block-four {
   top: -130px;
-  padding: 0 47px; }
+  padding: 0 47px;
+  margin-bottom: -85px; }
   .av-block-four .av-img {
     width: 350px;
     height: 425px;
@@ -273,3 +281,135 @@ body {
     padding: 30px 25px;
     box-sizing: border-box;
     width: 660px; }
+
+.av-block-five {
+  color: #000; }
+  .av-block-five .av-title {
+    font-size: 32px;
+    font-family: "ddt", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 35px;
+    text-align: center; }
+  .av-block-five > .av-content {
+    padding: 60px 45px; }
+    .av-block-five > .av-content > p {
+      font-size: 16px;
+      font-family: "Minion Pro";
+      line-height: 21px; }
+  .av-block-five .av-left {
+    width: 585px; }
+    .av-block-five .av-left .av-dropcaps {
+      font-size: 65px;
+      float: left;
+      font-weight: 400;
+      line-height: 1em;
+      margin-bottom: 0.3em;
+      margin-right: 0.1em;
+      position: relative;
+      top: -6px;
+      font-family: "hna", sans-serif; }
+    .av-block-five .av-left .av-reason-title {
+      font-size: 26px;
+      font-family: "hna", sans-serif;
+      text-transform: uppercase;
+      line-height: 30px;
+      padding-bottom: 25px; }
+    .av-block-five .av-left .av-item {
+      padding-bottom: 25px;
+      overflow: hidden;
+      font-size: 16px;
+      font-family: "Minion Pro";
+      line-height: 20px; }
+    .av-block-five .av-left .av-img-product {
+      position: absolute;
+      top: 110px;
+      right: 90px;
+      width: 195px;
+      z-index: 999; }
+    .av-block-five .av-left .av-decor {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      width: 220px; }
+  .av-block-five .av-item-column {
+    padding-top: 40px;
+    position: relative; }
+    .av-block-five .av-item-column .av-img {
+      width: 470px;
+      height: 655px;
+      float: left; }
+    .av-block-five .av-item-column .av-content {
+      width: 365px;
+      float: left;
+      padding: 35px 0 0 50px; }
+    .av-block-five .av-item-column .av-dropcaps {
+      font-size: 65px;
+      float: left;
+      font-weight: 400;
+      line-height: 1em;
+      margin-bottom: 1.3em;
+      margin-right: 0.1em;
+      position: relative;
+      top: -6px;
+      font-family: "hna", sans-serif; }
+    .av-block-five .av-item-column .av-reason-title {
+      font-size: 26px;
+      font-family: "hna", sans-serif;
+      text-transform: uppercase;
+      line-height: 30px;
+      padding-bottom: 25px; }
+    .av-block-five .av-item-column .av-poster {
+      background-color: #ffc709;
+      position: absolute;
+      bottom: 35px;
+      left: 335px;
+      width: 540px;
+      height: 218px;
+      padding: 25px;
+      box-sizing: border-box;
+      color: #000; }
+      .av-block-five .av-item-column .av-poster .av-poster-q {
+        width: 65px;
+        height: 165px;
+        float: left; }
+        .av-block-five .av-item-column .av-poster .av-poster-q img {
+          padding-top: 10px; }
+      .av-block-five .av-item-column .av-poster .av-poster-content {
+        font-size: 20px;
+        font-family: "hn", sans-serif;
+        line-height: 23px;
+        padding: 5px 0 0 85px; }
+      .av-block-five .av-item-column .av-poster .av-poster-name {
+        font-size: 25px;
+        font-family: "hnm", sans-serif;
+        font-weight: bold;
+        padding-top: 20px; }
+        .av-block-five .av-item-column .av-poster .av-poster-name span {
+          text-transform: uppercase; }
+  .av-block-five .av-item-final {
+    color: #000;
+    padding: 45px 60px;
+    width: 750px;
+    box-sizing: border-box; }
+    .av-block-five .av-item-final .av-dropcaps {
+      font-size: 90px;
+      float: left;
+      line-height: 1em;
+      margin-bottom: -0.4em;
+      margin-right: 0.1em;
+      position: relative;
+      top: -15px;
+      font-family: "hna", sans-serif;
+      font-weight: bold; }
+    .av-block-five .av-item-final .av-reason-title {
+      font-size: 35px;
+      font-family: "hnm", sans-serif;
+      text-transform: uppercase;
+      line-height: 35px;
+      padding-bottom: 25px;
+      width: 555px; }
+    .av-block-five .av-item-final .av-content {
+      font-size: 16px;
+      font-family: "Minion Pro";
+      line-height: 22px; }
