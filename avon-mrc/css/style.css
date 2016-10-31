@@ -342,8 +342,10 @@ body {
     font-family: "Minion Pro";
     color: #000;
     line-height: 20px; }
+    .av-block-six .av-content p {
+      padding-bottom: 20px; }
   .av-block-six .av-product {
-    height: 535px;
+    height: 545px;
     position: absolute;
     right: 155px;
     top: 0px; }
