@@ -1,0 +1,55 @@
+@font-face {
+	font-family: 'avenir';
+	src: url('../fonts/avenir/Avenir.eot');
+	src: url('../fonts/avenir/Avenir.woff') format('woff'), url('../fonts/avenir/Avenir.ttf') format('truetype'), url('../fonts/avenir/Avenir.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'dd-black';
+	src: url('../fonts/dd-black/DomaineDisplayCyr-Black.eot');
+	src: url('../fonts/dd-black/DomaineDisplayCyr-Black.woff') format('woff'), url('../fonts/dd-black/DomaineDisplayCyr-Black.ttf') format('truetype'), url('../fonts/dd-black/DomaineDisplayCyr-Black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'bn-thin';
+	src: url('../fonts/bn-thin/BebasNeue Thin.eot');
+	src: url('../fonts/bn-thin/BebasNeue Thin.woff') format('woff'), url('../fonts/bn-thin/BebasNeue Thin.ttf') format('truetype'), url('../fonts/bn-thin/BebasNeue Thin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'bn-reg';
+	src: url('../fonts/bn-reg/BebasNeue Regular.eot');
+	src: url('../fonts/bn-reg/BebasNeue Regular.woff') format('woff'), url('../fonts/bn-reg/BebasNeue Regular.ttf') format('truetype'), url('../fonts/bn-reg/BebasNeue Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'bn-light';
+	src: url('../fonts/bn-light/BebasNeue Light.eot');
+	src: url('../fonts/bn-light/BebasNeue Light.woff') format('woff'), url('../fonts/bn-light/BebasNeue Light.ttf') format('truetype'), url('../fonts/bn-light/BebasNeue Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'bn-book';
+	src: url('../fonts/bn-book/BebasNeue Book.eot');
+	src: url('../fonts/bn-book/BebasNeue Book.woff') format('woff'), url('../fonts/bn-book/BebasNeue Book.ttf') format('truetype'), url('../fonts/bn-book/BebasNeue Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'bn-bold';
+	src: url('../fonts/bn-bold/BebasNeue Bold.eot');
+	src: url('../fonts/bn-bold/BebasNeue Bold.woff') format('woff'), url('../fonts/bn-bold/BebasNeue Bold.ttf') format('truetype'), url('../fonts/bn-bold/BebasNeue Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
