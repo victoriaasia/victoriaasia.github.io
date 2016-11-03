@@ -18,7 +18,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   position: relative;
   min-height: 100%;
   min-width: 1180px; }
-  .main__header {
+  .main .m__header {
     padding: 0 15px 0 35px;
     height: 80px;
     background: #a02b07;
@@ -28,7 +28,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     position: relative;
     top: 0;
     z-index: 999; }
-    .main__header .logo-product {
+    .main .m__header .logo-product {
       width: 520px;
       padding: 10px 0;
       display: -webkit-box;
@@ -44,30 +44,30 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
           -ms-flex-align: center;
               align-items: center;
       float: left; }
-      .main__header .logo-product .logo-product1 {
+      .main .m__header .logo-product .logo-product1 {
         width: 208px; }
-      .main__header .logo-product .logo-product2 {
+      .main .m__header .logo-product .logo-product2 {
         width: 235px; }
-      .main__header .logo-product .slash {
+      .main .m__header .logo-product .slash {
         height: 40px; }
-    .main__header .logo-woman {
+    .main .m__header .logo-woman {
       float: right;
       padding: 20px 0; }
-      .main__header .logo-woman__img {
+      .main .m__header .logo-woman__img {
         width: 150px; }
-  .main__footer {
+  .main .m__footer {
     background-color: #f1ddda;
     text-align: center;
     padding: 10px 10px 0 10px; }
-    .main__footer .footer-text {
+    .main .m__footer .footer-text {
       max-width: 100%; }
-  .main__left-menu {
+  .main .m__left-menu {
     position: absolute;
     z-index: 1;
     left: 0px;
     top: -55px;
     width: 490px; }
-  .main__content {
+  .main .m__content {
     background: url(../img/back.png) no-repeat 0px -5px;
     box-sizing: border-box;
     padding-left: 0px;
@@ -76,7 +76,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     min-width: 1180px;
     position: relative;
     overflow: hidden; }
-    .main__content .social-content {
+    .main .m__content .social-content {
       position: absolute;
       bottom: 50px;
       left: 540px;
@@ -84,7 +84,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
-      .main__content .social-content .icons {
+      .main .m__content .social-content .icons {
         width: 120px;
         display: -webkit-box;
         display: -webkit-flex;
@@ -94,14 +94,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         -webkit-justify-content: space-between;
             -ms-flex-pack: justify;
                 justify-content: space-between; }
-      .main__content .social-content .icon {
+      .main .m__content .social-content .icon {
         width: 35px; }
-      .main__content .social-content .slash {
+      .main .m__content .social-content .slash {
         height: 40px;
         position: relative;
         top: -2px;
         padding: 0 7px; }
-      .main__content .social-content .auth .link {
+      .main .m__content .social-content .auth .link {
         font-size: 36px;
         font-family: "bn-book";
         color: #e33535;
