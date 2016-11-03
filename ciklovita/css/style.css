@@ -146,26 +146,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       top: 30px;
       right: 110px;
       background: url(../img/decor-yellow.png) no-repeat left bottom; }
-      .main__articles .articles__quote:hover ~ .articles__img {
-        background: url(../img/photo1.jpg);
-        background-size: cover;
-        background-repeat: no-repeat; }
+      .main__articles .articles__quote:hover ~ .articles__img .image-quote {
+        display: block; }
     .main__articles .articles__competition {
       top: 160px;
       right: 260px;
       background: url(../img/decor-green.png) no-repeat left bottom; }
-      .main__articles .articles__competition:hover ~ .articles__img {
-        background: url(../img/photo3.jpg);
-        background-size: cover;
-        background-repeat: no-repeat; }
+      .main__articles .articles__competition:hover ~ .articles__img .image-competition {
+        display: block; }
     .main__articles .articles__trand {
       top: 345px;
       right: 410px;
       background: url(../img/decor-yellow.png) no-repeat left bottom; }
-      .main__articles .articles__trand:hover ~ .articles__img {
-        background: url(../img/photo2.jpg);
-        background-size: cover;
-        background-repeat: no-repeat; }
+      .main__articles .articles__trand:hover ~ .articles__img .image-trand {
+        display: block; }
     .main__articles .articles__img {
       position: absolute;
       bottom: -85px;
@@ -176,4 +170,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       width: 365px;
       background: url(../img/photo.png);
       background-size: cover;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      overflow: hidden; }
+      .main__articles .articles__img .image__wrapper {
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+        height: 365px;
+        width: 365px; }
+      .main__articles .articles__img .image-item {
+        display: none;
+        position: absolute;
+        left: -50%;
+        right: -50%;
+        top: 0;
+        margin: auto;
+        height: 100%;
+        width: auto; }
