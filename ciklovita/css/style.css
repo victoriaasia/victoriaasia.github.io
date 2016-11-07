@@ -58,9 +58,25 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   .main .m__footer {
     background-color: #f1ddda;
     text-align: center;
-    padding: 10px 10px 0 10px; }
+    padding: 15px 10px 0 10px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1000;
+    min-width: 100%;
+    min-height: 80px;
+    left: 0;
+    bottom: 0; }
     .main .m__footer .footer-text {
-      max-width: 100%; }
+      max-width: 95%; }
+    .main .m__footer .btn-close {
+      background: url(../img/close.png);
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 15px;
+      height: 15px;
+      background-size: cover;
+      cursor: pointer; }
   .main .m__left-menu {
     position: absolute;
     z-index: 1;
@@ -71,6 +87,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background: url(../img/back.png) no-repeat 0px -5px;
     box-sizing: border-box;
     padding-left: 0px;
+    padding-bottom: 80px;
     min-height: 100%;
     width: 100%;
     min-width: 1180px;
@@ -78,7 +95,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     overflow: hidden; }
     .main .m__content .social-content {
       position: absolute;
-      bottom: 50px;
+      top: 560px;
       left: 540px;
       display: -webkit-box;
       display: -webkit-flex;
@@ -107,7 +124,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         color: #e33535;
         text-decoration: none; }
   .main__intro-text {
-    padding: 40px 0 20px 45px; }
+    padding: 30px 0 20px 45px; }
     .main__intro-text .title {
       font-size: 30px;
       font-family: "dd-black";
@@ -162,7 +179,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         display: block; }
     .main__articles .articles__img {
       position: absolute;
-      bottom: -85px;
+      bottom: -78px;
       right: -45px;
       border: 20px solid #c52c43;
       border-radius: 50%;
