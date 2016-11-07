@@ -16,7 +16,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .main {
   position: relative;
-  min-height: 100%;
+  height: 100vh;
   min-width: 1180px; }
   .main .m__header {
     padding: 0 15px 0 35px;
@@ -81,13 +81,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     position: absolute;
     z-index: 1;
     left: 0px;
-    top: -55px;
+    top: -60px;
     width: 490px; }
   .main .m__content {
     background: url(../img/back.png) no-repeat 0px -5px;
     box-sizing: border-box;
     padding-left: 0px;
-    padding-bottom: 80px;
+    padding-bottom: 10px;
     min-height: 100%;
     width: 100%;
     min-width: 1180px;
@@ -95,7 +95,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     overflow: hidden; }
     .main .m__content .social-content {
       position: absolute;
-      top: 560px;
+      top: 490px;
       left: 540px;
       display: -webkit-box;
       display: -webkit-flex;
@@ -124,13 +124,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         color: #e33535;
         text-decoration: none; }
   .main__intro-text {
-    padding: 30px 0 20px 45px; }
+    padding: 0 0 20px 45px;
+    margin-top: -20px; }
     .main__intro-text .title {
       font-size: 30px;
       font-family: "dd-black";
       color: #e33535;
       line-height: 30px;
-      padding-bottom: 20px; }
+      padding-bottom: 10px; }
     .main__intro-text .text {
       font-size: 20px;
       font-family: "avenir";
@@ -139,7 +140,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   .main__articles {
     position: relative;
     padding-left: 550px;
-    min-height: 660px;
+    min-height: 585px;
     height: 100vh; }
     .main__articles .articles__item {
       position: absolute;
@@ -167,21 +168,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       .main__articles .articles__quote:hover ~ .articles__img .image-quote {
         display: block; }
     .main__articles .articles__competition {
-      top: 160px;
-      right: 260px;
+      top: 130px;
+      right: 290px;
       background: url(../img/decor-green.png) no-repeat left bottom; }
       .main__articles .articles__competition:hover ~ .articles__img .image-competition {
         display: block; }
     .main__articles .articles__trand {
-      top: 345px;
-      right: 410px;
+      top: 300px;
+      right: 415px;
       background: url(../img/decor-yellow.png) no-repeat left bottom; }
       .main__articles .articles__trand:hover ~ .articles__img .image-trand {
         display: block; }
     .main__articles .articles__img {
       position: absolute;
-      bottom: -78px;
-      right: -45px;
+      bottom: -10px;
+      right: -50px;
       border: 20px solid #c52c43;
       border-radius: 50%;
       height: 365px;
