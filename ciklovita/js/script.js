@@ -27,4 +27,5 @@ if ($.cookie('bud-closed') != 1) {
     $(this).parent().hide();
     $('.m__content').css('padding-bottom', '0');
     $('.m__articles').css('overflow', 'hidden');
+    $('.main').css('overflow', 'hidden');
   });
