@@ -139,7 +139,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   .main__articles {
     position: relative;
     padding-left: 550px;
-    min-height: 660px; }
+    min-height: 660px;
+    height: 100vh; }
     .main__articles .articles__item {
       position: absolute;
       width: 255px;
