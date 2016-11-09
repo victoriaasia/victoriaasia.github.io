@@ -1,0 +1,109 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+.nob-wrapper {
+  width: 1045px;
+  height: 587px;
+  background-color: #990066;
+  margin: 0 auto; }
+
+img {
+  max-width: 100%; }
+
+.clearfix {
+  clear: both;
+  display: table;
+  position: absolute; }
+
+.nob-mark {
+  background: #e90049;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 92px;
+  font-family: "rob-light";
+  text-transform: uppercase; }
+
+.nob-container {
+  width: 754px;
+  height: 200px;
+  background-color: #fff; }
+  .nob-container .nob-intro {
+    background: url(../img/img1.png);
+    width: 100%;
+    height: 587px;
+    position: relative; }
+    .nob-container .nob-intro__content > div {
+      position: absolute; }
+    .nob-container .nob-intro-item:first-child {
+      -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+      color: #fff;
+      font-size: 64px;
+      font-family: "rob-reg";
+      text-transform: uppercase;
+      bottom: 126px;
+      left: 80px; }
+    .nob-container .nob-intro-item:nth-child(2) {
+      bottom: 100px;
+      right: 0; }
+    .nob-container .nob-intro-item:last-child {
+      bottom: 0;
+      right: -195px;
+      line-height: 90px;
+      padding: 10px 30px; }
+  .nob-container .nob-block-one {
+    padding: 30px;
+    padding-right: 0px;
+    padding-bottom: 55px; }
+    .nob-container .nob-block-one__content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+    .nob-container .nob-block-one .nob-text {
+      width: 190px;
+      min-height: 100%;
+      position: relative; }
+      .nob-container .nob-block-one .nob-text > div {
+        position: absolute;
+        color: #000;
+        font-size: 21px; }
+      .nob-container .nob-block-one .nob-text div:nth-child(2) {
+        font-family: "rob-bold";
+        text-transform: uppercase;
+        bottom: 75px; }
+      .nob-container .nob-block-one .nob-text div:last-child {
+        font-family: "rob-light";
+        bottom: -2px;
+        right: 10px;
+        text-align: right; }
+    .nob-container .nob-block-one .nob-title {
+      font-size: 57px;
+      font-family: "rob-bold";
+      color: #000;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 999;
+      top: 55px; }
+      .nob-container .nob-block-one .nob-title::before, .nob-container .nob-block-one .nob-title::after {
+        content: "";
+        position: absolute;
+        border-bottom: 1px solid #000;
+        width: 100%; }
+      .nob-container .nob-block-one .nob-title::before {
+        top: -10px; }
+      .nob-container .nob-block-one .nob-title::after {
+        bottom: -9px; }
+      .nob-container .nob-block-one .nob-title span {
+        font-size: 89px;
+        font-family: "rob-light";
+        color: #990066;
+        background-color: #fff;
+        padding-right: 12px;
+        line-height: 90px; }
