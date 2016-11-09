@@ -7,7 +7,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  max-height: 100%; }
 
 a {
   display: block;
@@ -26,7 +27,8 @@ a {
   color: #fff;
   font-size: 92px;
   font-family: "rob-light";
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  white-space: nowrap; }
 
 .nob-title-violet {
   font-size: 89px;
@@ -54,14 +56,15 @@ a {
     .nob-block-violet .nob-title:first-child::before {
       content: "";
       position: absolute;
-      width: 88%;
+      width: 89%;
       border-top: 1px solid #fff;
       top: 35px;
       left: 5%; }
   .nob-block-violet .nob-title:nth-child(2) {
     font-family: "rob-light";
-    font-size: 90px;
-    line-height: 90px; }
+    font-size: 92px;
+    line-height: 90px;
+    position: relative; }
     .nob-block-violet .nob-title:nth-child(2)::after {
       content: "";
       position: absolute;
@@ -233,3 +236,41 @@ a {
     color: #000;
     text-transform: uppercase;
     padding: 30px; }
+.nob-block-five__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 630px;
+  padding: 60px 0;
+  box-sizing: border-box; }
+.nob-block-five .nob-text {
+  width: 50%;
+  position: relative; }
+  .nob-block-five .nob-text > div {
+    position: absolute; }
+.nob-block-five .nob-title {
+  font-size: 57px;
+  font-family: "rob-bold";
+  color: #000;
+  text-transform: uppercase;
+  top: 150px;
+  left: 50px; }
+.nob-block-five .nob-sub-title {
+  font-size: 21px;
+  font-family: "rob-bold";
+  color: #000;
+  text-transform: uppercase;
+  bottom: 0;
+  left: 35px; }
+.nob-block-five .nob-title-pink:nth-child(2) {
+  bottom: 165px;
+  left: 45px;
+  padding: 5px 35px; }
+.nob-block-five .nob-title-pink:nth-child(3) {
+  bottom: 50px;
+  padding: 5px 40px; }
+.nob-block-five .nob-img img {
+  height: 100%; }
+.nob-block-six .nob-title:first-child span {
+  padding: 0 50px; }
