@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NOBEL</title>
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,26 +14,60 @@
     <div class="nob-container">
       <div class="nob-intro">
         <div class="nob-intro__content">
-          <div class="nob-intro-item">моя</div>
-          <div class="nob-mark nob-intro-item">идеальная</div>
-          <div class="nob-mark nob-intro-item">улыбка</div>
+          <div class="nob-intro-item"><span>моя</span></div>
+          <div class="nob-title-pink nob-intro-item wow slideInRight" data-wow-duration="1.5s"><span>идеальная</span></div>
+          <div class="nob-title-pink nob-intro-item wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s"><span>улыбка</span></div>
         </div>
       </div>
 
-      <div class="nob-block nob-block-one">
+      <a href="#" class="nob-block nob-block-one">
         <div class="nob-block-one__content">
           <div class="nob-text">
-            <h3 class="nob-title">карта<br/><span>улыбок</span></h3>
-            <div>Как улыбаются в мире?</div>
-            <div>10 фактов, которые заставят вас улыбнуться</div>
+            <div class="nob-title"><span>карта</span></div>
+            <div class="nob-title-violet wow slideInRight" data-wow-duration="1s" data-wow-delay="0.5s"><span>улыбок</span></div>
+            <div class="nob-sub-title"><span>Как улыбаются в мире?</span></div>
+            <div class="nob-sub-title"><span>10 фактов, которые заставят вас улыбнуться</span></div>
           </div>
           <div class="nob-img"><img src="img/img2.png" alt=""></div>
-        </div>
+        </div></a>
 
-      </div>
+      <a href="#" class="nob-block-violet nob-block-two">
+        <div class="nob-block-violet__content">
+          <div class="nob-title"><span>32 повода</span></div>
+          <div class="nob-title"><span>улыбнуться</span></div>
+          <div class="nob-text wow slideInUp" data-wow-duration="1s" data-wow-delay="0.5s"><span>Что заставит вас улыбаться сегодня, завтра и всегда</span></div>
+          <div class="nob-img"><img src="img/img3.png" alt=""></div>
+        </div></a>
+
+      <a href="#" class="nob-block nob-block-three">
+        <div class="nob-block-three__content">
+          <div class="nob-img"><img src="img/img4.png" alt=""></div>
+          <div class="nob-text">
+            <div class="nob-title"><span>идеальная</span></div>
+            <div class="nob-title-pink wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"><span>улыбка</span></div>
+            <div class="nob-sub-title wow slideInUp" data-wow-duration="1s" data-wow-delay="1s"><span>Почему никогда не поздно заняться своей улыбкой</span></div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="nob-block nob-block-four">
+        <div class="nob-block-four__content">
+          <div class="nob-title"><span>Голливудские</span></div>
+          <div class="nob-title-violet"><span>истории</span></div>
+          <div class="nob-img"><img src="img/img5.png" alt=""></div>
+          <div class="nob-sub-title wow slideInDown" data-wow-duration="1s" data-wow-delay="0.5s"><span>С чего начинались истории успеха самых ярких актеров и исполнителей</span></div>
+        </div>
+      </a>
 
     </div>
   </div>
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
 
 </body>
 </html>
