@@ -67,7 +67,7 @@ body {
     width: 862px; }
   .av-header .av-sub-title {
     background: #ffc709;
-    padding: 10px 15px;
+    padding: 15px 20px;
     font-family: "hna", sans-serif;
     font-weight: 300;
     font-size: 35px;
@@ -85,7 +85,7 @@ body {
   background-image: url(../img/back1.png);
   width: 945px;
   height: 690px;
-  top: -113px;
+  top: -120px;
   background-size: cover;
   margin-bottom: -110px; }
   .av-block-one .av-content {
@@ -103,10 +103,9 @@ body {
       margin-bottom: -0.4em;
       margin-right: 0.09em;
       position: relative;
-      top: -28px;
-      font-family: "hna", sans-serif; }
+      top: -28px; }
     .av-block-one .av-content p {
-      padding: 10px; }
+      padding: 15px; }
 
 .av-block-two > div {
   position: relative; }
@@ -120,27 +119,29 @@ body {
   background-image: url(../img/oil1.png);
   width: 980px;
   height: 415px;
-  background-size: cover; }
+  background-size: 665px;
+  background-position: right;
+  background-repeat: no-repeat; }
   .av-block-two .av-oil-one .av-content {
-    width: 400px;
+    width: 190px;
     position: absolute;
-    bottom: 65px;
-    left: 155px; }
+    bottom: 95px;
+    left: 210px; }
   .av-block-two .av-oil-one .av-number {
     position: absolute;
-    bottom: 40px;
-    left: 40px;
+    bottom: 125px;
+    left: 90px;
     height: 160px; }
 .av-block-two .av-oil-two .av-img {
-  width: 495px;
+  width: 370px;
   position: relative;
-  left: 15px;
-  top: 32px; }
+  left: 35px;
+  top: -35px; }
 .av-block-two .av-oil-two .av-number {
   height: 160px;
   position: absolute;
   top: 50px;
-  left: 410px; }
+  left: 395px; }
 .av-block-two .av-oil-two .av-content {
   position: absolute;
   width: 315px;
@@ -150,44 +151,48 @@ body {
   padding-top: 300px; }
   .av-block-two .av-oil-three .av-img {
     position: absolute;
-    top: -180px;
+    top: -265px;
     right: 60px;
     width: 345px; }
   .av-block-two .av-oil-three .av-number {
     height: 160px;
     position: absolute;
-    bottom: 90px;
+    bottom: 185px;
     right: 290px;
     z-index: 999; }
   .av-block-two .av-oil-three .av-content {
     width: 205px;
     padding: 0 0 0 730px;
     position: relative;
+    top: -105px;
     z-index: 999; }
 .av-block-two .av-oil-four .av-img {
   position: absolute;
-  top: -413px;
+  top: -455px;
   left: 88px;
-  width: 360px; }
+  width: 360px;
+  height: 470px;
+  z-index: 99; }
 .av-block-two .av-oil-four .av-number {
   height: 160px;
   position: absolute;
-  bottom: 211px;
-  left: 52px; }
+  bottom: 219px;
+  left: 52px;
+  z-index: 999; }
 .av-block-two .av-oil-four .av-content {
   width: 235px;
-  padding: 35px 90px; }
+  padding: 40px 90px; }
 .av-block-two .av-oil-five .av-img {
   position: absolute;
-  top: -335px;
-  right: 45px; }
+  top: -355px;
+  right: -20px; }
 .av-block-two .av-oil-five .av-number {
   height: 160px;
   position: absolute;
   bottom: 25px;
   left: 348px; }
 .av-block-two .av-oil-five .av-content {
-  padding: 25px 90px 25px 500px; }
+  padding: 115px 90px 25px 500px; }
 .av-block-two .av-oil-footer {
   padding-bottom: 40px; }
   .av-block-two .av-oil-footer div:first-child {
