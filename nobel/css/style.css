@@ -190,10 +190,11 @@ a {
         bottom: -102px; }
     .nob-block-one .nob-title-violet {
       background-color: #fff;
-      padding-right: 187px;
+      padding-right: 190px;
       width: 100%;
       position: relative;
-      top: 55px; }
+      top: 55px;
+      z-index: 999; }
   .nob-block-three {
     height: 520px;
     padding: 80px 0; }
