@@ -99,6 +99,47 @@ img {
   .nob-stars-btn:checked + label:after {
     opacity: 1; }
 
+.nob-stars-container {
+  width: 754px;
+  height: 100%;
+  padding-bottom: 60px;
+  background-color: #fff; }
+
+.nob-stars-intro {
+  width: 100%;
+  height: 465px;
+  position: relative;
+  overflow: hidden; }
+  .nob-stars-intro .nob-stars-title-pink:first-child {
+    top: 30px;
+    right: 95px;
+    padding: 7px 25px; }
+  .nob-stars-intro .nob-stars-title-pink:nth-child(2) {
+    top: 100px;
+    right: 185px;
+    padding: 3px 25px; }
+  .nob-stars-intro .nob-stars-title-pink:nth-child(3) {
+    top: 165px;
+    right: 67px; }
+  .nob-stars-intro__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 40px; }
+  .nob-stars-intro-img {
+    max-width: 50%;
+    height: 410px; }
+  .nob-stars-intro-text {
+    max-width: 40%;
+    font-size: 22px;
+    font-family: "rob-bold";
+    color: #000;
+    text-transform: uppercase;
+    padding-top: 265px;
+    padding-left: 30px;
+    line-height: 30px; }
+
 .nob-stars-violet {
   background: #990066;
   color: #fff; }
@@ -228,43 +269,3 @@ img {
     .nob-stars-pink .nob-stars-block__content .nob-stars-btn:not(checked) + label:after {
       background: #fff;
       left: 3px; }
-
-.nob-stars-container {
-  width: 754px;
-  height: 100%;
-  padding-bottom: 60px;
-  background-color: #fff; }
-
-.nob-stars-intro {
-  width: 100%;
-  height: 465px;
-  position: relative;
-  overflow: hidden; }
-  .nob-stars-intro .nob-stars-title-pink:first-child {
-    top: 30px;
-    right: 95px;
-    padding: 7px 25px; }
-  .nob-stars-intro .nob-stars-title-pink:nth-child(2) {
-    top: 100px;
-    right: 185px;
-    padding: 3px 25px; }
-  .nob-stars-intro .nob-stars-title-pink:nth-child(3) {
-    top: 165px;
-    right: 67px; }
-  .nob-stars-intro__content {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 10px 40px; }
-  .nob-stars-intro-img {
-    max-width: 50%; }
-  .nob-stars-intro-text {
-    max-width: 40%;
-    font-size: 22px;
-    font-family: "rob-bold";
-    color: #000;
-    text-transform: uppercase;
-    padding-top: 265px;
-    padding-left: 30px;
-    line-height: 30px; }
