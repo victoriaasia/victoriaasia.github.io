@@ -64,3 +64,8 @@ $('.nob-stars-block6 .js-button').click(function() { setTimeout(function() {
   $('.nob-stars-block6').hide();
   $('.nob-stars-block7').css('display', 'block');
 }, 2000); });
+
+$('.nob-stars-block7 .js-button').click(function() { setTimeout(function() {
+  $('.nob-stars-block7').hide();
+  var msg = $('#nob-stars-form').submit();
+}, 2000); });
