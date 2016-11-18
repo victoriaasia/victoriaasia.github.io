@@ -1,0 +1,214 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.nob-facts-container ::-moz-selection {
+  background: #990066;
+  color: #fff; }
+
+.nob-facts-container ::selection {
+  background: #990066;
+  color: #fff; }
+
+.nob-facts-container {
+  position: relative; }
+
+#nob-facts-slider {
+  position: relative;
+  overflow: hidden;
+  width: 754px;
+  height: 545px; }
+
+#nob-facts-slider .nob-facts-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  #nob-facts-slider .nob-facts-list__item {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 754px;
+    height: 545px; }
+
+.nob-facts-control {
+  position: absolute;
+  top: 45%;
+  z-index: 999;
+  display: block;
+  width: 20px;
+  height: 65px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer; }
+
+.next {
+  right: 40px;
+  background: url(../img/next.png) no-repeat;
+  background-size: contain; }
+
+.prev {
+  left: 40px;
+  background: url(../img/back.png) no-repeat;
+  background-size: contain; }
+
+.nob-facts-intro {
+  background: #990066;
+  box-sizing: border-box; }
+  .nob-facts-intro__content {
+    color: #fff;
+    font-family: "rob-bold";
+    text-transform: uppercase;
+    text-align: center;
+    padding: 35px 80px; }
+  .nob-facts-intro .nob-title:first-child {
+    font-size: 37px;
+    position: relative; }
+    .nob-facts-intro .nob-title:first-child span {
+      background: #990066;
+      padding: 0 10px;
+      position: relative; }
+    .nob-facts-intro .nob-title:first-child::before {
+      content: "";
+      position: absolute;
+      width: 68%;
+      border-top: 1px solid #fff;
+      top: 24px;
+      left: 16%; }
+  .nob-facts-intro .nob-title:nth-child(2) {
+    font-family: "rob-light";
+    font-size: 60px;
+    line-height: 70px;
+    position: relative; }
+    .nob-facts-intro .nob-title:nth-child(2)::after {
+      content: "";
+      position: absolute;
+      width: 90px;
+      border-top: 1px solid #fff;
+      bottom: -2px;
+      left: 43%; }
+  .nob-facts-intro .nob-text {
+    padding: 14px 0;
+    font-size: 15px; }
+  .nob-facts-intro .nob-img {
+    width: 410px;
+    margin: 20px auto; }
+
+.nob-facts-item__content {
+  padding: 70px 115px;
+  height: 545px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .nob-facts-item__content > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+.nob-facts-item-odd {
+  background-color: #e90049; }
+.nob-facts-item-even {
+  background-color: #990066; }
+
+.nob-facts-item__card {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  width: 245px;
+  height: 190px;
+  position: relative; }
+  .nob-facts-item__card:hover .card-flipper, .nob-facts-item__card.hover .card-flipper {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+  .nob-facts-item__card .card-flipper {
+    -webkit-transition: 0.6s;
+            transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    position: relative;
+    z-index: -1;
+    cursor: pointer; }
+  .nob-facts-item__card .card-front, .nob-facts-item__card .card-back {
+    width: 245px;
+    height: 190px;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .nob-facts-item__card .card-front {
+    z-index: 2;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); }
+  .nob-facts-item__card .card-back {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    background: #fff; }
+    .nob-facts-item__card .card-back__content {
+      padding: 35px 18px;
+      text-align: center;
+      position: relative;
+      font-size: 11px;
+      font-family: "rob-reg";
+      line-height: 11px;
+      height: 190px;
+      overflow: hidden;
+      box-sizing: border-box; }
+      .nob-facts-item__card .card-back__content::before, .nob-facts-item__card .card-back__content::after {
+        position: absolute;
+        content: "";
+        border-top: 1px solid #000;
+        width: 60px; }
+      .nob-facts-item__card .card-back__content::before {
+        top: 20px;
+        left: 92px; }
+      .nob-facts-item__card .card-back__content::after {
+        bottom: 20px;
+        left: 92px; }
+  .nob-facts-item__card .card-number {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "rob-bold";
+    background: url(../img/number.png) no-repeat;
+    background-size: contain;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: -10px;
+    left: -10px; }
