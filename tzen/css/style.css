@@ -12,7 +12,8 @@ body {
 
 img {
   max-width: 100%;
-  max-height: 100%; }
+  height: auto;
+  vertical-align: middle; }
 
 a {
   text-decoration: none;
@@ -309,6 +310,69 @@ a {
 
 #section-7 {
   min-height: 600px; }
+
+#section-2 .about {
+  padding: 0 60px; }
+  #section-2 .about > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  #section-2 .about__item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0 70px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    #section-2 .about__item .content {
+      color: #75174D;
+      font-family: "u-light";
+      font-size: 18px;
+      padding: 0 30px;
+      max-width: 425px; }
+    #section-2 .about__item .img {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      overflow: hidden; }
+    #section-2 .about__item .img-market {
+      background: url("../img/supermaket.png") no-repeat;
+      background-size: contain; }
+    #section-2 .about__item .img-clock {
+      background: url("../img/round-wall-clock.png") no-repeat;
+      background-size: contain; }
+    #section-2 .about__item .img-total {
+      background: url("../img/location-2.png") no-repeat;
+      background-size: contain; }
+    #section-2 .about__item .img-extra {
+      background: url("../img/commerce.png") no-repeat;
+      background-size: contain; }
+  #section-2 .about__item:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
 
 .contacts-decor {
   background: #ece7e1;

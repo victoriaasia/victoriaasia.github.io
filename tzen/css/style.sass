@@ -20,7 +20,8 @@ body
 
 img
   max-width: 100%
-  max-height: 100%
+  height: auto
+  vertical-align: middle
 a
   text-decoration: none
   color: $violet
@@ -288,6 +289,47 @@ a
   padding-bottom: 25px
 #section-7
   min-height: 600px
+
+#section-2
+  .about
+    padding: 0 60px
+    > div
+      display: flex
+      align-items: center
+      justify-content: center
+    &__item
+      flex: 1
+      padding: 0 70px
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      .content
+        color: $violet
+        font-family: 'u-light'
+        font-size: 18px
+        padding: 0 30px
+        max-width: 425px
+      .img
+        height: 60px
+        width: 60px
+        border-radius: 50%
+        overflow: hidden
+      .img-market
+        background: url('../img/supermaket.png') no-repeat
+        background-size: contain
+      .img-clock
+        background: url('../img/round-wall-clock.png') no-repeat
+        background-size: contain
+      .img-total
+        background: url('../img/location-2.png') no-repeat
+        background-size: contain
+      .img-extra
+        background: url('../img/commerce.png') no-repeat
+        background-size: contain
+
+    &__item:nth-child(even)
+      flex-direction: row-reverse
+
 
 
 .contacts-decor
