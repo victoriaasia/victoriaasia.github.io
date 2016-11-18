@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+	<meta content='ie=edge' http-equiv='X-UA-Compatible'>
+	<title>Victoria</title>
+	<link href='css/animate.min.css' rel='stylesheet'>
+	<link href='css/fonts.css' rel='stylesheet'>
+	<link href='css/style.css' rel='stylesheet'>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<header class="header">
+				<div class="header__inner">
+					<div class="header-logo">
+						<h1 class="title"><span class="title__v">в</span>иктория <span class="title__tz">торговый центр</span> <span class="title__tz-min">тц</span></h1>
+					</div>
+					<div class="header-nav">
+						<button class="hamburger hamburger--collapse menu-toggle" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+						<ul class="menu">
+							<li class="">
+								<a class="menu-link" href="#section-2">О ТЦ Виктория</a>
+							</li>
+							<li class="">
+								<a class="menu-link" href="#section-3">магазины и бренды</a>
+							</li>
+							<li class="">
+								<a class="menu-link" href="#section-4">Схемы этажей</a>
+							</li>
+							<li class="">
+								<a class="menu-link" href="#section-5">Фотогалерея</a>
+							</li>
+							<li class="">
+								<a class="menu-link" href="#section-6">Контакты</a>
+							</li>
+							<li class="">
+								<a class="menu-link" href="#section-7">Виктория на карте</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<main>
+				<section>
+					<div class="section-1">
+						<div class="video-container">
+							<div class="filter"></div>					
+
+							<video autoplay="" class="fillWidth" loop="" controls="controls" poster="img/ph3.jpg">
+							    <source src="video/clothing.mp4" type="video/mp4" />
+							    <object type="application/x-shockwave-flash"
+							            data="swf/flowplayer-3.2.18.swf">
+							        <param name="movie" value="swf/flowplayer-3.2.18.swf" />
+							        <param name="allowFullScreen" value="true" />
+							        <param name="wmode" value="transparent" />
+							        <param name="flashVars"
+							               value="config={'playlist':['img%2Fph3.jpg',{'url':'video%2Fclothing.mp4','autoPlay':true}]}" />
+
+							        <img src="img/ph3.jpg" title="No Flash found" />
+							    </object>
+							</video>
+						</div>
+						<div class="video-decor"></div>
+					</div>
+				</section>
+				<section class="section-container" id="section-2">
+					<h2 class="section-title"><span>о тц виктория</span></h2>
+				</section>
+				<section class="section-container parallax-brands" data-bleed="10" data-parallax="scroll" id="section-3">
+					<h2 class="section-title"><span>магазины и бренды</span></h2>
+
+					<div class="filter-controls">
+					  <button class="filter" data-filter="all">Все</button>
+					  <button class="filter" data-filter=".category-1">Одежда</button>
+					  <button class="filter active" data-filter=".category-2">Обувь</button>
+						<button class="filter active" data-filter=".category-3">Парфюмерия и косметика</button>
+						<button class="filter active" data-filter=".category-4">ЖД билеты</button>
+					</div>
+					<div id="brands-filter" class="brands-container">
+					  <div class="mix category-1" data-myorder="1"></div>
+					  <div class="mix category-1" data-myorder="2"></div>
+					  <div class="mix category-3" data-myorder="3"></div>
+					  <div class="mix category-2" data-myorder="4"></div>
+					  <div class="mix category-1" data-myorder="5"></div>
+					  <div class="mix category-4" data-myorder="6"></div>
+					  <div class="mix category-2" data-myorder="7"></div>
+					  <div class="mix category-2" data-myorder="8"></div>
+						<div class="mix category-4" data-myorder="9"></div>
+					  <div class="mix category-1" data-myorder="10"></div>
+					  <div class="mix category-3" data-myorder="11"></div>
+					  <div class="mix category-2" data-myorder="12"></div>
+					  <div class="mix category-4" data-myorder="13"></div>
+
+					  <div class="filter-gap"></div>
+					  <div class="filter-gap"></div>
+					</div>
+				</section>
+				<section class="section-container" id="section-4">
+					<h2 class="section-title"><span>Схемы этажей</span></h2>
+				</section>
+				<section class="section-container parallax-gallery" id="section-5">
+					<h2 class="section-title"><span>Фотогалерея</span></h2>
+				</section>
+				<section class="section-container" id="section-6">
+					<h2 class="section-title"><span>контакты</span></h2>
+					<div class="contacts">
+						<div class="contacts__tabs">
+							<input checked id="tab1" name="tabs" type="radio"> <label for="tab1"><span>Покупателям</span></label> <input id="tab2" name="tabs" type="radio"> <label for="tab2"><span>Рекламодателям</span></label> <input id="tab3" name="tabs" type="radio"> <label for="tab3"><span>Арендаторам</span></label>
+							<div class="tab-content customer" id="tab-content1">
+								<div class="customer-time">
+									<div>
+										Режим работы:
+									</div>
+									<div>
+										c 10.00 до 20.00
+									</div>
+								</div>
+								<div class="customer-address">
+									<div>
+										Адрес:
+									</div>
+									<div>
+										ул. Ленина, 127а
+									</div>
+								</div>
+								<div class="customer-tel">
+									<div>
+										Телефон:
+									</div>
+									<div>
+										<a href="tel:83022------">(3022) -- -- --</a>
+									</div>
+								</div>
+								<div class="customer-mail">
+									<div>
+										Электронная почта:
+									</div>
+									<div>
+										<a href="mailto:info@victoria.ru">info@victoria.ru</a>
+									</div>
+								</div>
+							</div>
+							<div class="tab-content" id="tab-content2">
+								Lorem ipsum dolor sit amet, ne duo urbanitas eloquentiam consectetuer, vel et stet complectitur intellegebat, malorum alterum mei no. Ut alii reprehendunt cum, homero munere mentitum mei eu. At sit everti aliquid, ad nusquam voluptaria pro, ad pri quot aeterno constituto. Phaedrum volutpat cu vix, vim cu fugit iriure iudicabit, sea dico veri ei. Detracto copiosae platonem nam id, nonumy molestie indoctum sit no. Vix paulo facete an, ne usu viris graece legendos.
+							</div>
+							<div class="tab-content rent" id="tab-content3">
+								<div class="rent-inner">
+									<div class="">
+										По вопросам аренды торговых площадей в ТЦ Виктория просим отправлять заявки на почту: <b>kochetov.75@mail.ru</b>
+									</div>
+									<div class="">
+										Контакты:
+										<div class="">
+											Кочетов Валерий Петрович. Тел: 89-- -- --
+										</div>
+										<div class="">
+											Чевлытко Игорь Владимирович. Тел: 89-- -- --
+										</div>
+									</div><a class="rent-link" href="content/about.pdf" target="_blank">Открыть презентацию о ТЦ Виктория</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contacts-decor"></div>
+				</section>
+				<section class="section-googlemap" id="section-7">
+					<div class="googlemap-content">
+						<p><iframe allowfullscreen frameborder="0" height="600px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1062.175186087348!2d113.49231773721283!3d52.03650189398258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5dca3547f1b099b7%3A0x7242cb558f195cd5!2z0YPQuy4g0JvQtdC90LjQvdCwLCAxMjfQkCwg0KfQuNGC0LAsINCX0LDQsdCw0LnQutCw0LvRjNGB0LrQuNC5INC60YDQsNC5LCA2NzIwMDA!5e0!3m2!1sru!2sru!4v1467366700383" style="border:0" width="100%"></iframe></p>
+					</div>
+				</section>
+			</main>
+		</div>
+	</div>
+	<script src='js/jquery.min.js'></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/jquery.mixit.js"></script>
+	<script src='js/wow.min.js'></script>
+	<script>new WOW().init();</script>
+	<script src='js/script.js'></script>
+	<script>
+	   $('.parallax-brands').parallax({imageSrc: 'img/ph1.jpg'});
+	   $('.parallax-gallery').parallax({imageSrc: 'img/ph2.jpg'});
+	</script>
+	<script>
+	$(function(){
+ $('#brands-filter').mixItUp({
+	 load: {
+		 filter: 'all'
+	 }
+ });
+});
+	</script>
+</body>
+</html>
