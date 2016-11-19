@@ -1,0 +1,211 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a, a:hover {
+  text-decoration: none; }
+
+.sp-container ::-moz-selection {
+  background: #ef7a12;
+  color: #fff; }
+
+.sp-container ::selection {
+  background: #ef7a12;
+  color: #fff; }
+
+.sp-container {
+  width: 754px; }
+
+.sp-header {
+  background: url(../img/header.png);
+  background-size: cover;
+  height: 410px;
+  width: 100%;
+  position: relative; }
+
+.sp-logo {
+  position: absolute;
+  top: 55px;
+  left: 25px;
+  width: 325px;
+  height: 195px;
+  background: url(../img/logo.png);
+  background-size: cover; }
+
+.sp-intro {
+  height: 80px;
+  width: 100%;
+  background: #ef7a12;
+  color: #fff;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "avenir";
+  line-height: 14px;
+  overflow: hidden; }
+
+.sp-main {
+  width: 100%;
+  height: 1200px;
+  background: url(../img/back.png), -webkit-linear-gradient(top, #fff 0%, rgba(239, 234, 220, 0.4) 50%, rgba(239, 234, 220, 0.9) 100%);
+  background: url(../img/back.png), linear-gradient(to bottom, #fff 0%, rgba(239, 234, 220, 0.4) 50%, rgba(239, 234, 220, 0.9) 100%);
+  background-position: bottom;
+  background-repeat: no-repeat; }
+  .sp-main-container {
+    background: url(../img/back1.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; }
+
+.sp-article {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 260px;
+  box-sizing: border-box;
+  padding-top: 40px;
+  position: relative; }
+  .sp-article:hover .sp-info {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    visibility: visible;
+    opacity: 1; }
+  .sp-article:hover .sp-img {
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%); }
+  .sp-article .sp-title {
+    text-transform: uppercase;
+    font-size: 45px;
+    line-height: 43px;
+    height: auto;
+    position: relative; }
+    .sp-article .sp-title__first {
+      font-family: "cr85";
+      color: #741212; }
+    .sp-article .sp-title__second {
+      font-family: "ptnarrow-reg";
+      color: #febc2b;
+      white-space: nowrap; }
+
+.sp-article:nth-child(even) {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .sp-article:nth-child(even) .sp-info {
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%); }
+  .sp-article:nth-child(even) .sp-img {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0); }
+  .sp-article:nth-child(even):hover .sp-info {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    visibility: visible;
+    opacity: 1; }
+  .sp-article:nth-child(even):hover .sp-img {
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%); }
+
+.sp-item {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  top: 15px;
+  -webkit-transition: all 0.35s ease-in-out;
+          transition: all 0.35s ease-in-out; }
+  .sp-item .sp-info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: "avenir";
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 0.35s ease-in-out;
+            transition: all 0.35s ease-in-out; }
+    .sp-item .sp-info h3 {
+      background: #ef7a12;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      font-size: 17px;
+      padding: 10px;
+      margin: 15px 0 0 0; }
+    .sp-item .sp-info p {
+      font-size: 14px;
+      position: relative;
+      color: #741212;
+      padding: 20px 20px 20px;
+      text-align: center; }
+  .sp-item .sp-img {
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: all 0.35s ease-in-out;
+            transition: all 0.35s ease-in-out; }
+
+.sp-article-first .sp-title {
+  top: 30px;
+  left: 10px; }
+.sp-article-first .sp-img {
+  background: url("../img/img1.png") no-repeat;
+  background-size: cover; }
+.sp-article-second .sp-title {
+  left: 140px;
+  top: 20px; }
+.sp-article-second .sp-item {
+  width: 300px;
+  right: 20px; }
+.sp-article-second .sp-img {
+  background: url("../img/img2.png") no-repeat;
+  background-size: contain; }
+.sp-article-third {
+  top: -10px; }
+  .sp-article-third .sp-title {
+    top: 0px;
+    left: 20px; }
+  .sp-article-third .sp-img {
+    background: url("../img/img3.png") no-repeat;
+    background-size: contain; }

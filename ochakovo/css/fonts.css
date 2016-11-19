@@ -1,0 +1,23 @@
+@font-face {
+	font-family: 'avenir';
+	src: url('../fonts/avenir/Avenir.eot');
+	src: url('../fonts/avenir/Avenir.woff') format('woff'), url('../fonts/avenir/Avenir.woff') format('woff2'), url('../fonts/avenir/Avenir.ttf') format('truetype'), url('../fonts/avenir/Avenir.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'cr85';
+	src: url('../fonts/cr85/cr85.eot');
+	src: url('../fonts/cr85/cr85.woff') format('woff'), url('../fonts/cr85/cr85.ttf') format('truetype'), url('../fonts/cr85/cr85.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ptnarrow-reg';
+	src: url('../fonts/ptnarrow-reg/ptnarrow.eot');
+	src: url('../fonts/ptnarrow-reg/ptnarrow.woff') format('woff'), url('../fonts/ptnarrow-reg/ptnarrow.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
