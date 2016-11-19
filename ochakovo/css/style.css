@@ -34,7 +34,7 @@ a, a:hover {
 .sp-logo {
   position: absolute;
   top: 55px;
-  left: 25px;
+  left: 35px;
   width: 325px;
   height: 195px;
   background: url(../img/logo.png);
@@ -54,14 +54,14 @@ a, a:hover {
 
 .sp-main {
   width: 100%;
-  height: 1200px;
+  height: 1385px;
   background: url(../img/back.png), -webkit-linear-gradient(top, #fff 0%, rgba(239, 234, 220, 0.4) 50%, rgba(239, 234, 220, 0.9) 100%);
   background: url(../img/back.png), linear-gradient(to bottom, #fff 0%, rgba(239, 234, 220, 0.4) 50%, rgba(239, 234, 220, 0.9) 100%);
   background-position: bottom;
   background-repeat: no-repeat; }
   .sp-main-container {
     background: url(../img/back1.png) no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     height: 100%;
     box-sizing: border-box; }
@@ -191,6 +191,7 @@ a, a:hover {
   left: 10px; }
 .sp-article-first .sp-img {
   background: url("../img/img1.png") no-repeat;
+  background-position: center;
   background-size: cover; }
 .sp-article-second .sp-title {
   left: 140px;
@@ -200,12 +201,37 @@ a, a:hover {
   right: 20px; }
 .sp-article-second .sp-img {
   background: url("../img/img2.png") no-repeat;
+  background-position: center;
   background-size: contain; }
 .sp-article-third {
   top: -10px; }
   .sp-article-third .sp-title {
-    top: 0px;
+    top: 10px;
     left: 20px; }
   .sp-article-third .sp-img {
     background: url("../img/img3.png") no-repeat;
+    background-position: center;
     background-size: contain; }
+.sp-article-fouth .sp-title {
+  left: 55px;
+  top: -8px; }
+.sp-article-fouth .sp-item {
+  width: 400px;
+  right: 0px; }
+.sp-article-fouth .sp-img {
+  background: url("../img/img4.png") no-repeat;
+  background-position: center;
+  background-size: contain; }
+.sp-article-fifth .sp-title {
+  top: 15px;
+  left: 50px; }
+  .sp-article-fifth .sp-title__second {
+    color: #fff; }
+.sp-article-fifth .sp-item {
+  width: 305px;
+  left: 30px;
+  top: 35px; }
+.sp-article-fifth .sp-img {
+  background: url("../img/img5.png") no-repeat;
+  background-position: center;
+  background-size: contain; }
