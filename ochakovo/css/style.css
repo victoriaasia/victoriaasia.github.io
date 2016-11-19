@@ -60,13 +60,13 @@ a, a:hover {
   background: url(../img/back.png), linear-gradient(to bottom, #fff 0%, rgba(239, 234, 220, 0.4) 50%, rgba(239, 234, 220, 0.9) 100%);
   background-position: bottom;
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  overflow: hidden; }
   .sp-main-container {
     background: url(../img/back1.png) no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100%;
-    box-sizing: border-box; }
+    height: 100%; }
 
 .sp-article {
   display: -webkit-box;
