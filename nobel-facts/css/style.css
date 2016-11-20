@@ -24,8 +24,9 @@ img {
 #nob-facts-slider {
   position: relative;
   overflow: hidden;
-  width: 754px;
-  height: 545px; }
+  width: 1100px;
+  height: 780px;
+  margin: 0 auto; }
 
 #nob-facts-slider .nob-facts-list {
   position: relative;
@@ -38,27 +39,27 @@ img {
     float: left;
     margin: 0;
     padding: 0;
-    width: 754px;
-    height: 545px; }
+    width: 1100px;
+    height: 780px; }
 
 .nob-facts-control {
   position: absolute;
-  top: 45%;
+  top: 44%;
   z-index: 999;
   display: block;
-  width: 20px;
-  height: 65px;
+  width: 30px;
+  height: 100px;
   text-decoration: none;
   font-weight: 600;
   cursor: pointer; }
 
 .next {
-  right: 40px;
+  right: 50px;
   background: url(../img/next.png) no-repeat;
   background-size: contain; }
 
 .prev {
-  left: 40px;
+  left: 50px;
   background: url(../img/back.png) no-repeat;
   background-size: contain; }
 
@@ -72,7 +73,7 @@ img {
     text-align: center;
     padding: 35px 80px; }
   .nob-facts-intro .nob-title:first-child {
-    font-size: 37px;
+    font-size: 58px;
     position: relative; }
     .nob-facts-intro .nob-title:first-child span {
       background: #990066;
@@ -81,32 +82,32 @@ img {
     .nob-facts-intro .nob-title:first-child::before {
       content: "";
       position: absolute;
-      width: 68%;
+      width: 65%;
       border-top: 1px solid #fff;
-      top: 24px;
-      left: 16%; }
+      top: 30px;
+      left: 17%; }
   .nob-facts-intro .nob-title:nth-child(2) {
     font-family: "rob-light";
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 90px;
+    line-height: 90px;
     position: relative; }
     .nob-facts-intro .nob-title:nth-child(2)::after {
       content: "";
       position: absolute;
-      width: 90px;
+      width: 135px;
       border-top: 1px solid #fff;
-      bottom: -2px;
+      bottom: -7px;
       left: 43%; }
   .nob-facts-intro .nob-text {
-    padding: 14px 0;
-    font-size: 15px; }
+    padding: 30px 0;
+    font-size: 21px; }
   .nob-facts-intro .nob-img {
-    width: 410px;
-    margin: 20px auto; }
+    width: 620px;
+    margin: 10px auto 0; }
 
 .nob-facts-item__content {
-  padding: 70px 115px;
-  height: 545px;
+  padding: 85px 155px;
+  height: 780px;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -138,8 +139,8 @@ img {
 .nob-facts-item__card {
   -webkit-perspective: 1000px;
           perspective: 1000px;
-  width: 245px;
-  height: 190px;
+  width: 370px;
+  height: 285px;
   position: relative; }
   .nob-facts-item__card:hover .card-flipper, .nob-facts-item__card.hover .card-flipper {
     -webkit-transform: rotateY(180deg);
@@ -153,8 +154,8 @@ img {
     z-index: -1;
     cursor: pointer; }
   .nob-facts-item__card .card-front, .nob-facts-item__card .card-back {
-    width: 245px;
-    height: 190px;
+    width: 100%;
+    height: 285px;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
     position: absolute;
@@ -169,29 +170,29 @@ img {
             transform: rotateY(180deg);
     background: #fff; }
     .nob-facts-item__card .card-back__content {
-      padding: 35px 18px;
+      padding: 55px 28px 35px;
       text-align: center;
       position: relative;
-      font-size: 11px;
+      font-size: 16px;
       font-family: "rob-reg";
-      line-height: 11px;
-      height: 190px;
+      line-height: 17px;
+      height: 285px;
       overflow: hidden;
       box-sizing: border-box; }
       .nob-facts-item__card .card-back__content::before, .nob-facts-item__card .card-back__content::after {
         position: absolute;
         content: "";
         border-top: 1px solid #000;
-        width: 60px; }
+        width: 95px; }
       .nob-facts-item__card .card-back__content::before {
-        top: 20px;
-        left: 92px; }
+        top: 30px;
+        left: 140px; }
       .nob-facts-item__card .card-back__content::after {
         bottom: 20px;
-        left: 92px; }
+        left: 145px; }
   .nob-facts-item__card .card-number {
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     color: #fff;
     font-size: 18px;
     font-family: "rob-bold";
@@ -211,4 +212,4 @@ img {
             justify-content: center;
     position: absolute;
     top: -10px;
-    left: -10px; }
+    left: -15px; }
