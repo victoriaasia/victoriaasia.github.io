@@ -320,6 +320,39 @@ a, a:hover {
     top: 10px;
     left: 215px; } }
 @media screen and (max-width: 768px) {
+  @keyframes light-comb1 {
+    0% {
+      transform: scale(0); }
+    50% {
+      transform: scale(1.2); }
+    70% {
+      transform: scale(1.4); }
+    100% {
+      transform: scale(0);
+      left: 300px; } }
+  @keyframes light-comb2 {
+    0% {
+      transform: scale(0); }
+    50% {
+      transform: scale(1.2); }
+    70% {
+      transform: scale(1.4); }
+    100% {
+      transform: scale(0);
+      top: 90px;
+      left: 55px; } }
+  @keyframes light-comb3 {
+    0% {
+      transform: scale(0); }
+    50% {
+      transform: scale(1.2); }
+    70% {
+      transform: scale(1.4); }
+    100% {
+      transform: scale(0);
+      top: 0px;
+      left: 140px; } } }
+@media screen and (max-width: 768px) {
   .sp-container {
     width: 768px; }
 
@@ -347,5 +380,29 @@ a, a:hover {
 
   .sp-article-first .sp-title {
     flex: 1; }
+  .sp-article-first .sp-highlight-comb-first {
+    top: 195px;
+    left: 215px; }
+  .sp-article-first .sp-highlight-comb-second {
+    top: 205px;
+    left: 235px; }
   .sp-article-second .sp-title__first, .sp-article-second .sp-title__second {
-    padding-left: 70px; } }
+    padding-left: 70px; }
+  .sp-article-second .sp-highlight-comb-first {
+    top: 120px;
+    left: 130px; }
+  .sp-article-second .sp-highlight-comb-second {
+    top: 115px;
+    left: 190px; }
+  .sp-article-second .sp-highlight-comb-third {
+    top: 160px;
+    left: 245px; }
+  .sp-article-fouth .sp-highlight {
+    top: 30px;
+    right: 20px; }
+  .sp-article-fifth .sp-highlight-first {
+    top: 70px;
+    left: 15px; }
+  .sp-article-fifth .sp-highlight-second {
+    top: 90px;
+    left: 65px; } }
