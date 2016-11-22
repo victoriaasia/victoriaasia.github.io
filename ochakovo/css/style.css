@@ -356,6 +356,9 @@ a, a:hover {
   .sp-container {
     width: 768px; }
 
+  .sp-intro {
+    text-align: justify; }
+
   .sp-article {
     display: flex;
     align-items: center;
