@@ -291,8 +291,8 @@ img {
     height: 465px; }
   .nob-stars-violet .nob-stars-buttons, .nob-stars-pink .nob-stars-buttons {
     flex: 1;
-    width: 100%;
-    padding: 60px 100px; }
+    width: auto;
+    padding: 60px 10%; }
     .nob-stars-violet .nob-stars-buttons > div, .nob-stars-pink .nob-stars-buttons > div {
       width: 100%; }
     .nob-stars-violet .nob-stars-buttons label, .nob-stars-pink .nob-stars-buttons label {
@@ -315,9 +315,9 @@ img {
       flex: 1;
       flex-direction: column;
       justify-content: space-between;
-      width: 100%;
+      width: auto;
       height: 410px;
-      padding: 60px 100px;
+      padding: 60px 10%;
       box-sizing: border-box; }
       .nob-stars-white .nob-stars-buttons > div {
         display: flex;
