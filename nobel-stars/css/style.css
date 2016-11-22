@@ -250,7 +250,8 @@ img {
     height: 100vh; }
 
   .nob-stars-title-pink {
-    padding: 15px 25px; }
+    padding: 15px 25px;
+    line-height: 77px; }
 
   .nob-stars-intro {
     height: auto;
@@ -267,7 +268,7 @@ img {
       width: 100%;
       background-position: left; }
     .nob-stars-intro .nob-stars-title-pink:nth-child(1) {
-      top: 290px;
+      top: 280px;
       right: 40px; }
     .nob-stars-intro .nob-stars-title-pink:nth-child(2) {
       top: auto;
