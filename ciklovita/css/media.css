@@ -3,11 +3,15 @@
     display: none; }
 
   .main {
-    min-width: 768px; }
+    min-width: 768px;
+    height: 100%; }
     .main .m__header .logo-woman {
       display: none; }
     .main .m__content {
-      min-width: 100%; }
+      min-width: 100%;
+      background-position: center;
+      background-repeat: repeat;
+      padding-bottom: 80px; }
       .main .m__content .social-content {
         position: static;
         justify-content: center; }
@@ -17,7 +21,8 @@
 
   .main__intro-text {
     margin-top: 0;
-    padding: 40px 40px 0; }
+    padding: 40px 80px 0;
+    text-align: justify; }
 
   .main__articles {
     min-height: 100%;
