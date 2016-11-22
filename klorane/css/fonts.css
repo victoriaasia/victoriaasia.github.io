@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "FuturaBook";
+  src: url("../fonts/futurabook/FuturaBook.eot") format("embedded-opentype");
+  src: url("../fonts/futurabook/FuturaBook.woff") format("woff"),
+       url("../fonts/futurabook/FuturaBook.ttf") format("truetype"),
+       url("../fonts/futurabook/FuturaBook.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;}
+@font-face {
+  font-family: "FuturaMedium";
+  src: url("../fonts/futuramedium/FTR-medium.eot") format("embedded-opentype");
+  src: url("../fonts/futuramedium/FTR-medium.woff") format("woff"),
+       url("../fonts/futuramedium/FTR-medium.ttf") format("truetype"),
+       url("../fonts/futuramedium/FTR-medium.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "BodoniCyr";
+  src: url("../fonts/bodonicyr/BodoniCyr.eot") format("embedded-opentype");
+  src: url("../fonts/bodonicyr/BodoniCyr.woff") format("woff"),
+       url("../fonts/bodonicyr/BodoniCyr.ttf") format("truetype"),
+       url("../fonts/bodonicyr/BodoniCyr.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Bodoni72OSC";
+  src: url("../fonts/bodoni720/Bodoni72OSC.eot") format("embedded-opentype");
+  src: url("../fonts/bodoni720/Bodoni72OSC.otf") format("opentype"),
+       url("../fonts/bodoni720/Bodoni72OSC.ttf") format("truetype"),
+       url("../fonts/bodoni720/Bodoni72OSC.svg#Bodoni72OSC") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  @font-face {
+    font-family: "BodoniCondensed";
+    src: url("../fonts/bodoniconcyr/BodoniCondensedCyr.eot") format("embedded-opentype");
+    src: url("../fonts/bodoniconcyr/BodonConCyr.ttf") format("truetype"),
+         url("../fonts/bodoniconcyr/BodoniCondensedCyr.svg#BodoniCondensedCyr") format("svg");
+    font-weight: normal;
+    font-style: normal; } }

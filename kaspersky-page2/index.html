@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="k-game-wrapper">
+  <div class="k-game-container part-two">
+    <div class="k-game-inner">
+
+      <div class="k-game-header">
+        <div class="k-game-logo">
+          <a href="#"><img src="img/logo2.png" alt="KasperskyLab"></a>
+        </div>
+        <div class="k-game-pages">
+          <div class="page wow flipInY" class="js-page" data-wow-delay="0.5s">
+            <span id="page-1" style="display:block;">1&#47;10</span>
+            <span id="page-2" style="display:none;">2&#47;10</span>
+            <span id="page-3" style="display:none;">3&#47;10</span>
+            <span id="page-4" style="display:none;">4&#47;10</span>
+            <span id="page-5" style="display:none;">5&#47;10</span>
+            <span id="page-6" style="display:none;">6&#47;10</span>
+            <span id="page-7" style="display:none;">7&#47;10</span>
+            <span id="page-8" style="display:none;">8&#47;10</span>
+            <span id="page-9" style="display:none;">9&#47;10</span>
+            <span id="page-10" style="display:none;">10&#47;10</span>
+          </div>
+          <div class="circle2"></div>
+          <div class="circle3"></div>
+        </div>
+      </div>
+
+    <form method="POST" id="question-form" action="javascript:void(null);">
+
+      <div class="k-game-main" id="question-one" style="display:block;">
+        <div class="k-game-question">
+          <div class="question-load">
+            <img src="img/load.png" alt="">
+            <div class="question-equal">
+              <div id="equaliser">
+                <div class="bar bar-1"></div>
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+                <div class="bar bar-4"></div>
+                <div class="bar bar-5"></div>
+                <div class="bar bar-6"></div>
+                <div class="bar bar-7"></div>
+                <div class="bar bar-8"></div>
+                <div class="bar bar-9"></div>
+                <div class="bar bar-10"></div>
+              </div>
+            </div>
+          </div>
+          <h2 class="wow fadeIn" data-wow-delay="0.7s">Как часто вы пользуетесь Интернетом?</h2>
+        </div>
+          <div class="k-game-answer wow fadeIn" data-wow-delay="0.9s">
+            <div>
+            <input type="radio" name="answer" id="answer-1" class="js-button"/>
+            <label for="answer-1">Не представляю своей жизни без него: мой
+              день начинается с проверки почты, а заканчивается перепиской в
+              мессенджере с подругой или родственниками! </label>
+            </div>
+          </div>
+          <div class="k-game-answer wow fadeIn" data-wow-delay="1.1s">
+            <div>
+            <input type="radio" name="answer" id="answer-2" class="js-button"/>
+            <label for="answer-2">Пользуюсь на работе и дома, когда есть
+              свободное время.</label>
+            </div>
+          </div>
+          <div class="k-game-answer wow fadeIn" data-wow-delay="1.3s">
+            <div>
+            <input type="radio" name="answer" id="answer-3" class="js-button"/>
+            <label for="answer-3">Захожу в Интернет нерегулярно,
+              только когда есть необходимость. </label>
+            </div>
+          </div>
+      </div>
+
+      <div class="k-game-main" id="question-two" style="display:none;">
+        <div class="k-game-question">
+          <div class="question-load">
+            <img src="img/load.png" alt="">
+            <div class="question-equal">
+              <div id="equaliser">
+                <div class="bar bar-1"></div>
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+                <div class="bar bar-4"></div>
+                <div class="bar bar-5"></div>
+                <div class="bar bar-6"></div>
+                <div class="bar bar-7"></div>
+                <div class="bar bar-8"></div>
+                <div class="bar bar-9"></div>
+                <div class="bar bar-10"></div>
+              </div>
+            </div>
+          </div>
+          <h2>Не представляю своей жизни без него: мой
+            день начинается с проверки почты</h2>
+        </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-4" class="js-button"/>
+            <label for="answer-4">заканчивается перепиской в
+              мессенджере с подругой или родственниками! </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn" >
+            <div>
+            <input type="radio" name="answer" id="answer-5" class="js-button" />
+            <label for="answer-5">Далеко-далеко за словесными горами в стране,
+              гласных и согласных живут рыбные тексты. Эта текст свою послушавшись
+            </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-6" class="js-button"/>
+            <label for="answer-6">Захожу в Интернет нерегулярно,
+              только когда есть необходимость. </label>
+            </div>
+          </div>
+      </div>
+
+      <div class="k-game-main" id="question-three" style="display:none;">
+        <div class="k-game-question">
+          <div class="question-load">
+            <img src="img/load.png" alt="">
+            <div class="question-equal">
+              <div id="equaliser">
+                <div class="bar bar-1"></div>
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+                <div class="bar bar-4"></div>
+                <div class="bar bar-5"></div>
+                <div class="bar bar-6"></div>
+                <div class="bar bar-7"></div>
+                <div class="bar bar-8"></div>
+                <div class="bar bar-9"></div>
+                <div class="bar bar-10"></div>
+              </div>
+            </div>
+          </div>
+          <h2>Коварных семантика семь о ipsum если, необходимыми живет алфавит</h2>
+        </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-7" class="js-button"/>
+            <label for="answer-7">заканчивается перепиской в
+              мессенджере с подругой или родственниками! </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-8" class="js-button"/>
+            <label for="answer-8">Далеко-далеко за словесными горами в стране,
+              гласных и согласных живут рыбные тексты. Эта текст свою послушавшись
+            </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-9" class="js-button"/>
+            <label for="answer-9">Захожу в Интернет нерегулярно,
+              только когда есть необходимость. </label>
+            </div>
+          </div>
+      </div>
+
+      <div class="k-game-main" id="question-four" style="display:none;">
+        <div class="k-game-question">
+          <div class="question-load">
+            <img src="img/load.png" alt="">
+            <div class="question-equal">
+              <div id="equaliser">
+                <div class="bar bar-1"></div>
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+                <div class="bar bar-4"></div>
+                <div class="bar bar-5"></div>
+                <div class="bar bar-6"></div>
+                <div class="bar bar-7"></div>
+                <div class="bar bar-8"></div>
+                <div class="bar bar-9"></div>
+                <div class="bar bar-10"></div>
+              </div>
+            </div>
+          </div>
+          <h2>Захожу в Интернет нерегулярно,
+            только когда есть необходимость.</h2>
+        </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-10" class="js-button"/>
+            <label for="answer-10">заканчивается перепиской в
+              мессенджере с подругой или родственниками! </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-11" class="js-button"/>
+            <label for="answer-11">Далеко-далеко за словесными горами в стране,
+              гласных и согласных живут рыбные тексты. Эта текст свою послушавшись
+            </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-12" class="js-button"/>
+            <label for="answer-12">Захожу в Интернет нерегулярно,
+              только когда есть необходимость. </label>
+            </div>
+          </div>
+      </div>
+
+      <div class="k-game-main" id="question-five" style="display:none;">
+        <div class="k-game-question">
+          <div class="question-load">
+            <img src="img/load.png" alt="">
+            <div class="question-equal">
+              <div id="equaliser">
+                <div class="bar bar-1"></div>
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+                <div class="bar bar-4"></div>
+                <div class="bar bar-5"></div>
+                <div class="bar bar-6"></div>
+                <div class="bar bar-7"></div>
+                <div class="bar bar-8"></div>
+                <div class="bar bar-9"></div>
+                <div class="bar bar-10"></div>
+              </div>
+            </div>
+          </div>
+          <h2>Далеко-далеко за словесными горами в стране</h2>
+        </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-13" class="js-button"/>
+            <label for="answer-13">заканчивается перепиской в
+              мессенджере с подругой или родственниками! </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-14" class="js-button"/>
+            <label for="answer-14">Далеко-далеко за словесными горами в стране,
+              гласных и согласных живут рыбные тексты. Эта текст свою послушавшись.
+              Далеко-далеко за словесными горами в стране,
+              гласных и согласных живут рыбные тексты. Эта текст свою послушавшись
+            </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-15" class="js-button"/>
+            <label for="answer-15">Захожу в Интернет нерегулярно,
+              только когда есть необходимость. </label>
+            </div>
+          </div>
+      </div>
+
+      <div class="k-game-main" id="question-six" style="display:none;">
+        <div class="k-game-question">
+          <div class="question-load">
+            <img src="img/load.png" alt="">
+            <div class="question-equal">
+              <div id="equaliser">
+                <div class="bar bar-1"></div>
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+                <div class="bar bar-4"></div>
+                <div class="bar bar-5"></div>
+                <div class="bar bar-6"></div>
+                <div class="bar bar-7"></div>
+                <div class="bar bar-8"></div>
+                <div class="bar bar-9"></div>
+                <div class="bar bar-10"></div>
+              </div>
+            </div>
+          </div>
+          <h2>Далеко-далеко за словесными горами в стране</h2>
+        </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-16" class="js-button"/>
+            <label for="answer-16">заканчивается перепиской в
+              мессенджере с подругой или родственниками! </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-17" class="js-button"/>
+            <label for="answer-17">Далеко-далеко за словесными горами в стране,
+              гласных и согласных живут рыбные тексты. Эта текст свою послушавшись.
+              Далеко-далеко за словесными горами в стране,
+              гласных и согласных живут рыбные тексты. Эта текст свою послушавшись
+            </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-18" class="js-button"/>
+            <label for="answer-18">Захожу в Интернет нерегулярно,
+              только когда есть необходимость. </label>
+            </div>
+          </div>
+      </div>
+
+      <div class="k-game-main" id="question-seven" style="display:none;">
+        <div class="k-game-question">
+          <div class="question-load">
+            <img src="img/load.png" alt="">
+            <div class="question-equal">
+              <div id="equaliser">
+                <div class="bar bar-1"></div>
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+                <div class="bar bar-4"></div>
+                <div class="bar bar-5"></div>
+                <div class="bar bar-6"></div>
+                <div class="bar bar-7"></div>
+                <div class="bar bar-8"></div>
+                <div class="bar bar-9"></div>
+                <div class="bar bar-10"></div>
+              </div>
+            </div>
+          </div>
+          <h2>Далеко-далеко за словесными горами в стране</h2>
+        </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-19" class="js-button"/>
+            <label for="answer-19">заканчивается перепиской в
+              мессенджере с подругой или родственниками! </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-20" class="js-button"/>
+            <label for="answer-20">Далеко-далеко за словесными горами в стране,
+              гласных и согласных живут рыбные тексты. Эта текст свою послушавшись.
+              Далеко-далеко за словесными горами в стране,
+              гласных и согласных живут рыбные тексты. Эта текст свою послушавшись
+            </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-21" class="js-button"/>
+            <label for="answer-21">Захожу в Интернет нерегулярно,
+              только когда есть необходимость. </label>
+            </div>
+          </div>
+      </div>
+
+      <div class="k-game-main" id="question-eight" style="display:none;">
+        <div class="k-game-question">
+          <div class="question-load">
+            <img src="img/load.png" alt="">
+            <div class="question-equal">
+              <div id="equaliser">
+                <div class="bar bar-1"></div>
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+                <div class="bar bar-4"></div>
+                <div class="bar bar-5"></div>
+                <div class="bar bar-6"></div>
+                <div class="bar bar-7"></div>
+                <div class="bar bar-8"></div>
+                <div class="bar bar-9"></div>
+                <div class="bar bar-10"></div>
+              </div>
+            </div>
+          </div>
+          <h2>Коварных семантика семь о ipsum если, необходимыми живет алфавит</h2>
+        </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-22" class="js-button"/>
+            <label for="answer-22">заканчивается перепиской в
+              мессенджере с подругой или родственниками! </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-23" class="js-button"/>
+            <label for="answer-23">Далеко-далеко за словесными горами в стране,
+              гласных и согласных живут рыбные тексты. Эта текст свою послушавшись
+            </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-24" class="js-button"/>
+            <label for="answer-24">Захожу в Интернет нерегулярно,
+              только когда есть необходимость. </label>
+            </div>
+          </div>
+      </div>
+
+      <div class="k-game-main" id="question-nine" style="display:none;">
+        <div class="k-game-question">
+          <div class="question-load">
+            <img src="img/load.png" alt="">
+            <div class="question-equal">
+              <div id="equaliser">
+                <div class="bar bar-1"></div>
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+                <div class="bar bar-4"></div>
+                <div class="bar bar-5"></div>
+                <div class="bar bar-6"></div>
+                <div class="bar bar-7"></div>
+                <div class="bar bar-8"></div>
+                <div class="bar bar-9"></div>
+                <div class="bar bar-10"></div>
+              </div>
+            </div>
+          </div>
+          <h2>Коварных семантика семь о ipsum если, необходимыми живет алфавит</h2>
+        </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-25" class="js-button"/>
+            <label for="answer-25">заканчивается перепиской в
+              мессенджере с подругой или родственниками! </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-26" class="js-button"/>
+            <label for="answer-26">Далеко-далеко за словесными горами в стране,
+              гласных и согласных живут рыбные тексты. Эта текст свою послушавшись
+            </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-27" class="js-button"/>
+            <label for="answer-27">Захожу в Интернет нерегулярно,
+              только когда есть необходимость. </label>
+            </div>
+          </div>
+      </div>
+
+      <div class="k-game-main" id="question-ten" style="display:none;">
+        <div class="k-game-question">
+          <div class="question-load">
+            <img src="img/load.png" alt="">
+            <div class="question-equal">
+              <div id="equaliser">
+                <div class="bar bar-1"></div>
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+                <div class="bar bar-4"></div>
+                <div class="bar bar-5"></div>
+                <div class="bar bar-6"></div>
+                <div class="bar bar-7"></div>
+                <div class="bar bar-8"></div>
+                <div class="bar bar-9"></div>
+                <div class="bar bar-10"></div>
+              </div>
+            </div>
+          </div>
+          <h2>Коварных семантика семь о ipsum если, необходимыми живет алфавит</h2>
+        </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-28" class="js-button"/>
+            <label for="answer-28">заканчивается перепиской в
+              мессенджере с подругой или родственниками! заканчивается перепиской в
+                мессенджере с подругой или родственниками! </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-29" class="js-button"/>
+            <label for="answer-29">Далеко-далеко за словесными горами в стране,
+              гласных и согласных живут рыбные тексты. Эта текст свою послушавшись
+            </label>
+            </div>
+          </div>
+          <div class="k-game-answer animated fadeIn">
+            <div>
+            <input type="radio" name="answer" id="answer-30" class="js-button"/>
+            <label for="answer-30">Захожу в Интернет нерегулярно,
+              только когда есть необходимость. </label>
+            </div>
+          </div>
+      </div>
+
+    </form>
+
+      <div class="k-game-footer"></div>
+
+
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
+<script src="js/script.js"></script>
+</body>
+</html>

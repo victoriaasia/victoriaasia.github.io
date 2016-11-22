@@ -1,0 +1,33 @@
+input, button {
+  outline: none;
+  border-radius: 2px !important;
+  font-size: 13px !important;
+  font-family: "Titillium Web", sans-serif; }
+
+.wrapper {
+  width: 80vw;
+  margin: 0 auto;
+  font-size: 13px;
+  font-family: "Titillium Web", sans-serif; }
+  .wrapper__header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 25px 0; }
+    .wrapper__header .search__field {
+      border: 1px solid lightgrey;
+      padding: 3px; }
+    .wrapper__header .search__title {
+      margin: 0 15px; }
+
+.table td {
+  vertical-align: middle !important; }

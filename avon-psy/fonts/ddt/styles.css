@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'DidotLTsPro-Bold';
+  src: url('DidotLTsPro-Bold.eot?#iefix') format('embedded-opentype'),  url('DidotLTsPro-Bold.otf')  format('opentype'),
+	     url('DidotLTsPro-Bold.woff') format('woff'), url('DidotLTsPro-Bold.ttf')  format('truetype'), url('DidotLTsPro-Bold.svg#DidotLTsPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
