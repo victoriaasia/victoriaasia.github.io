@@ -93,7 +93,8 @@ a {
   display: none; }
   .header-nav .menu li {
     display: inline-block;
-    float: none; }
+    float: none;
+    transition: all 0.3s ease-in-out; }
     .header-nav .menu li:hover .menu-link::after {
       position: absolute;
       content: "";
@@ -336,8 +337,8 @@ a {
       background-color: #e7b1bb;
       text-align: center;
       text-transform: uppercase;
-      font-weight: 500;
       color: #fff;
+      font-family: "u-med";
       box-sizing: border-box;
       cursor: pointer;
       -webkit-transition: background-color 150ms ease-in-out;
@@ -429,7 +430,7 @@ a {
     border-radius: 100px; }
 
 .filter-controls {
-  padding: 20px 60px;
+  height: 80px;
   background: #e7b1bb;
   display: flex;
   justify-content: space-around;
@@ -439,19 +440,30 @@ a {
     border: 0;
     outline: none;
     cursor: pointer;
-    font-size: 18px;
-    font-family: "u-light";
-    color: #75174D;
+    font-family: "u-med";
+    font-size: 16px;
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
     position: relative;
-    flex: 1; }
-    .filter-controls .filter:hover::after {
-      position: absolute;
-      content: "";
-      bottom: -5px;
-      left: 25%;
-      width: 50%;
-      border-top: 1px solid;
-      border-color: inherit; }
+    flex: 1;
+    transition: all 0.3s ease-in-out; }
+    .filter-controls .filter:hover {
+      color: #75174D; }
+  .filter-controls .active {
+    color: #75174D;
+    background: #fff; }
+  .filter-controls .active::after {
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 25%;
+    width: 50%;
+    border-top: 2px solid;
+    border-color: inherit; }
 
 #brands-filter label {
   font-weight: 300;
@@ -492,24 +504,105 @@ a {
       border-top: 2px solid #ece7e1; }
     #brands-filter .mix.category-2 {
       border-top: 2px solid #75174D; }
-    #brands-filter .mix::after {
-      content: attr(data-myorder);
-      color: #fff;
-      font-size: 16px;
-      display: inline-block;
-      vertical-align: top;
-      padding: 4% 6%;
-      font-weight: 700; }
     #brands-filter .mix::before {
       content: "";
       display: inline-block;
       padding-top: 60%; }
+  #brands-filter .glance {
+    background: url(../img/glance-logo.png) no-repeat;
+    background-size: cover;
+    background-position: center; }
+  #brands-filter .letual {
+    background: url(../img/letual-logo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center; }
+  #brands-filter .rgd {
+    background: url(../img/rgd-logo.png) no-repeat;
+    background-size: cover;
+    background-position: center; }
+  #brands-filter .dns {
+    background: url(../img/dns-logo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center; }
+  #brands-filter .zoloto {
+    background: url(../img/zoloto-logo.jpg) no-repeat;
+    background-size: contain;
+    background-position: center; }
+  #brands-filter .slon {
+    background: url(../img/slon-logo.jpg) no-repeat;
+    background-size: contain;
+    background-position: center; }
+  #brands-filter .stile {
+    background: url(../img/stile-logo.png) no-repeat;
+    background-size: contain;
+    background-position: center; }
+  #brands-filter .liza {
+    background: url(../img/liza-logo.jpg) no-repeat;
+    background-size: contain;
+    background-position: center; }
+  #brands-filter .valenzia {
+    background: url(../img/valenzia-logo.jpg) no-repeat;
+    background-size: contain;
+    background-position: center; }
+
+.detail-brand {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: pointer; }
+  .detail-brand .mask, .detail-brand .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0; }
+  .detail-brand .mask {
+    opacity: 0;
+    background-color: rgba(231, 177, 187, 0.8);
+    transition: all 0.4s ease-in-out; }
+  .detail-brand h2 {
+    text-transform: uppercase;
+    color: #75174D;
+    text-align: center;
+    font-family: "u-med";
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(236, 231, 225, 0.8);
+    margin: 20px 0 0 0;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out; }
+  .detail-brand p {
+    font-family: "u-light";
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.2s linear; }
+
+.detail-brand:hover .mask {
+  opacity: 1; }
+.detail-brand:hover h2, .detail-brand:hover p, .detail-brand:hover .info {
+  opacity: 1;
+  transform: translateY(0px); }
+.detail-brand:hover p {
+  transition-delay: 0.1s; }
+.detail-brand:hover .info {
+  transition-delay: 0.2s; }
 
 .section-googlemap {
   background: url("../img/map.png");
   background-size: contain; }
 
 @media only screen and (max-width: 768px) {
+  .container, .header, .section-1 {
+    width: 768px; }
+
   #section-2 .about__item {
     padding: 15px 70px; }
     #section-2 .about__item:nth-child(odd) {
@@ -576,9 +669,7 @@ a {
       width: 100%; }
 
   .filter-controls {
-    padding: 20px 3%; }
-    .filter-controls .filter:hover::after {
-      border: 0; } }
+    padding: 0px 3%; } }
 @media all and (min-width: 420px) {
   #brands-filter .mix, #brands-filter .gap {
     width: 32%; } }
