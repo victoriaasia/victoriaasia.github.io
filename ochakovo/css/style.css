@@ -357,7 +357,10 @@ a, a:hover {
     width: 768px; }
 
   .sp-intro {
-    text-align: justify; }
+    text-align: center; }
+
+  .sp-main {
+    padding-bottom: 0; }
 
   .sp-article {
     display: flex;
