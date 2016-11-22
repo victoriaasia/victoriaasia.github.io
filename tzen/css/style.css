@@ -558,7 +558,7 @@ a {
     top: 0;
     left: 0; }
   .detail-brand .mask {
-    opacity: 0;
+    opacity: 0.2;
     background-color: rgba(231, 177, 187, 0.8);
     transition: all 0.4s ease-in-out; }
   .detail-brand h2 {
