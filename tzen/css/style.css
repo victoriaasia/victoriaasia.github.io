@@ -738,9 +738,8 @@ a {
   left: 0px;
   width: 95px;
   height: 62px;
-  border: #75174D 2px solid;
   box-sizing: content-box;
-  background: url("../img/t01.png") -800px -800px no-repeat;
+  background: url("../img/t01.png") -800px -800px no-repeat, rgba(231, 177, 187, 0.3);
   _background: none; }
 .jssort01-99-66 .pav .c {
   top: 2px;
