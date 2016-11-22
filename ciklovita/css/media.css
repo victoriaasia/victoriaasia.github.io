@@ -9,6 +9,7 @@
       display: none; }
     .main .m__content {
       min-width: 100%;
+      min-height: 100vh;
       background-position: center;
       background-repeat: repeat;
       padding-bottom: 120px; }
