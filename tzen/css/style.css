@@ -315,7 +315,8 @@ a {
 
 #section-2 .about {
   width: 960px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  box-sizing: border-box; }
   #section-2 .about > div {
     display: -webkit-box;
     display: -webkit-flex;
@@ -519,6 +520,7 @@ a {
   width: 960px;
   height: 80px;
   margin: 0 auto;
+  box-sizing: border-box;
   background: #e7b1bb;
   display: -webkit-box;
   display: -webkit-flex;
@@ -586,6 +588,7 @@ a {
   width: 960px;
   margin: 0 auto;
   padding: 20px 3%;
+  box-sizing: border-box;
   text-align: justify;
   font-size: 0.1px;
   background: -webkit-radial-gradient(center, ellipse, rgba(231, 177, 187, 0.4) 0%, rgba(125, 186, 232, 0) 100%);
@@ -804,7 +807,7 @@ a {
       width: 100%; }
 
   .filter-controls {
-    padding: 0px;
+    padding: 0px 3%;
     width: 100%; }
 
   #brands-filter, #section-2 .about {
