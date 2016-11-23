@@ -807,7 +807,7 @@ a {
     padding: 0px;
     width: 100%; }
 
-  #brands-filter {
+  #brands-filter, #section-2 .about {
     width: 100%; } }
 @media all and (min-width: 420px) {
   #brands-filter .mix, #brands-filter .gap {
