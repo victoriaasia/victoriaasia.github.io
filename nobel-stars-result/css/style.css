@@ -109,7 +109,9 @@ img {
     .nob-stars-result .nob-starts-result-title {
       top: -40px;
       left: 50px;
-      font-size: 50px; }
+      font-size: 50px;
+      line-height: 1;
+      padding: 15px 35px; }
     .nob-stars-result .nob-starts-result-text {
       padding: 15px 40px; }
     .nob-stars-result .nob-starts-result-advise {
