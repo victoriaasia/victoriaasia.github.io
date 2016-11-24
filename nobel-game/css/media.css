@@ -1,7 +1,6 @@
 @media only screen and (max-width: 768px) {
   .block_main {
-    width: 768px;
-    overflow: hidden; }
+    width: 768px; }
 
   .header__left, .header__right, .form, .body__left, .body__right, .footer__left, .footer__right {
     width: 100%;
@@ -60,7 +59,7 @@
     position: relative; }
 
   .body__right {
-    padding: 40px 30px;
+    padding: 40px 25px;
     box-sizing: border-box;
     position: relative;
     height: 440px;
@@ -80,7 +79,7 @@
         -ms-flex: 1;
             flex: 1; }
 
-  .body__line1:first-line, .body__line2:first-line {
+  .body__line1::first-line, .body__line2::first-line {
     text-transform: lowercase; }
 
   .body__line1 {
@@ -109,7 +108,8 @@
     top: 120px; }
 
   .body__line6 {
-    top: 260px; }
+    top: 250px;
+    width: 245px; }
 
   .footer__left {
     text-align: center; }
