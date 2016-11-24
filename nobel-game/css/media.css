@@ -90,7 +90,7 @@
     line-height: 1; }
 
   .body__line2 {
-    font-size: 25px; }
+    font-size: 24px; }
 
   .body__line3, .body__line4, .body__line5, .body__line6 {
     position: absolute; }
@@ -112,7 +112,7 @@
 
   .body__line6 {
     top: 250px;
-    width: 245px; }
+    width: 270px; }
 
   .footer__left {
     text-align: center; }
