@@ -1,6 +1,7 @@
 @media only screen and (max-width: 768px) {
   .block_main {
-    width: 768px; }
+    width: 768px;
+    overflow: hidden; }
 
   .header__left, .header__right, .form, .body__left, .body__right, .footer__left, .footer__right {
     width: 100%;
@@ -42,11 +43,16 @@
     background: #fff;
     padding: 20px;
     height: 120px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
 
   .form__text {
     margin: 0;
-    margin-right: 15px; }
+    margin-right: 15px;
+    top: 0; }
 
   .header {
     position: relative; }
@@ -76,7 +82,8 @@
     text-transform: lowercase; }
 
   .body__line1 {
-    font-size: 38px; }
+    font-size: 38px;
+    line-height: 1; }
 
   .body__line2 {
     font-size: 25px; }
@@ -89,6 +96,9 @@
 
   .body__line5, .body__line6 {
     right: 0; }
+
+  .body__line3 {
+    left: 20px; }
 
   .body__line4 {
     left: 200px; }
