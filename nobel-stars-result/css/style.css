@@ -96,3 +96,25 @@ img {
       background-position: -156px 0; }
     .nob-stars-result .nob-starts-result-share .nob-link-vk {
       background-position: -234px 0; }
+
+@media only screen and (max-width: 768px) {
+  .nob-stars-container {
+    width: 768px; }
+
+  .nob-stars-result {
+    padding: 90px 40px 60px; }
+    .nob-stars-result__content {
+      padding: 45px 40px;
+      height: 420px; }
+    .nob-stars-result .nob-starts-result-title {
+      top: -40px;
+      left: 50px;
+      font-size: 50px; }
+    .nob-stars-result .nob-starts-result-text {
+      padding: 15px 40px; }
+    .nob-stars-result .nob-starts-result-advise {
+      padding: 15px 15px; }
+    .nob-stars-result .nob-starts-result-text, .nob-stars-result .nob-starts-result-advise {
+      font-size: 21px; }
+    .nob-stars-result .nob-starts-result-share {
+      margin: 30px auto 0; } }
