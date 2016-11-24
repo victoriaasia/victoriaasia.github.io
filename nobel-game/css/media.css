@@ -15,6 +15,7 @@
       text-align: right; }
 
   .header__right {
+    height: 540px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -33,7 +34,8 @@
 
   .header__text {
     padding: 30px 40px 40px;
-    text-align: center; }
+    text-align: center;
+    font-size: 30px; }
 
   .header__sub-title {
     margin: 35px 10px 22px 0px; }
