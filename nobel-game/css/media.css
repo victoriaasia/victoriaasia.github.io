@@ -120,7 +120,7 @@
 
   .body__line6 {
     top: 250px;
-    font-size: 38px; }
+    font-size: 34px; }
 
   .footer__left {
     text-align: center; }
@@ -140,7 +140,7 @@
 
   .social__title {
     text-align: center;
-    font-size: 31px;
+    font-size: 34px;
     padding: 0px 0px 40px; }
     .social__title br {
       display: none; }
@@ -160,7 +160,21 @@
             justify-content: center; }
 
   .social__item {
-    margin-left: 40px; }
+    margin-left: 40px;
+    width: 100px;
+    height: 100px; }
 
   .social__item:first-child {
-    margin: 0; } }
+    margin: 0; }
+
+  .social__link_od {
+    background-position: 10px 10px; }
+
+  .social__link_tw {
+    background-position: -68px 10px; }
+
+  .social__link_fb {
+    background-position: -146px 10px; }
+
+  .social__link_vk {
+    background-position: -224px 10px; } }
