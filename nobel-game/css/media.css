@@ -106,7 +106,8 @@
     top: 160px; }
 
   .body__line5, .body__line6 {
-    right: 0; }
+    right: 0;
+    width: 40%; }
 
   .body__line3 {
     left: 20px; }
@@ -115,12 +116,10 @@
     left: 200px; }
 
   .body__line5 {
-    top: 120px;
-    width: 40%; }
+    top: 120px; }
 
   .body__line6 {
     top: 250px;
-    width: 50%;
     font-size: 40px; }
 
   .footer__left {
