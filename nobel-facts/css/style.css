@@ -243,11 +243,13 @@ img {
     width: 280px;
     height: 280px; }
 
-  .nob-facts-item__card .card-front, .nob-facts-item__card .card-back {
+  .nob-facts-item__card .card-front {
+    height: 220px; }
+  .nob-facts-item__card .card-back {
     height: 280px; }
-  .nob-facts-item__card .card-back__content {
-    height: 280px;
-    padding: 42px 5px 20px;
-    font-size: 14px; }
-    .nob-facts-item__card .card-back__content::after, .nob-facts-item__card .card-back__content::before {
-      left: 90px; } }
+    .nob-facts-item__card .card-back__content {
+      height: 280px;
+      padding: 42px 5px 20px;
+      font-size: 14px; }
+      .nob-facts-item__card .card-back__content::after, .nob-facts-item__card .card-back__content::before {
+        left: 90px; } }
