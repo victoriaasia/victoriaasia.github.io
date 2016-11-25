@@ -1,0 +1,172 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+.av-wrapper ::-moz-selection {
+  background: #ffc709;
+  color: #000; }
+
+.av-wrapper ::selection {
+  background: #ffc709;
+  color: #000; }
+
+.av-container {
+  width: 754px;
+  background: #fff;
+  box-sizing: border-box; }
+  .av-container > div {
+    position: relative; }
+
+.av-block {
+  padding: 40px 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-family: "Minion Pro";
+  line-height: 1.125;
+  box-sizing: border-box; }
+  .av-block__content {
+    padding: 0px 20px;
+    width: 315px;
+    box-sizing: border-box; }
+
+.av-question {
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 10px; }
+
+.av-quote {
+  font-size: 22px;
+  font-family: "hnl";
+  color: #000;
+  text-transform: uppercase;
+  line-height: 1.682; }
+  .av-quote__img {
+    width: 90px;
+    height: 70px; }
+  .av-quote__text {
+    padding: 0 50px; }
+
+.av-header {
+  background: url("../img/photo.png");
+  width: 100%;
+  height: 595px;
+  background-size: cover; }
+  .av-header__title {
+    width: 400px;
+    height: 100%;
+    float: right;
+    padding: 85px 25px;
+    box-sizing: border-box; }
+  .av-header__line {
+    width: 100%;
+    height: 25px;
+    background: #ffc709;
+    position: absolute;
+    top: 15px; }
+
+.av-title-name {
+  font-size: 85px;
+  font-family: "ddt";
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.9;
+  text-align: right;
+  position: relative; }
+  .av-title-name span {
+    margin-right: 30px; }
+  .av-title-name::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #fff;
+    width: 98%;
+    bottom: -20px;
+    left: 5px; }
+
+.av-title-text {
+  font-size: 29px;
+  font-family: "hna";
+  color: #ffc709;
+  text-transform: uppercase;
+  line-height: 1.069;
+  text-align: right;
+  padding-top: 50px; }
+
+.av-block1 .av-block__content:nth-child(2) {
+  position: relative;
+  top: -55px; }
+
+.av-block3 {
+  background: #000;
+  color: #fff;
+  margin-top: 60px; }
+  .av-block3::before, .av-block3::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    width: 0;
+    height: 0; }
+  .av-block3::before {
+    top: -79px;
+    border-bottom: 80px solid #000;
+    border-left: 754px solid transparent; }
+  .av-block3::after {
+    bottom: -79px;
+    border-top: 80px solid #000;
+    border-right: 754px solid transparent; }
+  .av-block3 .av-block__content:nth-child(2) {
+    position: relative;
+    top: -55px; }
+
+.av-quote1 {
+  background: #ffc709;
+  width: 100%;
+  height: 180px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 35px;
+  margin-top: 40px;
+  box-sizing: border-box; }
+  .av-quote1::before, .av-quote1::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    width: 0;
+    height: 0; }
+  .av-quote1::before {
+    top: -79px;
+    border-bottom: 80px solid #ffc709;
+    border-left: 754px solid transparent; }
+  .av-quote1::after {
+    bottom: -79px;
+    border-top: 80px solid #ffc709;
+    border-right: 754px solid transparent; }
+
+.av-block2 {
+  padding-top: 120px; }
+  .av-block2 .av-quote {
+    width: 280px;
+    margin-left: 20px; }
+    .av-block2 .av-quote__text {
+      padding: 0; }
+
+.av-block4 {
+  padding-top: 135px; }
+  .av-block4 .av-quote {
+    width: 280px;
+    margin-right: 35px; }
+    .av-block4 .av-quote__text {
+      padding: 0; }
+  .av-block4 .av-block__content {
+    margin-top: -60px; }
