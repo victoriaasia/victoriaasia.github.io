@@ -17,7 +17,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .av-container {
   width: 754px;
   background: #fff;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow: hidden; }
   .av-container > div {
     position: relative; }
 
