@@ -213,3 +213,40 @@ img {
     position: absolute;
     top: -10px;
     left: -15px; }
+
+@media only screen and (max-width: 768px) {
+  .nob-facts-intro .nob-text {
+    font-size: 25px; }
+  .nob-facts-intro .nob-img {
+    width: 600px;
+    height: 400px; }
+
+  .prev {
+    left: 20px; }
+
+  .next {
+    right: 20px; }
+
+  .nob-facts-item__content {
+    padding: 60px 80px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .nob-facts-item__content > div {
+      margin: 30px 0; }
+
+  .nob-facts-item__card {
+    width: 280px;
+    height: 220px; }
+
+  .nob-facts-item__card .card-front {
+    height: 220px; }
+  .nob-facts-item__card .card-back {
+    height: 250px; }
+    .nob-facts-item__card .card-back__content {
+      height: 250px;
+      padding: 40px 5px 20px;
+      font-size: 13px; }
+      .nob-facts-item__card .card-back__content::after, .nob-facts-item__card .card-back__content::before {
+        left: 90px; } }
