@@ -288,11 +288,11 @@ img {
     margin: 0 10px;
     box-sizing: border-box;
     cursor: pointer; }
-    .nob-block9 .nob-word:hover {
+    .nob-block9 .nob-word:hover, .nob-block9 .nob-word:focus {
       background: #e90049; }
-      .nob-block9 .nob-word:hover span:first-child {
+      .nob-block9 .nob-word:hover span:first-child, .nob-block9 .nob-word:focus span:first-child {
         display: none; }
-      .nob-block9 .nob-word:hover .nob-hidden {
+      .nob-block9 .nob-word:hover .nob-hidden, .nob-block9 .nob-word:focus .nob-hidden {
         display: inline-block; }
   .nob-block9 .nob-word:nth-child(1) {
     width: 160px;
@@ -426,7 +426,8 @@ img {
     .nob-block5__img {
       width: 545px;
       position: absolute;
-      top: 405px; }
+      top: 415px;
+      left: 110px; }
     .nob-block5__text {
       padding: 60px 0 40px; }
       .nob-block5__text p {
