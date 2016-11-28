@@ -120,6 +120,8 @@ a {
     height: 210px; }
   .sp-slider-item.-first {
     width: 250px; }
+    .sp-slider-item.-first .sp-item-title__first {
+      white-space: nowrap; }
     .sp-slider-item.-first .sp-item-img {
       width: 150px;
       background: url("../img/img1.png") no-repeat; }
