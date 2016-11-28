@@ -1,0 +1,250 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none;
+  border: 0;
+  outline: none; }
+
+.sp-container ::-moz-selection {
+  background: #ef7a12;
+  color: #fff; }
+
+.sp-container ::selection {
+  background: #ef7a12;
+  color: #fff; }
+
+.sp-container {
+  width: 754px;
+  height: 386px;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 15px 35px; }
+
+.sp-title, .sp-link {
+  font-size: 17px;
+  font-family: "cr85";
+  color: #ef7a12;
+  text-transform: uppercase;
+  line-height: 1.5; }
+
+.sp-title-all {
+  text-align: center;
+  margin-top: 20px; }
+  .sp-title-all .sp-link {
+    position: relative; }
+    .sp-title-all .sp-link::after {
+      position: absolute;
+      content: "";
+      border-bottom: 1px solid #ef7a12;
+      width: 100%;
+      bottom: 0;
+      left: 0; }
+
+.sp-slider {
+  margin: 15px auto 0;
+  border-top: 1px solid #dbdbdb;
+  width: 680px;
+  height: 270px;
+  padding: 50px 0px 0 20px; }
+
+.sp-slick-list {
+  position: relative;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  padding: 0 !important; }
+  .sp-slick-list:focus {
+    outline: none; }
+
+.sp-slick-list.dragging {
+  cursor: pointer;
+  cursor: hand; }
+
+.slick-loading .sp-slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat; }
+
+.sp-item-title {
+  text-transform: uppercase;
+  font-size: 27px;
+  line-height: 1;
+  height: auto; }
+  .sp-item-title__first {
+    font-family: "cr85";
+    color: #741212; }
+  .sp-item-title__second {
+    font-family: "ptnarrow-reg";
+    color: #febc2b;
+    white-space: nowrap; }
+
+.sp-item-img {
+  width: 100%;
+  height: 135px;
+  background-size: contain !important;
+  background-position: center; }
+
+.sp-slider-item {
+  display: block;
+  margin: 0 15px; }
+  .sp-slider-item__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 210px; }
+  .sp-slider-item.-first {
+    width: 250px; }
+    .sp-slider-item.-first .sp-item-img {
+      width: 150px;
+      background: url("../img/img1.png") no-repeat; }
+  .sp-slider-item.-second {
+    width: 165px; }
+    .sp-slider-item.-second .sp-item-img {
+      width: 150px;
+      height: 120px;
+      background: url("../img/img2.png") no-repeat; }
+  .sp-slider-item.-third {
+    width: 280px; }
+    .sp-slider-item.-third .sp-item-title {
+      width: 200px; }
+    .sp-slider-item.-third .sp-item-img {
+      width: 150px;
+      background: url("../img/img3.png") no-repeat; }
+  .sp-slider-item.-fouth {
+    width: 250px; }
+    .sp-slider-item.-fouth .sp-item-img {
+      background: url("../img/img4.png") no-repeat; }
+  .sp-slider-item.-fifth {
+    width: 220px; }
+    .sp-slider-item.-fifth .sp-item-img {
+      background: url("../img/img5.png") no-repeat; }
+
+/* Arrows */
+.sp-slick-prev, .sp-slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent; }
+
+.sp-slick-next {
+  background: url("../img/next.png") no-repeat;
+  right: -30px; }
+
+.sp-slick-prev {
+  background: url("../img/prev.png") no-repeat;
+  left: -10px; }
+
+.sp-slick-prev, .sp-slick-next {
+  top: 165px;
+  width: 30px;
+  height: 40px;
+  background-position: center;
+  background-size: contain; }
+  .sp-slick-prev:hover, .sp-slick-prev:focus, .sp-slick-next:hover, .sp-slick-next:focus {
+    outline: none; }
+
+/*slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+  .slick-slider .slick-track {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block; }
+  .slick-track:before {
+    display: table;
+    content: ""; }
+  .slick-track:after {
+    display: table;
+    content: "";
+    clear: both; }
+
+.slick-loading .slick-track {
+  visibility: hidden; }
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px; }
+
+[dir='rtl'] .slick-slide {
+  float: right; }
+
+.slick-slide img {
+  display: block; }
+.slick-slide.slick-loading img {
+  display: none; }
+.slick-slide.dragging img {
+  pointer-events: none; }
+
+.slick-initialized .slick-slide {
+  display: block; }
+
+.slick-loading .slick-slide {
+  visibility: hidden; }
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
