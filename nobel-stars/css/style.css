@@ -18,9 +18,6 @@ img {
   background: #990066;
   color: #fff; }
 
-.nob-stars-block1 {
-  display: none; }
-
 .nob-stars-block2 {
   display: none; }
 
@@ -109,45 +106,6 @@ img {
                 transition: all 0.2s; }
   .nob-stars-btn:checked + label:after {
     opacity: 1; }
-
-.nob-stars-intro {
-  width: 100%;
-  height: 600px;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer; }
-  .nob-stars-intro .nob-stars-title-pink:first-child {
-    top: 30px;
-    right: 145px;
-    padding: 10px 35px; }
-  .nob-stars-intro .nob-stars-title-pink:nth-child(2) {
-    top: 125px;
-    right: 275px;
-    padding: 10px 35px; }
-  .nob-stars-intro .nob-stars-title-pink:nth-child(3) {
-    bottom: 293px;
-    right: 120px; }
-  .nob-stars-intro__content {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 10px 40px; }
-  .nob-stars-intro-img {
-    width: 50%;
-    height: 580px;
-    background: url(../img/photo1.gif) no-repeat;
-    background-size: contain;
-    background-position: center; }
-  .nob-stars-intro-text {
-    max-width: 40%;
-    font-size: 30px;
-    font-family: "rob-bold";
-    color: #000;
-    text-transform: uppercase;
-    padding-top: 385px;
-    padding-left: 65px;
-    line-height: 38px; }
 
 .nob-stars-violet {
   background: #990066;
@@ -307,6 +265,9 @@ img {
         -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
 
+#nob-stars-form {
+  height: 100%; }
+
 @media only screen and (max-width: 768px) {
   body {
     overflow-x: hidden; }
@@ -322,37 +283,11 @@ img {
     padding: 15px 25px;
     line-height: 77px; }
 
-  .nob-stars-intro {
-    height: auto;
-    padding-bottom: 20px; }
-    .nob-stars-intro__content {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      padding: 10px 15px; }
-    .nob-stars-intro-text {
-      font-size: 40px;
-      line-height: 40px;
-      padding: 10px 50px;
-      max-width: 100%; }
-    .nob-stars-intro-img {
-      width: 100%;
-      background-position: left; }
-    .nob-stars-intro .nob-stars-title-pink:nth-child(1) {
-      top: 266px;
-      right: 40px; }
-    .nob-stars-intro .nob-stars-title-pink:nth-child(2) {
-      top: auto;
-      right: 170px;
-      bottom: 303px; }
-    .nob-stars-intro .nob-stars-title-pink:nth-child(3) {
-      bottom: 200px;
-      right: 0px; }
-
   .nob-stars-block {
     height: 100%; }
+
+  .nob-stars-btn + label {
+    font-size: 50px; }
 
   .nob-stars-violet .nob-stars-block__content, .nob-stars-pink .nob-stars-block__content {
     padding: 0;
@@ -372,6 +307,7 @@ img {
         -ms-flex: 1;
             flex: 1;
     width: 600px;
+    max-height: 465px;
     height: 465px; }
   .nob-stars-violet .nob-stars-buttons, .nob-stars-pink .nob-stars-buttons {
     -webkit-box-flex: 1;
@@ -379,7 +315,8 @@ img {
         -ms-flex: 1;
             flex: 1;
     width: auto;
-    padding: 60px 10%; }
+    padding: 60px 10%;
+    max-height: 550px; }
     .nob-stars-violet .nob-stars-buttons > div, .nob-stars-pink .nob-stars-buttons > div {
       width: 100%; }
     .nob-stars-violet .nob-stars-buttons label, .nob-stars-pink .nob-stars-buttons label {
@@ -390,12 +327,24 @@ img {
         width: 40px;
         height: 40px; }
 
+  .nob-stars-violet .nob-stars-buttons {
+    padding: 100px 10%; }
+
+  .nob-stars-pink .nob-stars-buttons {
+    padding: 60px 10% 120px; }
+
   .nob-stars-white {
     margin-top: 0;
     padding-top: 100px; }
+    .nob-stars-white .nob-stars-block__content {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
     .nob-stars-white .nob-stars-img {
       width: 600px;
-      height: 395px;
+      max-height: 465px;
+      height: 465px;
       margin-top: -145px;
       -webkit-box-flex: 1;
       -webkit-flex: 1;
@@ -416,7 +365,7 @@ img {
           -ms-flex-pack: justify;
               justify-content: space-between;
       width: auto;
-      height: 410px;
+      max-height: 500px;
       padding: 60px 10%;
       box-sizing: border-box; }
       .nob-stars-white .nob-stars-buttons > div {
