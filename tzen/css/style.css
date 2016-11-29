@@ -799,6 +799,15 @@ h1 {
   #brands-filter, #section-2 .about {
     width: 100%; }
 
+  #brands-filter {
+    padding: 20px 3%; }
+
+  .slider-nav, .slider-for {
+    width: 768px; }
+
+  .slider-for img {
+    width: 768px; }
+
   .contacts {
     font-size: 18px;
     width: 80% !important; }
