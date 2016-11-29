@@ -284,7 +284,8 @@ img {
     line-height: 77px; }
 
   .nob-stars-block {
-    height: 100vh; }
+    height: 100%;
+    min-height: 100vh; }
 
   .nob-stars-btn + label {
     font-size: 50px; }
