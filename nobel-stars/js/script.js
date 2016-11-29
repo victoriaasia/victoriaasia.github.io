@@ -35,6 +35,11 @@ $('.nob-stars-block7 .js-button').change(function(){
         }
 });
 
+$('.nob-stars-intro').click(function() { setTimeout(function() {
+  $('.nob-stars-intro').hide();
+  $('.nob-stars-block1').css('display', 'block');
+}, 2000); });
+
 $('.nob-stars-block1 .js-button').click(function() { setTimeout(function() {
   $('.nob-stars-block1').hide();
   $('.nob-stars-block2').css('display', 'block');
