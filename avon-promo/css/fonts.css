@@ -1,0 +1,43 @@
+
+@font-face {
+  font-family: 'hna';
+  src: url('../fonts/hna/HelveticaNeueAVON-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/hna/HelveticaNeueAVON-Light.otf')  format('opentype'),
+	     url('../fonts/hna/HelveticaNeueAVON-Light.woff') format('woff'), url('../fonts/hna/HelveticaNeueAVON-Light.ttf')  format('truetype'), url('../fonts/hna/HelveticaNeueAVON-Light.svg#HelveticaNeueAVON-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ddt';
+  src: url('../fonts/ddt/DidotLTsPro-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/ddt/DidotLTsPro-Bold.otf')  format('opentype'),
+	     url('../fonts/ddt/DidotLTsPro-Bold.woff') format('woff'), url('../fonts/ddt/DidotLTsPro-Bold.ttf')  format('truetype'), url('../fonts/ddt/DidotLTsPro-Bold.svg#DidotLTsPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'hnm';
+	src: url('../fonts/hnm/HelveticaNeue-Medium.eot');
+	src: url('../fonts/hnm/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/hnm/HelveticaNeue-Medium.woff2') format('woff2'),
+		url('../fonts/hnm/HelveticaNeue-Medium.woff') format('woff'),
+		url('../fonts/hnm/HelveticaNeue-Medium.ttf') format('truetype'),
+		url('../fonts/hnm/HelveticaNeue-Medium.svg#HelveticaNeue-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'hnl';
+	src: url('../fonts/hnl/HelveticaNeue-Light.eot');
+	src: url('../fonts/hnl/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/hnl/HelveticaNeue-Light.woff2') format('woff2'),
+		url('../fonts/hnl/HelveticaNeue-Light.woff') format('woff'),
+		url('../fonts/hnl/HelveticaNeue-Light.ttf') format('truetype'),
+		url('../fonts/hnl/HelveticaNeue-Light.svg#HelveticaNeue-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}

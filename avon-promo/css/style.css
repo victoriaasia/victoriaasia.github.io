@@ -1,0 +1,116 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  background: #000; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.av-wrapper ::-moz-selection {
+  background: #ffc709;
+  color: #000; }
+
+.av-wrapper ::selection {
+  background: #ffc709;
+  color: #000; }
+
+.av-container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 40px 0px;
+  background: #fff;
+  box-sizing: border-box;
+  overflow: hidden; }
+  .av-container > div {
+    position: relative; }
+
+.av-intro {
+  padding: 0px 50px; }
+  .av-intro__special {
+    font-size: 14px;
+    font-family: "hna";
+    color: #000;
+    background: #ffc709;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 9px;
+    white-space: nowrap;
+    padding: 10px 15px;
+    width: 350px;
+    box-sizing: border-box; }
+  .av-intro__title {
+    width: 835px;
+    font-size: 65px;
+    font-family: "ddt";
+    color: #fff;
+    background: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.077;
+    letter-spacing: 4px;
+    white-space: nowrap;
+    padding: 25px 40px;
+    box-sizing: border-box; }
+  .av-intro__sub-title {
+    position: absolute;
+    bottom: -40px;
+    right: 45px;
+    font-size: 43px;
+    font-family: "hna";
+    color: #000;
+    background: #ffc709;
+    text-transform: uppercase;
+    line-height: 1.07;
+    letter-spacing: 6px;
+    padding: 20px;
+    z-index: 999; }
+
+.av-block-one {
+  background: url("../img/photo1.png") no-repeat;
+  background-position: -5px 45px;
+  background-size: 520px;
+  padding: 95px 50px 140px; }
+  .av-block-one__content {
+    float: right;
+    width: 63%;
+    color: #000; }
+  .av-block-one .av-title {
+    font-size: 34px;
+    font-family: "ddt";
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.188;
+    text-align: center;
+    letter-spacing: 1px;
+    position: relative; }
+    .av-block-one .av-title::after {
+      position: absolute;
+      content: "";
+      border-bottom: 2px solid #000;
+      width: 180px;
+      bottom: -50px;
+      left: 240px; }
+  .av-block-one .av-text {
+    font-size: 16px;
+    font-family: "Minion Pro";
+    line-height: 1.6;
+    padding: 135px 55px 0; }
+
+.av-dropcaps {
+  font-size: 140px;
+  float: left;
+  font-weight: 400;
+  line-height: 1em;
+  margin-bottom: -0.8em;
+  margin-right: -0.05em;
+  position: relative;
+  top: -60px;
+  left: -10px; }

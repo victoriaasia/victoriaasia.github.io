@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'HelveticaNeueAVON-Light';
+  src: url('HelveticaNeueAVON-Light.eot?#iefix') format('embedded-opentype'),  url('HelveticaNeueAVON-Light.otf')  format('opentype'),
+	     url('HelveticaNeueAVON-Light.woff') format('woff'), url('HelveticaNeueAVON-Light.ttf')  format('truetype'), url('HelveticaNeueAVON-Light.svg#HelveticaNeueAVON-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
