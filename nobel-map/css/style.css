@@ -476,8 +476,11 @@ img {
       .nob-block4__img img:first-child {
         display: none; }
       .nob-block4__img img {
-        position: static;
-        width: 100%; }
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999; }
     .nob-block4__text {
       padding: 0 0 40px; }
     .nob-block4 .nob-flag {
@@ -547,7 +550,9 @@ img {
     max-width: 440px; }
   .nob-block9 .nob-word:nth-child(5) {
     width: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    position: relative;
+    z-index: 999; }
 
   .nob-block10 {
     height: auto;
