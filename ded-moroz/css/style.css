@@ -10,6 +10,18 @@ img {
   max-width: 100%;
   height: auto; }
 
+*::-webkit-media-controls-panel {
+  display: none !important;
+  -webkit-appearance: none; }
+
+*::--webkit-media-controls-play-button {
+  display: none !important;
+  -webkit-appearance: none; }
+
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none; }
+
 .dm-container ::-moz-selection {
   background: #4778dd;
   color: #fff; }
@@ -79,7 +91,7 @@ img {
 
 .dm-block {
   width: 100%;
-  min-height: 250px; }
+  min-height: 150px; }
   .dm-block.-first {
     background: url("../img/back1.png") no-repeat;
     background-size: cover;
