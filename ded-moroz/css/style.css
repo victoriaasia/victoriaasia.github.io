@@ -1,0 +1,337 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.dm-container ::-moz-selection {
+  background: #4778dd;
+  color: #fff; }
+
+.dm-container ::selection {
+  background: #4778dd;
+  color: #fff; }
+
+.dm-container {
+  width: 1100px;
+  height: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: "Helvetica"; }
+  .dm-container > div {
+    position: relative; }
+
+.dm-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.dm-desc p {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 40px; }
+
+.dm-special {
+  background: url("../img/special.png") no-repeat;
+  background-size: cover;
+  width: 180px;
+  height: 40px;
+  margin: 0 auto; }
+
+.dm-main-title {
+  background: url("../img/main-title.png") no-repeat;
+  background-size: cover;
+  width: 875px;
+  height: 85px;
+  margin: 0 auto; }
+
+.dm-line {
+  background: url("../img/line.png") no-repeat;
+  background-position: center !important;
+  background-size: contain;
+  width: 516px;
+  height: 56px;
+  margin: 10px auto; }
+
+.dm-button {
+  display: block;
+  width: 100%; }
+
+.dm-intro .dm-content {
+  padding: 30px 0 50px; }
+.dm-intro__text {
+  font-size: 26px;
+  color: #000;
+  line-height: 1.2;
+  text-align: center;
+  padding: 0px 110px; }
+
+.dm-block {
+  width: 100%;
+  min-height: 250px; }
+  .dm-block.-first {
+    background: url("../img/back1.png") no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 515px; }
+    .dm-block.-first .dm-content {
+      float: right;
+      width: 54%;
+      height: 100%;
+      padding: 55px 60px 75px 30px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      box-sizing: border-box; }
+    .dm-block.-first .dm-title {
+      background: url("../img/title1.png") no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 100px;
+      position: relative; }
+      .dm-block.-first .dm-title::after {
+        position: absolute;
+        content: "";
+        border-bottom: 2px solid #fff;
+        width: 85px;
+        bottom: -40px;
+        left: 42%; }
+    .dm-block.-first .dm-desc {
+      color: #fff; }
+    .dm-block.-first .dm-button {
+      background: url("../img/button1.png") no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: 100px; }
+  .dm-block.-first-result {
+    background: url("../img/back2.png") no-repeat; }
+  .dm-block.-second {
+    background: url("../img/photo2.png") no-repeat;
+    background-position: 90% 75px;
+    background-size: 460px;
+    color: #000;
+    height: 625px; }
+    .dm-block.-second .dm-content {
+      width: 54%;
+      height: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 120px 60px 50px 45px;
+      box-sizing: border-box;
+      position: relative; }
+      .dm-block.-second .dm-content::before, .dm-block.-second .dm-content::after {
+        position: absolute;
+        content: "";
+        border-bottom: 2px solid #000;
+        left: 10%;
+        width: 78%; }
+      .dm-block.-second .dm-content::before {
+        top: 76px; }
+      .dm-block.-second .dm-content::after {
+        bottom: 1px; }
+    .dm-block.-second .dm-title {
+      font-size: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: center; }
+    .dm-block.-second .dm-desc p {
+      padding-bottom: 60px; }
+    .dm-block.-second .dm-button {
+      background: url("../img/button2.png") no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: 90px; }
+  .dm-block.-third .dm-content {
+    margin-top: 60px; }
+    .dm-block.-third .dm-content .dm-button {
+      background: url("../img/button3.png") no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: 125px;
+      margin-top: 60px; }
+  .dm-block.-fouth .dm-title {
+    font-size: 23px;
+    font-family: "Helvetica";
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.043;
+    text-align: center;
+    margin: 35px 0 20px; }
+  .dm-block.-fouth .dm-share-btns {
+    text-align: center; }
+  .dm-block.-fouth .dm-share {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url("../img/share-btn.png");
+    background-size: cover;
+    margin: 0 10px; }
+  .dm-block.-fouth .dm-ok {
+    background-position: -60px 0; }
+  .dm-block.-fouth .dm-vk {
+    background-position: 60px 0; }
+  .dm-block.-fouth .dm-fb {
+    background-position: 0 0; }
+  .dm-block.-fouth .dm-tw {
+    background-position: -120px 0; }
+
+.dm-video-container {
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 420px;
+  margin: 0 60px;
+  z-index: 0;
+  overflow: hidden; }
+  .dm-video-container video {
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    z-index: -100; }
+
+.dm-video-controls {
+  height: 100%;
+  position: relative; }
+  .dm-video-controls .dm-control {
+    border: 0;
+    outline: 0;
+    background: url("../img/play-btn.png") no-repeat;
+    background-size: contain;
+    width: 85px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%); }
+  .dm-video-controls .dm-control-hide {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0; }
+
+@media only screen and (max-width: 768px) {
+  .dm-special {
+    width: 305px;
+    height: 68px; }
+
+  .dm-main-title {
+    background: url("../img/main-title-min.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 720px;
+    height: 260px; }
+
+  .dm-intro .dm-content {
+    padding: 75px 0 120px; }
+  .dm-intro__text {
+    font-size: 41px;
+    padding: 0px 20px; }
+
+  .dm-line {
+    width: 360px;
+    height: 21px;
+    margin: 55px auto 25px; }
+
+  .dm-desc p {
+    font-size: 40px; }
+
+  .dm-container {
+    width: 768px; }
+
+  .dm-block.-first {
+    height: 1090px;
+    background: url("../img/back1-min.png") no-repeat;
+    background-size: cover; }
+    .dm-block.-first .dm-content {
+      float: none;
+      width: 100%;
+      margin: 0 auto;
+      padding: 55px 30px 75px 30px; }
+    .dm-block.-first .dm-title {
+      width: 650px;
+      height: 170px;
+      margin: 0 auto; }
+      .dm-block.-first .dm-title::after {
+        display: none; }
+    .dm-block.-first .dm-button {
+      width: 650px;
+      height: 125px;
+      margin: 0 auto; }
+  .dm-block.-second {
+    background: none;
+    height: auto; }
+    .dm-block.-second .dm-content {
+      width: 100%;
+      padding: 80px 0; }
+      .dm-block.-second .dm-content::before, .dm-block.-second .dm-content::after {
+        display: none; }
+    .dm-block.-second .dm-title {
+      font-size: 54px;
+      padding: 0 60px 45px; }
+    .dm-block.-second .dm-img {
+      width: 100%;
+      height: 495px;
+      background: url("../img/photo2-min.png") no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 45px; }
+    .dm-block.-second .dm-button {
+      height: 110px; }
+  .dm-block.-third .dm-content {
+    margin: 0px; }
+    .dm-block.-third .dm-content .dm-button {
+      height: 110px;
+      margin-top: 45px; }
+  .dm-block.-fouth .dm-title {
+    font-size: 40px;
+    margin: 50px 0 30px; }
+  .dm-block.-fouth .dm-share {
+    width: 110px;
+    height: 110px; }
+  .dm-block.-fouth .dm-ok {
+    background-position: -110px 0; }
+  .dm-block.-fouth .dm-vk {
+    background-position: 110px 0; }
+  .dm-block.-fouth .dm-fb {
+    background-position: 0 0; }
+  .dm-block.-fouth .dm-tw {
+    background-position: -220px 0; }
+  .dm-block .dm-video-container {
+    margin: 0;
+    height: 345px; } }
