@@ -48,9 +48,9 @@
 				<section>
 					<div class="section-1">
 						<div class="video-container">
+							<input type="button" value="play" onclick="document.video.play()">
 							<div class="filter"></div>
-
-							<video class="fillWidth" preload autoplay loop webkit-playsinline>
+							<video class="fillWidth" preload autoplay="true" controls="false" loop webkit-playsinline>
 							    <source src="video/clothing.mp4" type="video/mp4" />
 							    <object type="application/x-shockwave-flash"
 							            data="swf/flowplayer-3.2.18.swf">
