@@ -93,12 +93,12 @@ $('#brands-filter').mixItUp({
 });
 });
 
-var brand = document.querySelectorAll('.detail-brand');
-for (let i=0; i<brand.length; i++) {
-  brand[i].addEventListener('click', function() {
-    brand[i].classList.toggle('hover-effect');
+var detailBrand = document.querySelectorAll('.detail-brand');
+for (let i=0; i<detailBrand.length; i++) {
+  detailBrand[i].addEventListener('click', function() {
+    detailBrand[i].classList.toggle('hover-effect');
   });
-}
+
 
 // photo slider settings
 $('.slider-for').slick({

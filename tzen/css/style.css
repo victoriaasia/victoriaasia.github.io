@@ -727,17 +727,17 @@ a {
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s; }
 
-.detail-brand:hover .mask, .detail-brand:focus .mask {
+.detail-brand:hover .mask {
   opacity: 1; }
-.detail-brand:hover h2, .detail-brand:hover p, .detail-brand:hover .info, .detail-brand:focus h2, .detail-brand:focus p, .detail-brand:focus .info {
+.detail-brand:hover h2, .detail-brand:hover p, .detail-brand:hover .info {
   opacity: 1;
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
           transform: translateY(0px); }
-.detail-brand:hover p, .detail-brand:focus p {
+.detail-brand:hover p {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s; }
-.detail-brand:hover .info, .detail-brand:focus .info {
+.detail-brand:hover .info {
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s; }
 
