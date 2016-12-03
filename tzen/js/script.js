@@ -36,7 +36,7 @@ $('.menu a').click(function(){
     video.removeAttribute('controls')
   }
 
-window.onload = function(){		
+window.onload = function(){
 	play.addEventListener("click",function(){
 		video.play();
 	});
@@ -92,6 +92,13 @@ $('#brands-filter').mixItUp({
  }
 });
 });
+
+var brand = document.querySelectorAll('.detail-brand');
+for (let i=0; i<brand.length; i++) {
+  brand[i].addEventListener('click', function() {
+    brand[i].classList.toggle('hover-effect');
+  });
+}
 
 // photo slider settings
 $('.slider-for').slick({
