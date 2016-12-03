@@ -19,6 +19,18 @@ a {
   text-decoration: none;
   color: #75174D; }
 
+*::-webkit-media-controls-panel {
+  display: none !important;
+  -webkit-appearance: none; }
+
+*::--webkit-media-controls-play-button {
+  display: none !important;
+  -webkit-appearance: none; }
+
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none; }
+
 .container ::-moz-selection {
   background: #75174D;
   color: #ece7e1; }
