@@ -31,12 +31,8 @@ a {
   display: none !important;
   -webkit-appearance: none; }
 
-.play-btn {
-  top: 0;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%; }
+#play {
+  position: absolute; }
 
 .container ::-moz-selection {
   background: #75174D;

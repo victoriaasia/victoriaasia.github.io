@@ -26,19 +26,28 @@ $('.menu a').click(function(){
   initBannerVideoSize('.video-container .poster img');
   initBannerVideoSize('.video-container .filter');
   initBannerVideoSize('.video-container video');
+
   var video = document.querySelector('.fillWidth');
+  var play = document.getElementById("play");
+
   video.addEventListener('contextmenu', function (e) { e.preventDefault(); e.stopPropagation(); }, false);
+
   if (video.hasAttribute('controls')) {
     video.removeAttribute('controls')
   }
 
-  $(window).on('resize', function() {
-      scaleVideoContainer();
-      scaleBannerVideoSize('.video-container .poster img');
-      scaleBannerVideoSize('.video-container .filter');
-      scaleBannerVideoSize('.video-container video');
-  });
+window.onload = function(){		
+	play.addEventListener("click",function(){
+		video.play();
+	});
+}
 
+$(window).on('resize', function() {
+    scaleVideoContainer();
+    scaleBannerVideoSize('.video-container .poster img');
+    scaleBannerVideoSize('.video-container .filter');
+    scaleBannerVideoSize('.video-container video');
+});
 
 function scaleVideoContainer() {
   var height = $(window).height() + 5;
