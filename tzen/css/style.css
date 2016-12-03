@@ -713,6 +713,20 @@ a {
     -webkit-transition: all 0.2s linear;
             transition: all 0.2s linear; }
 
+.detail-brand.hover-effect .mask {
+  opacity: 1; }
+.detail-brand.hover-effect h2, .detail-brand.hover-effect p, .detail-brand.hover-effect .info {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px); }
+.detail-brand.hover-effect p {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s; }
+.detail-brand.hover-effect .info {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s; }
+
 .detail-brand:hover .mask, .detail-brand:focus .mask {
   opacity: 1; }
 .detail-brand:hover h2, .detail-brand:hover p, .detail-brand:hover .info, .detail-brand:focus h2, .detail-brand:focus p, .detail-brand:focus .info {
