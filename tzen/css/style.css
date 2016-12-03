@@ -713,17 +713,17 @@ a {
     -webkit-transition: all 0.2s linear;
             transition: all 0.2s linear; }
 
-.detail-brand:hover .mask {
+.detail-brand:hover .mask, .detail-brand:focus .mask {
   opacity: 1; }
-.detail-brand:hover h2, .detail-brand:hover p, .detail-brand:hover .info {
+.detail-brand:hover h2, .detail-brand:hover p, .detail-brand:hover .info, .detail-brand:focus h2, .detail-brand:focus p, .detail-brand:focus .info {
   opacity: 1;
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
           transform: translateY(0px); }
-.detail-brand:hover p {
+.detail-brand:hover p, .detail-brand:focus p {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s; }
-.detail-brand:hover .info {
+.detail-brand:hover .info, .detail-brand:focus .info {
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s; }
 
