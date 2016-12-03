@@ -34,13 +34,13 @@ $('.menu a').click(function(){
 
   if (video.hasAttribute('controls')) {
     video.removeAttribute('controls')
-  }
+  };
 
 window.onload = function(){
 	play.addEventListener("click",function(){
 		video.play();
 	});
-}
+};
 
 $(window).on('resize', function() {
     scaleVideoContainer();
@@ -53,14 +53,14 @@ function scaleVideoContainer() {
   var height = $(window).height() + 5;
   var unitHeight = parseInt(height) + 'px';
   $('.section-1').css('height',unitHeight);
-}
+};
 function initBannerVideoSize(element){
   $(element).each(function(){
       $(this).data('height', $(this).height());
       $(this).data('width', $(this).width());
   });
   scaleBannerVideoSize(element);
-}
+};
 function scaleBannerVideoSize(element){
   var windowWidth = $(window).width(),
   windowHeight = $(window).height() + 5,
@@ -82,7 +82,7 @@ function scaleBannerVideoSize(element){
       }
       $('.section-1 .video-container video').addClass('fadeIn animated');
   });
-}
+};
 
 // filter brands section
 $(function(){
@@ -98,7 +98,7 @@ for (let i=0; i<detailBrand.length; i++) {
   detailBrand[i].addEventListener('click', function() {
     detailBrand[i].classList.toggle('hover-effect');
   });
-
+};
 
 // photo slider settings
 $('.slider-for').slick({
