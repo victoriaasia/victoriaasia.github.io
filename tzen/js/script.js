@@ -1,4 +1,9 @@
 jQuery(function($){
+
+// parallax settings
+$('.parallax-brands').parallax({imageSrc: 'img/ph1.jpg'});
+$('.parallax-gallery').parallax({imageSrc: 'img/ph2.jpg'});
+
 // menu toggle
 $('.menu-toggle').click(function(){
     $(this).next('ul').slideToggle();
@@ -61,4 +66,32 @@ function scaleBannerVideoSize(element){
       $('.section-1 .video-container video').addClass('fadeIn animated');
   });
 }
+
+// filter brands section
+$(function(){
+$('#brands-filter').mixItUp({
+ load: {
+   filter: 'all'
+ }
+});
+});
+
+// photo slider settings
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    centerMode: true,
+    arrows: true,
+    focusOnSelect: true
+});
+
+
 });

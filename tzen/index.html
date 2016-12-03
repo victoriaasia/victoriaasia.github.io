@@ -52,7 +52,7 @@
 
 							<video autoplay="" class="fillWidth" loop="" controls="controls" poster="img/ph3.jpg">
 							    <source src="video/clothing.mp4" type="video/mp4" />
-							    <object type="application/x-shockwave-flash"
+							    <!-- <object type="application/x-shockwave-flash"
 							            data="swf/flowplayer-3.2.18.swf">
 							        <param name="movie" value="swf/flowplayer-3.2.18.swf" />
 							        <param name="allowFullScreen" value="true" />
@@ -61,7 +61,7 @@
 							               value="config={'playlist':['img%2Fph3.jpg',{'url':'video%2Fclothing.mp4','autoPlay':true}]}" />
 
 							        <img src="img/ph3.jpg" title="No Flash found" />
-							    </object>
+							    </object> -->
 							</video>
 						</div>
 						<div class="video-decor"></div>
@@ -310,37 +310,6 @@
 	<script>new WOW().init();</script>
 	<script src='js/slick.min.js'></script>
 	<script src='js/script.js'></script>
-	<script>
-	   $('.parallax-brands').parallax({imageSrc: 'img/ph1.jpg'});
-	   $('.parallax-gallery').parallax({imageSrc: 'img/ph2.jpg'});
-	</script>
-	<script>
-			$(function(){
-		 $('#brands-filter').mixItUp({
-			 load: {
-				 filter: 'all'
-			 }
-		 });
-		});
-	</script>
-	<script>
-	$('.slider-for').slick({
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-	    arrows: false,
-	    fade: true,
-	    asNavFor: '.slider-nav'
-	});
 
-	$('.slider-nav').slick({
-	    slidesToShow: 3,
-	    slidesToScroll: 1,
-	    asNavFor: '.slider-for',
-	    centerMode: true,
-	    arrows: true,
-	    focusOnSelect: true
-	});
-
-	</script>
 </body>
 </html>
