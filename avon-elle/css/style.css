@@ -104,20 +104,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       width: 375px; }
     .av-intro__title {
       width: 410px;
-      font-size: 49px; }
+      font-size: 47px; }
     .av-intro .av-text-elle {
       width: 410px;
       padding: 35px 30px 100px;
       font-size: 38px; }
     .av-intro .av-text-title, .av-intro .av-text-subtitle {
       width: 100%;
-      white-space: nowrap; }
+      white-space: nowrap;
+      padding: 0; }
     .av-intro .av-text-title {
-      font-size: 45px;
-      padding: 0 0 0 70px; }
+      font-size: 45px; }
     .av-intro .av-text-subtitle {
-      font-size: 46px;
-      padding: 0 0 0 90px; }
+      font-size: 44px; }
     .av-intro .av-text-content {
       width: 100%;
       font-size: 38px;
