@@ -1,0 +1,124 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+.av-wrapper ::-moz-selection {
+  background: #ffc709;
+  color: #000; }
+
+.av-wrapper ::selection {
+  background: #ffc709;
+  color: #000; }
+
+.av-container {
+  width: 980px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto; }
+  .av-container > div {
+    position: relative; }
+
+.av-intro {
+  background: url("../img/photo.png") no-repeat;
+  background-position: 97% 40px;
+  background-size: 398px;
+  padding: 40px;
+  box-sizing: border-box; }
+  .av-intro__special {
+    font-size: 14px;
+    font-family: "hna";
+    color: #000;
+    background: #ffc709;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 7px;
+    white-space: nowrap;
+    padding: 10px 15px;
+    width: 315px;
+    box-sizing: border-box; }
+  .av-intro__title {
+    width: 525px;
+    font-size: 65px;
+    font-family: "ddt";
+    color: #fff;
+    background: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.077;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    padding: 15px 25px;
+    box-sizing: border-box; }
+  .av-intro__text {
+    color: #000; }
+  .av-intro .av-text-elle {
+    width: 525px;
+    padding: 35px 30px 30px;
+    font-size: 24px;
+    font-family: "Minion Pro";
+    font-style: italic;
+    line-height: 1.2;
+    text-align: right;
+    box-sizing: border-box; }
+  .av-intro .av-text-title {
+    width: 525px;
+    padding: 0 25px;
+    font-size: 30px;
+    font-family: "hnb";
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: right;
+    box-sizing: border-box; }
+  .av-intro .av-text-subtitle {
+    width: 525px;
+    padding: 0 25px;
+    font-size: 31px;
+    font-family: "hnl";
+    font-weight: bold;
+    line-height: 1;
+    text-align: right;
+    box-sizing: border-box; }
+  .av-intro .av-text-content {
+    width: 525px;
+    padding: 40px 15px 15px 0;
+    font-size: 24px;
+    font-family: "Minion Pro";
+    font-style: italic;
+    line-height: 1.2;
+    box-sizing: border-box; }
+
+@media only screen and (max-width: 768px) {
+  .av-container {
+    width: 768px; }
+
+  .av-intro {
+    padding: 0 30px;
+    background-position: 96% 20px;
+    background-size: 310px; }
+    .av-intro__special {
+      font-size: 19px;
+      width: 375px; }
+    .av-intro__title {
+      width: 410px;
+      font-size: 49px; }
+    .av-intro .av-text-elle {
+      width: 410px;
+      padding: 35px 30px 100px;
+      font-size: 38px; }
+    .av-intro .av-text-title, .av-intro .av-text-subtitle {
+      width: 100%;
+      white-space: nowrap; }
+    .av-intro .av-text-title {
+      font-size: 45px;
+      padding: 0 0 0 70px; }
+    .av-intro .av-text-subtitle {
+      font-size: 46px;
+      padding: 0 0 0 90px; }
+    .av-intro .av-text-content {
+      width: 100%;
+      font-size: 38px;
+      padding: 40px 0px 15px; } }
