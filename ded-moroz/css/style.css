@@ -67,8 +67,7 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
-  text-align: center;
-  padding-bottom: 40px; }
+  text-align: center; }
 
 .dm-special {
   background: url("../img/special.png") no-repeat;
@@ -129,7 +128,8 @@ img {
       background: url("../img/button1.png") no-repeat;
       background-size: contain;
       background-position: center;
-      height: 100px; }
+      height: 100px;
+      margin: 40px auto 0; }
     .dm-block.-first .dm-title {
       background: url("../img/title1.png") no-repeat;
       background-size: contain;
@@ -202,13 +202,13 @@ img {
       text-transform: uppercase;
       line-height: 1.2;
       text-align: center; }
-    .dm-block.-second .dm-desc p {
-      padding-bottom: 60px; }
     .dm-block.-second .dm-button {
       background: url("../img/button2.png") no-repeat;
       background-size: contain;
       background-position: center;
-      height: 90px; }
+      height: 90px;
+      width: 300px;
+      margin: 60px auto 0; }
   .dm-block.-third .dm-content {
     margin-top: 60px; }
     .dm-block.-third .dm-content .dm-button {
@@ -366,7 +366,7 @@ img {
     .dm-block.-first .dm-button, .dm-block.-first .dm-result-button {
       width: 650px;
       height: 125px;
-      margin: 0 auto; }
+      margin: 30px auto 0; }
   .dm-block.-second {
     background: none;
     height: auto; }
@@ -386,7 +386,8 @@ img {
       background-position: center;
       margin-bottom: 45px; }
     .dm-block.-second .dm-button {
-      height: 110px; }
+      height: 110px;
+      width: 365px; }
   .dm-block.-third .dm-content {
     margin: 0px; }
     .dm-block.-third .dm-content .dm-button {
