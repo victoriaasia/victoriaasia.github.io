@@ -216,7 +216,8 @@ img {
       background-size: contain;
       background-position: center;
       height: 125px;
-      margin-top: 60px; }
+      width: 400px;
+      margin: 60px auto 35px; }
   .dm-block.-fourth {
     padding-bottom: 30px; }
     .dm-block.-fourth .dm-title {
@@ -227,7 +228,7 @@ img {
       text-transform: uppercase;
       line-height: 1.043;
       text-align: center;
-      margin: 35px 0 20px; }
+      margin: 0 0 20px; }
 
 .dm-share-btns {
   text-align: center; }
