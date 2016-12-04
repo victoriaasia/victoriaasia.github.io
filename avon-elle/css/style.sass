@@ -1,0 +1,173 @@
+$white: #fff
+$black: #000
+$yellow: #ffc709
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+// common styles
+.av-wrapper ::-moz-selection
+  background: $yellow
+  color: $black
+.av-wrapper ::selection
+  background: $yellow
+  color: $black
+.av-container
+  width: 980px
+  box-sizing: border-box
+  overflow: hidden
+  margin: 0 auto
+  > div
+    position: relative
+img
+  width: 100%
+  height: auto
+
+.av-decor
+  position: absolute
+  background: url('../img/decor.png') no-repeat
+  background-size: contain
+
+.av-flex
+  display: flex
+
+.av-block
+  padding: 0px 40px
+  &__title
+    position: absolute
+    background: $yellow
+    color: $black
+    font-size: 32px
+    font-family: "ddt"
+    font-weight: bold
+    text-transform: uppercase
+    line-height: 2.188
+    padding: 0 2%
+    white-space: nowrap
+  &__text
+    font-size: 16px
+    font-family: "Minion Pro"
+    line-height: 1.438
+
+.av-intro
+  background: url('../img/photo.png') no-repeat
+  background-position: 97% 40px
+  background-size: 398px
+  padding: 40px 40px 130px
+  box-sizing: border-box
+  &__special
+    font-size: 14px
+    font-family: "hna"
+    color: $black
+    background: $yellow
+    text-transform: uppercase
+    line-height: 1.2
+    letter-spacing: 7px
+    white-space: nowrap
+    padding: 10px 15px
+    width: 315px
+    box-sizing: border-box
+  &__title
+    width: 525px
+    font-size: 65px
+    font-family: "ddt"
+    color: $white
+    background: $black
+    font-weight: bold
+    text-transform: uppercase
+    line-height: 1.077
+    letter-spacing: 1px
+    white-space: nowrap
+    padding: 15px 25px
+    box-sizing: border-box
+  &__text
+    color: $black
+  .av-text-
+    &elle
+      width: 525px
+      padding: 35px 30px 30px
+      font-size: 24px
+      font-family: "Minion Pro"
+      font-style: italic
+      line-height: 1.2
+      text-align: right
+      box-sizing: border-box
+    &title
+      width: 525px
+      padding: 0 25px
+      font-size: 30px
+      font-family: "hnb"
+      text-transform: uppercase
+      line-height: 1.2
+      text-align: right
+      box-sizing: border-box
+    &subtitle
+      width: 525px
+      padding: 0 25px
+      font-size: 31px
+      font-family: "hnl"
+      font-weight: bold
+      line-height: 1
+      text-align: right
+      box-sizing: border-box
+    &content
+      width: 525px
+      padding: 40px 15px 15px 0
+      font-size: 24px
+      font-family: "Minion Pro"
+      font-style: italic
+      line-height: 1.2
+      box-sizing: border-box
+  .av-decor
+    width: 200px
+    height: 300px
+    bottom: 0
+    right: 0
+
+.av-block
+  &.-first
+    margin-top: -90px
+    .av-block__title
+      top: 20px
+      left: 290px
+    .av-block__img
+      width: 40%
+    .av-block__text
+      width: 60%
+      padding: 110px 40px
+      box-sizing: border-box
+  &.-second
+    background: url('../img/2.png')
+    height: 725px
+    .av-block__img
+      display: none
+    .av-block__title
+      top: 60px
+      left: 40px
+    .av-block__text
+      width: 40%
+      padding: 165px 0 0 15px
+      color: $white
+  &.-third
+    margin-top: 40px
+    height: 300px
+    .av-block__title
+      top: 20px
+      left: 270px
+    .av-block__img
+      flex: 1
+    .av-block__text
+      flex: 1
+      padding: 110px 40px
+      box-sizing: border-box
+
+
+
+
+
+@import "media"
