@@ -387,7 +387,8 @@ img {
       margin-bottom: 45px; }
     .dm-block.-second .dm-button {
       height: 110px;
-      width: 365px; }
+      width: 365px;
+      margin: 30px auto 0; }
   .dm-block.-third .dm-content {
     margin: 0px; }
     .dm-block.-third .dm-content .dm-button {
