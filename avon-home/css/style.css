@@ -384,4 +384,44 @@ body {
       right: 380px;
       top: 35px; }
   .av-block-four .av-woman {
-    width: 335px; } }
+    width: 335px; }
+
+  .av-block-five {
+    height: 350px;
+    padding: 60px 35px 30px; }
+    .av-block-five::after {
+      width: 265px;
+      bottom: 86px;
+      right: 40px; }
+    .av-block-five .av-sub-title {
+      width: 530px; }
+    .av-block-five .av-quotes {
+      width: 75px; }
+    .av-block-five .av-sub-title2 {
+      width: 290px;
+      height: 245px;
+      font-size: 42px; }
+    .av-block-five .av-decor {
+      right: 5px;
+      width: 150px; }
+
+  .av-block-six {
+    padding: 60px 45px;
+    height: 430px; }
+    .av-block-six .av-sub-title {
+      width: 225px; }
+
+  .av-block-seven {
+    padding: 70px 40px 0;
+    background-position: 70px 70px;
+    background-size: 660px; }
+    .av-block-seven .av-title {
+      padding: 25px;
+      width: 350px;
+      top: 40px; }
+    .av-block-seven .av-sub-title {
+      width: 532px;
+      padding: 30px;
+      top: 130px;
+      left: 158px;
+      text-align: left; } }
