@@ -338,7 +338,7 @@ body {
     .av-block-one .av-sub-title {
       left: 20px; }
     .av-block-one .av-woman {
-      top: 40px;
+      top: 41px;
       right: 40px;
       width: 335px; }
     .av-block-one .av-decor {
@@ -356,7 +356,7 @@ body {
     .av-block-two .av-title {
       padding-left: 225px; }
     .av-block-two .av-sub-title {
-      padding-top: 30px; }
+      padding-top: 15px; }
 
   .av-block-three {
     padding: 55px 40px 400px; }
@@ -385,7 +385,7 @@ body {
     .av-block-four .av-sub-title::before {
       height: 125px;
       right: 380px;
-      top: 28px; }
+      top: 25px; }
   .av-block-four .av-woman {
     width: 335px; }
 
@@ -395,7 +395,7 @@ body {
     .av-block-five::after {
       width: 265px;
       bottom: 86px;
-      right: 40px; }
+      right: 35px; }
     .av-block-five .av-sub-title {
       width: 530px; }
     .av-block-five .av-quotes {
@@ -411,6 +411,8 @@ body {
   .av-block-six {
     padding: 60px 45px;
     height: 430px; }
+    .av-block-six .av-title::after {
+      width: 225px; }
     .av-block-six .av-sub-title {
       width: 225px; }
 
@@ -423,8 +425,8 @@ body {
       width: 350px;
       top: 40px; }
     .av-block-seven .av-sub-title {
-      width: 532px;
+      width: 531px;
       padding: 30px;
       top: 130px;
-      left: 158px;
+      left: 159px;
       text-align: left; } }
