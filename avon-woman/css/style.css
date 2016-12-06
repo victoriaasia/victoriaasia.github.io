@@ -16,11 +16,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   color: #000;
   background: #ffc709;
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 45px;
   letter-spacing: 7px;
   white-space: nowrap;
-  padding: 10px 60px;
-  box-sizing: border-box; }
+  padding: 0px 60px;
+  box-sizing: border-box;
+  height: 100%; }
 
 .av-intro {
   font-size: 39px;
@@ -49,9 +50,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .av-block {
   padding: 40px 60px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   font-size: 16px;
   font-family: "Minion Pro";
@@ -158,9 +156,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   background: #ffc709;
   width: 100%;
   height: 180px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   padding: 25px 35px;
   margin-top: 40px;
@@ -208,11 +203,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
   .av-block {
     font-size: 36px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 40px 20px; }
     .av-block__content {
       width: 100%; }
