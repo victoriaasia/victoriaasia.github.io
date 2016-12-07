@@ -42,3 +42,11 @@ btn.addEventListener("click", function(){
       blockResult.classList.remove('dm-hidden');
     }, 1500);
 });
+
+// cut text in modal window
+var size = 100,
+modalContent= $('.dm-modal__text'),
+modalText = modalContent.text();
+if(modalText.length > size){
+modalContent.text(modalText.slice(0, size) + ' ...');
+}

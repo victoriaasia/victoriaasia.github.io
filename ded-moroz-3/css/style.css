@@ -7,7 +7,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto; }
 
 *::-webkit-media-controls-panel {
@@ -252,7 +252,7 @@ img {
         -webkit-align-items: flex-end;
             -ms-flex-align: end;
                 align-items: flex-end; }
-      .dm-block.-second .dm-list img, .dm-block.-second .dm-list .dm-desc {
+      .dm-block.-second .dm-list .dm-img, .dm-block.-second .dm-list .dm-desc {
         width: 270px;
         max-width: 270px; }
       .dm-block.-second .dm-list .dm-desc {
@@ -275,8 +275,7 @@ img {
           background: url("../img/like.png") no-repeat;
           background-size: contain;
           width: 30px;
-          height: 30px;
-          cursor: pointer; }
+          height: 30px; }
   .dm-block.-third .dm-content {
     margin-top: 60px; }
     .dm-block.-third .dm-content .dm-button {
@@ -364,6 +363,130 @@ img {
     width: 100%;
     height: 100%;
     cursor: pointer; }
+
+#dm-modal {
+  position: absolute;
+  top: 0;
+  left: 49.99%;
+  margin-left: -520px;
+  display: none;
+  opacity: 0;
+  z-index: 5; }
+
+.dm-modal {
+  width: 1040px;
+  height: 1040px;
+  background: url("../img/modal/back.png") no-repeat;
+  background-size: contain; }
+  .dm-modal__content {
+    position: relative; }
+  .dm-modal__desc {
+    width: 600px;
+    margin: 100px auto 35px; }
+  .dm-modal__text {
+    font-size: 20px;
+    font-family: "Helvetica";
+    color: #000;
+    line-height: 1.2;
+    text-align: center;
+    margin: 10px; }
+  .dm-modal__img {
+    width: 590px;
+    height: 414px;
+    margin: 0 auto;
+    border: 3px solid #fff;
+    overflow: hidden; }
+  .dm-modal__title {
+    font-size: 30px;
+    font-family: "Helvetica";
+    color: #000;
+    line-height: 1.2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .dm-modal__name {
+    margin-left: 5px; }
+  .dm-modal__like {
+    width: 135px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .dm-modal .dm-like {
+    background: url("../img/modal/like.png") no-repeat;
+    background-position: -5px 0;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    cursor: pointer; }
+    .dm-modal .dm-like:hover, .dm-modal .dm-like:focus {
+      background-position: -60px 0; }
+  .dm-modal .dm-share-title {
+    font-size: 20px;
+    font-family: "Helvetica";
+    color: #000;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center; }
+  .dm-modal .dm-share-btns {
+    text-align: center;
+    margin-top: 20px; }
+  .dm-modal .dm-share {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: url("../img/share-btn.png");
+    background-size: 325px;
+    margin: 0 10px; }
+  .dm-modal .dm-ok {
+    background-position: -87px -5px; }
+  .dm-modal .dm-vk {
+    background-position: 75px -5px; }
+  .dm-modal .dm-fb {
+    background-position: -6px -5px; }
+  .dm-modal .dm-tw {
+    background-position: -169px -5px; }
+  .dm-modal .modal-close {
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    top: -25px;
+    right: 75px;
+    cursor: pointer;
+    display: block;
+    background: url("../img/modal/close.png") no-repeat;
+    background-size: contain;
+    background-position: center; }
+
+#dm-overlay {
+  z-index: 3;
+  position: fixed;
+  background-color: transparent;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none; }
 
 @media only screen and (max-width: 769px) {
   .-first-result {
