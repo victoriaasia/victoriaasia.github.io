@@ -1,3 +1,6 @@
+body {
+  background: #000; }
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -31,7 +34,7 @@ img {
   color: #fff; }
 
 .dm-container {
-  width: 1100px;
+  width: 1060px;
   height: 100%;
   background-color: #fff;
   margin: 0 auto;
@@ -78,8 +81,9 @@ img {
 
 .dm-main-title {
   background: url("../img/main-title.png") no-repeat;
-  background-size: cover;
-  width: 875px;
+  background-size: contain;
+  background-position: center;
+  width: 835px;
   height: 85px;
   margin: 0 auto; }
 
@@ -87,7 +91,7 @@ img {
   background: url("../img/line.png") no-repeat;
   background-position: center !important;
   background-size: contain;
-  width: 516px;
+  width: 500px;
   height: 56px;
   margin: 10px auto; }
 
@@ -98,7 +102,7 @@ img {
   color: #000;
   line-height: 1.2;
   text-align: center;
-  padding: 0px 110px; }
+  padding: 0px 105px; }
 
 .dm-block {
   width: 100%; }
@@ -107,13 +111,13 @@ img {
     background-size: cover;
     color: #fff;
     height: auto;
-    min-height: 515px; }
+    min-height: 495px; }
     .dm-block.-first .dm-content, .dm-block.-first .dm-result-content {
       float: right;
       width: 54%;
       height: 100%;
       min-height: 515px;
-      padding: 55px 60px 75px 30px;
+      padding: 55px 60px 95px 30px;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
@@ -129,7 +133,7 @@ img {
       background-size: contain;
       background-position: center;
       height: 100px;
-      margin: 40px auto 0; }
+      margin: 30px auto 0; }
     .dm-block.-first .dm-title {
       background: url("../img/title1.png") no-repeat;
       background-size: contain;
@@ -141,24 +145,24 @@ img {
         content: "";
         border-bottom: 2px solid #fff;
         width: 85px;
-        bottom: -40px;
+        bottom: -30px;
         left: 42%; }
     .dm-block.-first .dm-desc {
       color: #fff; }
     .dm-block.-first .dm-result-content {
-      padding: 35px 60px 35px 30px; }
+      padding: 25px 60px 45px 30px; }
     .dm-block.-first .dm-result-text {
       font-size: 20px;
       line-height: 1.2;
       text-align: center;
       text-transform: none;
-      font-weight: normal;
-      padding-bottom: 20px; }
+      font-weight: normal; }
     .dm-block.-first .dm-result-button {
       background: url("../img/button1-again.png") no-repeat;
       background-size: contain;
       background-position: center;
-      height: 100px; }
+      height: 100px;
+      margin: 20px 0; }
     .dm-block.-first .dm-result-share {
       font-size: 19px;
       font-weight: bold;
@@ -178,7 +182,7 @@ img {
         position: absolute;
         content: "";
         border-bottom: 2px solid #000;
-        left: 60px;
+        left: 59px;
         top: 60px;
         width: 89%; }
     .dm-block.-second .dm-title {
@@ -200,11 +204,12 @@ img {
           font-size: 20px;
           font-family: "Helvetica";
           text-transform: uppercase;
-          line-height: 1.2; }
+          line-height: 1.2;
+          border: 1px solid transparent; }
           .dm-block.-second .dm-list-wrapper .dm-controls .dm-page:hover {
             cursor: pointer; }
       .dm-block.-second .dm-list-wrapper .active {
-        border: 1px solid #c41230;
+        border: 1px solid #c41230 !important;
         border-radius: 50%;
         color: #c41230;
         font-weight: bold; }
@@ -241,7 +246,7 @@ img {
         height: 230px;
         width: 270px;
         max-width: 270px;
-        margin-bottom: 40px; }
+        margin-bottom: 30px; }
       .dm-block.-second .dm-list__item:nth-child(3n+1) {
         -webkit-box-align: start;
         -webkit-align-items: flex-start;
@@ -253,8 +258,8 @@ img {
             -ms-flex-align: end;
                 align-items: flex-end; }
       .dm-block.-second .dm-list .dm-img, .dm-block.-second .dm-list .dm-desc {
-        width: 270px;
-        max-width: 270px; }
+        width: 265px;
+        max-width: 265px; }
       .dm-block.-second .dm-list .dm-desc {
         display: -webkit-box;
         display: -webkit-flex;
@@ -277,18 +282,18 @@ img {
           width: 30px;
           height: 30px; }
   .dm-block.-third .dm-content {
-    margin-top: 60px; }
+    margin-top: 65px; }
     .dm-block.-third .dm-content .dm-button {
       background: url("../img/button3.png") no-repeat;
       background-size: contain;
       background-position: center;
       height: 125px;
       width: 400px;
-      margin: 60px auto 35px; }
+      margin: 40px auto 35px; }
   .dm-block.-fourth {
     padding-bottom: 30px; }
     .dm-block.-fourth .dm-title {
-      font-size: 23px;
+      font-size: 24px;
       font-family: "Helvetica";
       color: #000;
       font-weight: bold;
@@ -326,7 +331,7 @@ img {
   background-size: cover;
   background-position: 50% 50%;
   height: 420px;
-  margin: 0 60px;
+  margin: 0 45px;
   z-index: 0;
   overflow: hidden; }
   .dm-video-container video {
@@ -367,15 +372,15 @@ img {
 #dm-modal {
   position: absolute;
   top: 0;
-  left: 49.99%;
-  margin-left: -520px;
+  left: 50%;
+  margin-left: -500px;
   display: none;
   opacity: 0;
   z-index: 5; }
 
 .dm-modal {
-  width: 1040px;
-  height: 1040px;
+  width: 1000px;
+  height: 1000px;
   background: url("../img/modal/back.png") no-repeat;
   background-size: contain; }
   .dm-modal__content {
@@ -389,10 +394,10 @@ img {
     color: #000;
     line-height: 1.2;
     text-align: center;
-    margin: 10px; }
+    margin: 20px; }
   .dm-modal__img {
-    width: 590px;
-    height: 414px;
+    width: 565px;
+    height: 380px;
     margin: 0 auto;
     border: 3px solid #fff;
     overflow: hidden; }
@@ -447,15 +452,15 @@ img {
     text-align: center; }
   .dm-modal .dm-share-btns {
     text-align: center;
-    margin-top: 20px; }
+    margin-top: 15px; }
   .dm-modal .dm-share {
     display: inline-block;
-    width: 70px;
+    width: 72px;
     height: 70px;
     border-radius: 50%;
     background: url("../img/share-btn.png");
     background-size: 325px;
-    margin: 0 10px; }
+    margin: 0; }
   .dm-modal .dm-ok {
     background-position: -87px -5px; }
   .dm-modal .dm-vk {
@@ -561,25 +566,6 @@ img {
   .dm-block.-second {
     background: none;
     height: auto; }
-    .dm-block.-second .dm-content {
-      width: 100%;
-      padding: 80px 0; }
-      .dm-block.-second .dm-content::before, .dm-block.-second .dm-content::after {
-        display: none; }
-    .dm-block.-second .dm-title {
-      font-size: 54px;
-      padding: 0 60px 45px; }
-    .dm-block.-second .dm-img {
-      width: 100%;
-      height: 495px;
-      background: url("../img/photo2-min.png") no-repeat;
-      background-size: cover;
-      background-position: center;
-      margin-bottom: 45px; }
-    .dm-block.-second .dm-button {
-      height: 110px;
-      width: 365px;
-      margin: 30px auto 0; }
   .dm-block.-third .dm-content {
     margin: 0px; }
     .dm-block.-third .dm-content .dm-button {
