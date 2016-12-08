@@ -19,28 +19,7 @@ $(document).ready(function() {
     $('.dm-list').children().slice(0, show_per_page).css('display', 'inline-flex');
 
 
-// modal window
-
-  $('.dm-img').click( function(event){ // лoвим клик пo ссылки с id="go"
-		event.preventDefault();
-    $('#dm-overlay').fadeIn(200,
-		 	function(){
-			$('#dm-modal').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
-	   });
-  });
-	$('.modal-close, #dm-overlay').click( function(){
-		$('#dm-modal')
-			.animate({opacity: 0, top: '20px'}, 200,
-				function(){
-					$(this).css('display', 'none');
-          $('#dm-overlay').fadeOut(400); // скрывaем пoдлoжку
-				}
-			);
-	});
 });
-
-
-// pagination
 
 function go_to_page(page_num) {
     var show_per_page = parseInt($('#show_per_page').val(), 0);

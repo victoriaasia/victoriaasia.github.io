@@ -50,3 +50,21 @@ modalText = modalContent.text();
 if(modalText.length > size){
 modalContent.text(modalText.slice(0, size) + ' ...');
 }
+
+// modal window
+$('.dm-img').click( function(event){ // лoвим клик пo ссылки с id="go"
+	event.preventDefault();
+  $('#dm-overlay').fadeIn(200,
+	 	function(){
+		$('#dm-modal').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
+   });
+});
+$('.modal-close, #dm-overlay').click( function(){
+	$('#dm-modal')
+		.animate({opacity: 0, top: '20px'}, 200,
+			function(){
+				$(this).css('display', 'none');
+        $('#dm-overlay').fadeOut(400); // скрывaем пoдлoжку
+			}
+		);
+});

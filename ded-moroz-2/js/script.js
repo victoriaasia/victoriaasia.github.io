@@ -42,3 +42,21 @@ btn.addEventListener("click", function(){
       blockResult.classList.remove('dm-hidden');
     }, 1500);
 });
+
+
+$('.dm-btn-join').click( function(event){
+  event.preventDefault();
+  $('#dm-overlay').fadeIn(200,
+    function(){
+    $('#dm-modal-3').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
+   });
+});
+$('.modal-close, #dm-overlay').click( function(){
+  $('#dm-modal-3')
+    .animate({opacity: 0, top: '20px'}, 200,
+      function(){
+        $(this).css('display', 'none');
+        $('#dm-overlay').fadeOut(400);
+      }
+    );
+});

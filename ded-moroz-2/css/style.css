@@ -334,6 +334,115 @@ img {
 .dm-tw {
   background-position: -120px 0; }
 
+#dm-modal-2, #dm-modal-3 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -500px;
+  display: none;
+  opacity: 0;
+  z-index: 5; }
+
+.dm-modal-3 {
+  width: 1000px;
+  height: 1000px;
+  background: url("../img/modal/back3.png") no-repeat;
+  background-size: contain; }
+  .dm-modal-3__content {
+    position: relative; }
+  .dm-modal-3 .dm-line {
+    width: 200px;
+    height: 5px;
+    background: #000;
+    margin: 45px auto; }
+  .dm-modal-3__text {
+    text-align: center;
+    padding: 0 15px; }
+  .dm-modal-3__desc {
+    width: 470px;
+    margin: 165px auto 35px;
+    font-size: 40px;
+    font-family: "Helvetica";
+    color: #000;
+    line-height: 1.2; }
+  .dm-modal-3__title {
+    font-weight: bold;
+    text-transform: uppercase; }
+  .dm-modal-3 .modal-close {
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    top: -90px;
+    right: 75px;
+    cursor: pointer;
+    display: block;
+    background: url("../img/modal/close.png") no-repeat;
+    background-size: contain;
+    background-position: center; }
+
+.dm-modal-2 {
+  width: 1000px;
+  height: 1000px;
+  background: url("../img/modal/back2.png") no-repeat;
+  background-size: contain; }
+  .dm-modal-2__content {
+    position: relative; }
+  .dm-modal-2__desc {
+    width: 840px;
+    margin: 75px auto 35px; }
+  .dm-modal-2__title {
+    font-size: 40px;
+    font-family: "Helvetica";
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center; }
+  .dm-modal-2__btn {
+    display: block;
+    background: url("../img/modal/button2.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 75%;
+    height: 70px;
+    margin: 60px auto;
+    padding: 0;
+    border: 0;
+    outline: none;
+    cursor: pointer; }
+  .dm-modal-2 .kv-avatar .file-preview-frame, .dm-modal-2 .kv-avatar .file-preview-frame:hover {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    text-align: center; }
+  .dm-modal-2 .kv-avatar .file-input {
+    display: table-cell;
+    max-width: 220px; }
+  .dm-modal-2 .modal-close {
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    top: -90px;
+    right: 75px;
+    cursor: pointer;
+    display: block;
+    background: url("../img/modal/close.png") no-repeat;
+    background-size: contain;
+    background-position: center; }
+
+#dm-overlay {
+  z-index: 3;
+  position: fixed;
+  background-color: transparent;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none; }
+
 .dm-video-container {
   position: relative;
   background-size: cover;
