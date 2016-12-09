@@ -42,3 +42,72 @@ btn.addEventListener("click", function(){
       blockResult.classList.remove('dm-hidden');
     }, 1500);
 });
+
+// page 2
+// photo-preview
+$(document).ready(function() {
+  $.uploadPreview({
+    input_field: '#dm-image-upload',
+    preview_box: '#dm-image-preview',
+    label_field: '#dm-image-label'
+  });
+});
+
+// modal
+$('.dm-btn-join').click( function(event){
+  event.preventDefault();
+  $('#dm-overlay').fadeIn(200,
+    function(){
+    $('#dm-modal-1').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
+   });
+});
+
+$('.modal-close, #dm-overlay').click( function(){
+  $('.js-modal')
+    .animate({opacity: 0, top: '20px'}, 200,
+      function(){
+        $(this).css('display', 'none');
+        $('#dm-overlay').fadeOut(400);
+      }
+    );
+});
+
+$('.js-modal-1-btn').click( function(event){
+  event.preventDefault();
+    $('#dm-modal-1').css('display', 'none');
+    $('#dm-modal-2').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
+});
+
+$('.js-modal-2-btn').click( function(event){
+  event.preventDefault();
+    $('#dm-modal-2').css('display', 'none');
+    $('#dm-modal-3').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
+});
+
+
+// page 3
+// cut text in modal window
+var size = 100,
+modalContent= $('.dm-modal-4__text'),
+modalText = modalContent.text();
+if(modalText.length > size){
+modalContent.text(modalText.slice(0, size) + ' ...');
+}
+
+// modal
+$('.js-dm-img').click( function(event){ // лoвим клик пo ссылки с id="go"
+	event.preventDefault();
+  $('#dm-overlay').fadeIn(200,
+	 	function(){
+		$('#dm-modal-4').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
+   });
+});
+$('.modal-close, #dm-overlay').click( function(){
+	$('#dm-modal-4')
+		.animate({opacity: 0, top: '20px'}, 200,
+			function(){
+				$(this).css('display', 'none');
+        $('#dm-overlay').fadeOut(400); // скрывaем пoдлoжку
+			}
+		);
+});
