@@ -43,26 +43,59 @@
 				</div>
 			</div>
 
-		<div id="dm-modal-2" class="dm-modal-2">
+		<div id="dm-modal-1" class="dm-modal dm-modal-1">
+			<div class="dm-modal-1__content">
+				<span class="modal-close"></span>
+			<div class="dm-modal-1__desc">
+				<div class="dm-modal-1__title">регистрация</div>
+					<form action="" class="dm-modal-1__form" enctype="multipart/form-data">
+						<div class="dm-form-inner dm-flex">
+							<input type="text" name="name" placeholder="Имя" required="true">
+							<input type="text" name="surname" placeholder="Фамилия" required="true">
+							<input type="email" name="email" placeholder="email" required="true">
+						</div>
+					<div class="dm-accept dm-flex">
+							 <span class="dm-check-wrap">
+								 <input class="dm-checkbox" type="checkbox" />
+							 </span>
+							<span class="dm-accept__text">С правилами конкурса ознакомлен/а</span>
+					</div>
+					<input type="submit" class="dm-modal-1__btn js-modal-1" value=""/>
+					</form>
+				<div class="dm-login-social">возможность зарегистрироваться через соцсети</div>
+				<div class='dm-share-btns'>
+					<a class='dm-share dm-ok' href=''></a>
+					<a class='dm-share dm-vk' href=''></a>
+					<a class='dm-share dm-fb' href=''></a>
+					<a class='dm-share dm-tw' href=''></a>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<div id="dm-modal-2" class="dm-modal dm-modal-2">
 			<div class="dm-modal-2__content">
 				<span class="modal-close"></span>
 			<div class="dm-modal-2__desc">
 				<div class="dm-modal-2__title">регистрация</div>
 					<form action="" class="dm-modal-2__form" enctype="multipart/form-data">
 						<div class="dm-form-inner dm-flex">
-							<div class="kv-avatar center-block" style="width:200px">
-					        <input id="avatar-2" name="avatar-2" type="file" class="file-loading">
-					    </div>
-							<textarea name="name" rows="8" cols="80"></textarea>
-						</div>
-					<input type="submit" class="dm-modal-2__btn" value=""/>
-					</form>
+							<div id='dm-image-preview'>
+							  <label for='image-upload' id='dm-image-label'>Загрузить фото</label>
+							  <input type='file' name='image' id='dm-image-upload' />
+							</div>
 
+							<div class='dm-textarea-wrap'>
+								<textarea name='name' rows='8' cols='80' placeholder='Добавить комментарий'></textarea>
+							</div>
+						</div>
+					<input type="submit" class="dm-modal-2__btn js-modal-2" value=""/>
+					</form>
 			</div>
 			</div>
 		</div>
 
-		<div id="dm-modal-3" class="dm-modal-3">
+		<div id="dm-modal-3" class="dm-modal dm-modal-3">
 			<div class="dm-modal-3__content">
 				<span class="modal-close"></span>
 			<div class="dm-modal-3__desc">
@@ -137,32 +170,10 @@
 		</div>
 	</div>
 	<script
-  src="https://code.jquery.com/jquery-3.1.1.js"
-  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
 	<script src='js/file-input.js'></script>
 	<script src='js/script.js'></script>
-	<script>
-var btnCust = '<button type="button" class="btn btn-default" title="Add picture tags" ' +
-    'onclick="alert(\'Call your custom code here.\')">' +
-    '<i class="glyphicon glyphicon-tag"></i>' +
-    '</button>';
-$("#avatar-2").fileinput({
-    overwriteInitial: true,
-    maxFileSize: 1500,
-    showClose: false,
-    showCaption: false,
-    showBrowse: false,
-    browseOnZoneClick: true,
-    removeLabel: '',
-    removeIcon: '<i class="glyphicon glyphicon-remove"></i>',
-    removeTitle: 'Cancel or reset changes',
-    elErrorContainer: '#kv-avatar-errors-2',
-    msgErrorClass: 'alert alert-block alert-danger',
-    defaultPreviewContent: '<img src="/uploads/default_avatar_male.jpg" alt="Your Avatar" style="width:160px"><h6 class="text-muted">Click to select</h6>',
-    layoutTemplates: {main2: '{preview} ' +  btnCust + ' {remove} {browse}'},
-    allowedFileExtensions: ["jpg", "png", "gif"]
-});
-</script>
 </body>
 </html>

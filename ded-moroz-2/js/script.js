@@ -43,20 +43,42 @@ btn.addEventListener("click", function(){
     }, 1500);
 });
 
+// photo-preview
+$(document).ready(function() {
+  $.uploadPreview({
+    input_field: '#dm-image-upload',
+    preview_box: '#dm-image-preview',
+    label_field: '#dm-image-label'
+  });
+});
 
+// modal
 $('.dm-btn-join').click( function(event){
   event.preventDefault();
   $('#dm-overlay').fadeIn(200,
     function(){
-    $('#dm-modal-3').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
+    $('#dm-modal-1').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
    });
 });
+
 $('.modal-close, #dm-overlay').click( function(){
-  $('#dm-modal-3')
+  $('.dm-modal')
     .animate({opacity: 0, top: '20px'}, 200,
       function(){
         $(this).css('display', 'none');
         $('#dm-overlay').fadeOut(400);
       }
     );
+});
+
+$('.js-modal-1').click( function(event){
+  event.preventDefault();
+    $('#dm-modal-1').css('display', 'none');
+    $('#dm-modal-2').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
+});
+
+$('.js-modal-2').click( function(event){
+  event.preventDefault();
+    $('#dm-modal-2').css('display', 'none');
+    $('#dm-modal-3').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
 });
