@@ -45,7 +45,6 @@ btn.addEventListener("click", function(){
 
 
 $(document).ready(function() {
-    
   // page 2
   // photo-preview
   $.uploadPreview({
@@ -90,13 +89,14 @@ $(document).ready(function() {
      });
   });
   $('.modal-close, #dm-overlay').click( function(){
-  	$('#dm-modal-4')
-  		.animate({opacity: 0, top: '20px'}, 200,
+  	$('#dm-modal-4').animate({opacity: 0, top: '20px'}, 200,
   			function(){
   				$(this).css('display', 'none');
           $('#dm-overlay').fadeOut(400);
   			}
   		);
+      document.getElementById('dmError1').innerHTML = "";
+      document.getElementById('dmError2').innerHTML = "";
   });
 
   // form 1
@@ -146,7 +146,6 @@ $(document).ready(function() {
   });
 
 });
-
 
 
  // if(error == ""){
