@@ -48,19 +48,20 @@
 				<span class='modal-close'></span>
 			<div class='dm-modal-1__desc'>
 				<div class='dm-modal-1__title'>регистрация</div>
-					<form action='' class='dm-modal-1__form' enctype='multipart/form-data'>
+					<form action="save_user.php" method="POST" id='jsForm1' name='jsForm1' class='dm-modal-1__form' enctype='multipart/form-data'>
 						<div class='dm-form-inner dm-flex'>
-							<input type='text' name='name' placeholder='Имя' required='true'>
-							<input type='text' name='surname' placeholder='Фамилия' required='true'>
-							<input type='email' name='email' placeholder='email' required='true'>
+							<input type='text' id='jsName' name='name' placeholder='Имя' />
+							<input type='text' id='jsSurname' name='surname' placeholder='Фамилия' />
+							<input type='email' id='jsEmail' name='email' placeholder='email' />
 						</div>
 					<div class='dm-accept dm-flex'>
 							 <span class='dm-check-wrap'>
-								 <input class='dm-checkbox' type='checkbox' />
+								 <input id='jsAgree' name='jsAgree' class='dm-checkbox' type='checkbox' />
 							 </span>
 							<span class='dm-accept__text'>С правилами конкурса ознакомлен/а</span>
 					</div>
-					<input type='submit' class='dm-modal-1__btn js-modal-1-btn' value=''/>
+          <span id="dmError1"></span>
+					<input type='submit' class='dm-modal-1__btn' value=''/>
 					</form>
 				<div class='dm-login-social'>возможность зарегистрироваться через соцсети</div>
 				<div class='dm-share-btns'>
@@ -78,7 +79,7 @@
 				<span class='modal-close'></span>
 			<div class='dm-modal-2__desc'>
 				<div class='dm-modal-2__title'>регистрация</div>
-					<form action='' class='dm-modal-2__form' enctype='multipart/form-data'>
+					<form action="save_photo.php" method="POST" id='jsForm2' class='dm-modal-2__form' enctype='multipart/form-data'>
 						<div class='dm-form-inner dm-flex'>
 							<div id='dm-image-preview'>
 							  <label for='image-upload' id='dm-image-label'>Загрузить фото</label>
@@ -89,7 +90,8 @@
 								<textarea name='name' rows='8' cols='80' placeholder='Добавить комментарий'></textarea>
 							</div>
 						</div>
-					<input type='submit' class='dm-modal-2__btn js-modal-2-btn' value=''/>
+          <span id="dmError1"></span>
+					<input type='submit' class='dm-modal-2__btn' value=''/>
 					</form>
 			</div>
 			</div>

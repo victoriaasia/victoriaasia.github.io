@@ -72,19 +72,6 @@ $('.modal-close, #dm-overlay').click( function(){
     );
 });
 
-$('.js-modal-1-btn').click( function(event){
-  event.preventDefault();
-    $('#dm-modal-1').css('display', 'none');
-    $('#dm-modal-2').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
-});
-
-$('.js-modal-2-btn').click( function(event){
-  event.preventDefault();
-    $('#dm-modal-2').css('display', 'none');
-    $('#dm-modal-3').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
-});
-
-
 // page 3
 // cut text in modal window
 var size = 100,
@@ -111,3 +98,62 @@ $('.modal-close, #dm-overlay').click( function(){
 			}
 		);
 });
+
+
+// form 1
+$(function(){
+  $('#jsForm1').submit(function(e){
+  e.preventDefault();
+  var m_method=$(this).attr('method');
+  var m_action=$(this).attr('action');
+
+  var m_data=$(this).serialize();
+
+    $.ajax({
+      type: m_method,
+      url: m_action,
+      data: m_data,
+
+      success: function(result){
+        $('#dm-modal-1').css('display', 'none');
+        $('#dm-modal-2').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
+      },
+      error: function(result) { //Если ошибка
+        document.getElementById(dmError1).innerHTML = "Проверьте правильность заполнения формы.";
+      }
+    });
+  });
+});
+
+// form 2
+$(function(){
+  $('#jsForm2').submit(function(e){
+  e.preventDefault();
+  var m_method=$(this).attr('method');
+  var m_action=$(this).attr('action');
+
+  var m_data=$(this).serialize();
+
+    $.ajax({
+      type: m_method,
+      url: m_action,
+      data: m_data,
+
+      success: function(result){
+        $('#dm-modal-2').css('display', 'none');
+        $('#dm-modal-3').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
+      },
+      error: function(result) { //Если ошибка
+        document.getElementById(dmError2).innerHTML = "Проверьте правильность заполнения формы.";
+      }
+    });
+  });
+});
+
+
+ // if(error == ""){
+ //      document.getElementById(dmError).innerHTML = "Проверьте правильность заполнения формы";
+ //    } else {
+ //      $('#dm-modal-1').css('display', 'none');
+ //      $('#dm-modal-2').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
+ //    }
