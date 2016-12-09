@@ -711,7 +711,7 @@ img {
     box-shadow: inset 8px 8px 11px -2px rgba(0, 0, 0, 0.71);
     padding: 30px;
     box-sizing: border-box;
-    resize: none; }
+    resize: none !important; }
     .dm-modal-2 textarea::-moz-placeholder {
       line-height: 295px;
       font-size: 30px;
