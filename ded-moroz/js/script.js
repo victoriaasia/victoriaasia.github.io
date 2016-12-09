@@ -118,7 +118,7 @@ $(function(){
         $('#dm-modal-2').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
       },
       error: function(result) { //Если ошибка
-        document.getElementById(dmError1).innerHTML = "Проверьте правильность заполнения формы.";
+        document.getElementById('dmError1').innerHTML = "Проверьте правильность заполнения формы.";
       }
     });
   });
@@ -143,7 +143,7 @@ $(function(){
         $('#dm-modal-3').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
       },
       error: function(result) { //Если ошибка
-        document.getElementById(dmError2).innerHTML = "Проверьте правильность заполнения формы.";
+        document.getElementById('dmError2').innerHTML = "Проверьте правильность заполнения формы.";
       }
     });
   });
