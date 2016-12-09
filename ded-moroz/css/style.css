@@ -588,7 +588,8 @@ img {
       font-size: 30px;
       font-family: "Helvetica";
       color: #000;
-      line-height: 1.2; }
+      line-height: 1.2;
+      cursor: pointer; }
   .dm-modal-1 .dm-check-wrap {
     width: 40px;
     height: 40px;
@@ -797,6 +798,8 @@ img {
     width: 45px;
     height: 45px;
     display: inline-block;
+    border: 0;
+    outline: 0;
     cursor: pointer; }
     .dm-modal-4 .dm-like:hover, .dm-modal-4 .dm-like:focus {
       background-position: -60px 0; }
