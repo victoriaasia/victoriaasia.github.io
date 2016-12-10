@@ -77,15 +77,15 @@ $(document).ready(function() {
       );
   });
 
-  var currentAbsoluteScroll = $(window).scrollTop();
-    $('input').on('focus', function() {
-      $('.js-modal').css({
-        position: 'absolute',
-        marginTop: $(window).scrollTop() + 'px',
-        bottom: 'auto',
-        });
-        $(window).scrollTop(currentAbsoluteScroll);
-    });
+  // var currentAbsoluteScroll = $(window).scrollTop();
+  //   $('input').on('focus', function() {
+  //     $('.js-modal').css({
+  //       position: 'absolute',
+  //       marginTop: $(window).scrollTop() + 'px',
+  //       bottom: 'auto',
+  //       });
+  //       $(window).scrollTop(currentAbsoluteScroll);
+  //   });
 
 
   // page 3
