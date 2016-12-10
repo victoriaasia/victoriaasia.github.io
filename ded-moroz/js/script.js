@@ -102,11 +102,17 @@ $(document).ready(function() {
   $('.js-dm-img').click( function(event){
   	event.preventDefault();
     $('#dm-overlay').fadeIn(200,
-  	 	function(){
-  		$('#dm-modal-4').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
-     });
+      function(){
+      if(window.matchMedia('(min-width: 769px)').matches) {
+      $('#dm-modal-4').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
+      }	else if(window.matchMedia('(max-width: 768px)').matches) {
+  		$('#dm-modal-4').css('display', 'block').animate({opacity: 1, top: '0px'}, 300);
+      $('body').css('overflow', 'hidden');
+      $('#dm-modal-4').css('overflow', 'auto');
+     }
+   });
   });
-  $('.modal-close, #dm-overlay').click( function(){
+  $('.modal-close, #dm-overlay, .js-modal').click( function(){
   	$('#dm-modal-4').animate({opacity: 0, top: '20px'}, 200,
   			function(){
   				$(this).css('display', 'none');

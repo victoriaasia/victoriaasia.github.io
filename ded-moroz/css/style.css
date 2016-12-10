@@ -1342,6 +1342,33 @@ img {
   .dm-modal-3 .modal-close {
     top: -5px !important; }
 
+  .dm-modal-4__img {
+    width: 600px;
+    height: 400px; }
+  .dm-modal-4__text {
+    font-size: 30px;
+    margin: 20px 60px; }
+  .dm-modal-4__title {
+    font-size: 55px;
+    margin: 0 70px; }
+  .dm-modal-4__like {
+    width: 190px; }
+  .dm-modal-4 .dm-share-title {
+    font-size: 36px; }
+  .dm-modal-4 .dm-share-btns {
+    margin-top: 30px; }
+  .dm-modal-4 .dm-share {
+    width: 120px;
+    height: 120px;
+    margin: 0 20px;
+    background-size: cover; }
+  .dm-modal-4 .dm-ok {
+    background-position: -125px 0; }
+  .dm-modal-4 .dm-vk {
+    background-position: 120px 0; }
+  .dm-modal-4 .dm-tw {
+    background-position: -245px 0; }
+
   #dm-image-preview {
     width: 345px;
     min-width: 280px;
