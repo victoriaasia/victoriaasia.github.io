@@ -1248,7 +1248,7 @@ img {
     .dm-modal-1__desc, .dm-modal-2__desc, .dm-modal-3__desc, .dm-modal-4__desc {
       width: 100%;
       margin: 30px auto 0;
-      padding-bottom: 40px; }
+      padding: 30px 0 60px; }
     .dm-modal-1__title, .dm-modal-2__title, .dm-modal-3__title, .dm-modal-4__title {
       font-size: 70px; }
 
@@ -1331,7 +1331,8 @@ img {
     width: 660px;
     margin: 0 auto;
     text-align: center;
-    font-size: 52px; }
+    font-size: 52px;
+    line-height: 1.5; }
   .dm-modal-3__text {
     padding: 0 80px;
     font-size: 56px; }
