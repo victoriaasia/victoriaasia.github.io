@@ -1230,6 +1230,7 @@ img {
   .dm-modal-1, .dm-modal-2, .dm-modal-3, .dm-modal-4 {
     background: url("../img/modal/back-mobile.png") no-repeat, #9de0fb;
     background-position: top;
+    background-size: cover;
     width: 768px;
     height: 100vh; }
     .dm-modal-1__desc, .dm-modal-2__desc, .dm-modal-3__desc, .dm-modal-4__desc {
