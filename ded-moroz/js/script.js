@@ -119,8 +119,8 @@ $(document).ready(function() {
           $('#dm-overlay').fadeOut(400);
   			}
   		);
-      document.getElementById('dmError1').innerHTML = "";
-      document.getElementById('dmError2').innerHTML = "";
+      document.querySelector('#dmError1').innerHTML = "";
+      document.querySelector('#dmError2').innerHTML = "";
   });
 
   // form 1
