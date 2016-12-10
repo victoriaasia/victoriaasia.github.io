@@ -62,7 +62,7 @@ $(document).ready(function() {
       $('#dm-modal-1').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
       }	else if(window.matchMedia('(max-width: 768px)').matches) {
       $('#dm-modal-1').css('display', 'block').animate({opacity: 1, top: '0px'}, 300);
-      $(window).scroll(function() { return false; });
+      $('html').css('overflow', 'hidden');
       $('.js-modal').css('overflow', 'auto');
       }
      });
