@@ -40,6 +40,7 @@ btn.addEventListener("click", function(){
       block.classList.add('dm-hidden');
       wrapperBlock.classList.add('-first-result');
       blockResult.classList.remove('dm-hidden');
+      document.querySelector('.-first-result__back').classList.add('back-visible');    
     }, 1500);
 });
 
