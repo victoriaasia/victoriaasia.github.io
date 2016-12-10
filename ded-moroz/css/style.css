@@ -1236,7 +1236,9 @@ img {
     background-position: top;
     background-size: cover;
     width: 768px;
-    height: 100vh; }
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh; }
     .dm-modal-1__desc, .dm-modal-2__desc, .dm-modal-3__desc, .dm-modal-4__desc {
       width: 100%;
       margin: 30px auto 0;
