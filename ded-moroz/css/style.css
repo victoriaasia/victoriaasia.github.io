@@ -1288,6 +1288,43 @@ img {
   .dm-modal-1 .dm-tw {
     background-position: -245px 0; }
 
+  .dm-modal-2 .dm-form-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .dm-modal-2 textarea {
+    width: 690px;
+    height: 375px;
+    margin: 0 30px;
+    box-shadow: none;
+    font-size: 40px; }
+    .dm-modal-2 textarea::-moz-placeholder {
+      line-height: 1.2;
+      font-size: 40px; }
+    .dm-modal-2 textarea::-webkit-input-placeholder {
+      line-height: 1.2;
+      font-size: 40px; }
+    .dm-modal-2 textarea:-ms-input-placeholder {
+      line-height: 1.2;
+      font-size: 40px; }
+  .dm-modal-2__btn {
+    background: url("../img/modal/button2-mobile.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 165px; }
+
+  #dm-image-preview {
+    width: 345px;
+    min-width: 280px;
+    height: 480px;
+    margin: 0px auto 80px;
+    box-shadow: none; }
+
+  #dm-image-label {
+    font-size: 40px; }
+
   #dmError1, #dmError2 {
     bottom: 115px;
     font-size: 24px;
