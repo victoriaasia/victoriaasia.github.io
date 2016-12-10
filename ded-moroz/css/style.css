@@ -1326,10 +1326,15 @@ img {
     font-size: 40px; }
 
   #dmError1, #dmError2 {
-    bottom: 115px;
     font-size: 24px;
-    left: 83px;
+    left: 100px;
     width: 80%;
     -webkit-transform: translate(0);
         -ms-transform: translate(0);
-            transform: translate(0); } }
+            transform: translate(0); }
+
+  #dmError1 {
+    bottom: 115px; }
+
+  #dmError2 {
+    bottom: 290px; } }
