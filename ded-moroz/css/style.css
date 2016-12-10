@@ -1330,7 +1330,8 @@ img {
   .dm-modal-3__title {
     width: 660px;
     margin: 0 auto;
-    text-align: center; }
+    text-align: center;
+    font-size: 52px; }
   .dm-modal-3__text {
     padding: 0 80px;
     font-size: 56px; }
