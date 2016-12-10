@@ -25,10 +25,6 @@ img {
   display: none !important;
   -webkit-appearance: none; }
 
-.noscroll {
-  overflow: hidden;
-  position: fixed; }
-
 .dm-container ::-moz-selection {
   background: #4778dd;
   color: #fff; }
@@ -1237,7 +1233,6 @@ img {
     background-size: cover;
     width: 768px;
     height: 100vh;
-    max-height: 100vh;
     min-height: 100vh; }
     .dm-modal-1__desc, .dm-modal-2__desc, .dm-modal-3__desc, .dm-modal-4__desc {
       width: 100%;
