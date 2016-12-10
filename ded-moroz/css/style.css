@@ -218,6 +218,8 @@ img {
     background-position: 90% 40px;
     background-size: 445px;
     color: #000; }
+    .dm-block.-second-part2 .dm-line {
+      display: none; }
     .dm-block.-second-part2 .dm-content {
       width: 54%;
       height: 625px;
@@ -1065,6 +1067,8 @@ img {
   .dm-block.-second-part2 {
     background: none;
     height: auto; }
+    .dm-block.-second-part2 .dm-line {
+      display: block; }
     .dm-block.-second-part2 .dm-content {
       width: 100%;
       padding: 0;
@@ -1128,7 +1132,7 @@ img {
       .dm-block.-second-part3 .dm-list .dm-desc__name {
         font-size: 40px; }
       .dm-block.-second-part3 .dm-list .dm-desc__like {
-        width: 70px;
+        width: 75px;
         height: 55px; }
   .dm-block.-third .dm-content {
     margin: 0px;
