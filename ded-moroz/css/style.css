@@ -1045,7 +1045,7 @@ img {
     height: auto; }
     .dm-block.-second .dm-content {
       width: 100%;
-      padding: 80px 0; }
+      padding: 90px 0 0 0; }
       .dm-block.-second .dm-content::before, .dm-block.-second .dm-content::after {
         display: none; }
     .dm-block.-second .dm-title {
@@ -1096,7 +1096,8 @@ img {
       height: 330px;
       margin: 0 25px; }
   .dm-block.-third .dm-content {
-    margin: 0px; }
+    margin: 0px;
+    padding-top: 90px; }
     .dm-block.-third .dm-content .dm-button {
       height: 110px;
       margin-top: 45px; }
