@@ -59,15 +59,15 @@ $(document).ready(function() {
     $('#dm-overlay').fadeIn(200,
       function(){
       if(window.matchMedia('(min-width: 769px)').matches) {
-      $('#dm-modal-2').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
+      $('#dm-modal-3').css('display', 'block').animate({opacity: 1, top: '40px'}, 300);
       }	else if(window.matchMedia('(max-width: 768px)').matches) {
-      $('#dm-modal-2').css('display', 'block').animate({opacity: 1, top: '0px'}, 300);
+      $('#dm-modal-3').css('display', 'block').animate({opacity: 1, top: '0px'}, 300);
       $('html').css('overflow', 'hidden');
       $('.js-modal').css('overflow', 'auto');
       }
      });
   });
-  $('.modal-close, #dm-overlay').click( function(){
+  $('.modal-close, #dm-overlay, .js-modal-3').click( function(){
     $('.js-modal')
       .animate({opacity: 0, top: '20px'}, 200,
         function(){

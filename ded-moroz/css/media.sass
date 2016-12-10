@@ -1,0 +1,363 @@
+@media only screen and (max-width: 769px)
+
+  .-first-result
+    background: $black !important
+
+  .dm-special
+    width: 305px
+    height: 68px
+  .dm-main-title
+    background: url('../img/main-title-min.png') no-repeat
+    background-size: contain
+    background-position: center
+    width: 720px
+    height: 260px
+  .dm-intro
+    .dm-content
+      padding: 75px 0 120px
+    &__text
+      font-size: 44px
+      padding: 0px 45px
+  .dm-line
+    width: 360px
+    height: 21px
+    margin: 55px auto 25px
+  .dm-divider
+    width: 100%
+    height: 2px
+    background: $black
+  .dm-desc
+    p
+      font-size: 40px
+  .dm-container
+    width: 768px
+  .dm-block
+    &.-first
+      height: auto
+      min-height: 1090px
+      background: url('../img/back1-min.png') no-repeat
+      background-size: cover
+      background-position: center
+      .dm-content
+        float: none
+        width: 100%
+        height: 100%
+        min-height: 1090px
+        margin: 0 auto
+        padding: 55px 30px 75px 30px
+      .dm-result-content
+        float: none
+        width: 100%
+        margin: 0 auto
+        padding: 0 0 80px !important
+      .dm-result-text
+        font-size: 41px
+        padding: 50px
+      .dm-result-share
+        font-size: 30px
+        padding: 90px 0 40px
+      .dm-title, .dm-result-title
+        width: 650px
+        height: 170px
+        margin: 0 auto
+        &::after
+          display: none
+      .dm-result-title
+        background: url('../img/title1.png') no-repeat
+        background-size: contain
+        margin: 55px auto 5px
+      .dm-button, .dm-result-button
+        width: 650px
+        height: 125px
+        margin: 30px auto 0
+    &.-second
+      background: none
+      height: auto
+      .dm-content
+        width: 100%
+        padding: 90px 0 0 0
+        &::before, &::after
+          display: none
+      .dm-title
+        font-size: 54px
+        padding: 0 60px 45px
+      .dm-img
+        width: 100%
+        height: 495px
+        background: url('../img/photo2-min.png') no-repeat
+        background-size: cover
+        background-position: center
+        margin-bottom: 45px
+      .dm-button
+        height: 110px
+        width: 365px
+        margin: 30px auto 0
+
+    &.-second-part2
+      background: none
+      height: auto
+      padding-bottom: 0px
+      .dm-line
+        display: block
+      .dm-content
+        width: 100%
+        padding: 0
+        height: auto
+        &::before, &::after
+          display: none
+      .dm-title
+        width: 675px
+        height: 250px
+        margin: 60px auto
+      .dm-img
+        width: 100%
+        height: 485px
+        background: url('../img/photo2-min.png') no-repeat
+        background-size: cover
+        background-position: center
+        margin-bottom: 65px
+      .dm-text
+        font-size: 43px
+        br:last-child
+          display: none
+      .dm-button
+        height: 110px
+        width: 365px
+        margin: 30px auto 0
+      .dm-desc__intro
+        font-size: 36px
+        text-align: center
+        height: 330px
+        margin: 0 30px
+
+    &.-second-part3
+      .dm-content
+        padding: 75px 60px 20px
+        &::before
+          display: none
+      .dm-title
+        font-size: 69px
+      .dm-list
+        flex-direction: column
+        &-wrapper
+          margin-top: 60px
+        &__item
+          flex: 1
+          width: 100%
+          max-width: 100%
+          height: 545px
+          margin-bottom: 35px
+        .dm-img, .dm-desc
+          width: 100%
+          max-width: 100%
+        .dm-img
+          max-height: 465px
+        .dm-desc
+          max-height: 100px
+          &__name
+            font-size: 40px
+          &__like
+            width: 75px
+            height: 55px
+
+    &.-third
+      .dm-content
+        margin: 0px
+        padding-top: 30px
+        .dm-button
+          height: 110px
+          margin-top: 45px
+
+    &.-fourth
+      .dm-title
+        font-size: 40px
+        margin: 50px 0 30px
+
+  .dm-share
+    width: 110px
+    height: 110px
+  .dm-ok
+    background-position: -110px 0
+  .dm-vk
+    background-position: 110px 0
+  .dm-fb
+    background-position: 0 0
+  .dm-tw
+    background-position: -220px 0
+
+  .dm-video-container
+    margin: 0
+    height: 345px
+
+  .dm-result-img
+    width: 100%
+    height: 345px
+    min-height: 345px
+    background: url('../img/back1-result-min.png') no-repeat
+    background-size: cover
+    background-position: center
+    margin-bottom: 45px
+
+  .dm-steps
+    flex-direction: column
+    .dm-step
+      font-size: 58px
+      width: 100%
+      margin: 50px 15px
+      &__number
+        width: 30%
+        height: 150px
+      &__text
+        width: 60%
+
+  .dm-join
+    .dm-btns
+      flex-direction: column
+      margin: 80px 60px 125px
+      height: 310px
+    .dm-btn
+      width: 640px
+      height: 115px
+    .dm-members-title
+      font-size: 70px
+    .dm-members
+      flex-direction: column
+      margin: 65px 55px 90px
+      height: 1015px
+      >div:last-child
+        display: none
+
+  #dm-modal-1, #dm-modal-2, #dm-modal-3, #dm-modal-4
+    position: fixed
+    top: 0
+    left: 0
+    margin-left: 0
+    display: none
+    opacity: 0
+    z-index: 5
+    .modal-close
+      top: -15px
+      right: 15px
+  .dm-modal-1, .dm-modal-2, .dm-modal-3, .dm-modal-4
+    background: url('../img/modal/back-mobile.png') no-repeat, $lightBlue
+    background-position: top
+    background-size: cover
+    width: 768px
+    height: 100vh
+    min-height: 100vh
+    &__desc
+      width: 100%
+      margin: 30px auto 0
+      padding-bottom: 40px
+    &__title
+      font-size: 70px
+
+  .dm-modal-1
+    .dm-form-inner
+      height: 415px
+      input
+        height: 110px
+        font-size: 40px
+        box-shadow: none
+        border-radius: 0
+        &::-moz-placeholder
+          font-size: 40px
+        &::-webkit-input-placeholder
+          font-size: 40px
+        &:-ms-input-placeholder
+          font-size: 40px
+    .dm-accept
+      margin-top: 75px
+      &__text
+        font-size: 40px
+        margin-left: 25px
+    .dm-check-wrap
+      margin-top: -35px
+    .dm-checkbox
+      width: 70px
+      height: 70px
+      &:checked::after
+        width: 75px
+        height: 75px
+    &__btn
+      width: 100%
+      height: 100px
+      margin: 50px auto 100px
+    .dm-login-social
+      font-size: 48px
+      width: 90%
+      margin: 0 auto
+    .dm-share-btns
+      margin-top: 55px
+    .dm-share
+      width: 120px
+      height: 120px
+      margin: 0 20px
+    .dm-ok
+      background-position: -125px 0
+    .dm-vk
+      background-position: 120px 0
+    .dm-tw
+      background-position: -245px 0
+
+  .dm-modal-2
+    .dm-form-inner
+      flex-direction: column
+    textarea
+      width: 690px
+      height: 375px
+      margin: 0 30px
+      box-shadow: none
+      font-size: 40px
+      border-radius: 0
+      &::-moz-placeholder
+        line-height: 1.2
+        font-size: 40px
+      &::-webkit-input-placeholder
+        line-height: 1.2
+        font-size: 40px
+      &:-ms-input-placeholder
+        line-height: 1.2
+        font-size: 40px
+    &__btn
+      background: url("../img/modal/button2-mobile.png") no-repeat
+      background-size: contain
+      background-position: center
+      height: 165px
+
+  .dm-modal-3
+    &__title
+      font-size: 50px
+      width: 590px
+      margin: 0 auto
+    &__text
+      padding: 0 80px
+      font-size: 56px
+    .dm-line
+      width: 300px
+      height: 3px
+    .modal-close
+      top: -5px !important
+
+
+
+
+  #dm-image-preview
+    width: 345px
+    min-width: 280px
+    height: 480px
+    margin: 0px auto 80px
+    box-shadow: none
+  #dm-image-label
+    font-size: 40px
+
+
+  #dmError1, #dmError2
+    font-size: 24px
+    left: 100px
+    width: 80%
+    transform: translate(0)
+  #dmError1
+    bottom: 115px
+  #dmError2
+    bottom: 290px
