@@ -77,6 +77,17 @@ $(document).ready(function() {
       );
   });
 
+  var currentAbsoluteScroll = $(window).scrollTop();
+    $('input').on('focus', function() {
+      $('.js-modal').css({
+        position: 'absolute',
+        marginTop: $(window).scrollTop() + 'px',
+        bottom: 'auto',
+        });
+        $(window).scrollTop(currentAbsoluteScroll);
+    });
+
+
   // page 3
   // cut text in modal window
   var size = 100,
