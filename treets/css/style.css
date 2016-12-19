@@ -173,7 +173,7 @@ body {
       text-transform: none;
       line-height: 1.5; }
     .t-intro__title span {
-      display: none; }
+      white-space: normal; }
     .t-intro__products {
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
