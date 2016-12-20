@@ -7,8 +7,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 body {
-  line-height: 1;
-  background: #000; }
+  line-height: 1; }
 
 .clearfix::after {
   clear: both;
@@ -46,6 +45,14 @@ body {
 
 .-fourth ::selection {
   background: #323a8f;
+  color: #fff; }
+
+.-fifth ::-moz-selection {
+  background: #f18bab;
+  color: #fff; }
+
+.-fifth ::selection {
+  background: #f18bab;
   color: #fff; }
 
 .flex {
@@ -143,7 +150,7 @@ body {
 .t-intro {
   background: url("../img/map.png") no-repeat;
   width: 100%;
-  background-position: bottom;
+  background-position: -25px 100%;
   padding: 45px 0px;
   box-sizing: border-box;
   position: relative; }
@@ -406,7 +413,7 @@ body {
     .t-block.-fourth .t-link:hover {
       background: rgba(50, 58, 143, 0.8); }
 .t-block.-fifth {
-  height: 2165px; }
+  height: 1660px; }
   .t-block.-fifth .t-block__title {
     background: url("../img/photo5.png") no-repeat;
     background-size: cover; }
@@ -414,24 +421,30 @@ body {
     width: 108%;
     background: url("../img/title5.png") no-repeat;
     background-position: 94% 25px; }
+  .t-block.-fifth .t-info {
+    padding: 90px 50px 0 0; }
   .t-block.-fifth .t-first-letter {
     background: url("../img/letter5.png") no-repeat;
     background-size: contain;
-    top: 15px;
-    left: -45px; }
+    width: 100px;
+    height: 135px;
+    top: 26px;
+    left: 18px; }
   .t-block.-fifth .t-product-title {
     background: url("../img/product5-title.png") no-repeat;
     background-size: contain;
     width: 520px;
     height: 190px;
     bottom: 20px;
-    left: -15px; }
+    left: 35px; }
   .t-block.-fifth .t-link {
     background: #f18bab; }
     .t-block.-fifth .t-link:hover {
       background: rgba(241, 139, 171, 0.8); }
   .t-block.-fifth .t-product-img {
-    left: 20px; }
+    left: 40px;
+    width: 465px;
+    height: 465px; }
 
 @media only screen and (max-width: 769px) {
   .t-hidden {
@@ -473,7 +486,7 @@ body {
   .t-link {
     width: 490px;
     height: 80px;
-    margin: 70px auto; }
+    margin: 70px auto 0; }
     .t-link span {
       font-size: 45px;
       line-height: 80px;
@@ -647,7 +660,7 @@ body {
   .t-block.-third {
     height: auto; }
     .t-block.-third .t-block__product {
-      top: -90px; }
+      top: -75px; }
     .t-block.-third .t-line {
       bottom: 250px; }
     .t-block.-third .t-title {
@@ -658,6 +671,8 @@ body {
     .t-block.-third .t-info {
       top: 815px;
       padding: 0; }
+    .t-block.-third .t-product-desc {
+      padding: 45px 30px 0; }
   .t-block.-fourth {
     height: auto; }
     .t-block.-fourth .t-title {
@@ -683,4 +698,16 @@ body {
     .t-block.-fourth .t-product-title {
       left: 0; }
     .t-block.-fourth .t-product-img {
-      right: 0; } }
+      right: 0; }
+  .t-block.-fifth {
+    height: auto; }
+    .t-block.-fifth .t-title {
+      width: 100%;
+      background: url("../img/mobile/title5.png") no-repeat;
+      background-size: 635px;
+      background-position: 70% 100%; }
+    .t-block.-fifth .t-product-title {
+      top: 0; }
+    .t-block.-fifth .t-info {
+      top: 760px;
+      padding: 0; } }
