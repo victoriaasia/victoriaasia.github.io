@@ -24,6 +24,22 @@ body {
   background: #09accd;
   color: #fff; }
 
+.-second ::-moz-selection {
+  background: #f49924;
+  color: #fff; }
+
+.-second ::selection {
+  background: #f49924;
+  color: #fff; }
+
+.-third ::-moz-selection {
+  background: #8f86bf;
+  color: #fff; }
+
+.-third ::selection {
+  background: #8f86bf;
+  color: #fff; }
+
 .flex {
   display: -webkit-box;
   display: -webkit-flex;
@@ -214,7 +230,9 @@ body {
 
 .t-block__title {
   width: 100%;
-  height: 475px; }
+  height: 475px;
+  position: relative;
+  z-index: 999; }
 .t-block__content {
   line-height: 1.25;
   position: relative; }
@@ -280,31 +298,70 @@ body {
     left: -15px; }
   .t-block.-first .t-product-img {
     left: 20px; }
-.t-block.-second .t-block__title {
-  background: url("../img/photo2.png") no-repeat, #fff;
-  background-size: cover; }
-.t-block.-second .t-title {
-  width: 100%;
-  background: url("../img/title2.png") no-repeat;
-  background-position: 100% 100%; }
-.t-block.-second .t-first-letter {
-  background: url("../img/letter2.png") no-repeat;
-  background-size: contain;
-  top: 15px;
-  left: -25px; }
-.t-block.-second .t-product-title {
-  background: url("../img/product2-title.png") no-repeat;
-  background-size: contain;
-  width: 590px;
-  height: 210px;
-  left: 105px;
-  bottom: -4px; }
-.t-block.-second .t-product-img {
-  bottom: -55px; }
-.t-block.-second .t-link {
-  background: #f49924; }
-  .t-block.-second .t-link:hover {
-    background: rgba(244, 153, 36, 0.8); }
+.t-block.-second {
+  height: 1940px; }
+  .t-block.-second .t-block__title {
+    background: url("../img/photo2.png") no-repeat, #fff;
+    background-size: cover; }
+  .t-block.-second .t-title {
+    width: 100%;
+    background: url("../img/title2.png") no-repeat;
+    background-position: 100% 100%; }
+  .t-block.-second .t-first-letter {
+    background: url("../img/letter2.png") no-repeat;
+    background-size: contain;
+    top: 15px;
+    left: -25px; }
+  .t-block.-second .t-product-title {
+    background: url("../img/product2-title.png") no-repeat;
+    background-size: contain;
+    width: 590px;
+    height: 210px;
+    left: 105px;
+    bottom: -4px; }
+  .t-block.-second .t-product-img {
+    bottom: -55px; }
+  .t-block.-second .t-link {
+    background: #f49924; }
+    .t-block.-second .t-link:hover {
+      background: rgba(244, 153, 36, 0.8); }
+.t-block.-third {
+  height: 2165px; }
+  .t-block.-third .t-block__title {
+    background: url("../img/photo3.png") no-repeat;
+    background-size: 830px; }
+  .t-block.-third .t-block__product {
+    top: -230px; }
+  .t-block.-third .t-title {
+    width: 108%;
+    background: url("../img/title3.png") no-repeat;
+    background-position: 94% 0px; }
+  .t-block.-third .t-info {
+    padding: 80px 50px 0 0; }
+  .t-block.-third .t-text {
+    top: -100px;
+    padding: 190px 65px 30px; }
+  .t-block.-third .t-first-letter {
+    background: url("../img/letter3.png") no-repeat;
+    background-size: contain;
+    top: 125px;
+    left: -15px; }
+  .t-block.-third .t-product-title {
+    background: url("../img/product3-title.png") no-repeat;
+    background-size: contain;
+    width: 620px;
+    height: 215px;
+    bottom: 8px; }
+  .t-block.-third .t-line {
+    bottom: 35px; }
+  .t-block.-third .t-link {
+    background: #8f86bf; }
+    .t-block.-third .t-link:hover {
+      background: rgba(143, 134, 191, 0.8); }
+  .t-block.-third .t-product-title {
+    left: -15px; }
+  .t-block.-third .t-product-img {
+    left: 20px; }
 
 @media only screen and (max-width: 769px) {
   .t-hidden {
@@ -444,14 +501,14 @@ body {
     margin: 0; }
     .t-block-right .t-info {
       padding: 0;
-      top: 1100px; }
+      top: 1115px; }
       .t-block-right .t-info p {
         margin: 0; }
   .t-block-left .t-block__content {
     margin: 0; }
   .t-block-left .t-info {
     padding: 0;
-    top: 1000px; }
+    top: 1015px; }
     .t-block-left .t-info p {
       margin: 0; }
   .t-block__title {
@@ -466,7 +523,7 @@ body {
     position: absolute;
     z-index: 99999;
     text-align: center;
-    width: 400px;
+    width: 490px;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -488,26 +545,44 @@ body {
     .t-block.-first .t-product-title {
       background: url("../img/mobile/product1-title.png") no-repeat;
       background-size: contain; }
-  .t-block.-second .t-product {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -webkit-flex-direction: column-reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .t-block.-second .t-product-title {
-    width: 515px;
-    left: 0;
-    top: 80px; }
-  .t-block.-second .t-product-desc {
-    padding: 120px 30px 45px; }
-  .t-block.-second .t-title {
-    background-position: 60% 100%;
-    background-size: 600px; } }
+  .t-block.-second {
+    height: auto; }
+    .t-block.-second .t-product {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .t-block.-second .t-product-title {
+      width: 515px;
+      left: 0;
+      top: 80px; }
+    .t-block.-second .t-product-desc {
+      padding: 120px 30px 45px; }
+    .t-block.-second .t-product-img {
+      bottom: -80px;
+      left: -30px; }
+    .t-block.-second .t-title {
+      background-position: 60% 100%;
+      background-size: 600px; }
+  .t-block.-third {
+    height: auto; }
+    .t-block.-third .t-block__product {
+      top: -90px; }
+    .t-block.-third .t-line {
+      bottom: 250px; }
+    .t-block.-third .t-title {
+      background: url("../img/mobile/title3.png") no-repeat;
+      background-size: 600px;
+      background-position: 80px 103%; }
+    .t-block.-third .t-info {
+      top: 815px;
+      padding: 0; } }
