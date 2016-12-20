@@ -53,7 +53,7 @@ body {
   display: none; }
 
 .t-margin-left {
-  margin-left: 35px;
+  margin-left: 55px;
   display: inline-block; }
 
 .t-first-letter {
@@ -77,19 +77,14 @@ body {
   position: relative; }
 
 .t-product-title {
-  width: 520px;
-  height: 190px;
-  bottom: 20px;
   position: relative;
-  z-index: 999;
-  left: -15px; }
+  z-index: 999; }
 
 .t-product-img {
   position: relative;
   z-index: 999;
   width: 435px;
-  height: 450px;
-  left: 20px; }
+  height: 450px; }
 
 .t-product-desc {
   padding: 45px 85px;
@@ -106,11 +101,11 @@ body {
   height: 60px;
   margin: 40px auto;
   font-family: "dfd-light";
-  font-size: 35px;
   text-transform: uppercase; }
   .t-link span {
     display: block;
-    padding: 10px 0;
+    font-size: 35px;
+    line-height: 60px;
     height: 60px;
     white-space: nowrap;
     box-sizing: border-box; }
@@ -224,7 +219,7 @@ body {
   line-height: 1.25;
   position: relative; }
 .t-block .t-title {
-  height: 200px; }
+  height: 100%; }
 .t-block .t-info {
   width: 40%;
   font-size: 32px;
@@ -249,25 +244,67 @@ body {
     padding: 255px 50px 0 0; }
     .t-block-right .t-info p {
       margin-left: 70px; }
-.t-block.-first .t-block__title {
-  background: url("../img/photo1.png") no-repeat, #fff;
-  background-size: contain; }
-.t-block.-first .t-title {
-  width: 108%;
-  background: url("../img/title1.png") no-repeat;
-  background-position: 94% 25px; }
-.t-block.-first .t-first-letter {
-  background: url("../img/letter1.png") no-repeat;
+.t-block-left .t-block__content {
+  margin-left: 85px; }
+.t-block-left .t-info {
+  box-sizing: border-box;
+  padding: 180px 0 0 0; }
+  .t-block-left .t-info p {
+    margin-left: 50px;
+    width: 230px; }
+.t-block.-first {
+  height: 2165px; }
+  .t-block.-first .t-block__title {
+    background: url("../img/photo1.png") no-repeat, #fff;
+    background-size: contain; }
+  .t-block.-first .t-title {
+    width: 108%;
+    background: url("../img/title1.png") no-repeat;
+    background-position: 94% 25px; }
+  .t-block.-first .t-first-letter {
+    background: url("../img/letter1.png") no-repeat;
+    background-size: contain;
+    top: 15px;
+    left: -45px; }
+  .t-block.-first .t-product-title {
+    background: url("../img/product1-title.png") no-repeat;
+    background-size: contain;
+    width: 520px;
+    height: 190px;
+    bottom: 20px; }
+  .t-block.-first .t-link {
+    background: #09accd; }
+    .t-block.-first .t-link:hover {
+      background: rgba(9, 172, 205, 0.8); }
+  .t-block.-first .t-product-title {
+    left: -15px; }
+  .t-block.-first .t-product-img {
+    left: 20px; }
+.t-block.-second .t-block__title {
+  background: url("../img/photo2.png") no-repeat, #fff;
+  background-size: cover; }
+.t-block.-second .t-title {
+  width: 100%;
+  background: url("../img/title2.png") no-repeat;
+  background-position: 100% 100%; }
+.t-block.-second .t-first-letter {
+  background: url("../img/letter2.png") no-repeat;
   background-size: contain;
   top: 15px;
-  left: -45px; }
-.t-block.-first .t-product-title {
-  background: url("../img/product1-title.png") no-repeat;
-  background-size: contain; }
-.t-block.-first .t-link {
-  background: #09accd; }
-  .t-block.-first .t-link:hover {
-    background: rgba(9, 172, 205, 0.8); }
+  left: -25px; }
+.t-block.-second .t-product-title {
+  background: url("../img/product2-title.png") no-repeat;
+  background-size: contain;
+  width: 590px;
+  height: 210px;
+  left: 105px;
+  bottom: -4px; }
+.t-block.-second .t-product-img {
+  bottom: -55px; }
+.t-block.-second .t-link {
+  background: #f49924; }
+  .t-block.-second .t-link:hover {
+    background: rgba(244, 153, 36, 0.8); }
 
 @media only screen and (max-width: 769px) {
   .t-hidden {
@@ -309,8 +346,11 @@ body {
   .t-link {
     width: 490px;
     height: 80px;
-    margin: 70px auto;
-    font-size: 45px; }
+    margin: 70px auto; }
+    .t-link span {
+      font-size: 45px;
+      line-height: 80px;
+      padding: 0; }
 
   .t-line {
     bottom: 215px; }
@@ -407,6 +447,13 @@ body {
       top: 1100px; }
       .t-block-right .t-info p {
         margin: 0; }
+  .t-block-left .t-block__content {
+    margin: 0; }
+  .t-block-left .t-info {
+    padding: 0;
+    top: 1000px; }
+    .t-block-left .t-info p {
+      margin: 0; }
   .t-block__title {
     height: 495px; }
   .t-block__content {
@@ -425,15 +472,42 @@ body {
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     text-transform: uppercase; }
+    .t-block .t-info p {
+      width: 100%; }
   .t-block .t-text {
     width: 100%;
     font-size: 35px;
     padding: 60px 90px; }
-  .t-block.-first .t-block__title {
-    background-size: cover;
-    background: url("../img/photo1.png") no-repeat; }
-  .t-block.-first .t-title {
-    background-position: 60% 330px; }
-  .t-block.-first .t-product-title {
-    background: url("../img/mobile/product1-title.png") no-repeat;
-    background-size: contain; } }
+  .t-block.-first {
+    height: auto; }
+    .t-block.-first .t-block__title {
+      background-size: cover;
+      background: url("../img/photo1.png") no-repeat; }
+    .t-block.-first .t-title {
+      background-position: 60% 330px; }
+    .t-block.-first .t-product-title {
+      background: url("../img/mobile/product1-title.png") no-repeat;
+      background-size: contain; }
+  .t-block.-second .t-product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .t-block.-second .t-product-title {
+    width: 515px;
+    left: 0;
+    top: 80px; }
+  .t-block.-second .t-product-desc {
+    padding: 120px 30px 45px; }
+  .t-block.-second .t-title {
+    background-position: 60% 100%;
+    background-size: 600px; } }
