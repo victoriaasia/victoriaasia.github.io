@@ -340,12 +340,12 @@ body {
     .t-block.-second .t-link:hover {
       background: rgba(244, 153, 36, 0.8); }
 .t-block.-third {
-  height: 1720px; }
+  height: 1730px; }
   .t-block.-third .t-block__title {
     background: url("../img/photo3.png") no-repeat;
     background-size: 830px; }
   .t-block.-third .t-block__product {
-    top: -230px; }
+    top: -235px; }
   .t-block.-third .t-title {
     width: 108%;
     background: url("../img/title3.png") no-repeat;
