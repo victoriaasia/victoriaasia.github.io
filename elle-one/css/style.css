@@ -32,8 +32,16 @@ body {
   .av-container > div {
     position: relative; }
 
-.av-hidden {
-  display: none; }
+.av-dropcaps {
+  font-size: 140px;
+  float: left;
+  font-weight: 400;
+  line-height: 1em;
+  margin-bottom: -0.8em;
+  margin-right: -0.05em;
+  position: relative;
+  top: -60px;
+  left: -10px; }
 
 .av-flex {
   display: -webkit-box;
@@ -181,8 +189,14 @@ body {
     padding: 0;
     width: 768px; }
 
-  .av-hidden {
-    display: inline; }
+  .av-dropcaps {
+    font-size: inherit;
+    float: none;
+    font-weight: normal;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-right: 0;
+    position: static; }
 
   .av-text {
     font-size: 37px; }
