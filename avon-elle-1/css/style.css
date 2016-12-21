@@ -1,0 +1,252 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  background: #000; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.av-wrapper ::-moz-selection {
+  background: #ffc709;
+  color: #000; }
+
+.av-wrapper ::selection {
+  background: #ffc709;
+  color: #000; }
+
+.av-container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 40px 0px 150px;
+  background: #fff;
+  box-sizing: border-box;
+  overflow: hidden; }
+  .av-container > div {
+    position: relative; }
+
+.av-hidden {
+  display: none; }
+
+.av-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.av-text {
+  font-size: 16px;
+  font-family: "Minion Pro";
+  color: #000;
+  line-height: 1.6;
+  text-align: left; }
+
+.av-intro {
+  margin: 0px 45px; }
+  .av-intro__special {
+    font-size: 14px;
+    font-family: "hna";
+    color: #000;
+    background: #ffc709;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 9px;
+    white-space: nowrap;
+    padding: 10px 15px;
+    width: 350px;
+    box-sizing: border-box;
+    position: relative; }
+    .av-intro__special::before {
+      position: absolute;
+      content: "";
+      width: 300px;
+      height: 300px;
+      background: url("../img/decor.png") no-repeat;
+      background-size: contain;
+      left: 100px;
+      top: 60px;
+      z-index: 0; }
+  .av-intro__title {
+    width: 780px;
+    font-size: 65px;
+    font-family: "ddt";
+    color: #fff;
+    background: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.077;
+    letter-spacing: 5px;
+    white-space: nowrap;
+    padding: 25px 40px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 9; }
+  .av-intro__sub-title {
+    position: absolute;
+    top: 140px;
+    right: 235px;
+    font-size: 45px;
+    font-family: "hna";
+    color: #000;
+    background: #ffc709;
+    text-transform: uppercase;
+    line-height: 1.07;
+    letter-spacing: 6px;
+    padding: 20px;
+    z-index: 999; }
+
+.av-block-one {
+  position: relative; }
+  .av-block-one .av-img {
+    background: url("../img/product.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+    float: right;
+    width: 340px;
+    height: 710px;
+    position: absolute;
+    z-index: 999;
+    right: -40px;
+    top: -295px; }
+  .av-block-one .av-text {
+    margin: 45px;
+    position: relative; }
+  .av-block-one .av-text:first-child p {
+    padding: 165px 310px 0 0;
+    box-sizing: border-box; }
+  .av-block-one .av-text:last-child p {
+    padding: 40px 100px 0 145px;
+    box-sizing: border-box; }
+  .av-block-one .av-text:last-child::before {
+    position: absolute;
+    content: "";
+    height: 80%;
+    border-left: 2px solid #000;
+    top: 45px;
+    left: 70px; }
+
+.av-block-two {
+  margin: 90px 85px 90px 45px; }
+  .av-block-two .av-content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .av-block-two .av-img {
+    width: 470px;
+    height: 630px; }
+  .av-block-two .av-content:first-child {
+    margin-right: 40px; }
+    .av-block-two .av-content:first-child .av-img {
+      background: url("../img/photo1.png") no-repeat;
+      background-size: cover; }
+  .av-block-two .av-content:last-child .av-img {
+    background: url("../img/photo2.png") no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 999; }
+  .av-block-two .av-content:last-child::after {
+    position: absolute;
+    content: "";
+    width: 350px;
+    height: 350px;
+    background: url("../img/decor.png") no-repeat;
+    background-size: contain;
+    left: 50%;
+    bottom: -130px;
+    z-index: 0;
+    -webkit-transform: translateX(-70%);
+        -ms-transform: translateX(-70%);
+            transform: translateX(-70%); }
+  .av-block-two .av-quest {
+    background: #ffc709;
+    font-size: 25px;
+    font-family: "Myriad Pro";
+    color: #000;
+    line-height: 1.2;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 30px 45px;
+    margin-bottom: 40px; }
+
+@media only screen and (max-width: 769px) {
+  .av-container {
+    padding: 0;
+    width: 768px; }
+
+  .av-hidden {
+    display: inline; }
+
+  .av-text {
+    font-size: 37px; }
+
+  .av-intro {
+    margin: 0px 25px; }
+    .av-intro__special {
+      font-size: 17px;
+      width: 390px; }
+      .av-intro__special::before {
+        display: none; }
+    .av-intro__title {
+      letter-spacing: 0px;
+      padding: 15px 20px;
+      font-size: 48px; }
+    .av-intro__sub-title {
+      top: 110px;
+      right: 170px;
+      font-size: 40px;
+      letter-spacing: 0px; }
+
+  .av-block-one .av-img {
+    shape-outside: polygon(0% 0%, 100% 0%, 100% 75%, -15% 65%) border-box;
+    position: relative;
+    width: 220px;
+    height: 610px;
+    right: -35px;
+    top: -170px; }
+  .av-block-one .av-text {
+    margin: 0 30px; }
+  .av-block-one .av-text:first-child p {
+    padding: 165px 0 0 0;
+    box-sizing: border-box; }
+  .av-block-one .av-text:last-child p {
+    padding: 130px 0px 0 0px;
+    box-sizing: border-box; }
+  .av-block-one .av-text:last-child::before {
+    position: absolute;
+    content: "";
+    width: 60%;
+    border-top: 2px solid #000;
+    border-left: 0px;
+    top: 65px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
+  .av-block-two {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    margin-top: 30px; }
+    .av-block-two .av-content:first-child {
+      margin-right: 0; }
+    .av-block-two .av-img {
+      width: 100%;
+      height: 980px; }
+    .av-block-two .av-quest {
+      margin-bottom: 0; }
+    .av-block-two .av-content:last-child::after {
+      display: none; }
+    .av-block-two .av-quest {
+      font-size: 44px; } }
