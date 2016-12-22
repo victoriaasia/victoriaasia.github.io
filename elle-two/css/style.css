@@ -307,4 +307,4 @@ body {
     .av-block-three .av-content:last-child::after {
       display: none; }
     .av-block-three .av-content:last-child .av-img {
-      margin-top: 0; } }
+      margin-top: -2px; } }
