@@ -768,7 +768,7 @@ body {
       left: -10px; }
 
   .t-product {
-    min-height: 800px; }
+    min-height: 400px; }
 
   .t-link {
     width: 100%; }
@@ -776,13 +776,13 @@ body {
       font-size: 9vw; }
 
   .t-line {
-    bottom: 28% !important;
-    -webkit-transform: translateX(-28%) !important;
-        -ms-transform: translateX(-28%) !important;
-            transform: translateX(-28%) !important; }
+    bottom: 35% !important;
+    -webkit-transform: translateX(-35%) !important;
+        -ms-transform: translateX(-35%) !important;
+            transform: translateX(-35%) !important; }
 
   .t-product-desc {
-    padding: 20vw 5vw 0; }
+    padding: 10vw 5vw 0; }
 
   .t-block.-first .t-product-img {
     top: 20px;
