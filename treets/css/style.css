@@ -496,7 +496,7 @@ body {
   .t-link {
     width: 490px;
     height: 80px;
-    margin: 70px auto 0; }
+    margin: 70px auto; }
     .t-link span {
       font-size: 45px;
       line-height: 80px;
@@ -740,7 +740,10 @@ body {
   .t-block-right .t-info {
     top: 36%; }
   .t-block-left .t-info {
-    top: 38%; } }
+    top: 38%; }
+
+  .t-product-title {
+    height: 190px !important; } }
 @media only screen and (min-width: 340px) and (max-width: 374px) {
   .t-block.-third .t-info {
     top: 44.5%; }
