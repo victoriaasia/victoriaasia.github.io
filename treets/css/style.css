@@ -519,7 +519,7 @@ body {
     padding: 5px 3vw;
     background-position: 0 45px;
     background-size: contain;
-    height: 335vw; }
+    height: 345vw; }
     .t-intro::before {
       display: none; }
     .t-intro__line {
@@ -581,7 +581,7 @@ body {
     .t-products-line2 .t-products-item:nth-child(3) {
       position: absolute;
       left: -10px;
-      top: 110vw; }
+      top: 115vw; }
 
   .t-products-item {
     width: 45vw; }
@@ -828,4 +828,4 @@ body {
     left: 0; } }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .t-intro {
-    height: 345vw; } }
+    height: 355vw; } }
