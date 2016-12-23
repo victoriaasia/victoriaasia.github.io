@@ -577,7 +577,7 @@ body {
     .t-products-line2 .t-products-item:nth-child(2) {
       position: absolute;
       right: 15px;
-      top: 35vw; }
+      top: 30vw; }
     .t-products-line2 .t-products-item:nth-child(3) {
       position: absolute;
       left: -10px;
@@ -588,7 +588,7 @@ body {
     .t-products-item__img {
       height: 40vw; }
     .t-products-item__link {
-      font-size: 5vw;
+      font-size: 6vw;
       text-align: left; }
 
   .t-block-right {
