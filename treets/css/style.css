@@ -814,12 +814,14 @@ body {
     top: 0; }
   .t-block.-second .t-block__product {
     top: 30px !important; }
-  .t-block.-third .t-title {
-    background-position: 0 103% !important; }
-  .t-block.-third .t-text {
-    padding: 150px 8vw 30px; }
-  .t-block.-third .t-product-title {
-    left: 0; }
+  .t-block.-third {
+    margin-top: 40px; }
+    .t-block.-third .t-title {
+      background-position: 0 103% !important; }
+    .t-block.-third .t-text {
+      padding: 150px 8vw 30px; }
+    .t-block.-third .t-product-title {
+      left: 0; }
   .t-block.-fourth .t-product-title {
     bottom: 0; }
   .t-block.-fifth .t-product-img, .t-block.-fifth .t-product-title {
