@@ -731,12 +731,12 @@ body {
   .t-block-left .t-info {
     top: 37%; } }
 @media only screen and (min-width: 375px) and (max-width: 569px) {
+  .t-block.-first .t-info {
+    top: 37%; }
   .t-block.-third .t-info, .t-block.-fifth .t-info {
     top: 44.5%; }
   .t-block.-fourth .t-info {
-    top: 33%; }
-  .t-block-right .t-info {
-    top: 36%; }
+    top: 34%; }
   .t-block-left .t-info {
     top: 38%; }
 
