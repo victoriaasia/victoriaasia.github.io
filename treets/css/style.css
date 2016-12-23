@@ -273,8 +273,12 @@ body {
     color: #000;
     position: relative; }
   .t-block__product {
-    position: relative;
-    top: -170px; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative; }
   .t-block-right {
     margin-right: 85px; }
     .t-block-right .t-info {
@@ -351,8 +355,6 @@ body {
     .t-block.-third .t-block__title {
       background: url("../img/photo3.png") no-repeat;
       background-size: 830px; }
-    .t-block.-third .t-block__product {
-      top: -235px; }
     .t-block.-third .t-title {
       width: 108%;
       background: url("../img/title3.png") no-repeat;
@@ -387,8 +389,6 @@ body {
     .t-block.-fourth .t-block__title {
       background: url("../img/photo4.png") no-repeat, #fff;
       background-size: cover; }
-    .t-block.-fourth .t-block__product {
-      top: -125px; }
     .t-block.-fourth .t-title {
       width: 100%;
       background: url("../img/title4.png") no-repeat;
@@ -768,7 +768,8 @@ body {
       left: -10px; }
 
   .t-product {
-    min-height: 400px; }
+    min-height: 400px;
+    height: 100%; }
 
   .t-link {
     width: 100%; }
@@ -776,14 +777,16 @@ body {
       font-size: 9vw; }
 
   .t-line {
-    bottom: 35% !important;
-    -webkit-transform: translateX(-35%) !important;
-        -ms-transform: translateX(-35%) !important;
-            transform: translateX(-35%) !important; }
+    bottom: 30% !important;
+    -webkit-transform: translateX(-50%) !important;
+        -ms-transform: translateX(-50%) !important;
+            transform: translateX(-50%) !important; }
 
   .t-product-desc {
     padding: 10vw 5vw 0; }
 
+  .t-block__product {
+    top: -15px; }
   .t-block.-first .t-product-img {
     top: 20px;
     left: 0; }
@@ -791,12 +794,12 @@ body {
     left: 0; }
   .t-block.-second .t-product-desc {
     padding: 20vw 30px 45px; }
+  .t-block.-second .t-block__product {
+    top: -50px; }
   .t-block.-third .t-title {
     background-position: 0 103% !important; }
   .t-block.-third .t-text {
     padding: 150px 8vw 30px; }
-  .t-block.-third .t-block__product {
-    top: -75px; }
   .t-block.-third .t-product-title {
     left: 0; }
   .t-block.-fourth .t-info {
