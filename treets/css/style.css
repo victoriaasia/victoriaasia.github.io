@@ -786,8 +786,6 @@ body {
   .t-product {
     min-height: 400px;
     height: 100%; }
-    .t-product-img {
-      min-height: 80vw; }
     .t-product-desc {
       padding: 20vw 30px 45px !important; }
 
