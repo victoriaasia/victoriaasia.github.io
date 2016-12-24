@@ -142,7 +142,7 @@ body {
     box-sizing: border-box; }
 
 .t-container {
-  width: 1060px;
+  width: 1114px;
   margin: 0 auto;
   background: #fcfcf2;
   overflow: hidden; }
@@ -323,7 +323,7 @@ body {
     .t-block.-first .t-product-img {
       left: 20px; }
   .t-block.-second {
-    height: 2030px; }
+    height: 1940px; }
     .t-block.-second .t-block__title {
       background: url("../img/photo2.png") no-repeat, #fff;
       background-size: cover; }
