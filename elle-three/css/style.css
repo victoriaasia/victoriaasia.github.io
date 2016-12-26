@@ -38,6 +38,39 @@ body {
   display: -ms-flexbox;
   display: flex; }
 
+.av-result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 199, 9, 0.9);
+  color: #000;
+  font-size: 25px;
+  font-family: "m-pro";
+  line-height: 1.2;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .av-result p {
+    width: 50%; }
+
+.av-hidden {
+  display: none; }
+
+.av-link {
+  color: #000; }
+
 .av-text {
   font-size: 16px;
   font-family: "Minion Pro";
@@ -197,6 +230,7 @@ body {
   .av-block-three .av-img {
     width: 470px;
     height: 630px;
+    cursor: pointer;
     position: relative;
     z-index: 999; }
   .av-block-three .av-content:first-child {
@@ -246,6 +280,11 @@ body {
 
   .av-text {
     font-size: 37px; }
+
+  .av-result {
+    font-size: 46px; }
+    .av-result p {
+      width: 70%; }
 
   .av-intro {
     margin: 0px 25px; }
