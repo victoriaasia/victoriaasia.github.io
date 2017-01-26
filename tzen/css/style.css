@@ -772,11 +772,7 @@ h1 {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
+            flex-direction: column; }
 
   #section-3 {
     height: auto; }
@@ -805,7 +801,7 @@ h1 {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
     .filter-controls .filter {
-      font-size: 24px;
+      font-size: 18px;
       -webkit-box-flex: 1;
       -webkit-flex: 1 1 170px;
           -ms-flex: 1 1 170px;
@@ -834,8 +830,7 @@ h1 {
 
   .contacts {
     font-size: 28px;
-    width: 100% !important;
-    padding: 0 3%; }
+    width: 93% !important; }
     .contacts__tabs label {
       float: none;
       width: 100%; }
