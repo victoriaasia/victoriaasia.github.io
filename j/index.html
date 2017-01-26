@@ -31,6 +31,8 @@
       content: "";
       display: table;
       clear: both; }
+    a {
+      text-decoration: none; }
     .n-container {
       width: 738px;
       font-family: "intro";
@@ -78,7 +80,7 @@
         line-height: 1.3;
         text-transform: uppercase; }
       .n-desc__title img {
-        width: 220px; }
+        max-width: 100%; }
     .n-desc__content {
       width: 55%;
       height: 390px;
@@ -90,9 +92,8 @@
         margin: 8px 0 0;
         font-size: 11px;
         line-height: 1.2; }
-    .n-link {
-      text-decoration: none;
-      color: #fff; }
+    .n-desc-link {
+      width: 220px; }
     .n-button {
       display: -webkit-box;
       display: -webkit-flex;
@@ -111,7 +112,8 @@
       border: 3px solid #fff;
       font-size: 16px;
       text-transform: uppercase;
-      line-height: 1.2; }
+      line-height: 1.2;
+      color: #fff; }
       .n-button > div {
         text-align: center; }
     .n-nomination {
@@ -123,7 +125,7 @@
         font-size: 14px; }
       .n-nomination p {
         font-size: 8.5px; }
-      .n-nomination-desc {
+      .n-nomination-info {
         margin-top: 10px; }
       .n-nomination__first {
         width: 155px;
@@ -189,11 +191,11 @@
         </div>
         <div class="n-about">
           <div class="n-about__buttons">
-            <a href="#" class="n-button n-link"><div>новости<br>имена</div></a>
-            <a href="#" class="n-button n-link"><div>подробнее<br>про номинации</div></a>
-            <a href="#" class="n-button n-link"><div>лауреаты</div></a>
+            <a href="#" class="n-button"><div>новости<br>имена</div></a>
+            <a href="#" class="n-button"><div>подробнее<br>про номинации</div></a>
+            <a href="#" class="n-button"><div>лауреаты</div></a>
           </div>
-          <div class="n-about__desc n-clearfix">
+          <div class="n-about__desc n-desc n-clearfix">
             <div class="n-desc__title">
               <h1>
                 ПЕРВАЯ ЕЖЕГОДНАЯ
@@ -205,7 +207,7 @@
                 «ИНИЦИАТИВА ГОДА»,
                 «ПРОФИ ГОДА».
               </h1>
-              <a href="#">
+              <a href="#" class="n-desc-link">
                 <img src="data:image/png;base64,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" alt="">
               </a>
             </div>
@@ -231,17 +233,17 @@
           <div class="n-nomination__first">
             <h3>профи года</h3>
             <p>форма совершенна</p>
-            <p class="n-nomination-desc">Мы открываем имена тех, кто достигает нового, непрерывно совершенствуя свое мастерство.</p>
+            <p class="n-nomination-info">Мы открываем имена тех, кто достигает нового, непрерывно совершенствуя свое мастерство.</p>
           </div>
           <div class="n-nomination__second">
             <h3>жажда знаний</h3>
             <p>форма бесконечна</p>
-            <p class="n-nomination-desc">Мы открываем имена тех, кто стремится к новому, постоянно развивая свои знания.</p>
+            <p class="n-nomination-info">Мы открываем имена тех, кто стремится к новому, постоянно развивая свои знания.</p>
           </div>
           <div class="n-nomination__third">
             <h3>инициатива года</h3>
             <p>форма обретает направление</p>
-            <p class="n-nomination-desc">Мы открываем имена тех, кто предлагает новое, выходя за рамки стереотипов.</p>
+            <p class="n-nomination-info">Мы открываем имена тех, кто предлагает новое, выходя за рамки стереотипов.</p>
           </div>
         </div>
       </div>
