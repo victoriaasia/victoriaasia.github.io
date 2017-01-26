@@ -766,7 +766,7 @@ h1 {
           -ms-flex-direction: row-reverse;
               flex-direction: row-reverse; }
     #section-2 .about__item .content {
-      font-size: 26px; }
+      font-size: 28px; }
   #section-2 .about > div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -799,7 +799,7 @@ h1 {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
     .filter-controls .filter {
-      font-size: 18px;
+      font-size: 24px;
       -webkit-box-flex: 1;
       -webkit-flex: 1 1 170px;
           -ms-flex: 1 1 170px;
@@ -827,8 +827,9 @@ h1 {
     width: 768px; }
 
   .contacts {
-    font-size: 18px;
-    width: 80% !important; }
+    font-size: 28px;
+    width: 100% !important;
+    margin: 0 3%; }
     .contacts__tabs label {
       float: none;
       width: 100%; }
