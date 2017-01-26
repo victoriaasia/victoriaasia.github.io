@@ -321,7 +321,7 @@ a {
   height: auto; }
 
 #section-6 {
-  padding-bottom: 25px; }
+  padding-bottom: 60px; }
 
 #section-7 {
   min-height: 600px; }
@@ -745,12 +745,6 @@ h1 {
 .slick-slide {
   text-align: center; }
 
-.section-googlemap {
-  background: url("../img/map.png");
-  background-size: contain;
-  position: relative;
-  z-index: -9999; }
-
 .googlemap-overlay {
   background: transparent;
   position: relative;
@@ -821,6 +815,13 @@ h1 {
 
   .slider-nav, .slider-for {
     width: 768px; }
+
+  .slider-nav {
+    max-height: 105px;
+    overflow: hidden; }
+    .slider-nav img {
+      width: 95%;
+      margin: 0 auto; }
 
   .slider-for img {
     width: 768px; }
