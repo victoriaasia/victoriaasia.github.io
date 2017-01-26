@@ -878,7 +878,11 @@ h1 {
     text-align: left !important;
     padding: 40px 80px; }
     .rent-inner > div, .rent-inner a {
-      width: 100%; } }
+      width: 100%; }
+
+  .contacts-decor {
+    -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0);
+    clip-path: polygon(50% 50%, 0 0, 100% 0); } }
 @media all and (min-width: 420px) {
   #brands-filter .mix, #brands-filter .gap {
     width: 32%; } }
