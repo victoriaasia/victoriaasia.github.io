@@ -181,7 +181,6 @@ a {
   width: 40px;
   height: 4px;
   background-color: #e7b1bb;
-  border-radius: 4px;
   position: absolute;
   -webkit-transition-property: -webkit-transform;
           transition-property: -webkit-transform;
@@ -196,7 +195,6 @@ a {
     width: 40px;
     height: 4px;
     background-color: #e7b1bb;
-    border-radius: 4px;
     position: absolute;
     -webkit-transition-property: -webkit-transform;
             transition-property: -webkit-transform;
@@ -629,48 +627,41 @@ a {
       content: "";
       display: inline-block;
       padding-top: 60%; }
-  #brands-filter .glance {
-    background: url(../img/glance-logo.png) no-repeat;
-    background-size: cover;
-    background-position: center; }
-  #brands-filter .letual {
-    background: url(../img/letual-logo.jpg) no-repeat;
-    background-size: cover;
-    background-position: center; }
-  #brands-filter .rgd {
-    background: url(../img/rgd-logo.png) no-repeat;
-    background-size: cover;
-    background-position: center; }
-  #brands-filter .dns {
-    background: url(../img/dns-logo.jpg) no-repeat;
-    background-size: cover;
-    background-position: center; }
-  #brands-filter .zoloto {
-    background: url(../img/zoloto-logo.jpg) no-repeat;
-    background-size: contain;
-    background-position: center; }
-  #brands-filter .slon {
-    background: url(../img/slon-logo.jpg) no-repeat;
-    background-size: contain;
-    background-position: center; }
-  #brands-filter .stile {
-    background: url(../img/stile-logo.png) no-repeat;
-    background-size: contain;
-    background-position: center; }
-  #brands-filter .liza {
-    background: url(../img/liza-logo.jpg) no-repeat;
-    background-size: contain;
-    background-position: center; }
-  #brands-filter .valenzia {
-    background: url(../img/valenzia-logo.jpg) no-repeat;
-    background-size: contain;
-    background-position: center; }
+
+.detail-glance {
+  background: url(../img/brands/glance-logo.jpg) no-repeat !important; }
+
+.detail-letual {
+  background: url(../img/brands/letual-logo.jpg) no-repeat !important; }
+
+.detail-rgd {
+  background: url(../img/brands/rgd-logo.jpg) no-repeat !important; }
+
+.detail-dns {
+  background: url(../img/brands/dns-logo.jpg) no-repeat !important; }
+
+.detail-zoloto {
+  background: url(../img/brands/zoloto-logo.jpg) no-repeat !important; }
+
+.detail-slon {
+  background: url(../img/brands/slon-logo.jpg) no-repeat !important; }
+
+.detail-stile {
+  background: url(../img/brands/stile-logo.jpg) no-repeat !important; }
+
+.detail-liza {
+  background: url(../img/brands/liza-logo.jpg) no-repeat !important; }
+
+.detail-valenzia {
+  background: url(../img/brands/valenzia-logo.jpg) no-repeat !important; }
 
 .detail-brand {
   overflow: hidden;
   position: relative;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  background-size: contain !important;
+  background-position: center !important; }
   .detail-brand .mask, .detail-brand .content {
     width: 100%;
     height: 100%;
@@ -712,34 +703,19 @@ a {
     opacity: 0;
     -webkit-transition: all 0.2s linear;
             transition: all 0.2s linear; }
-
-.detail-brand.hover-effect .mask {
-  opacity: 1; }
-.detail-brand.hover-effect h2, .detail-brand.hover-effect p, .detail-brand.hover-effect .info {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px); }
-.detail-brand.hover-effect p {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s; }
-.detail-brand.hover-effect .info {
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s; }
-
-.detail-brand:hover .mask {
-  opacity: 1; }
-.detail-brand:hover h2, .detail-brand:hover p, .detail-brand:hover .info {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px); }
-.detail-brand:hover p {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s; }
-.detail-brand:hover .info {
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s; }
+  .detail-brand.hover-effect .mask {
+    opacity: 1; }
+  .detail-brand.hover-effect h2, .detail-brand.hover-effect p, .detail-brand.hover-effect .info {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px); }
+  .detail-brand.hover-effect p {
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s; }
+  .detail-brand.hover-effect .info {
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s; }
 
 .slider-for {
   width: 960px;
@@ -751,9 +727,11 @@ a {
   width: 960px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 0px 40px; }
+  padding: 0px 40px;
+  max-height: 135px;
+  overflow: hidden; }
   .slider-nav img {
-    width: 200px; }
+    width: 240px; }
 
 .slick-prev {
   left: 5px; }
@@ -769,7 +747,17 @@ h1 {
 
 .section-googlemap {
   background: url("../img/map.png");
-  background-size: contain; }
+  background-size: contain;
+  position: relative;
+  z-index: -9999; }
+
+.googlemap-overlay {
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  top: 600px;
+  margin-top: -600px; }
 
 @media only screen and (max-width: 768px) {
   .container, .header, .section-1 {
