@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=cyrillic,cyrillic-ext");
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+input {
+  outline: none;
+}
+.container {
+  max-width: 970px;
+  min-width: 320px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  padding: 15px;
+  box-sizing: border-box;
+  color: #333;
+}
+.main-content {
+  width: 75%;
+  margin: 0 20px;
+  box-sizing: border-box;
+}
+.aside-content {
+  width: 35%;
+  background: #fff6e0;
+}
+.page-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.25;
+  margin: 30px 0;
+}
+.block-title {
+  font-size: 18px;
+  font-family: "Verdana";
+  line-height: 1;
+}
+.edit-field,
+.edit-btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.edit-btn {
+  font-size: 12px;
+  font-family: "Verdana";
+  color: #aaa;
+  line-height: 1.286;
+  text-decoration: underline;
+  text-align: right;
+}
+.edit-field {
+  font-size: 12px;
+  padding-left: 10px;
+  height: 15px;
+  border: 1px solid transparent;
+}
+.edit-field:disabled {
+  background: transparent;
+}
+.btn-active {
+  color: #ef7800;
+}
+.field-active {
+  border: 1px solid #aaa;
+}
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-year-field {
+  color: #aaa;
+}
+::-webkit-clear-button,
+::-webkit-inner-spin-button,
+::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.personal-list {
+  margin: 20px 0;
+  border: 1px solid #aaa;
+}
+.personal-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #aaa;
+  padding: 13px 25px 13px 10px;
+}
+.personal-item:last-child {
+  border-bottom: none;
+}
+.aside-content {
+  margin-top: 60px;
+  padding: 20px 15px 30px;
+  box-sizing: border-box;
+}
+.aside-title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.143;
+}
+.aside-desc {
+  font-size: 12px;
+  font-family: "Verdana";
+  line-height: 1.333;
+  margin: 10px 0;
+}
+.aside-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.social__btn {
+  height: 45px;
+  margin: 10px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-family: "Verdana";
+  color: #fff;
+}
+.social-logo {
+  width: 25px;
+  height: 25px;
+  margin: 0 20px;
+  background: url("../../public/assets/img/img.png");
+}
+.social-fb {
+  background: #1d59a3;
+}
+.social-fb__logo {
+  background-position: 22px 0;
+}
+.social-vk {
+  background: #1c608d;
+}
+.social-vk__logo {
+  background-position: -35px 0;
+}
+.social-tw {
+  background: #00b2e6;
+}
+.social-tw__logo {
+  background-position: 0 0;
+}
+.social-odn {
+  background: #ef7800;
+}
+.social-odn__logo {
+  background-position: -64px 0;
+}
