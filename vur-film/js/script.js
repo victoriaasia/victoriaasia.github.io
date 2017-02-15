@@ -71,6 +71,10 @@ function plusSlides(n) {
 showSlides(slideIndex += n);
 }
 
+function plusFacts(n) {
+showFacts(factIndex += n);
+}
+
 function currentSlide(n) {
 showSlides(slideIndex = n);
 }
