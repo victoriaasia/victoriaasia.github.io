@@ -41,7 +41,7 @@ a {
   width: 100vw;
   color: #fff;
   overflow: hidden;
-  background: rgba(0,0,0, 0.5)}
+  background: rgba(0,0,0, 0.5);}
 
 .v-clearfix:after {
   content: "";
@@ -1037,7 +1037,8 @@ a {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse; }
     .v-facts__item img {
-      height: 200px; }
+      height: auto;
+      max-height: 50vw; }
   .v-facts__dots {
     top: 400px;
     bottom: 0; }
@@ -1057,7 +1058,8 @@ a {
       overflow: visible; }
   .v-facts__prev, .v-facts__next {
     display: block;
-    width: 25px; }
+    width: 25px;
+    bottom: 20%; }
   .v-facts__dot {
     height: 20px;
     width: 20px; }
