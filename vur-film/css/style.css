@@ -41,7 +41,7 @@ a {
   width: 100vw;
   color: #fff;
   overflow: hidden;
-  background: rgba(0,0,0,0.5);}
+  background: rgba(0,0,0, 0.5)}
 
 .v-clearfix:after {
   content: "";
@@ -828,7 +828,7 @@ a {
   .v-intro, .v-block, .v-block-second-v, .v-block__item-wrapper, .v-facts, .v-slider, .v-footer {
     width: 100%; }
 
-  .v-img-first, .v-img-second, .v-img-fourth, .v-img-eighth, .v-img-nineth {
+  .v-img-first, .v-img-second, .v-img-third, .v-img-fourth, .v-img-eighth, .v-img-nineth {
     display: none; }
 
   .v-hidden {
@@ -915,6 +915,15 @@ a {
     padding: 0px 3px 15px; }
   .v-block-second-i .v-block__item-title {
     padding-left: 3px; }
+  .v-block-second-i .v-block__img {
+    width: 450px;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    min-width: 450px;
+    max-width: 450px;
+    margin-top: -300px; }
   .v-block-second-v .v-block__item-text, .v-block-second-v .v-block__item-title {
     background: transparent; }
   .v-block__test-link {
@@ -974,7 +983,7 @@ a {
       font-size: 32px; }
 
   .v-img-icons {
-    width: 85%; }
+    width: 80%; }
     .v-img-icons::before {
       width: 90%; }
     .v-img-icons__item {
@@ -982,7 +991,7 @@ a {
       height: 15vw; }
 
   #v-domovoy .v-img-icons, #v-demon .v-img-icons, #v-rusalka .v-img-icons, #v-oboroten .v-img-icons {
-    top: 90%; }
+    top: 93%; }
 
   #v-rusalka, #v-demon, #v-oboroten {
     margin: 30px 0; }
@@ -1142,13 +1151,6 @@ a {
   .v-block__item-text {
     font-size: 6vw; }
   .v-block-second-i .v-block__img {
-    height: 450px;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    min-height: 450px;
-    max-height: 450px;
     margin-top: -400px; }
 
   .v-footer__social-title {
@@ -1158,9 +1160,11 @@ a {
     width: 80%;
     font-size: 12vw; }
 
-  .v-img-icons__item {
-    width: 18vw;
-    height: 18vw; }
+  .v-img-icons {
+    width: 85%; }
+    .v-img-icons__item {
+      width: 18vw;
+      height: 18vw; }
 
   .v-slider__text {
     font-size: 4.5vw; } }
