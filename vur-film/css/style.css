@@ -1,4 +1,7 @@
-body {margin: 0;}
+body {
+  margin: 0;
+  background: black;
+}
 .v-footer__link, .v-intro__link, .v-block__test-link {
   text-decoration: none;
   color: inherit;
@@ -207,7 +210,7 @@ body {margin: 0;}
       box-sizing: border-box;
       position: relative; }
     .v-block.-seventh .v-float-right {
-      margin: 46px 0; }
+      margin: 130px 0; }
   .v-block.-eighth {
     background: url("../img/back3a.jpg") no-repeat;
     background-size: 100% 100%;
@@ -220,13 +223,12 @@ body {margin: 0;}
       background: rgba(6, 8, 9, 0.5); }
     .v-block.-eighth .v-block__desc {
       font-size: 32px;
-      font-family: "bodoni";
       line-height: 1.438;
       text-align: center;
       padding: 10px 50px; }
     .v-block.-eighth .v-block__test {
       position: absolute;
-      bottom: 105px;
+      bottom: 65px;
       left: 50px; }
   .v-block__desc {
     font-size: 23px;
@@ -324,7 +326,7 @@ body {margin: 0;}
       line-height: 1.548;
       position: relative; }
     .v-block__item-text {
-      font-size: 22px;
+      font-size: 19px;
       line-height: 1.609;
       margin-top: 15px;
       position: relative; }
@@ -1109,7 +1111,7 @@ body {margin: 0;}
     .v-block__title br {
       display: block; }
   .v-block__item {
-    height: 650px;
+    height: 820px;
     width: 100%; }
     .v-block__item-wrapper {
       display: -webkit-box;
@@ -1455,7 +1457,7 @@ body {margin: 0;}
   .v-block__item-title {
     font-size: 12vw; }
   .v-block__item-text {
-    font-size: 6vw; }
+    font-size: 4vw; }
   .v-block-second-i .v-block__img {
     width: 450px;
     margin-left: 50%;
@@ -1494,3 +1496,8 @@ body {margin: 0;}
     left: -55px;
     width: 40px;
     height: 40px; } }
+
+
+.v-active {
+  display: block;
+}
