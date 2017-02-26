@@ -110,12 +110,12 @@ a {
     -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
             transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
     .header-nav .hamburger-box .hamburger-inner::before {
-      -webkit-transition: top 0.12s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-              transition: top 0.12s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+      -webkit-transition: top 0.01s 0.03s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+              transition: top 0.01s 0.03s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
     .header-nav .hamburger-box .hamburger-inner::after {
       top: -20px;
-      -webkit-transition: top 0.3s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
-              transition: top 0.3s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear; }
+      -webkit-transition: top 0.1s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
+              transition: top 0.1s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear; }
 .header-nav .menu {
   position: absolute;
   top: 100%;
@@ -789,6 +789,20 @@ h1 {
 @media only screen and (max-width: 769px) {
   .header, .section-1 {
     width: 100%; }
+
+  .header-nav .hamburger-box {
+    width: 60px;
+    height: 35px; }
+    .header-nav .hamburger-box .hamburger-inner, .header-nav .hamburger-box .hamburger-inner::before, .header-nav .hamburger-box .hamburger-inner::after {
+      width: 60px;
+      height: 6px; }
+    .header-nav .hamburger-box .hamburger-inner::before {
+      top: -15px; }
+    .header-nav .hamburger-box .hamburger-inner::after {
+      top: -30px; }
+
+  .hamburger--collapse.is-active .hamburger-inner::before {
+    top: 0px; }
 
   .section-container .section-title {
     font-size: 50px; }
