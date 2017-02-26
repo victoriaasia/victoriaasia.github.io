@@ -97,18 +97,34 @@ for (let i=0; i<detailBrand.length; i++) {
 $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
+    nextArrow: '<i class="fa fa-angle-double-right next"></i>',
+    prevArrow: '<i class="fa fa-angle-double-left prev"></i>',
     fade: true,
+    // draggable: false,
     asNavFor: '.slider-nav'
 });
 $('.slider-nav').slick({
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
+    speed: 400,
+    arrows: false,
     asNavFor: '.slider-for',
     centerMode: true,
-    arrows: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    infinite: true,
+    responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }
+  ]
 });
+
+$('#tab3').prop( "checked", true);
 
 
 });
