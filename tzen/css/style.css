@@ -839,9 +839,9 @@ h1 {
     .filter-controls .filter {
       font-size: 28px;
       -webkit-box-flex: 1;
-      -webkit-flex: 1 1 200px;
-          -ms-flex: 1 1 200px;
-              flex: 1 1 200px;
+      -webkit-flex: 1 1 120px;
+          -ms-flex: 1 1 120px;
+              flex: 1 1 120px;
       max-width: 245px;
       height: 115px; }
 
@@ -853,6 +853,11 @@ h1 {
     #brands-filter .mix, #brands-filter .gap {
       width: 49%; }
 
+  .detail-brand h2 {
+    font-size: 28px; }
+  .detail-brand p {
+    font-size: 17px; }
+
   .slider-nav, .slider-for {
     width: 768px; }
 
@@ -862,17 +867,22 @@ h1 {
       width: 95%;
       margin: 0 auto; }
 
-  .slider-for img {
-    width: 768px; }
+  .slider-for {
+    padding: 0; }
+    .slider-for img {
+      width: 100%; }
 
   .prev, .next {
-    font-size: 35px; }
+    font-size: 35px;
+    color: #fff;
+    z-index: 999;
+    font-size: 60px; }
 
   .next {
-    right: 0; }
+    right: 30px; }
 
   .prev {
-    left: 7px; }
+    left: 30px; }
 
   .contacts {
     width: 93% !important; }
