@@ -748,8 +748,6 @@ a {
   height: 95%;
   cursor: pointer;
   position: absolute;
-  background: -webkit-radial-gradient(center, ellipse, rgba(117, 23, 77, 0.2) 0%, rgba(117, 23, 77, 0) 100%);
-  background: radial-gradient(ellipse at center, rgba(117, 23, 77, 0.2) 0%, rgba(117, 23, 77, 0) 100%);
   z-index: 99; }
 
 .fa-angle-double-left:before,
@@ -765,6 +763,9 @@ a {
   border: none;
   outline: none;
   color: #75174D; }
+
+.fa-angle-double-left:before {
+  left: 28px; }
 
 h1 {
   display: inline-block; }
@@ -880,6 +881,10 @@ h1 {
     padding: 0; }
     .slider-for img {
       width: 100%; }
+
+  .slick-arrow {
+    background: -webkit-radial-gradient(center, ellipse, rgba(117, 23, 77, 0.2) 0%, rgba(117, 23, 77, 0) 100%);
+    background: radial-gradient(ellipse at center, rgba(117, 23, 77, 0.2) 0%, rgba(117, 23, 77, 0) 100%); }
 
   .fa-angle-double-left:before,
   .fa-angle-double-right:before {
