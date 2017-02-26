@@ -736,23 +736,32 @@ a {
   overflow: hidden; }
 
 .prev {
-  left: -25px; }
+  left: -25px;
+  top: 5%; }
 
 .next {
-  right: -30px; }
+  right: -30px;
+  top: 5%; }
 
 .slick-arrow {
-  font-size: 45px;
+  width: 60px;
+  height: 95%;
+  cursor: pointer;
+  position: absolute;
+  background: -webkit-radial-gradient(center, ellipse, rgba(117, 23, 77, 0.2) 0%, rgba(117, 23, 77, 0) 100%);
+  background: radial-gradient(ellipse at center, rgba(117, 23, 77, 0.2) 0%, rgba(117, 23, 77, 0) 100%);
+  z-index: 99; }
+
+.fa-angle-double-left:before,
+.fa-angle-double-right:before {
   position: absolute;
   top: 50%;
+  font-size: 45px;
   display: block;
-  width: 30px;
-  height: 30px;
   padding: 0;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  cursor: pointer;
   border: none;
   outline: none;
   color: #75174D; }
@@ -830,7 +839,7 @@ h1 {
     padding: 7px 0; }
 
   .filter-controls {
-    padding: 0px 3%;
+    padding: 0px;
     width: 100%;
     height: auto;
     -webkit-flex-wrap: wrap;
@@ -839,9 +848,9 @@ h1 {
     .filter-controls .filter {
       font-size: 28px;
       -webkit-box-flex: 1;
-      -webkit-flex: 1 1 120px;
-          -ms-flex: 1 1 120px;
-              flex: 1 1 120px;
+      -webkit-flex: 1 1 200px;
+          -ms-flex: 1 1 200px;
+              flex: 1 1 200px;
       max-width: 245px;
       height: 115px; }
 
@@ -849,7 +858,7 @@ h1 {
     width: 100%; }
 
   #brands-filter {
-    padding: 20px 3%; }
+    padding: 20px 0; }
     #brands-filter .mix, #brands-filter .gap {
       width: 49%; }
 
@@ -872,20 +881,24 @@ h1 {
     .slider-for img {
       width: 100%; }
 
-  .prev, .next {
+  .fa-angle-double-left:before,
+  .fa-angle-double-right:before {
     font-size: 35px;
     color: #fff;
     z-index: 999;
     font-size: 60px; }
 
+  .fa-angle-double-left:before {
+    left: 25px; }
+
   .next {
-    right: 30px; }
+    right: 0px; }
 
   .prev {
-    left: 30px; }
+    left: 0px; }
 
   .contacts {
-    width: 93% !important; }
+    width: 100% !important; }
     .contacts__tabs label {
       float: none;
       width: 100%;
