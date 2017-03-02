@@ -106,7 +106,17 @@ $('.slider-for').slick({
     arrows: false,
     fade: true,
     // draggable: false,
-    asNavFor: '.slider-nav'
+    asNavFor: '.slider-nav',
+    responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        arrows: true,
+        nextArrow: '<i class="fa fa-angle-right next"></i>',
+        prevArrow: '<i class="fa fa-angle-left prev"></i>',
+      }
+    }
+  ]
 });
 $('.slider-nav').slick({
     slidesToShow: 4,
@@ -126,7 +136,13 @@ $('.slider-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 3
       }
-    }
+    },
+     {
+        breakpoint: 769,
+        settings: {
+          arrows: false
+        }
+      }
   ]
 });
 
