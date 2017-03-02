@@ -154,9 +154,9 @@ a {
     line-height: 1.2;
     text-align: center;
     font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 700;
     color: #75174D;
     padding: 0 20px;
-    font-weight: 300;
     margin-bottom: 50px; }
 
 .section-1 .video-decor {
@@ -218,13 +218,13 @@ a {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    padding: 15px 0; }
   #section-2 .about__item {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    padding: 0 30px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -240,32 +240,54 @@ a {
     #section-2 .about__item .content {
       color: #75174D;
       font-family: "Open Sans Condensed", sans-serif;
-      font-size: 18px;
+      font-size: 26px;
       padding: 0 30px;
-      max-width: 425px; }
+      width: 100%;
+      -webkit-box-flex: 2;
+      -webkit-flex: 2;
+          -ms-flex: 2;
+              flex: 2;
+      box-sizing: border-box; }
     #section-2 .about__item .img {
-      height: 60px;
-      width: 60px;
-      border-radius: 50%;
+      height: 80px;
+      width: 80px;
       overflow: hidden; }
     #section-2 .about__item .img-market {
-      background: url("../img/supermaket.png") no-repeat;
+      background: url("../img/about/market.png") no-repeat;
       background-size: contain; }
     #section-2 .about__item .img-clock {
-      background: url("../img/round-wall-clock.png") no-repeat;
+      background: url("../img/about/clock.png") no-repeat;
       background-size: contain; }
     #section-2 .about__item .img-total {
-      background: url("../img/location-2.png") no-repeat;
+      background: url("../img/about/loc.png") no-repeat;
+      background-size: contain; }
+    #section-2 .about__item .img-bank {
+      background: url("../img/about/card.png") no-repeat;
       background-size: contain; }
     #section-2 .about__item .img-extra {
-      background: url("../img/commerce.png") no-repeat;
+      background: url("../img/about/commerce.png") no-repeat;
       background-size: contain; }
+  #section-2 .about__item:nth-child(odd) {
+    text-align: right;
+    padding: 0 15px 0 0; }
   #section-2 .about__item:nth-child(even) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
     -webkit-flex-direction: row-reverse;
         -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse; }
+            flex-direction: row-reverse;
+    padding: 0 0 0 15px; }
+  #section-2 .about-extra .about__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 0;
+    text-align: center; }
+    #section-2 .about-extra .about__item .content {
+      padding: 30px 30px 0;
+      width: 600px; }
 
 .contacts-decor {
   background: #ece7e1;
@@ -749,6 +771,9 @@ h1 {
   .section-container .section-title {
     font-size: 65px !important; }
 
+  #section-2 .about-extra .about__item .content {
+    width: 100%;
+    padding: 0 30px; }
   #section-2 .about__item {
     padding: 15px 0px 45px;
     width: 100%; }
@@ -766,7 +791,7 @@ h1 {
       text-align: center; }
     #section-2 .about__item .img {
       height: 245px;
-      width: 385px;
+      width: 290px;
       background-size: 65% !important;
       background-position: center !important; }
   #section-2 .about > div {
@@ -823,6 +848,7 @@ h1 {
     width: 768px; }
 
   .slider-nav {
+    padding: 0px 60px;
     overflow: hidden; }
     .slider-nav img {
       width: 95%;
@@ -834,24 +860,28 @@ h1 {
       width: 100%; }
 
   .slick-arrow {
-    background: -webkit-radial-gradient(center, ellipse, rgba(117, 23, 77, 0.2) 0%, rgba(117, 23, 77, 0) 100%);
-    background: radial-gradient(ellipse at center, rgba(117, 23, 77, 0.2) 0%, rgba(117, 23, 77, 0) 100%); }
+    background: -webkit-radial-gradient(center, ellipse, rgba(117, 23, 77, 0.1) 0%, rgba(117, 23, 77, 0) 100%);
+    background: radial-gradient(ellipse at center, rgba(117, 23, 77, 0.1) 0%, rgba(117, 23, 77, 0) 100%); }
 
   .fa-angle-left:before,
   .fa-angle-right:before {
-    font-size: 35px;
     color: #fff;
     z-index: 999;
-    font-size: 130px; }
+    font-size: 120px; }
 
   .fa-angle-left:before {
-    left: 25px; }
+    left: 10px; }
+
+  .fa-angle-right:before {
+    right: 10px; }
 
   .next {
-    right: 0px; }
+    right: 0px;
+    top: 0; }
 
   .prev {
-    left: 0px; }
+    left: 0px;
+    top: 0; }
 
   .contacts {
     width: 100% !important; }
