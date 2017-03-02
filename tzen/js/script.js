@@ -5,21 +5,22 @@ $('.parallax-brands').parallax({imageSrc: 'img/ph1.jpg'});
 $('.parallax-gallery').parallax({imageSrc: 'img/ph2.jpg'});
 
 // menu toggle
-$('.menu-toggle').click(function(){
-    $(this).next('ul').slideToggle();
-    $('.hamburger--collapse').toggleClass('is-active');
+$('.header-nav').click(function(){
+    $('.menu').slideToggle();
+    $('.hamburger').toggleClass('menu-active');
 });
 
 $('.menu a').click(function(){
 // hide toggle-menu when selected
       $('.menu').css('display', 'none');
-      $('.hamburger').removeClass('is-active');
+      $('.hamburger').removeClass('menu-active');
 // smooth scroll to target
       $('html, body').animate({
           scrollTop: $($(this).attr('href')).offset().top -90
       }, 1500);
       return false;
   });
+
 
 // video settings
   scaleVideoContainer();
