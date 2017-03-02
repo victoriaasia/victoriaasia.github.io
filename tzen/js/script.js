@@ -1,9 +1,5 @@
 jQuery(function($){
 
-// parallax settings
-$('.parallax-brands').parallax({imageSrc: 'img/ph1.jpg'});
-$('.parallax-gallery').parallax({imageSrc: 'img/ph2.jpg'});
-
 // menu toggle
 $('.header-nav').click(function(){
     $('.menu').slideToggle();
@@ -20,6 +16,10 @@ $('.menu a').click(function(){
       }, 1500);
       return false;
   });
+
+// parallax settings
+  $('.parallax-brands').parallax({imageSrc: 'img/ph1.jpg'});
+  $('.parallax-gallery').parallax({imageSrc: 'img/ph2.jpg'});
 
 
 // video settings
@@ -99,8 +99,8 @@ $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    nextArrow: '<i class="fa fa-angle-double-right next"></i>',
-    prevArrow: '<i class="fa fa-angle-double-left prev"></i>',
+    nextArrow: '<i class="fa fa-angle-right next"></i>',
+    prevArrow: '<i class="fa fa-angle-left prev"></i>',
     fade: true,
     // draggable: false,
     asNavFor: '.slider-nav'
@@ -127,5 +127,9 @@ $('.slider-nav').slick({
 
 $('#tab3').prop( "checked", true);
 
+
+$( "a" ).click(function(event) {
+  event.preventDefault();
+});
 
 });
