@@ -34,11 +34,11 @@ a {
 #play {
   position: absolute; }
 
-.container ::-moz-selection {
+.wrapper ::-moz-selection {
   background: #75174D;
   color: #ece7e1; }
 
-.container ::selection {
+.wrapper ::selection {
   background: #75174D;
   color: #ece7e1; }
 
@@ -777,7 +777,7 @@ h1 {
           -ms-flex-direction: column-reverse;
               flex-direction: column-reverse; }
     #section-2 .about__item .content {
-      font-size: 4rem;
+      font-size: 50px;
       max-width: 100%;
       width: 100%;
       box-sizing: border-box;
@@ -817,13 +817,13 @@ h1 {
     .filter-controls .active::after {
       border-top: 0px; }
     .filter-controls .filter {
-      font-size: 32px;
+      font-size: 34px;
       -webkit-box-flex: 1;
       -webkit-flex: 1 1 245px;
           -ms-flex: 1 1 245px;
               flex: 1 1 245px;
       max-width: 245px;
-      height: 100px;
+      height: 130px;
       font-weight: 700; }
 
   #brands-filter, #section-2 .about {
@@ -883,7 +883,7 @@ h1 {
     .contacts__tabs label {
       float: none;
       width: 100%;
-      font-size: 36px;
+      font-size: 60px;
       font-weight: 700; }
       .contacts__tabs label:nth-child(4) {
         border-top: 1px solid #fff;
@@ -893,7 +893,7 @@ h1 {
     .contacts__tabs [id^="tab"]:checked + label > span::after {
       border: none; }
     .contacts__tabs .tab-content {
-      font-size: 38px; }
+      font-size: 50px; }
 
   .customer::after {
     background: url("../img/shopper.jpg") center center no-repeat;
@@ -927,7 +927,7 @@ h1 {
       text-align: left !important;
       padding: 40px 80px;
       background: rgba(255, 255, 255, 0.5);
-      font-size: 38px; }
+      font-size: 50px; }
       .rent-inner > div,
       .rent-inner .rent-link {
         width: 100%; }
@@ -937,7 +937,7 @@ h1 {
     clip-path: polygon(50% 50%, 0 0, 100% 0); } }
 @media only screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .section-container .section-title {
-    font-size: 5rem; }
+    font-size: 100px; }
 
   .header-nav .menu {
     height: 100vh;
@@ -952,7 +952,18 @@ h1 {
     font-size: 5em; }
     .header-logo .title__v::before {
       left: -35px;
-      bottom: -20px; } }
+      bottom: -20px; }
+
+  .section-googlemap, .googlemap-content, .googlemap-content p, .googlemap-content p iframe {
+    height: 100vh; }
+
+  .section-googlemap {
+    position: relative; }
+
+  .googlemap-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%; } }
 @media only screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .section-container .section-title {
     font-size: 5rem; }
