@@ -939,7 +939,7 @@ h1 {
   .contacts-decor {
     -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0);
     clip-path: polygon(50% 50%, 0 0, 100% 0); } }
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .section-container .section-title {
     font-size: 5rem; }
 
@@ -957,7 +957,7 @@ h1 {
     .header-logo .title__v::before {
       left: -35px;
       bottom: -20px; } }
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .section-container .section-title {
     font-size: 5rem; }
 
