@@ -526,31 +526,31 @@ a {
       padding-top: 60%; }
 
 .detail-glance {
-  background: url(../img/brands/glance-logo.jpg) no-repeat !important; }
+  background: url(../img/brands/glance-logo.png) no-repeat !important; }
 
 .detail-letual {
-  background: url(../img/brands/letual-logo.jpg) no-repeat !important; }
+  background: url(../img/brands/letual-logo.png) no-repeat !important; }
 
 .detail-rgd {
-  background: url(../img/brands/rgd-logo.jpg) no-repeat !important; }
+  background: url(../img/brands/rgd-logo.png) no-repeat !important; }
 
 .detail-dns {
-  background: url(../img/brands/dns-logo.jpg) no-repeat !important; }
+  background: url(../img/brands/dns-logo.png) no-repeat !important; }
 
 .detail-zoloto {
-  background: url(../img/brands/zoloto-logo.jpg) no-repeat !important; }
+  background: url(../img/brands/zoloto-logo.png) no-repeat !important; }
 
 .detail-slon {
-  background: url(../img/brands/slon-logo.jpg) no-repeat !important; }
+  background: url(../img/brands/slon-logo.png) no-repeat !important; }
 
 .detail-stile {
-  background: url(../img/brands/stile-logo.jpg) no-repeat !important; }
+  background: url(../img/brands/stile-logo.png) no-repeat !important; }
 
 .detail-liza {
-  background: url(../img/brands/liza-logo.jpg) no-repeat !important; }
+  background: url(../img/brands/liza-logo.png) no-repeat !important; }
 
 .detail-valenzia {
-  background: url(../img/brands/valenzia-logo.jpg) no-repeat !important; }
+  background: url(../img/brands/valenzia-logo.png) no-repeat !important; }
 
 .detail-brand {
   overflow: hidden;
@@ -766,7 +766,7 @@ h1 {
       top: 30px; }
 
   .section-container .section-title {
-    font-size: 5rem; }
+    font-size: 8rem; }
 
   #section-2 .about-extra .about__item .content {
     width: 100%;
