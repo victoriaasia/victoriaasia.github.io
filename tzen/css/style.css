@@ -7,7 +7,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 body {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "osc-reg";
   overflow-x: hidden; }
 
 img {
@@ -69,8 +69,7 @@ a {
             align-items: center; }
 
 .header-logo {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: 700;
+  font-family: "osc-bold";
   font-size: 48px;
   text-transform: uppercase; }
   .header-logo .title {
@@ -153,8 +152,7 @@ a {
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-weight: 700;
+    font-family: "osc-bold";
     color: #75174D;
     padding: 0 20px;
     margin-bottom: 50px; }
@@ -240,7 +238,7 @@ a {
     box-sizing: border-box; }
     #section-2 .about__item .content {
       color: #75174D;
-      font-family: "Open Sans Condensed", sans-serif;
+      font-family: "osc-reg";
       font-size: 26px;
       padding: 0 30px;
       width: 100%;
@@ -321,7 +319,7 @@ a {
       text-align: center;
       text-transform: uppercase;
       color: #fff;
-      font-family: "Open Sans Condensed", sans-serif;
+      font-family: "osc-reg";
       line-height: 1.5;
       font-size: 24px;
       box-sizing: border-box;
@@ -373,10 +371,9 @@ a {
   .customer > div > p {
     white-space: nowrap;
     margin-right: 20px;
-    font-family: "Open Sans Condensed", sans-serif; }
+    font-family: "osc-reg"; }
     .customer > div > p:nth-child(2) {
-      font-family: "Open Sans Condensed", sans-serif;
-      font-weight: 700; }
+      font-family: "osc-bold"; }
 
 .contacts a {
   position: relative;
@@ -415,8 +412,7 @@ a {
     width: 70%;
     line-height: 30px; }
   .rent-inner .rent-link {
-    font-family: "Open Sans Condensed", sans-serif;
-    font-weight: 700;
+    font-family: "osc-bold";
     display: block;
     width: 70%; }
 
@@ -456,7 +452,7 @@ a {
     border: 0;
     outline: none;
     cursor: pointer;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "osc-reg";
     font-size: 18px;
     height: 100%;
     text-align: center;
@@ -563,7 +559,7 @@ a {
   cursor: pointer;
   background-size: contain !important;
   background-position: center !important;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "osc-reg";
   color: #75174D; }
   .detail-brand .mask, .detail-brand .content {
     width: 100%;

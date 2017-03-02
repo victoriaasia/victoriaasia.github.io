@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'osc-bold';
+    src: url('fonts/osc/bold/opensans-condbold.woff2') format('woff2'),
+         url('fonts/osc/bold/opensans-condbold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'osc-reg';
+    src: url('fonts/osc/reg/opensans-condlight.woff2') format('woff2'),
+         url('fonts/osc/reg/opensans-condlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'osc-it';
+    src: url('fonts/osc/it/opensans-condlightitalic.woff2') format('woff2'),
+         url('fonts/osc/it/opensans-condlightitalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
