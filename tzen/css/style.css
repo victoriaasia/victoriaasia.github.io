@@ -626,7 +626,7 @@ a {
   top: 5%; }
 
 .next {
-  right: -30px;
+  right: -25px;
   top: 5%; }
 
 .slick-arrow {
@@ -652,6 +652,9 @@ a {
 
 .fa-angle-left:before {
   left: 28px; }
+
+.fa-angle-right:before {
+  right: 28px; }
 
 h1 {
   display: inline-block; }
