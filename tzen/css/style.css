@@ -737,7 +737,7 @@ h1 {
       top: 30px; }
 
   .section-container .section-title {
-    font-size: 60px; }
+    font-size: 65px !important; }
 
   #section-2 .about__item {
     padding: 15px 0px;
