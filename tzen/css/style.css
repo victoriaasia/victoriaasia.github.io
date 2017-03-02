@@ -749,7 +749,7 @@ h1 {
           -ms-flex-direction: row-reverse;
               flex-direction: row-reverse; }
     #section-2 .about__item .content {
-      font-size: 40px;
+      font-size: 42px;
       -webkit-box-flex: 2;
       -webkit-flex: 2;
           -ms-flex: 2;
