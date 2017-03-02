@@ -740,7 +740,8 @@ h1 {
     font-size: 60px; }
 
   #section-2 .about__item {
-    padding: 15px 70px; }
+    padding: 15px 0px;
+    width: 100%; }
     #section-2 .about__item:nth-child(odd) {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: reverse;
@@ -758,9 +759,9 @@ h1 {
       -webkit-flex: 1;
           -ms-flex: 1;
               flex: 1;
-      height: 150px;
+      height: 245px;
       width: 150px;
-      background-size: 80% !important;
+      background-size: 65% !important;
       background-position: center !important; }
   #section-2 .about > div {
     -webkit-box-orient: vertical;
