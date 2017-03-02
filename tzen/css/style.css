@@ -750,7 +750,7 @@ h1 {
 .fa-angle-right:hover::before {
   color: #fff; }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-device-width: 769px) {
   .header, .section-1, .rent {
     width: 100%; }
 
@@ -763,6 +763,9 @@ h1 {
       top: 15px; }
     .hamburger span:nth-child(4) {
       top: 30px; }
+
+  .section-container .section-title {
+    font-size: 100px; }
 
   #section-2 .about-extra .about__item .content {
     width: 100%;
@@ -822,7 +825,7 @@ h1 {
       -webkit-flex: 1 1 245px;
           -ms-flex: 1 1 245px;
               flex: 1 1 245px;
-      max-width: 245px;
+      max-width: 300px;
       height: 130px;
       font-weight: 700; }
 
@@ -843,7 +846,7 @@ h1 {
     width: 768px; }
 
   .slider-nav {
-    padding: 0px 60px;
+    padding: 0px;
     overflow: hidden; }
     .slider-nav img {
       width: 95%;
@@ -855,8 +858,8 @@ h1 {
       width: 100%; }
 
   .slick-arrow {
-    background: -webkit-radial-gradient(center, ellipse, rgba(117, 23, 77, 0.1) 0%, rgba(117, 23, 77, 0) 100%);
-    background: radial-gradient(ellipse at center, rgba(117, 23, 77, 0.1) 0%, rgba(117, 23, 77, 0) 100%); }
+    background: -webkit-radial-gradient(center, ellipse, rgba(117, 23, 77, 0.2) 0%, rgba(117, 23, 77, 0) 100%);
+    background: radial-gradient(ellipse at center, rgba(117, 23, 77, 0.2) 0%, rgba(117, 23, 77, 0) 100%); }
 
   .fa-angle-left:before,
   .fa-angle-right:before {
@@ -935,10 +938,7 @@ h1 {
   .contacts-decor {
     -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0);
     clip-path: polygon(50% 50%, 0 0, 100% 0); } }
-@media only screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .section-container .section-title {
-    font-size: 100px; }
-
+@media only screen and (max-device-width: 769px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .header-nav .menu {
     height: 100vh;
     overflow-x: scroll; }
@@ -949,14 +949,11 @@ h1 {
       font-size: 3em; }
 
   .header-logo {
-    font-size: 5em; }
+    font-size: 85px; }
     .header-logo .title__v::before {
       left: -35px;
       bottom: -20px; } }
-@media only screen and (max-width: 769px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .section-container .section-title {
-    font-size: 5rem; }
-
+@media only screen and (max-device-width: 769px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .header-nav .menu {
     height: auto;
     overflow-x: hidden; }
@@ -967,7 +964,7 @@ h1 {
       font-size: 30px; }
 
   .header-logo {
-    font-size: 4em; }
+    font-size: 70px; }
     .header-logo .title__v::before {
       left: -35px;
       bottom: -28px; } }
