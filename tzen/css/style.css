@@ -7,7 +7,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 body {
-  font-family: "osc-reg";
+  font-family: Calibri, Arial, sans-serif;
   overflow-x: hidden; }
 
 img {
@@ -69,7 +69,8 @@ a {
             align-items: center; }
 
 .header-logo {
-  font-family: "osc-bold";
+  font-family: Calibri, Arial, sans-serif;
+  font-weight: bold;
   font-size: 48px;
   text-transform: uppercase; }
   .header-logo .title {
@@ -152,7 +153,8 @@ a {
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
-    font-family: "osc-bold";
+    font-family: Calibri, Arial, sans-serif;
+    font-weight: bold;
     color: #75174D;
     padding: 0 20px;
     margin-bottom: 50px; }
@@ -182,7 +184,7 @@ a {
     border-bottom: 150px solid #ece7e1;
     border-right: 100vw solid transparent; }
 
-#section-2, #section-6 {
+#section-2, #section-7 {
   height: auto;
   background: #ece7e1; }
 
@@ -195,9 +197,12 @@ a {
   height: auto; }
 
 #section-6 {
-  padding-bottom: 60px; }
+  background: #fff; }
 
 #section-7 {
+  padding-bottom: 60px; }
+
+#section-8 {
   min-height: 600px; }
 
 #section-2 .about {
@@ -238,7 +243,7 @@ a {
     box-sizing: border-box; }
     #section-2 .about__item .content {
       color: #75174D;
-      font-family: "osc-reg";
+      font-family: Calibri, Arial, sans-serif;
       font-size: 26px;
       padding: 0 30px;
       width: 100%;
@@ -312,23 +317,20 @@ a {
     .contacts__tabs label {
       display: block;
       float: left;
-      width: 33.3333%;
+      width: 50%;
       padding: 1em;
       border-right: none;
       background-color: #e7b1bb;
       text-align: center;
       text-transform: uppercase;
       color: #fff;
-      font-family: "osc-reg";
+      font-family: Calibri, Arial, sans-serif;
       line-height: 1.5;
       font-size: 24px;
       box-sizing: border-box;
       cursor: pointer;
       -webkit-transition: background-color 150ms ease-in-out;
       transition: all 0.3s ease-in-out; }
-      .contacts__tabs label:nth-child(4) {
-        border-right: 1px solid #fff;
-        border-left: 1px solid #fff; }
       .contacts__tabs label:hover {
         color: #75174D; }
     .contacts__tabs [id^="tab"]:checked + label {
@@ -352,7 +354,7 @@ a {
     background-color: #fff;
     min-height: 220px;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.5; }
   .contacts #tab1:checked ~ #tab-content1, .contacts #tab2:checked ~ #tab-content2, .contacts #tab3:checked ~ #tab-content3 {
     display: block; }
@@ -371,9 +373,10 @@ a {
   .customer > div > p {
     white-space: nowrap;
     margin-right: 20px;
-    font-family: "osc-reg"; }
+    font-family: Calibri, Arial, sans-serif; }
     .customer > div > p:nth-child(2) {
-      font-family: "osc-bold"; }
+      font-family: Calibri, Arial, sans-serif;
+      font-weight: bold; }
 
 .contacts a {
   position: relative;
@@ -391,7 +394,7 @@ a {
     top: 25px;
     right: 11%;
     opacity: 0.5;
-    border-radius: 100px; }
+    border-radius: 50%; }
 
 .rent-inner {
   display: -webkit-box;
@@ -407,28 +410,24 @@ a {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
-  text-align: justify; }
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 24px;
+  color: #75174D; }
   .rent-inner > div {
     width: 70%;
-    line-height: 30px; }
+    line-height: 1.5; }
   .rent-inner .rent-link {
-    font-family: "osc-bold";
+    font-family: Calibri, Arial, sans-serif;
+    font-weight: bold;
     display: block;
     width: 70%; }
 
 .rent {
-  position: relative; }
-  .rent::before {
-    background: url("../img/for-rent.png") no-repeat;
-    position: absolute;
-    content: "";
-    width: 195px;
-    height: 185px;
-    background-size: cover;
-    top: 25px;
-    left: 3.5vw;
-    opacity: 0.3;
-    border-radius: 100px; }
+  position: relative;
+  width: 960px;
+  background: url("../img/for-rent.png") no-repeat;
+  background-size: 200px;
+  margin: 0 auto; }
 
 .filter-controls {
   width: 960px;
@@ -452,7 +451,7 @@ a {
     border: 0;
     outline: none;
     cursor: pointer;
-    font-family: "osc-reg";
+    font-family: Calibri, Arial, sans-serif;
     font-size: 18px;
     height: 100%;
     text-align: center;
@@ -559,7 +558,7 @@ a {
   cursor: pointer;
   background-size: contain !important;
   background-position: center !important;
-  font-family: "osc-reg";
+  font-family: Calibri, Arial, sans-serif;
   color: #75174D; }
   .detail-brand .mask, .detail-brand .content {
     width: 100%;
@@ -752,7 +751,7 @@ h1 {
   color: #fff; }
 
 @media only screen and (max-width: 769px) {
-  .header, .section-1 {
+  .header, .section-1, .rent {
     width: 100%; }
 
   .hamburger {
@@ -844,7 +843,7 @@ h1 {
     width: 768px; }
 
   .slider-nav {
-    padding: 0px;
+    padding: 0px 60px;
     overflow: hidden; }
     .slider-nav img {
       width: 95%;
@@ -856,8 +855,8 @@ h1 {
       width: 100%; }
 
   .slick-arrow {
-    background: -webkit-radial-gradient(center, ellipse, rgba(117, 23, 77, 0.2) 0%, rgba(117, 23, 77, 0) 100%);
-    background: radial-gradient(ellipse at center, rgba(117, 23, 77, 0.2) 0%, rgba(117, 23, 77, 0) 100%); }
+    background: -webkit-radial-gradient(center, ellipse, rgba(117, 23, 77, 0.1) 0%, rgba(117, 23, 77, 0) 100%);
+    background: radial-gradient(ellipse at center, rgba(117, 23, 77, 0.1) 0%, rgba(117, 23, 77, 0) 100%); }
 
   .fa-angle-left:before,
   .fa-angle-right:before {
@@ -902,7 +901,7 @@ h1 {
     height: 100%;
     top: 0;
     left: 0;
-    opacity: 0.1;
+    opacity: 0.3;
     border-radius: 0; }
   .customer > div {
     max-width: 100%;
@@ -917,25 +916,21 @@ h1 {
             align-items: center;
     margin-right: 0; }
 
-  .rent::before {
-    background: url("../img/for-rent.png") center center no-repeat;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.05;
-    border-radius: 0; }
-
-  .rent-inner {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: left !important;
-    padding: 40px 80px; }
-    .rent-inner > div, .rent-inner a {
-      width: 100%;
-      line-height: 1.2; }
+  .rent {
+    background-position: center;
+    background-size: 400px; }
+    .rent-inner {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-align: left !important;
+      padding: 40px 80px;
+      background: rgba(255, 255, 255, 0.5);
+      font-size: 38px; }
+      .rent-inner > div,
+      .rent-inner .rent-link {
+        width: 100%; }
 
   .contacts-decor {
     -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0);

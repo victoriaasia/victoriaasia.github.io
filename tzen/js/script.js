@@ -147,10 +147,8 @@ $('.slider-nav').slick({
   ]
 });
 
-$('#tab3').prop( "checked", true);
 
-
-$( "a" ).click(function(event) {
+$( "a.info" ).click(function(event) {
   event.preventDefault();
 });
 
@@ -163,7 +161,7 @@ var touch = 'ontouchstart' in document.documentElement
             || (navigator.msMaxTouchPoints > 0);
 
 if (touch) {
-    try { 
+    try {
         for (var si in document.styleSheets) {
             var styleSheet = document.styleSheets[si];
             if (!styleSheet.rules) continue;
