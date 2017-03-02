@@ -765,9 +765,6 @@ h1 {
     .hamburger span:nth-child(4) {
       top: 30px; }
 
-  .section-container .section-title {
-    font-size: 8rem; }
-
   #section-2 .about-extra .about__item .content {
     width: 100%;
     padding: 0 30px; }
@@ -819,14 +816,15 @@ h1 {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
     .filter-controls .filter {
-      font-size: 28px;
+      font-size: 32px;
       -webkit-box-flex: 1;
-      -webkit-flex: 1 1 200px;
-          -ms-flex: 1 1 200px;
-              flex: 1 1 200px;
-      max-width: 245px;
-      height: 115px;
-      font-weight: 700; }
+      -webkit-flex: 1 1 300px;
+          -ms-flex: 1 1 300px;
+              flex: 1 1 300px;
+      max-width: 300px;
+      min-height: 125px;
+      font-weight: 700;
+      height: auto; }
 
   #brands-filter, #section-2 .about {
     width: 100%; }
@@ -942,6 +940,9 @@ h1 {
     -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0);
     clip-path: polygon(50% 50%, 0 0, 100% 0); } }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .section-container .section-title {
+    font-size: 5rem; }
+
   .header-nav .menu {
     height: 100vh;
     overflow-x: scroll; }
@@ -957,6 +958,9 @@ h1 {
       left: -35px;
       bottom: -20px; } }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .section-container .section-title {
+    font-size: 5rem; }
+
   .header-nav .menu {
     height: auto;
     overflow-x: hidden; }
