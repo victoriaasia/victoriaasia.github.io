@@ -12,13 +12,14 @@ $('.header-nav').click(function(){
 });
 
 $('.menu a').click(function(){
-// hide toggle-menu when selected
-      $('.hamburger').removeClass('menu-active');
-      $('.menu').slideUp();
 // smooth scroll to target
       $('html, body').animate({
           scrollTop: $($(this).attr('href')).offset().top -90
       }, 1500);
+// hide toggle-menu when selected
+      $('.hamburger').removeClass('menu-active');
+      $('.menu').slideUp();
+
       return false;
   });
 
@@ -154,3 +155,26 @@ $( "a" ).click(function(event) {
 });
 
 });
+
+// remove hover on touch devices
+
+var touch = 'ontouchstart' in document.documentElement
+            || (navigator.MaxTouchPoints > 0)
+            || (navigator.msMaxTouchPoints > 0);
+
+if (touch) {
+    try { 
+        for (var si in document.styleSheets) {
+            var styleSheet = document.styleSheets[si];
+            if (!styleSheet.rules) continue;
+
+            for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                if (!styleSheet.rules[ri].selectorText) continue;
+
+                if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                    styleSheet.deleteRule(ri);
+                }
+            }
+        }
+    } catch (ex) {}
+}
