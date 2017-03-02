@@ -4,6 +4,11 @@ jQuery(function($){
 $('.header-nav').click(function(){
     $('.menu').slideToggle();
     $('.hamburger').toggleClass('menu-active');
+
+    if(window.matchMedia('(max-width: 769px)').matches) {
+      $('body').toggleClass('body-fixed');
+    }
+
 });
 
 $('.menu a').click(function(){
@@ -98,20 +103,20 @@ for (let i=0; i<detailBrand.length; i++) {
 $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
-    nextArrow: '<i class="fa fa-angle-right next"></i>',
-    prevArrow: '<i class="fa fa-angle-left prev"></i>',
+    arrows: false,
     fade: true,
     // draggable: false,
     asNavFor: '.slider-nav'
 });
 $('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     speed: 400,
-    arrows: false,
+    arrows: true,
+    nextArrow: '<i class="fa fa-angle-right next"></i>',
+    prevArrow: '<i class="fa fa-angle-left prev"></i>',
     asNavFor: '.slider-for',
-    centerMode: true,
+    variableWidth: false,
     focusOnSelect: true,
     infinite: true,
     responsive: [
