@@ -13,8 +13,8 @@ $('.header-nav').click(function(){
 
 $('.menu a').click(function(){
 // hide toggle-menu when selected
-      $('.menu').css('display', 'none');
       $('.hamburger').removeClass('menu-active');
+      $('.menu').slideUp();
 // smooth scroll to target
       $('html, body').animate({
           scrollTop: $($(this).attr('href')).offset().top -90

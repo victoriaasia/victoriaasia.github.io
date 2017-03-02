@@ -798,6 +798,9 @@ h1 {
   #section-3 {
     height: auto; }
 
+  .header-nav .menu li:hover .menu-link::after {
+    border-top: 0px; }
+
   .header-logo .title__v::before {
     width: 105px;
     height: 155px; }
@@ -816,7 +819,7 @@ h1 {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
     .filter-controls .active::after {
-      border-color: transparent; }
+      border-top: 0px; }
     .filter-controls .filter {
       font-size: 32px;
       -webkit-box-flex: 1;
@@ -824,7 +827,7 @@ h1 {
           -ms-flex: 1 1 245px;
               flex: 1 1 245px;
       max-width: 245px;
-      height: 90px;
+      height: 100px;
       font-weight: 700; }
 
   #brands-filter, #section-2 .about {
