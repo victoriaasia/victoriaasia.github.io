@@ -815,16 +815,17 @@ h1 {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
+    .filter-controls .active::after {
+      border-color: transparent; }
     .filter-controls .filter {
       font-size: 32px;
       -webkit-box-flex: 1;
-      -webkit-flex: 1 1 300px;
-          -ms-flex: 1 1 300px;
-              flex: 1 1 300px;
-      max-width: 300px;
-      min-height: 125px;
-      font-weight: 700;
-      height: auto; }
+      -webkit-flex: 1 1 245px;
+          -ms-flex: 1 1 245px;
+              flex: 1 1 245px;
+      max-width: 245px;
+      height: 90px;
+      font-weight: 700; }
 
   #brands-filter, #section-2 .about {
     width: 100%; }
