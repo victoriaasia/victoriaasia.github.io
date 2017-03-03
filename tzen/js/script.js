@@ -19,6 +19,7 @@ $('.menu a').click(function(){
 // hide toggle-menu when selected
       $('.hamburger').removeClass('menu-active');
       $('.menu').slideUp();
+      $('body').removeClass('body-fixed');
 
       return false;
   });
@@ -52,7 +53,7 @@ $(window).on('resize', function() {
 function scaleVideoContainer() {
   var height = $(window).height() + 5;
   var unitHeight = parseInt(height) + 'px';
-  $('.section-1').css('height',unitHeight);
+  $('.section-1').css('height', unitHeight);
 };
 function initBannerVideoSize(element){
   $(element).each(function(){

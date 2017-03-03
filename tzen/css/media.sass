@@ -1,0 +1,212 @@
+$violet: #75174D
+$pink: #e7b1bb
+$pale: #ece7e1
+$white: #fff
+$black: #000
+
+
+@media only screen and (max-device-width: 769px)
+
+  .header, .section-1, .rent
+    width: 100%
+
+  .hamburger
+    width: 85px
+    height: 40px
+    span
+      &:nth-child(1)
+        top: 0px
+      &:nth-child(2), &:nth-child(3)
+        top: 15px
+      &:nth-child(4)
+        top: 30px
+
+
+  .section-container .section-title
+    font-size: 70px
+
+  #section-2
+    .about
+      &-extra .about__item .content
+        width: 100%
+        padding: 0 30px
+      &__item
+        padding: 15px 0px 45px
+        width: 100%
+        &:nth-child(odd), &:nth-child(even)
+          flex-direction: column-reverse
+        .content
+          font-size: 50px
+          max-width: 100%
+          width: 100%
+          box-sizing: border-box
+          text-align: center
+        .img
+          height: 245px
+          width: 290px
+          background-size: 65% !important
+          background-position: center !important
+      > div
+        flex-direction: column
+  #section-3
+    height: auto
+
+
+  // .header-nav
+  //   .menu li:hover .menu-link::after
+  //     border-top: 0px
+
+  .header-logo
+    .title__v::before
+      width: 105px
+      height: 155px
+  .title__tz
+    display: none
+  .title__tz-min
+    display: inline-block !important
+
+  .filter-controls
+    padding: 0px
+    width: 100%
+    height: auto
+    flex-wrap: wrap
+    .active::after
+      border-top: 0px
+    .filter
+      font-size: 34px
+      flex: 1 1 245px
+      max-width: 300px
+      height: 130px
+      font-weight: 700
+  #brands-filter, #section-2 .about
+    width: 100%
+  #brands-filter
+    padding: 20px 0
+    .mix, .gap
+      width: 49%
+
+  .detail-brand
+    h2
+      font-size: 28px
+    p
+      font-size: 17px
+
+  .slider-nav, .slider-for
+    width: 768px
+  .slider-nav
+    padding: 0px
+    overflow: hidden
+    img
+      width: 95%
+      margin: 0 auto
+
+  .slider-for
+    padding: 0
+    img
+      width: 100%
+
+  .slick-arrow
+    background: radial-gradient(ellipse at center, rgba($violet,0.2) 0%,rgba($violet,0) 100%)
+  .fa-angle-left:before,
+  .fa-angle-right:before
+    color: $white
+    z-index: 999
+    font-size: 120px
+  .fa-angle-left:before
+    left: 10px
+  .fa-angle-right:before
+    right: 15px
+  .next
+    right: 0px
+    top: 0
+  .prev
+    left: 0px
+    top: 0
+
+  .contacts
+    width: 100% !important
+    // padding: 0 3%
+    &__tabs
+      label
+        float: none
+        width: 100%
+        font-size: 60px
+        font-weight: 700
+        &:nth-child(4)
+          border-top: 1px solid $white
+          border-bottom: 1px solid $white
+          border-right: none
+          border-left: none
+      [id^="tab"]:checked + label > span::after
+        border: none
+      .tab-content
+        font-size: 50px
+  .customer
+    &::after
+      background: url("../img/shopper.jpg") center center no-repeat
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      opacity: 0.3
+      border-radius: 0
+    > div
+      max-width: 100%
+      flex-direction: column
+      align-items: center
+      margin-right: 0
+
+  .rent
+    background-position: center
+    background-size: 400px
+    &-inner
+      align-items: center
+      text-align: left !important
+      padding: 40px 80px
+      background: rgba($white, 0.5)
+      font-size: 50px
+      > div,
+      .rent-link
+        width: 100%
+
+  .contacts-decor
+    -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0)
+    clip-path: polygon(50% 50%, 0 0, 100% 0)
+
+
+@media only screen and (max-device-width: 769px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)
+
+  .header-nav
+    .menu
+      height: 100vh
+      overflow-x: scroll
+      li
+        display: block
+        padding: 5% 0
+      .menu-link
+        font-size: 3em
+
+  .header-logo
+    font-size: 80px
+    .title__v::before
+      left: -35px
+      bottom: -20px
+
+
+@media only screen and (max-device-width: 769px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)
+
+  .header-nav
+    .menu
+      height: auto
+      overflow-x: hidden
+      li
+        display: inline-block
+        padding: 7px 0
+      .menu-link
+        font-size: 30px
+
+  .header-logo
+    font-size: 70px
+    .title__v::before
+      left: -35px
+      bottom: -28px
