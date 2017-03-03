@@ -5,9 +5,9 @@ $('.header-nav').click(function(){
     $('.menu').slideToggle();
     $('.hamburger').toggleClass('menu-active');
 
-    if(window.matchMedia('(max-width: 769px)').matches) {
-      $('body').toggleClass('body-fixed');
-    }
+    // if(window.matchMedia('(max-width: 769px)').matches) {
+    //   $('body').toggleClass('body-fixed');
+    // }
 
 });
 
@@ -19,7 +19,7 @@ $('.menu a').click(function(){
 // hide toggle-menu when selected
       $('.hamburger').removeClass('menu-active');
       $('.menu').slideUp();
-      $('body').removeClass('body-fixed');
+      // $('body').removeClass('body-fixed');
 
       return false;
   });
