@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function(){
  })();
 
 
- $('.menu-hamburger').click(function(){
+ $('.header-menu-hamburger').click(function(){
     $('nav').slideToggle();
-    $('.menu-hamburger').toggleClass('menu-active');
+    $('.header-menu-hamburger').toggleClass('header-menu-active');
 
     if(window.matchMedia('(max-width: 769px)').matches) {
       $('body').toggleClass('body-fixed');
