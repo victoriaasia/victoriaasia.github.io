@@ -655,7 +655,8 @@ main {
 
   .header__logo {
     background-size: contain;
-    background-position: 0 50%; }
+    background-position: 0 50%;
+    max-height: 60px; }
 
   .header-link {
     border: none;
@@ -894,10 +895,12 @@ main {
   .header__contacts {
     margin: 0 5px; }
   .header-menu-hamburger {
-    width: 65px;
+    width: 45px;
     height: 40px; }
     .header-menu-hamburger:hover, .header-menu-hamburger.header-menu-active {
       background-position: -45px 0; }
+  .header__logo {
+    width: 160px; }
 
   .-message {
     background-position: -3px 0; }
