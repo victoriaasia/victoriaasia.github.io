@@ -1,0 +1,257 @@
+@media only screen and (max-width: 1099px)
+  #to-top
+    position: static
+    width: 100%
+    background: $red
+    display: block !important
+    span
+      font-size: 0
+      &::before
+        width: 60px
+        height: 35px
+        top: -15px
+
+@media only screen and (max-width: 960px)
+  .header-menu-link, .main-menu__item-title
+    font-size: 13px
+  .slider
+    background-position: 50%
+  .main-menu__item-title
+    padding: 12px 3%
+
+
+@media only screen and (max-width: 768px)
+  .cr
+    color: inherit
+  .link-more
+    font-size: 4vw
+    &-btn
+      padding: 15px 30px
+  main
+    padding: 0 5px
+    box-sizing: border-box
+  .header-btn, .header__text, nav, .flex-control-paging
+    display: none
+  .header-container, .flexslider
+    max-width: 100%
+    width: auto
+  .header-line1
+    .header-container
+      padding: 0 5px
+  .header-line2
+    .header-container
+      background: $gray
+  .header__logo
+    background-size: contain
+    background-position: 0 50%
+    max-height: 60px
+  .header-link
+    border: none
+    background: url('../img/mob/header-links.png') no-repeat
+    width: 60px
+    height: 55px
+    background-size: cover
+    &::before, &::after
+      display: none
+  .-message
+    background-position: 0 0
+    &:hover, &:active, &:focus
+      background-position: -61px 0
+  .-phone
+    background-position: -123px 0
+    &:hover, &:active, &:focus
+      background-position: -184px 0
+
+  .header-menu-hamburger
+    display: block
+
+  nav
+    position: absolute
+    width: 100%
+    height: auto
+    top: 70px
+    left: 0
+    z-index: 999
+    background: $pale
+  .header-menu
+    flex-direction: column
+    justify-content: flex-start
+    &-link
+      font-size: 28px
+    &__item
+      height: 60px
+      &:hover, &:focus, &:active
+        background: $darkGray
+        &::before
+          opacity: 0
+
+  .slider
+    height: 80vw
+    border: 1px solid $darkGray
+    margin: 15px 0
+    &__item
+      &-content
+        padding: 10px 2%
+      &-title
+        max-height: 100%
+        font-size: 4.5vw
+        line-height: 1.5
+        white-space: nowrap
+        .tb
+          font-size: 7vw
+      &-link
+        margin-top: 6vw
+      &-text
+        font-size: 4vw
+        width: 70%
+  .flex-viewport
+    min-height: auto
+
+  .flex-direction-nav a
+    width: 50px
+    height: 50px
+    top: 80%
+  .flex-direction-nav .flex-prev
+    left: 70%
+  .flex-direction-nav .flex-next
+    right: 0
+    left: 85%
+  .flexslider:hover .flex-direction-nav .flex-prev
+    left: 70%
+
+
+  .main-menu
+    height: 100%
+    background: transparent
+    &-back
+      background: transparent
+    &-container
+      flex-direction: column
+      background: transparent
+      padding: 0
+      margin: 10px 7%
+    &__item
+      max-width: 100%
+      height: 60vw
+      margin: 0 0 30px 0
+      &-wrapper
+        height: 50vw
+      &-title
+        font-size: 4vw
+        padding: 2.5vw
+
+  .main-content
+    &-container
+      flex-direction: column
+      padding: 0
+      margin: 0 0 10vw
+    &-back
+      background: transparent
+    &__title
+      font-size: 1.5em
+      text-align: center
+      text-transform: uppercase
+      margin: 10vw 0
+    &__about
+      padding: 0
+      margin: 0 7%
+    .link-more
+      width: 100%
+      font-size: 1.5em
+      text-align: center
+    &__sale-item
+      padding: 5%
+      background: $veryLightGray
+      &:last-child
+        margin-top: 10vw
+  .about-content
+    flex-direction: column
+    padding: 0
+    &__img
+      width: 100%
+      padding: 30px 0
+      &:first-child, &:last-child
+        margin-left: 0
+        margin-right: 0
+    img
+      width: 100%
+    &__text
+      p
+        font-size: 1.1em
+
+  .col-rev
+    flex-direction: column-reverse
+
+  .sale-item
+    &__img
+      height: 65vw
+    img
+      width: 100%
+    &__title-date
+      height: 100%
+      font-size: 1em
+      p:last-child
+        font-size: 1.1em
+    &__title-text
+      font-size: 1.2em
+    &__text
+      font-size: 1.1em
+
+
+  .footer
+    &-container
+      flex-direction: column
+    &__menu
+      width: 100%
+      &-block
+        width: 100%
+        justify-content: center
+        align-items: center
+      .footer-title
+        display: none
+      &-wrapper
+        flex-direction: column
+      &-block:last-child
+        margin: 0
+        padding: 0
+    &-title
+      text-transform: none
+      align-items: center
+      justify-content: center
+      &:hover
+        color: $white
+    a
+      font-size: 1.5em
+      font-family: "Myriad Pro", sans-serif
+      font-weight: bold
+      font-style: normal
+      line-height: 2
+    &__contact-wrapper
+      display: none
+    &__copyright
+      display: block
+
+
+@media only screen and (max-width: 480px)
+  .header
+    &-link
+      width: 40px
+      height: 40px
+      margin: 0 5px
+    &__contacts
+      margin: 0 5px
+    &-menu-hamburger
+      width: 45px
+      height: 40px
+      &:hover, &.header-menu-active
+        background-position: -45px 0
+    &__logo
+      width: 160px
+  .-message
+    background-position: -3px 0
+    &:hover
+      background-position: -47px 0
+  .-phone
+    background-position: -91px 0
+    &:hover
+      background-position: -136px 0

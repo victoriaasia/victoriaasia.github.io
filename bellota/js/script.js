@@ -34,9 +34,9 @@ if(window.matchMedia('(min-width: 1100px)').matches) {
 
   $(window).scroll(function() {
     if ($(this).scrollTop() >= 50) {
-        $('#to-top').show();
+        $('#to-top').show(200);
     } else {
-        $('#to-top').hide();
+        $('#to-top').hide(200);
     }
   });
   $('#to-top').click(function() {
