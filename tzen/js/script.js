@@ -148,6 +148,15 @@ $('.slider-nav').slick({
   ]
 });
 
+// floors-slider settings
+
+$('.flexslider').flexslider({
+  animation: "slide",
+  start: function(slider){
+      $('body').removeClass('loading');
+      }
+  });
+
 
 $( "a.info" ).click(function(event) {
   event.preventDefault();

@@ -768,6 +768,51 @@ h1 {
 .fa-angle-right:hover::before {
   color: #fff; }
 
+#home-slider {
+  position: relative;
+  overflow: hidden; }
+
+#home-slider .slide {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  width: 100%;
+  height: 100%; }
+
+.tiltview {
+  position: absolute;
+  left: 50%;
+  width: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotateX(60deg) rotateZ(35deg);
+          transform: translateY(-50%) rotateX(60deg) rotateZ(35deg); }
+  .tiltview a:first-child {
+    margin-bottom: 30px; }
+  .tiltview a img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: #151515 3px 3px 4px 2px; }
+
+.flexslider {
+  height: 400px; }
+
+.floors-slider__list {
+  height: 100%; }
+.floors-slider__item {
+  height: 100%;
+  position: relative; }
+.floors-slider img {
+  position: absolute;
+  left: 50%;
+  height: 300px;
+  top: 50%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translate(-50%, -50%) rotateX(60deg) rotateZ(35deg);
+          transform: translate(-50%, -50%) rotateX(60deg) rotateZ(35deg);
+  box-shadow: #151515 3px 3px 4px 2px; }
+
 @media only screen and (max-width: 768px) {
   .wrapper {
     width: 768px; }
