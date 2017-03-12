@@ -973,7 +973,14 @@ h1 {
 
   .contacts-decor {
     -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0);
-    clip-path: polygon(50% 50%, 0 0, 100% 0); } }
+    clip-path: polygon(50% 50%, 0 0, 100% 0); }
+
+  .flex-control-nav {
+    width: 100%; }
+    .flex-control-nav li a {
+      padding: 25px; }
+      .flex-control-nav li a:focus, .flex-control-nav li a.flex-active {
+        background: #fff; } }
 @media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .section-container .section-title {
     font-size: 8vw; }
