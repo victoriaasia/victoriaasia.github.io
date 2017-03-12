@@ -54,6 +54,7 @@ function scaleVideoContainer() {
   var height = $(window).height() + 5;
   var unitHeight = parseInt(height) + 'px';
   $('.section-1').css('height', unitHeight);
+  $('.video-container video').css('height', unitHeight);
 };
 function initBannerVideoSize(element){
   $(element).each(function(){

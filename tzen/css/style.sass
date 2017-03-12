@@ -229,7 +229,7 @@ a
         color: $violet
         font-family: Calibri, Arial, sans-serif
         font-size: 26px
-        padding: 0 30px
+        padding: 0 3vw
         width: 100%
         flex: 2
         box-sizing: border-box
@@ -254,17 +254,17 @@ a
         background-size: contain
     &__item:nth-child(odd)
       text-align: right
-      padding: 0 15px 0 0
+      padding: 0 3vw 0 0
     &__item:nth-child(even)
       flex-direction: row-reverse
-      padding: 0 0 0 15px
+      padding: 0 0 0 3vw
     &-extra
       .about__item
         flex-direction: column-reverse
         padding: 0
         text-align: center
         .content
-          padding: 30px 30px 0
+          padding: 3vw 3vw 0
           width: 600px
 
 
@@ -537,6 +537,7 @@ a
       transition: all 0.2s linear
 
     &.hover-effect
+      // cursor: default
       .mask
         opacity: 1
       h2, p, .info

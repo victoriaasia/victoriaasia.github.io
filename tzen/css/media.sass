@@ -103,7 +103,7 @@ $black: #000
         position: absolute
         bottom: -30px
       label
-        font-size: 40px
+        font-size: 5vw
         font-weight: 700
         padding: 50px 15px
       .tab-content
@@ -143,24 +143,23 @@ $black: #000
 
   #section-2
     .about
+      padding: 0 3%
       &-extra .about__item .content
         width: 100%
-        padding: 0 30px
+        padding: 0 3vw
       &__item
-        padding: 15px 0px 45px
         width: 100%
         &:nth-child(odd), &:nth-child(even)
-          flex-direction: column-reverse
-          padding: 0 0 30px
+          flex-direction: row-reverse
+          padding: 15px 0
         .content
           font-size: 44px
-          max-width: 80%
-          width: 80%
+          flex: 1
           box-sizing: border-box
-          text-align: center
+          text-align: left
         .img
-          height: 200px
-          width: 285px
+          height: 95px
+          width: 20%
           background-size: 65% !important
           background-position: center !important
         .img-market
