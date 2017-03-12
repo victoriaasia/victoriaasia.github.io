@@ -980,7 +980,8 @@ h1 {
     .flex-control-nav li a {
       font-size: 34px; }
       .flex-control-nav li a:focus, .flex-control-nav li a.flex-active {
-        background: #fff; } }
+        background: #fff;
+        color: #75174D; } }
 @media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .section-container .section-title {
     font-size: 8vw; }
