@@ -606,12 +606,13 @@ a {
     background: white;
     -webkit-transition: all 0.4s ease-in-out;
             transition: all 0.4s ease-in-out; }
-  .detail-brand h2 {
+  .detail-brand h3 {
     text-transform: uppercase;
     position: relative;
     text-align: center;
     font-size: 18px;
     padding: 10px;
+    font-weight: bold;
     margin: 20px 0 0 0;
     -webkit-transform: translateY(-100px);
         -ms-transform: translateY(-100px);
@@ -619,7 +620,7 @@ a {
     opacity: 0;
     -webkit-transition: all 0.2s ease-in-out;
             transition: all 0.2s ease-in-out; }
-    .detail-brand h2::after {
+    .detail-brand h3::after {
       position: absolute;
       content: "";
       bottom: 0px;
@@ -642,6 +643,7 @@ a {
     font-size: 14px;
     position: relative;
     text-align: center;
+    font-style: italic;
     color: #75174D;
     padding: 10px 20px 20px;
     display: block;
@@ -650,7 +652,7 @@ a {
             transition: all 0.2s linear; }
   .detail-brand.hover-effect .mask {
     opacity: 1; }
-  .detail-brand.hover-effect h2, .detail-brand.hover-effect p, .detail-brand.hover-effect .info {
+  .detail-brand.hover-effect h3, .detail-brand.hover-effect p, .detail-brand.hover-effect .info {
     opacity: 1;
     -webkit-transform: translateY(0px);
         -ms-transform: translateY(0px);
