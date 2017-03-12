@@ -123,8 +123,8 @@ $('.slider-for').slick({
   ]
 });
 $('.slider-nav').slick({
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 5,
+    slidesToScroll: 5,
     speed: 400,
     arrows: true,
     nextArrow: '<i class="fa fa-angle-right next"></i>',
