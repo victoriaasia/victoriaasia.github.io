@@ -202,16 +202,18 @@ a {
   height: auto;
   background: #ece7e1; }
 
-#section-3 {
-  height: 1000px;
-  min-height: auto;
-  overflow: hidden; }
-
 #section-4, #section-5 {
   height: auto; }
 
+#section-3 {
+  height: 1200px;
+  min-height: 100%; }
+
 #section-6 {
-  background: #fff; }
+  background: #fff url("../img/for-rent.png");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 10% 90px; }
 
 #section-7 {
   padding-bottom: 60px; }
@@ -220,7 +222,7 @@ a {
   min-height: 600px; }
 
 #section-2 .about {
-  width: 960px;
+  max-width: 1170px;
   margin: 0 auto;
   box-sizing: border-box; }
   #section-2 .about-extra {
@@ -267,7 +269,8 @@ a {
       -webkit-flex: 2;
           -ms-flex: 2;
               flex: 2;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      text-align: justify; }
     #section-2 .about__item .img {
       height: 80px;
       width: 80px;
@@ -319,7 +322,7 @@ a {
   clip-path: polygon(50% 100%, 0 0, 100% 0); }
 
 .contacts {
-  width: 960px;
+  max-width: 1170px;
   margin: 0 auto; }
   .contacts__tabs {
     width: 100%;
@@ -342,7 +345,8 @@ a {
       color: #fff;
       font-family: Calibri, Arial, sans-serif;
       line-height: 1.5;
-      font-size: 24px;
+      font-size: 28px;
+      font-weight: bold;
       box-sizing: border-box;
       cursor: pointer;
       -webkit-transition: background-color 150ms ease-in-out;
@@ -373,7 +377,10 @@ a {
     font-size: 24px;
     line-height: 1.5; }
   .contacts #tab1:checked ~ #tab-content1, .contacts #tab2:checked ~ #tab-content2, .contacts #tab3:checked ~ #tab-content3 {
-    display: block; }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
 
 .customer > div {
   margin: 10px 0;
@@ -409,10 +416,13 @@ a {
     width: 180px;
     height: 180px;
     background-size: contain;
-    top: 25px;
+    top: 50%;
     right: 11%;
     opacity: 0.5;
-    border-radius: 50%; }
+    border-radius: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
 
 .rent-inner {
   display: -webkit-box;
@@ -424,31 +434,29 @@ a {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   font-family: Calibri, Arial, sans-serif;
   font-size: 24px;
-  color: #75174D; }
+  color: #75174D;
+  width: 70%;
+  float: right; }
   .rent-inner > div {
-    width: 70%;
     line-height: 1.5; }
   .rent-inner .rent-link {
     font-family: Calibri, Arial, sans-serif;
     font-weight: bold;
-    display: block;
-    width: 70%; }
+    display: block; }
 
 .rent {
   position: relative;
-  width: 960px;
-  background: url("../img/for-rent.png") no-repeat;
-  background-size: 200px;
+  max-width: 1170px;
   margin: 0 auto; }
+  .rent::after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .filter-controls {
-  width: 960px;
+  max-width: 1170px;
   height: 80px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -473,6 +481,7 @@ a {
     font-size: 18px;
     height: 100%;
     text-align: center;
+    font-weight: bold;
     text-transform: uppercase;
     color: #fff;
     box-sizing: border-box;
@@ -516,7 +525,7 @@ a {
     margin-left: 1em; }
 
 #brands-filter {
-  width: 960px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 20px 0;
   box-sizing: border-box;
@@ -524,7 +533,14 @@ a {
   font-size: 0.1px;
   background: -webkit-radial-gradient(center, ellipse, rgba(231, 177, 187, 0.4) 0%, rgba(125, 186, 232, 0) 100%);
   background: radial-gradient(ellipse at center, rgba(231, 177, 187, 0.4) 0%, rgba(125, 186, 232, 0) 100%);
-  -webkit-backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+  -webkit-align-content: flex-start; }
   #brands-filter::after {
     content: "";
     display: inline-block;
@@ -647,14 +663,14 @@ a {
             transition-delay: 0.2s; }
 
 .slider-for {
-  width: 960px;
+  max-width: 1170px;
   margin: 0 auto;
   box-sizing: border-box; }
   .slider-for img {
     width: 100%; }
 
 .slider-nav {
-  width: 960px;
+  max-width: 1170px;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 0px 40px;
@@ -766,7 +782,7 @@ h1 {
 
 .fa-angle-left:hover::before,
 .fa-angle-right:hover::before {
-  color: #fff; }
+  color: #e7b1bb; }
 
 #home-slider {
   position: relative;
@@ -813,6 +829,13 @@ h1 {
           transform: translate(-50%, -50%) rotateX(60deg) rotateZ(35deg);
   box-shadow: #151515 3px 3px 4px 2px; }
 
+@media only screen and (min-width: 769px) {
+  .customer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
 @media only screen and (max-width: 768px) {
   .wrapper {
     width: 768px; }
@@ -824,7 +847,8 @@ h1 {
     font-size: 70px; }
 
   #section-3 {
-    height: auto; }
+    height: 1770px;
+    min-height: 100%; }
 
   .title__tz {
     display: none; }
@@ -913,23 +937,31 @@ h1 {
       font-weight: 700;
       padding: 50px 15px; }
     .contacts__tabs .tab-content {
-      font-size: 44px;
+      font-size: 4vw;
       padding: 40px 60px; }
 
-  .customer::after {
-    width: 700px;
-    height: 600px;
-    background-size: cover;
-    right: 0;
-    opacity: 0.2; }
-  .customer > div {
-    max-width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-right: 0; }
+  .customer {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .customer::after {
+      width: 700px;
+      height: 600px;
+      background-size: cover;
+      right: 0;
+      opacity: 0.2; }
+    .customer > div {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-right: 0;
+      width: 50%;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 50%;
+          -ms-flex: 1 1 50%;
+              flex: 1 1 50%; }
 
   .rent {
     background: transparent; }
@@ -941,7 +973,7 @@ h1 {
       text-align: left !important;
       padding: 0px 60px;
       background: rgba(255, 255, 255, 0.5);
-      font-size: 44px; }
+      font-size: 4vw; }
       .rent-inner > div,
       .rent-inner .rent-link {
         width: 100%; }
@@ -965,7 +997,7 @@ h1 {
                 flex-direction: row-reverse;
         padding: 15px 0; }
       #section-2 .about__item .content {
-        font-size: 44px;
+        font-size: 4vw;
         -webkit-box-flex: 1;
         -webkit-flex: 1;
             -ms-flex: 1;

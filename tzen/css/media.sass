@@ -4,9 +4,9 @@ $pale: #ece7e1
 $white: #fff
 $black: #000
 
-// @media only screen and (min-width: 769px) and (max-width: 1200px)
-//   .wrapper
-//     min-width: 1200px
+@media only screen and (min-width: 769px)
+  .customer
+    flex-direction: column
 
 @media only screen and (max-width: 768px)
 
@@ -21,7 +21,8 @@ $black: #000
 
 
   #section-3
-    height: auto
+    height: 1770px
+    min-height: 100%
 
 
   // .header-nav
@@ -107,9 +108,10 @@ $black: #000
         font-weight: 700
         padding: 50px 15px
       .tab-content
-        font-size: 44px
+        font-size: 4vw
         padding: 40px 60px
   .customer
+    flex-wrap: wrap
     &::after
       width: 700px
       height: 600px
@@ -117,9 +119,10 @@ $black: #000
       right: 0
       opacity: 0.2
     > div
-      max-width: 100%
       flex-direction: column
       margin-right: 0
+      width: 50%
+      flex: 1 1 50%
 
   .rent
     background: transparent
@@ -128,7 +131,7 @@ $black: #000
       text-align: left !important
       padding: 0px 60px
       background: rgba($white, 0.5)
-      font-size: 44px
+      font-size: 4vw
       > div,
       .rent-link
         width: 100%
@@ -153,7 +156,7 @@ $black: #000
           flex-direction: row-reverse
           padding: 15px 0
         .content
-          font-size: 44px
+          font-size: 4vw
           flex: 1
           box-sizing: border-box
           text-align: left

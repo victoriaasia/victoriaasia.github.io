@@ -95,6 +95,7 @@ $('#brands-filter').mixItUp({
 });
 });
 
+
 var detailBrand = document.querySelectorAll('.detail-brand');
 for (let i=0; i<detailBrand.length; i++) {
   detailBrand[i].addEventListener('click', function() {

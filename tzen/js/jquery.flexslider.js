@@ -156,16 +156,16 @@
           slider.asNav = true;
           slider.animatingTo = Math.floor(slider.currentSlide/slider.move);
           slider.currentItem = slider.currentSlide;
-          slider.slides.removeClass(namespace + "active-slide").eq(slider.currentItem).addClass(namespace + "active-slide");
+          slider.slides.removeClass(namespace + "active-slide wow animated slideInLeft").eq(slider.currentItem).addClass(namespace + "active-slide wow animated slideInLeft");
           if(!msGesture){
               slider.slides.on(eventType, function(e){
                 e.preventDefault();
                 var $slide = $(this),
                     target = $slide.index();
                 var posFromLeft = $slide.offset().left - $(slider).scrollLeft(); // Find position of slide relative to left of slider container
-                if( posFromLeft <= 0 && $slide.hasClass( namespace + 'active-slide' ) ) {
+                if( posFromLeft <= 0 && $slide.hasClass( namespace + 'active-slide wow animated slideInLeft' ) ) {
                   slider.flexAnimate(slider.getTarget("prev"), true);
-                } else if (!$(slider.vars.asNavFor).data('flexslider').animating && !$slide.hasClass(namespace + "active-slide")) {
+                } else if (!$(slider.vars.asNavFor).data('flexslider').animating && !$slide.hasClass(namespace + "active-slide wow animated slideInLeft")) {
                   slider.direction = (slider.currentItem < target) ? "next" : "prev";
                   slider.flexAnimate(target, slider.vars.pauseOnAction, false, true, true);
                 }
@@ -678,11 +678,11 @@
 
           if (Math.ceil((target + 1)/slider.visible) - 1 !== slider.currentSlide && target !== 0) {
             slider.currentItem = target;
-            slider.slides.removeClass(namespace + "active-slide").eq(target).addClass(namespace + "active-slide");
+            slider.slides.removeClass(namespace + "active-slide wow animated slideInLeft").eq(target).addClass(namespace + "active-slide wow animated slideInLeft");
             target = Math.floor(target/slider.visible);
           } else {
             slider.currentItem = target;
-            slider.slides.removeClass(namespace + "active-slide").eq(target).addClass(namespace + "active-slide");
+            slider.slides.removeClass(namespace + "active-slide wow animated slideInLeft").eq(target).addClass(namespace + "active-slide wow animated slideInLeft");
             return false;
           }
         }
@@ -704,7 +704,7 @@
 
         // !CAROUSEL:
         // CANDIDATE: slide active class (for add/remove slide)
-        if (!carousel) slider.slides.removeClass(namespace + 'active-slide').eq(target).addClass(namespace + 'active-slide');
+        if (!carousel) slider.slides.removeClass(namespace + 'active-slide wow animated slideInLeft').eq(target).addClass(namespace + 'active-slide wow animated slideInLeft');
 
         // INFINITE LOOP:
         // CANDIDATE: atEnd
@@ -950,7 +950,7 @@
       }
       // !CAROUSEL:
       // CANDIDATE: active slide
-      if (!carousel) slider.slides.removeClass(namespace + "active-slide").eq(slider.currentSlide).addClass(namespace + "active-slide");
+      if (!carousel) slider.slides.removeClass(namespace + "active-slide wow animated slideInLeft").eq(slider.currentSlide).addClass(namespace + "active-slide wow animated slideInLeft");
 
       //FlexSlider: init() Callback
       slider.vars.init(slider);
@@ -1092,7 +1092,7 @@
     animationLoop: true,            //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
     smoothHeight: false,            //{NEW} Boolean: Allow height of the slider to animate smoothly in horizontal mode
     startAt: 0,                     //Integer: The slide that the slider should start on. Array notation (0 = first slide)
-    slideshow: true,                //Boolean: Animate slider automatically
+    // slideshow: true,                //Boolean: Animate slider automatically
     slideshowSpeed: 7000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
     animationSpeed: 600,            //Integer: Set the speed of animations, in milliseconds
     initDelay: 0,                   //{NEW} Integer: Set an initialization delay, in milliseconds
