@@ -805,7 +805,12 @@ h1 {
           transform-style: preserve-3d;
   -webkit-transform: translate(-50%, -50%) rotateX(60deg) rotateZ(35deg);
           transform: translate(-50%, -50%) rotateX(60deg) rotateZ(35deg);
-  box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 3px 3px; }
+  box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 3px 3px;
+  -webkit-transition: -webkit-transform 0.5s ease;
+          transition: transform 0.5s ease; }
+  .floors-slider img.img-big {
+    -webkit-transform: translate(-50%, -50%) rotateX(0deg) rotateZ(0deg) scale(1.1);
+            transform: translate(-50%, -50%) rotateX(0deg) rotateZ(0deg) scale(1.1); }
 
 .flex-control-paging li {
   position: relative; }

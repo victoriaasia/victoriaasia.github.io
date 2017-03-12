@@ -164,6 +164,10 @@ $( "a.info" ).click(function(event) {
   event.preventDefault();
 });
 
+$('.floors-slider img').on('click', function(){
+  $(this).toggleClass('img-big');
+});
+
 });
 
 // remove hover on touch devices
