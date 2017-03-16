@@ -199,13 +199,9 @@ a
   min-height: 100%
 #section-5
   height: auto
-#section-6
-  background: $white url("../img/for-rent.png")
-  background-repeat: no-repeat
-  background-size: 20%
-  background-position: 10% 90px
 #section-7
   padding-bottom: 60px
+  z-index: 999
 #section-8
   min-height: 600px
 
@@ -274,10 +270,10 @@ a
 
 .contacts-decor
   background: $pale
-  height: 45px
+  height: 100px
   position: absolute
   width: 100%
-  bottom: -39px
+  bottom: -97px
   -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0)
   clip-path: polygon(50% 100%, 0 0, 100% 0)
 
@@ -388,6 +384,10 @@ a
   position: relative
   max-width: 1170px
   margin: 0 auto
+  background: $white url("../img/for-rent.png")
+  background-repeat: no-repeat
+  background-size: 18%
+  background-position: 10% 0px
   &::after
     content: ""
     display: table
@@ -621,18 +621,27 @@ h1
     margin: 5px 0
 
 
-// .section-googlemap
-//   background: url('../img/map.png')
-//   background-size: contain
-//   position: relative
-//   z-index: -9999
-.googlemap-overlay
+#map
+  width: 100%
+  min-height: 600px
+  height: 100%
+
+
+.ymaps-2-1-48-controls__toolbar_left,
+.ymaps-2-1-48-controls__toolbar_right,
+.ymaps-2-1-48-controls__bottom,
+.ymaps-2-1-48-copyrights-pane
+  display: none !important
+
+
+.map-overlay
   background: transparent
   position: relative
   width: 100%
   height: 600px
   top: 600px
   margin-top: -600px
+  z-index: 99999
 
 
 
@@ -756,6 +765,7 @@ h1
     padding: 15px
     color: $white
     font-weight: bold
+    transition: all 0.5s ease
     &:hover,
     &.flex-active
       background: $white

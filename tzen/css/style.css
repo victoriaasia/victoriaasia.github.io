@@ -209,14 +209,9 @@ a {
 #section-5 {
   height: auto; }
 
-#section-6 {
-  background: #fff url("../img/for-rent.png");
-  background-repeat: no-repeat;
-  background-size: 20%;
-  background-position: 10% 90px; }
-
 #section-7 {
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  z-index: 999; }
 
 #section-8 {
   min-height: 600px; }
@@ -314,10 +309,10 @@ a {
 
 .contacts-decor {
   background: #ece7e1;
-  height: 45px;
+  height: 100px;
   position: absolute;
   width: 100%;
-  bottom: -39px;
+  bottom: -97px;
   -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
   clip-path: polygon(50% 100%, 0 0, 100% 0); }
 
@@ -449,7 +444,11 @@ a {
 .rent {
   position: relative;
   max-width: 1170px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background: #fff url("../img/for-rent.png");
+  background-repeat: no-repeat;
+  background-size: 18%;
+  background-position: 10% 0px; }
   .rent::after {
     content: "";
     display: table;
@@ -727,13 +726,25 @@ h1 {
   max-height: 60px;
   margin: 5px 0; }
 
-.googlemap-overlay {
+#map {
+  width: 100%;
+  min-height: 600px;
+  height: 100%; }
+
+.ymaps-2-1-48-controls__toolbar_left,
+.ymaps-2-1-48-controls__toolbar_right,
+.ymaps-2-1-48-controls__bottom,
+.ymaps-2-1-48-copyrights-pane {
+  display: none !important; }
+
+.map-overlay {
   background: transparent;
   position: relative;
   width: 100%;
   height: 600px;
   top: 600px;
-  margin-top: -600px; }
+  margin-top: -600px;
+  z-index: 99999; }
 
 .hamburger {
   width: 50px;
@@ -819,7 +830,9 @@ h1 {
     font-size: 20px;
     padding: 15px;
     color: #fff;
-    font-weight: bold; }
+    font-weight: bold;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease; }
     .flex-control-paging li a:hover, .flex-control-paging li a.flex-active {
       background: #fff;
       color: #75174D; }
@@ -850,7 +863,7 @@ h1 {
     height: 100%;
     min-height: 100%; }
 
-  #section-6 {
+  .rent {
     background: transparent; }
 
   .title__tz {

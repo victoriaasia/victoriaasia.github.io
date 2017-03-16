@@ -192,3 +192,27 @@ if (touch) {
         }
     } catch (ex) {}
 }
+
+
+// map
+
+var myMap;
+ymaps.ready(init);
+function init () {
+  var myMap = new ymaps.Map('map', {
+          center: [52.036428, 113.492398],
+          zoom: 16
+      }, {
+          searchControlProvider: 'yandex#search'
+      }),
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: 'ТЦ Виктория',
+          balloonContent: 'ул. Ленина, 127А'
+      }, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/marker.png',
+          iconImageSize: [50, 50],
+          iconImageOffset: [-5, -38]
+      });
+  myMap.geoObjects.add(myPlacemark);
+}

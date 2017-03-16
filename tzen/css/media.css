@@ -1,3 +1,6 @@
+@media only screen and (min-width: 769px) {
+  .customer {
+    flex-direction: column; } }
 @media only screen and (max-width: 768px) {
   .wrapper {
     width: 768px; }
@@ -5,11 +8,12 @@
   .header, .section-1, .rent, .contacts {
     width: 100%; }
 
-  .section-container .section-title {
-    font-size: 70px; }
-
   #section-3 {
-    height: auto; }
+    height: 100%;
+    min-height: 100%; }
+
+  #section-6 {
+    background: transparent; }
 
   .title__tz {
     display: none; }
@@ -88,65 +92,74 @@
       position: absolute;
       bottom: -30px; }
     .contacts__tabs label {
-      font-size: 40px;
+      font-size: 4vw;
       font-weight: 700;
-      padding: 50px 15px; }
+      padding: 50px 5%; }
     .contacts__tabs .tab-content {
-      font-size: 44px;
-      padding: 40px 60px; }
+      font-size: 4vw;
+      padding: 40px 5%; }
 
-  .customer::after {
-    width: 700px;
-    height: 600px;
-    background-size: cover;
-    right: 0;
-    opacity: 0.2; }
-  .customer > div {
-    max-width: 100%;
-    flex-direction: column;
-    margin-right: 0; }
-
-  .rent {
-    background: transparent; }
-    .rent-inner {
+  .customer {
+    flex-wrap: wrap; }
+    .customer::after {
+      background: transparent; }
+    .customer > div {
+      flex-direction: column;
       align-items: center;
-      text-align: left !important;
-      padding: 0px 60px;
-      background: rgba(255, 255, 255, 0.5);
-      font-size: 44px; }
-      .rent-inner > div,
-      .rent-inner .rent-link {
-        width: 100%; }
+      margin-right: 0;
+      width: 50%;
+      flex: 1 1 50%; }
+
+  .rent-inner {
+    text-align: left !important;
+    padding: 0px 5%;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 4vw;
+    width: 100%;
+    box-sizing: border-box; }
+    .rent-inner > div {
+      text-align: justify; }
 
   .contacts-decor {
     -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0);
-    clip-path: polygon(50% 50%, 0 0, 100% 0); } }
-@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  #section-2 .about-extra .about__item .content {
-    width: 100%;
-    padding: 0 30px; }
-  #section-2 .about__item {
-    padding: 15px 0px 45px;
+    clip-path: polygon(50% 50%, 0 0, 100% 0); }
+
+  .flex-control-nav {
     width: 100%; }
-    #section-2 .about__item:nth-child(odd), #section-2 .about__item:nth-child(even) {
-      flex-direction: column-reverse;
-      padding: 0 0 30px; }
-    #section-2 .about__item .content {
-      font-size: 44px;
-      max-width: 80%;
-      width: 80%;
-      box-sizing: border-box;
-      text-align: center; }
-    #section-2 .about__item .img {
-      height: 200px;
-      width: 285px;
-      background-size: 65% !important;
-      background-position: center !important; }
-    #section-2 .about__item .img-market {
-      height: 110px; }
-  #section-2 .about > div {
-    flex-direction: column;
-    padding: 0; }
+    .flex-control-nav li a {
+      font-size: 34px; }
+      .flex-control-nav li a:focus, .flex-control-nav li a.flex-active {
+        background: #fff;
+        color: #75174D; } }
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .section-container .section-title {
+    font-size: 8vw; }
+
+  #section-2 .about {
+    padding: 0 5%; }
+    #section-2 .about-extra .about__item .content {
+      width: 100%;
+      padding: 0 3vw; }
+    #section-2 .about__item {
+      width: 100%; }
+      #section-2 .about__item:nth-child(odd), #section-2 .about__item:nth-child(even) {
+        flex-direction: row-reverse;
+        padding: 15px 0; }
+      #section-2 .about__item .content {
+        font-size: 4vw;
+        flex: 1;
+        box-sizing: border-box;
+        text-align: left; }
+      #section-2 .about__item .img {
+        height: 95px;
+        width: 20%;
+        background-size: 65% !important;
+        background-position: center !important; }
+      #section-2 .about__item .img-market {
+        height: 110px; }
+    #section-2 .about > div {
+      flex-direction: column;
+      padding: 0; }
 
   .header-nav .menu {
     height: 100vh;
@@ -176,6 +189,9 @@
     .hamburger span:nth-child(4) {
       top: 30px; } }
 @media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .section-container .section-title {
+    font-size: 8vw; }
+
   .header-nav .menu {
     height: auto;
     overflow-x: hidden; }
