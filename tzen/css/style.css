@@ -866,7 +866,7 @@ h1 {
   .rent {
     background: transparent; }
 
-  .title__tz {
+  .title__tz, .map-overlay {
     display: none; }
 
   .title__tz-min {
