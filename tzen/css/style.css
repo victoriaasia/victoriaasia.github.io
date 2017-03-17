@@ -163,7 +163,7 @@ a {
   padding: 60px 0 80px;
   position: relative; }
   .section-container .section-title {
-    font-size: 48px;
+    font-size: 6vw;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
@@ -845,6 +845,9 @@ h1 {
         border-top: 2px solid;
         border-color: inherit; }
 
+@media only screen and (min-width: 900px) {
+  .section-container .section-title {
+    font-size: 48px; } }
 @media only screen and (min-width: 769px) {
   .customer {
     -webkit-box-orient: vertical;
@@ -853,14 +856,14 @@ h1 {
         -ms-flex-direction: column;
             flex-direction: column; } }
 @media only screen and (max-width: 768px) {
+  .section-container .section-title {
+    font-size: 48px; }
+
   .wrapper {
     width: 768px; }
 
   .header, .section-1, .rent, .contacts {
     width: 100%; }
-
-  .section-container .section-title {
-    font-size: 8vw; }
 
   #section-3 {
     height: 100%;
@@ -1003,7 +1006,7 @@ h1 {
       .flex-control-nav li a:focus, .flex-control-nav li a.flex-active {
         background: #fff;
         color: #75174D; } }
-@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #section-2 .about {
     padding: 0 5%; }
     #section-2 .about-extra .about__item .content {
@@ -1072,7 +1075,7 @@ h1 {
       top: 15px; }
     .hamburger span:nth-child(4) {
       top: 30px; } }
-@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .header-nav .menu {
     height: auto;
     overflow-x: hidden; }
