@@ -22,5 +22,8 @@ $(document).ready(function(){
      $(this).text($(this).text().substring(0, 90) + '...');
   });
 
-
+  $('.js-text').each (function(){
+   if ($(this).text().length > 1800)
+     $(this).text($(this).text().substring(0, 1800) + '...');
+  });
 });
