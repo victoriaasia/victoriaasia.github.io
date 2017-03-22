@@ -27,4 +27,15 @@ $(document).ready(function(){
    if ($(this).text().length > 1800)
      $(this).text($(this).text().substring(0, 1800) + '...');
   });
+
+  $('.js-items li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('.js-items li').removeClass('current');
+		$('.js-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	});
+
 });
