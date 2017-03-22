@@ -14,7 +14,8 @@ $(document).ready(function(){
   $('.home-slider').slick({
     infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    dots: true
   });
 
   $('.js-desc').each (function(){
