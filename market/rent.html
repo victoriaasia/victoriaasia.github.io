@@ -13,7 +13,7 @@
 
 <header>
   <div class="header">
-    <a href="" class="header__logo"><img src="assets/img/logo.png" alt=""></a>
+    <a href="index.html" class="header__logo"><img src="assets/img/logo.png" alt=""></a>
     <div class="header__item">
       <div class="header__address">
         <img src="assets/img/address.png" alt="">
@@ -49,7 +49,7 @@
 
   <nav>
     <ul class="main-menu">
-      <li class="main-menu__item"><a href="index.html">о компании</a></li>
+      <li class="main-menu__item"><a href="">о компании</a></li>
       <li class="main-menu__item"><a href="">новости</a></li>
       <li class="main-menu__item"><a href="product-item.html">продукция</a></li>
       <li class="main-menu__item"><a href="rent.html">арендаторам</a></li>
@@ -81,9 +81,9 @@
     <div class="rent__items">
 
       <div class="rent__item col-xs-6">
-        <h2 class="title js-title">Заголовок заголовок заголовок заголовок  заголовок заголовок Заголовок заголовок заголовок заголовок</h2>
+        <div class="title js-title btn" data-toggle="modal" data-target="#modal">Заголовок заголовок заголовок заголовок  заголовок заголовок Заголовок заголовок заголовок заголовок</div>
         <div class="rent__item-content">
-          <div class="document js-document">
+          <div class="document js-document btn" data-toggle="modal" data-target="#modal">
             <img src="assets/img/document-min.png" alt="">
             <p>Договор на аренду</p>
           </div>
@@ -230,13 +230,17 @@
 
 <a href="" class="page-btn">Смотреть схему рынка</a>
 
-<div class="modal js-modal">
-  <img class="modal__close js-close" src="assets/img/close.png" alt="">
-  <div class="modal__content">
-  	<img src="assets/img/document.png" alt="">
+<!-- modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <img src="assets/img/document.png" alt="">
+      </div>
+    </div>
   </div>
 </div>
-<div class="overlay"></div>
 
 </main>
 
@@ -493,28 +497,28 @@
     <div class="footer__menu">
       <div class="footer__menu-item">
         <h3 class="footer__menu-title">о компании</h3>
-        <a href="">О нас</a>
-        <a href="">Новости</a>
-        <a href="">Реклама</a>
+        <div><a href="">О нас</a></div>
+        <div><a href="">Новости</a></div>
+        <div><a href="">Реклама</a></div>
       </div>
       <div class="footer__menu-item">
         <h3 class="footer__menu-title">покупателям</h3>
-        <a href="">Скидки</a>
-        <a href="">Способы оплаты</a>
-        <a href="">для юридических лиц</a>
+        <div><a href="">Скидки</a></div>
+        <div><a href="">Способы оплаты</a></div>
+        <div><a href="">для юридических лиц</a></div>
       </div>
       <div class="footer__menu-item">
         <h3 class="footer__menu-title">услуги</h3>
-        <a href="">доставка и подъем</a>
-        <a href="">распил</a>
-        <a href="">колеровка краски</a>
+        <div><a href="">доставка и подъем</a></div>
+        <div><a href="">распил</a></div>
+        <div><a href="">колеровка краски</a></div>
       </div>
       <div class="footer__menu-item">
         <h3 class="footer__menu-title">контакты</h3>
-        <a href="">наши базы</a>
-        <a href="">сотрудничество</a>
-        <a href="">оптовые продажи</a>
-        <a href="">центральный офис</a>
+        <div><a href="">наши базы</a></div>
+        <div><a href="">сотрудничество</a></div>
+        <div><a href="">оптовые продажи</a></div>
+        <div><a href="">центральный офис</a></div>
       </div>
     </div>
   </div>
@@ -531,5 +535,10 @@
 </div>
 </div>
 <script src="js/script.js"></script>
+<script>
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+  })
+</script>
 </body>
 </html>

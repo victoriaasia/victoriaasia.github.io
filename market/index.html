@@ -13,7 +13,7 @@
 
 <header>
   <div class="header">
-    <a href="" class="header__logo"><img src="assets/img/logo.png" alt=""></a>
+    <a href="index.html" class="header__logo"><img src="assets/img/logo.png" alt=""></a>
     <div class="header__item">
       <div class="header__address">
         <img src="assets/img/address.png" alt="">
@@ -49,7 +49,7 @@
 
   <nav>
     <ul class="main-menu">
-      <li class="main-menu__item"><a href="index.html">о компании</a></li>
+      <li class="main-menu__item"><a href="">о компании</a></li>
       <li class="main-menu__item"><a href="">новости</a></li>
       <li class="main-menu__item"><a href="product-item.html">продукция</a></li>
       <li class="main-menu__item"><a href="rent.html">арендаторам</a></li>
@@ -379,28 +379,28 @@
     <div class="footer__menu">
       <div class="footer__menu-item">
         <h3 class="footer__menu-title">о компании</h3>
-        <a href="">О нас</a>
-        <a href="">Новости</a>
-        <a href="">Реклама</a>
+        <div><a href="">О нас</a></div>
+        <div><a href="">Новости</a></div>
+        <div><a href="">Реклама</a></div>
       </div>
       <div class="footer__menu-item">
         <h3 class="footer__menu-title">покупателям</h3>
-        <a href="">Скидки</a>
-        <a href="">Способы оплаты</a>
-        <a href="">для юридических лиц</a>
+        <div><a href="">Скидки</a></div>
+        <div><a href="">Способы оплаты</a></div>
+        <div><a href="">для юридических лиц</a></div>
       </div>
       <div class="footer__menu-item">
         <h3 class="footer__menu-title">услуги</h3>
-        <a href="">доставка и подъем</a>
-        <a href="">распил</a>
-        <a href="">колеровка краски</a>
+        <div><a href="">доставка и подъем</a></div>
+        <div><a href="">распил</a></div>
+        <div><a href="">колеровка краски</a></div>
       </div>
       <div class="footer__menu-item">
         <h3 class="footer__menu-title">контакты</h3>
-        <a href="">наши базы</a>
-        <a href="">сотрудничество</a>
-        <a href="">оптовые продажи</a>
-        <a href="">центральный офис</a>
+        <div><a href="">наши базы</a></div>
+        <div><a href="">сотрудничество</a></div>
+        <div><a href="">оптовые продажи</a></div>
+        <div><a href="">центральный офис</a></div>
       </div>
     </div>
   </div>
@@ -417,5 +417,10 @@
 </div>
 </div>
 <script src="js/script.js"></script>
+<script>
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+  })
+</script>
 </body>
 </html>
