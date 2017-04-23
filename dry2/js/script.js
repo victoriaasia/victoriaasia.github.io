@@ -22,11 +22,11 @@ $(document).ready(function(){
 
 //slider1
 
-  $('.dp-middle-js-items li').click(function(){
+  $('.js-dp-middle-items li').click(function(){
   var tab_id = $(this).attr('data-tab');
 
-  $('.dp-middle-js-items li').removeClass('current');
-  $('.dp-middle-js-content').removeClass('current');
+  $('.js-dp-middle-items li').removeClass('current');
+  $('.js-dp-middle-content').removeClass('current');
 
   $(this).addClass('current');
   $("#"+tab_id).addClass('current');
