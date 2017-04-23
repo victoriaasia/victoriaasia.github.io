@@ -83,6 +83,7 @@
   text-align: center; }
 
 .d-text {
+  width: 100%;
   font-size: 1em;
   font-family: 'k-reg';
   line-height: 1.625; }
@@ -389,7 +390,9 @@
     -webkit-flex: 1 1 50%;
     -ms-flex: 1 1 50%;
     flex: 1 1 50%;
+    max-width: 50%;
     height: 250px;
+    float: left;
     cursor: pointer;
     position: relative;
     -webkit-transition: opacity 3s linear;
