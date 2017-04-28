@@ -193,11 +193,26 @@ a.removeEventListener("load",S),r.ready()}"complete"===d.readyState||"loading"!=
 
 $(document).ready(function(){
 
-  // slider1
-    $('#dp-slider').cslider();
+  // slider
+    $('#dp-slider').cslider({
+        current: 0,
+        autoplay : true,
+        interval: 10000,
+        circular: true,
+        bgincrement : 50
+      });
 
-    $('#dp-middle-eu').cslider();
-    $('#dp-middle-rus').cslider();
+    $('#dp-middle-eu').cslider({
+        current: 0,
+        autoplay : true,
+        interval: 10000,
+        circular: true,
+        bgincrement : 50
+      });
+    $('#dp-middle-rus').cslider({
+        current: 0,
+        // autoplay : true
+      });
 
   // tab1
   $('.js-dp-items li').click(function(){
