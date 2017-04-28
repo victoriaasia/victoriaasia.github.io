@@ -497,6 +497,56 @@
       .g-fifth p br {
         display: block; } }
 
+.g-sixth {
+  height: 410px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .g-sixth {
+      height: 700px; } }
+  .g-sixth .g-title {
+    text-align: center; }
+    .g-sixth .g-title h3 {
+      padding: 20px 0;
+      line-height: .8; }
+      .g-sixth .g-title h3 span:first-child {
+        margin-right: 110px; }
+        @media screen and (max-width: 768px) {
+          .g-sixth .g-title h3 span:first-child {
+            margin-right: 0; } }
+      .g-sixth .g-title h3 span:last-child {
+        margin-left: 120px; }
+        @media screen and (max-width: 768px) {
+          .g-sixth .g-title h3 span:last-child {
+            margin-left: 3vw; } }
+  .g-sixth .g-product {
+    position: absolute; }
+    .g-sixth .g-product:first-child {
+      top: 0;
+      left: 85px; }
+      @media screen and (max-width: 768px) {
+        .g-sixth .g-product:first-child {
+          left: 0; } }
+    .g-sixth .g-product:last-child {
+      bottom: 0;
+      right: 35px; }
+      @media screen and (max-width: 768px) {
+        .g-sixth .g-product:last-child {
+          right: -80px; } }
+  .g-sixth .g-button-txt {
+    margin: 30px auto 0; }
+
 .g-seventh {
   background: url("../assets/img/block7.jpg") no-repeat;
   background-size: cover;
@@ -519,10 +569,11 @@
       background-position: top right !important; } }
   @media screen and (max-width: 768px) {
     .g-seventh {
-      background: url("../assets/img/block7-mob.png") no-repeat;
+      background: url("../assets/img/block7-mob.jpg") no-repeat;
       background-size: cover;
       background-position: top center;
-      height: 800px;
+      height: 480px;
+      max-height: 560px;
       margin-bottom: 38vw;
       -webkit-box-align: end;
       -webkit-align-items: flex-end;
