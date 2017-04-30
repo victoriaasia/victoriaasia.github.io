@@ -1,3 +1,23 @@
+@-webkit-keyframes shine {
+  100% {
+    left: 100%; } }
+
+@keyframes shine {
+  100% {
+    left: 100%; } }
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: .8; }
+  100% {
+    opacity: 1; } }
+
+@keyframes flash {
+  0% {
+    opacity: .8; }
+  100% {
+    opacity: 1; } }
+
 
 @charset "UTF-8";
 @font-face {
@@ -20,6 +40,16 @@
   src: local("☺"), url("fonts/os/opensans.woff") format("woff"), url("fonts/os/opensans.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+@keyframes shine {
+  100% {
+    left: 100%; } }
+
+@keyframes flash {
+  0% {
+    opacity: .8; }
+  100% {
+    opacity: 1; } }
 
 * {
   -webkit-box-sizing: border-box;
@@ -228,7 +258,7 @@
 .g-first {
   background: url("../assets/img/block1a.png") no-repeat;
   background-position: right;
-  background-size: contain;
+  background-size: 60%;
   height: 490px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -237,14 +267,25 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear; }
+  .g-first:hover {
+    background-size: 58%;
+    opacity: 1;
+    -webkit-animation: flash 1s;
+    animation: flash 1s; }
   @media screen and (max-width: 768px) {
     .g-first {
       background: url("../assets/img/block1a-mob.png") no-repeat;
       background-position: top;
       background-size: cover;
       height: 800px;
-      color: white; } }
+      color: white; }
+      .g-first:hover {
+        background-size: cover;
+        -webkit-animation: none;
+        animation: none; } }
   .g-first h3 {
     font-size: 4em; }
     @media screen and (max-width: 768px) {
@@ -367,6 +408,9 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  .g-fourth:hover .g-product {
+    -webkit-filter: blur(0);
+    filter: blur(0); }
   @media screen and (max-width: 768px) {
     .g-fourth {
       height: 700px; } }
@@ -398,10 +442,16 @@
     position: absolute;
     width: 365px;
     bottom: -1px;
-    right: 30px; }
+    right: 30px;
+    -webkit-filter: blur(1.5px);
+    filter: blur(1.5px);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; }
     @media screen and (max-width: 768px) {
       .g-fourth .g-product {
-        right: 0; } }
+        right: 0;
+        -webkit-filter: blur(0);
+        filter: blur(0); } }
   .g-fourth .g-button-txt {
     margin: 30px auto 0; }
 
@@ -409,6 +459,24 @@
   height: 420px;
   padding: 0;
   background: #ededed; }
+  .g-fifth::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 999;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.2)));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+    -webkit-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    transform: skewX(-20deg); }
+  .g-fifth:hover::before {
+    -webkit-animation: shine .75s;
+    animation: shine .75s; }
   @media screen and (max-width: 768px) {
     .g-fifth {
       background: url("../assets/img/block5-mob.jpg") no-repeat;
@@ -423,6 +491,9 @@
       -ms-flex-pack: center;
       justify-content: center;
       overflow: visible; }
+      .g-fifth:hover::before {
+        -webkit-animation: none;
+        animation: none; }
       .g-fifth .g-title {
         background: #ededed;
         width: 100%;
@@ -512,6 +583,10 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  .g-sixth:hover .g-product:last-child {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
   @media screen and (max-width: 768px) {
     .g-sixth {
       height: 700px; } }
@@ -540,10 +615,18 @@
           left: 0; } }
     .g-sixth .g-product:last-child {
       bottom: 0;
-      right: 35px; }
+      right: 35px;
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out; }
       @media screen and (max-width: 768px) {
         .g-sixth .g-product:last-child {
-          right: -80px; } }
+          right: -80px;
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1); } }
   .g-sixth .g-button-txt {
     margin: 30px auto 0; }
 
@@ -564,6 +647,24 @@
   -ms-flex-pack: start;
   justify-content: flex-start;
   padding: 0 20px; }
+  .g-seventh::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 999;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    -webkit-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    transform: skewX(-20deg); }
+  .g-seventh:hover::before {
+    -webkit-animation: shine .75s;
+    animation: shine .75s; }
   @media screen and (min-width: 320px) and (max-width: 599px) {
     .g-seventh {
       background-position: top right !important; } }
@@ -584,6 +685,9 @@
       -ms-flex-pack: center;
       justify-content: center;
       overflow: visible; }
+      .g-seventh:hover::before {
+        -webkit-animation: none;
+        animation: none; }
       .g-seventh .g-title {
         position: absolute;
         bottom: -35vw;
@@ -641,7 +745,13 @@
   height: 420px;
   padding: 0;
   background: #ededed;
-  z-index: 9; }
+  z-index: 9;
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease; }
+  .g-eighth:hover {
+    opacity: 1;
+    -webkit-animation: flash 1s;
+    animation: flash 1s; }
   @media screen and (max-width: 768px) {
     .g-eighth {
       background: url("../assets/img/block8-mob.jpg") no-repeat;
@@ -657,6 +767,9 @@
       -ms-flex-pack: center;
       justify-content: center;
       overflow: visible; }
+      .g-eighth:hover {
+        -webkit-animation: none;
+        animation: none; }
       .g-eighth .g-title {
         background: #ededed;
         width: 100%;
@@ -736,7 +849,7 @@
   padding: 30px 0 45px; }
   @media screen and (max-width: 768px) {
     .g-footer {
-      padding: 10vw 0 45px; } }
+      padding: 20vw 0 45px; } }
   .g-footer__title {
     font-size: 1.2em;
     font-family: "opensans", sans-serif;
