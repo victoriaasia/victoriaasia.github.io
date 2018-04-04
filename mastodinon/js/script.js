@@ -43,7 +43,7 @@ var app = app || {
 				app.current_slide++;
 				app.slide_to(app.current_slide);
 				$(".js-title").css( "opacity", "1" );
-			} 
+			}
 		});
 
 		// Try again
