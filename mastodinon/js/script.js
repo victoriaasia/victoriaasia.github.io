@@ -53,8 +53,8 @@ var app = app || {
 
 // Try again
 $(".js-repeat").on("click", function() {
-		location.reload();
 		console.log('to top');
+		window.location.reload();		
 });
 
 // results
