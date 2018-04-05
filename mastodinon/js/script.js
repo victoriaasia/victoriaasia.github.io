@@ -52,7 +52,7 @@ var app = app || {
 
 
 // Try again
-$(".js-repeat").click(function () {
+$(".js-repeat").on("click", function() {
 		location.reload();
 		console.log('to top');
 });
