@@ -62,14 +62,14 @@ var app = app || {
 			}
 		});
 
-		// Try again
-		$(".js-repeat").on("click", function() {
-				console.log('to top');
-				// window.location.reload();
-				app.slide_to(app.current_slide = 1);
-				$(".js-title").css( "opacity", "0" );
-		});
-		
+		// // Try again
+		// $(".js-repeat").on("click", function() {
+		// 		console.log('to top');
+		// 		// window.location.reload();
+		// 		app.slide_to(app.current_slide = 1);
+		// 		$(".js-title").css( "opacity", "0" );
+		// });
+
 	}
 };
 
