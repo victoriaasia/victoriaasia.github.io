@@ -36,25 +36,41 @@ var app = app || {
 	slide_functions: function(){
 		var total_slides = 9;
 		var body = $("#m-slides");
-		$(".m-down").on("click", function(){
 
-			if (app.current_slide < total_slides){
 
+		$(".js-start").on("click", function() {
+			app.current_slide++;
+			app.slide_to(app.current_slide);
+			$(".js-title").css({"opacity":"1", "width":"auto" });
+			$(".js-logo-brand").css("max-width","30vw" );
+			$(".js-logo").css("max-width","22vw" );
+		});
+
+		// validate
+		$(".js-next").on("click", function() {
+
+			var clikedForm = $(this).parent('.js-answers');
+			var answers = clikedForm.find('.m-answer:checked');
+
+	    if ( answers.length !== 0 ) {
 				app.current_slide++;
 				app.slide_to(app.current_slide);
-				$(".js-title").css({"opacity":"1", "width":"auto" });
-				$(".js-logo-brand").css("max-width","30vw" );
-				$(".js-logo").css("max-width","22vw" );
+	    }
+			else {
+				console.log('choose answer !');
+	      return false;
 			}
 		});
 	}
 };
 
+
 // Try again
 $(".js-repeat").on("click", function() {
 		console.log('to top');
-		// window.location.reload();
+		window.location.reload();
 });
+
 
 
 // results
