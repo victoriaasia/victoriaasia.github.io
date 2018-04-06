@@ -61,6 +61,15 @@ var app = app || {
 	      return false;
 			}
 		});
+
+		// Try again
+		$(".js-repeat").on("click", function() {
+				console.log('to top');
+				// window.location.reload();
+				app.slide_to(app.current_slide = 1);
+				$(".js-title").css( "opacity", "0" );
+		});
+		
 	}
 };
 
@@ -80,17 +89,9 @@ $(".js-result-btn").click(function () {
 	} else if (chk3 > chk1 && chk3 > chk2 && chk3 > chk4) {
 		$(".js-result").load("results/result3.html");
 	} else {
-		$(".js-result").load('results/result4.html', function () {
-			$(".js-repeat").on("click", function() {
-					console.log('to top');
-					// app.slide_to(app.current_slide = 1);
-					// $(".js-title").css( "opacity", "0" );
-					window.location.reload();
-				});
-	    });
-	    return false;
-		}
-	});
+		$(".js-result").load("results/result4.html");
+	}
+});
 
 // front page
 
