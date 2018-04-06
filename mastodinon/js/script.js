@@ -50,10 +50,11 @@ var app = app || {
 	}
 
 	// Try again
-	$(".js-repeat").on("click", function() {
-			console.log('to top');
-			window.location.reload();
-	});
+	// $(".js-repeat").on("click", function() {
+	// 		console.log('to top');
+	// 		window.location.reload();
+	//
+	// });
 
 };
 
