@@ -61,15 +61,6 @@ var app = app || {
 	      return false;
 			}
 		});
-
-		// // Try again
-		// $(".js-repeat").on("click", function() {
-		// 		console.log('to top');
-		// 		// window.location.reload();
-		// 		app.slide_to(app.current_slide = 1);
-		// 		$(".js-title").css( "opacity", "0" );
-		// });
-
 	}
 };
 
@@ -124,6 +115,65 @@ document.body.addEventListener("mousemove", function(e) {
   if (Math.abs(distX) < 800 && distY < 300 && fluidpeople.matches) {
 		people.style.transform = "translate("+(-1*distX)/12+"px,"+(-1*distY)/12+"px)";
 		woman.style.transform = "translate("+(-1*distX)/-12+"px,"+(-1*distY)/-12+"px)";
-		introContainer.style.backgroundPosition = `calc(87% + ${distX/50}px) calc(87% + ${distY/50}px)`;
+		// introContainer.style.backgroundPosition = `calc(87% + ${distX/50}px) calc(87% + ${distY/50}px)`;
   }
 });
+
+
+// question pics
+function changePic1(box){
+	var pics = new Array(4)
+	pics[1] = "img/quest/1/1.jpg";
+	pics[2] = "img/quest/1/3.jpg";
+	pics[3] = "img/quest/1/2.jpg";
+	pics[4] = "img/quest/1/4.jpg";
+	document.querySelector('.changepic1').src = pics[parseInt(box.value)];
+}
+function changePic2(box){
+	var pics = new Array(4)
+	pics[5] = "img/quest/2/5.png";
+	pics[6] = "img/quest/2/6.png";
+	pics[7] = "img/quest/2/7.png";
+	pics[8] = "img/quest/2/8.png";
+	document.querySelector('.changepic2').src = pics[parseInt(box.value)];
+}
+function changePic3(box){
+	var pics = new Array(4)
+	pics[9] = "img/quest/3/9.jpg";
+	pics[10] = "img/quest/3/10.jpg";
+	pics[11] = "img/quest/3/11.jpg";
+	pics[12] = "img/quest/3/12.jpg";
+	document.querySelector('.changepic3').src = pics[parseInt(box.value)];
+}
+function changePic4(box){
+	var pics = new Array(4)
+	pics[13] = "img/quest/4/13.png";
+	pics[14] = "img/quest/4/14.png";
+	pics[15] = "img/quest/4/15.jpg";
+	pics[16] = "img/quest/4/16.png";
+	document.querySelector('.changepic4').src = pics[parseInt(box.value)];
+}
+function changePic5(box){
+	var pics = new Array(4)
+	pics[17] = "img/quest/5/17.png";
+	pics[18] = "img/quest/5/18.jpg";
+	pics[19] = "img/quest/5/19.png";
+	pics[20] = "img/quest/5/20.png";
+	document.querySelector('.changepic5').src = pics[parseInt(box.value)];
+}
+function changePic6(box){
+	var pics = new Array(4)
+	pics[21] = "img/quest/6/21.jpg";
+	pics[22] = "img/quest/6/22.jpg";
+	pics[23] = "img/quest/6/23.jpg";
+	pics[24] = "img/quest/6/24.jpg";
+	document.querySelector('.changepic6').src = pics[parseInt(box.value)];
+}
+function changePic7(box){
+	var pics = new Array(4)
+	pics[25] = "img/quest/7/25.png";
+	pics[26] = "img/quest/7/26.png";
+	pics[27] = "img/quest/7/27.jpg";
+	pics[28] = "img/quest/7/28.png";
+	document.querySelector('.changepic7').src = pics[parseInt(box.value)];
+}
